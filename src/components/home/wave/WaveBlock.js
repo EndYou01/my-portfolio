@@ -1,19 +1,20 @@
 import React from 'react'
 import Wave from 'react-wavify'
-import styles from "./jumbo.module.css";
+// import styles from "./jumbo.module.css";
 import { Fade } from "react-awesome-reveal";
 
 export const WaveBlock = () => {
     return (
-      <div className={styles.container}>
-      <div className={styles.content}>
+      <div className='wcontainer'>
+      <div className='wcontent'>
         <Fade>
 
           <h3 className='animate__animated animate__fadeInDown animate__delay-1s animate__slow'>Hi, I'm Jorge!</h3>
           
-          <h1 className='animate__animated animate__backInUp animate__delay-2s animate__slow'>I'm a fullstack software engineer with 3+ years of experience building production ready applications.</h1>
+          {/* <h1 className='animate__animated animate__backInUp animate__delay-2s animate__slow'>I'm a fullstack software engineer with 3+ years of experience building production ready applications.</h1> */}
+          <h1 className='animate__animated animate__backInUp animate__delay-2s animate__slow'>I'm a Front-End software engineer with experience in building production ready applications.</h1>
 
-          <button className={styles.button}>
+          <button className='button'>
             <a
               target="_blank"
               href="mailto:anthonyfdez23@gmail.com"
@@ -26,7 +27,7 @@ export const WaveBlock = () => {
 
         <br/>
         <Wave
-          className={styles.wave}
+          className='wave'
           fill="rgb(20,20,20)"
           paused={false}
           options={{

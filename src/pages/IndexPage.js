@@ -11,9 +11,11 @@ export const IndexPage = () => {
         <>
         <Header/>
         <WaveBlock/>
-        <About/>
-        <Work/>
-        <Skills/>
+        <div className='container'>
+            <About/>
+            <Work/>
+            <Skills/>    
+        </div>
         <Footer/>
         </>
     )

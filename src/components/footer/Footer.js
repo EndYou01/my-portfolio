@@ -11,12 +11,12 @@ export const Footer = () => {
     return (
         <footer id="contact">
       <Fade>
-        <div >
-          <h1>Contact Me.</h1>
-          <ul>
+        <div className='contact_content'>
+          <h2>Contact Me.</h2>
+          <ul className='contact_information_list'>
             <Link>
               <li>
-                <HiOutlineMail />
+                <HiOutlineMail className= 'icon'/>
                 <a
                   href="jorgesenjudo@gmail.com"
                   target="_blank"
@@ -29,7 +29,7 @@ export const Footer = () => {
 
             <Link>
               <li>
-                <FaGithub />
+                <FaGithub className= 'icon'/>
                 <a
                   href="https://github.com/EndYou01"
                   target="_blank"
@@ -42,7 +42,7 @@ export const Footer = () => {
 
             <Link>
               <li>
-                <AiFillLinkedin />
+                <AiFillLinkedin className= 'icon'/>
                 <a
                   href="https://www.linkedin.com/in/jorge-senjudo-25122525b/"
                   target="_blank"
@@ -55,8 +55,8 @@ export const Footer = () => {
           </ul>
           <br></br>
           <Link>
-            <div >
-              <BsCodeSlash />
+            <div className='this_page_source_container' >
+              <BsCodeSlash className= 'icon'/>
               <a
                 target="_blank"
                 href="https://github.com/EndYou01/my-portfolio"

@@ -1,14 +1,13 @@
 import React from 'react'
 import { Fade } from "react-awesome-reveal";
-import styles from "./skills.module.css";
 
 export const Skills = () => {
     return (
-        <div className={styles.content}>
+        <div className='content'>
       <Fade>
         <h1>Skills.</h1>
         <br></br>
-        <div className={styles.columns}>
+        <div className='columns'>
           <ul>
             <li>
               <span>HTML5/CSS</span>
