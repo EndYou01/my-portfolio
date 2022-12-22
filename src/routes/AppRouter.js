@@ -7,8 +7,10 @@ import {
 
 import { IndexPage } from '../pages/IndexPage';
 
-export const AppRoute = () => {
+export const AppRouter = () => {
     return (
+        
+
         <BrowserRouter>
             <Routes>
 
@@ -16,5 +18,6 @@ export const AppRoute = () => {
 
             </Routes>
         </BrowserRouter>
+        
     )
 }
