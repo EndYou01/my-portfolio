@@ -181,8 +181,9 @@
     .header_title {
       font-weight: bold;
       font-size: 1.5rem;
+      outline: none;
       &:hover{
-        color: rgb(16, 149, 14);
+        color:  rgb(226, 70, 48);
         // background-color:  rgb(16, 149, 14);
     }
     }
@@ -202,7 +203,7 @@
       cursor: pointer;
       transition: 100ms;
       &:hover{
-        color: rgb(16, 149, 14);
+        color:  rgb(226, 70, 48);
         // background-color:  rgb(16, 149, 14);
     }
     }
