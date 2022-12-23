@@ -6,13 +6,13 @@ export const About = () => {
             <br/>
             <h1>About & Experience.</h1>
             <br/>
-            <p>I am a full stack software engineer with 3+ years of experience building fullstack websites and mobile applications. I have worked alone, and with other teams of professional developers creating modern and robust software. I mainly work on frontend codebases using ReactJS , but I can most certainly learn any JS framework and tool. I am also experienced with backend languages and frameworks like NodeJS, as well as SQL and noSQL databases.</p>
+            <p className='contain'>I am a full stack software engineer with 3+ years of experience building fullstack websites and mobile applications. I have worked alone, and with other teams of professional developers creating modern and robust software. I mainly work on frontend codebases using ReactJS , but I can most certainly learn any JS framework and tool. I am also experienced with backend languages and frameworks like NodeJS, as well as SQL and noSQL databases.</p>
        
             <br/>
 
             <h1>Professional Experience.</h1>
             <br/>
-            <p>Frontend Software Engineer/Analyst
+            <p className='contain'>Frontend Software Engineer/Analyst
             United Automobile Insurance Company, Miami Gardens, FL
 
             Key Responsibilities.
@@ -27,7 +27,7 @@ export const About = () => {
 
             <h1>Education.</h1> 
             <br/>  
-            <p>Major in Computer Science (AA)
+            <p className='contain'>Major in Computer Science (AA)
             Miami Dade College, Miami, FL
 
 
