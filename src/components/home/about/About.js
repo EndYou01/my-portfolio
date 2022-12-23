@@ -2,7 +2,7 @@ import React from 'react'
 import {useTranslation} from 'react-i18next'
 
 export const About = () => {
-  const [text, i18n] = useTranslation("global")
+  const [text ] = useTranslation("global")
 
     return (
         <div id="about" className='about_container'>
@@ -11,6 +11,7 @@ export const About = () => {
         <p>
           {text("about.a&et")}
         </p>
+        
         <br></br>
         <h2 className='center'>{text("about.profExp")}</h2>
         <div className='table'>

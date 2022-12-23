@@ -9,7 +9,7 @@ import { AiFillLinkedin } from "react-icons/ai";
 import {useTranslation} from 'react-i18next'
 
 export const Footer = () => {
-  const [text, i18n] = useTranslation("global")
+  const [text] = useTranslation("global")
 
     return (
         <footer id="contact">

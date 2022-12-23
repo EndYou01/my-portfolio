@@ -36,6 +36,20 @@ export const Header = () => {
         };
     }, []);
 
+    const toSpanish = () =>{
+        // window.location.reload();
+        scrollToTop()
+        localStorage.setItem('lastLang', 'es')
+        i18n.changeLanguage("es")
+    }
+    const toEnglish = () =>{
+        scrollToTop()
+
+        // window.location.reload();
+        localStorage.setItem('lastLang', 'en')
+        i18n.changeLanguage("en")
+    }
+
     return (
         <header className={
                     scrollPosition < 10
@@ -102,7 +116,7 @@ export const Header = () => {
                         <li className='nav-item '>
                             <button className='btn-lg navigation_button' 
                                     type="button"
-                                    onClick={()=> i18n.changeLanguage("en")}
+                                    onClick={toEnglish}
                             >En
                             </button>
                         </li>
@@ -110,7 +124,7 @@ export const Header = () => {
                         <li className='nav-item '>
                             <button className='btn-lg navigation_button' 
                                     type="button"
-                                    onClick={()=> i18n.changeLanguage("es")}
+                                    onClick={toSpanish}
                             >Es
                             </button>
                         </li>

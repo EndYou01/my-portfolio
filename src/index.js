@@ -8,9 +8,11 @@ import i18next from 'i18next'
 import global_es from './translations/es/global.json'
 import global_en from './translations/en/global.json'
 
+const lastLang = localStorage.getItem('lastLang')||'en'
+
 i18next.init({
     interpolation: {escapeValue: false},
-    lng: "es",
+    lng: lastLang,
     resources:{
         es:{
             global: global_es

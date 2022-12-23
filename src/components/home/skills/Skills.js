@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal";
 import {useTranslation} from 'react-i18next'
 
 export const Skills = () => {
-  const [text, i18n] = useTranslation("global")
+  const [text ] = useTranslation("global")
 
     return (
         <div className='content'>
