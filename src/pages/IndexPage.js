@@ -15,8 +15,6 @@ export const IndexPage = () => {
 
             <About />
 
-            <br/>
-
             <Work/>
             
             <br/>

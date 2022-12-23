@@ -17,7 +17,7 @@ export const WaveBlock = () => {
           <button className='button'>
             <a
               target="_blank"
-              href="mailto:anthonyfdez23@gmail.com"
+              href="mailto:jorgesenjudo@gmail.com"
               rel="noreferrer"
             >
               Contact Me
@@ -31,7 +31,7 @@ export const WaveBlock = () => {
           fill="rgb(20,20,20)"
           paused={false}
           options={{
-            height: 10,
+            height: 20,
             amplitude: 60,
             speed: 0.15,
             points: 3,
