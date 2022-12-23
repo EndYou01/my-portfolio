@@ -1,27 +1,18 @@
 import React from 'react'
+import {useTranslation} from 'react-i18next'
 
 export const About = () => {
+  const [text, i18n] = useTranslation("global")
+
     return (
         <div id="about" className='about_container'>
-        <h1 className='center'>About & Experience.</h1>
+        <h1 className='center'>{text("about.a&e")}</h1>
         <br></br>
         <p>
-          {/* Soy Jorge L. Senjudo, desarrollador Front-End con experiencia en desarrollo y construccion
-          de sitios web. Eh trabajado solo y con otros desarrolladores en la creacion de los mismos,
-          siempre teniendo como objetivo la superacion personal y profesional, para lograr el despliegue
-          de softwares con la calidad adecuada. Trabajo principalmente usando codigo de ReactJS, con capacidad
-          para aprender cualquier framework de JS o herramienta. Tambien tengo breve experiencia
-          con lenguajes backend como JAVA y bases de datos como MySQL. Como meta quiero alcanzar a ser
-          un desarrollador fullstack y poder llevar una vida plena. */}
-          I am Jorge L. Senjudo, Front-End developer with experience in development and construction of websites.
-          I worked alone and with other developers in the creation of them, always aiming at personal and professional
-          improvement, to achieve the deployment of software with the appropriate quality. I work mainly using ReactJS code,
-          with the ability to learn any JS framework or tool. I also have brief experience with backend languages such
-          as JAVA and databases such as MySQL. As a goal I want to become a fullstack developer and be able to lead a
-          full life.
+          {text("about.a&et")}
         </p>
         <br></br>
-        <h2 className='center'>Professional Experience.</h2>
+        <h2 className='center'>{text("about.profExp")}</h2>
         <div className='table'>
           <div style={{ border: "none" }} className='tr'>
             <div className='first_td'>2020 - Present</div>
@@ -71,19 +62,19 @@ export const About = () => {
           </div>
         </div>
         <br></br>
-        <h2 className='center'>Education.</h2>
+        <h2 className='center'>{text("about.education")}</h2>
         <div className='table'>
           <div className='tr'>
-            <div className='first_td'>2020-09 - present</div>
+            <div className='first_td'>{text("about.2020")}</div>
             <div className='second_td'>
-              <h3>Student of Computer Science Engineer</h3>
-              <p>University of Computer Science, Havana, CUB</p>
+              <h3>{text("about.h3")}</h3>
+              <p>{text("about.uci")}</p>
               <br></br>
               <p>
-                <strong>Graduation:</strong> not, yet
+                <strong>{text("about.graduation1")}:</strong> {text("about.graduation2")}
               </p>
               <p>
-                <strong>Average:</strong> 4.5
+                <strong>{text("about.average")}</strong> 4.5
               </p>
             </div>
           </div>

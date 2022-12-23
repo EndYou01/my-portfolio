@@ -1,0 +1,39 @@
+{
+    "header":{
+        "portofolio": "Portafolio.",
+        "about": "Acerca",
+        "work": "Proyectos",
+        "contact": "Contactame"
+    },
+    "footer":{
+        "contactMe": "Contactame.",
+        "linkedin": "Mi perfil de Linkedin",
+        "source": "Ver codigo fuente."
+    },
+    "about":{
+        "a&e": "Acerca y Experiencia.",
+        "a&et": "Soy Jorge L. Senjudo, desarrollador Front-End con experiencia en desarrollo y construccion de sitios web. Eh trabajado solo y con otros desarrolladores en la creacion de los mismos, siempre teniendo como objetivo la superacion personal y profesional, para lograr el despliegue de softwares con la calidad adecuada. Trabajo principalmente usando codigo de ReactJS, con capacidad para aprender cualquier framework de JS o herramienta. Tambien tengo breve experiencia con lenguajes backend como JAVA y bases de datos como MySQL. Como meta quiero alcanzar a ser un desarrollador fullstack y poder llevar una vida plena",
+        "profExp": "Experiencia Profesional.",
+        "education": "Educacion.",
+        "2020": "2020-09 - presente",
+        "h3": "Estudiante de Ingenieria en Ciencias Informaticas.",
+        "uci": "Universidad de las Ciencias Informaticas, Habana, CUB",
+        "graduation1": "Graduacion:",
+        "graduation2": "en proceso.",
+        "average": "Promedio:"
+    },
+    "skills":{
+        "h1": "Habilidades."
+    },
+    "waveB":{
+        "h3": "Hola, soy Jorge!",
+        "h1": "Soy un ingeniero de software Front-End con experiencia en la creación de aplicaciones listas para producción."
+    },
+    "work":{
+        "h1": "Proyectos."
+    }
+}
+
+
+
+

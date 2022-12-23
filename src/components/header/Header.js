@@ -6,20 +6,11 @@ import { MdWeb } from "react-icons/md";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import { MdPermContactCalendar } from "react-icons/md";
 
-const sideMenuVariants = {
-    open: {
-      opacity: 1,
-      x: "-100%",
-      transition: { duration: 0.6, type: "spring" },
-    },
-    closed: {
-      opacity: 1,
-      x: 0,
-      transition: { duration: 0.4, type: "spring" },
-    },
-  };
+import {useTranslation} from 'react-i18next'
 
 export const Header = () => {
+
+    const [text, i18n] = useTranslation("global")
 
     const [scrollPosition, setScrollPosition] = useState(0);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -59,7 +50,7 @@ export const Header = () => {
                         style={{ cursor: "pointer" }} 
                         className="navbar-brand header_title" 
                         >
-                            Portofolio.
+                            {text("header.portofolio")}
                     </span>
                 </Link>
 
@@ -78,29 +69,52 @@ export const Header = () => {
                     }}>
                     <div className="navbar-nav">
 
+                        <li className='nav-item'>
                         <NavLink 
-                            className="nav-item nav-link navigation_button" 
+                            className=" nav-link navigation_button" 
                             to="/about"
                         >
                             <AiOutlineInfoCircle className='menu_icon' />
-                            About
+                            {text("header.about")}
                         </NavLink>
+                        </li>
 
+                        <li className='nav-item '>
                         <NavLink 
-                            className="nav-item nav-link navigation_button" 
+                            className="nav-link navigation_button" 
                             to="/work"
                         >
                             <MdWeb className='menu_icon' />
-                            Work
+                            {text("header.work")}
                         </NavLink>
+                        </li>
 
+                        <li className='nav-item '>
                         <NavLink
                             onClick={scrollToBottom}
-                            className='nav-item nav-link navigation_button'
+                            className='nav-link navigation_button'
                         > 
                             <MdPermContactCalendar className='menu_icon' />
-                            Contact
+                            {text("header.contact")}
                         </NavLink>
+                        </li>
+
+                        <li className='nav-item '>
+                            <button className='btn-lg navigation_button' 
+                                    type="button"
+                                    onClick={()=> i18n.changeLanguage("en")}
+                            >En
+                            </button>
+                        </li>
+
+                        <li className='nav-item '>
+                            <button className='btn-lg navigation_button' 
+                                    type="button"
+                                    onClick={()=> i18n.changeLanguage("es")}
+                            >Es
+                            </button>
+                        </li>
+
                     </div>
                 </div>    
                 

@@ -6,13 +6,16 @@ import { HiOutlineMail } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
 import { BsCodeSlash } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";
+import {useTranslation} from 'react-i18next'
 
 export const Footer = () => {
+  const [text, i18n] = useTranslation("global")
+
     return (
         <footer id="contact">
       <Fade>
         <div className='contact_content'>
-          <h2>Contact Me.</h2>
+          <h2>{text("footer.contactMe")}</h2>
           <ul className='contact_information_list'>
             <Link>
               <li>
@@ -48,7 +51,7 @@ export const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  My LinkedIn Profile
+                  {text("footer.linkedin")}
                 </a>
               </li>
             </Link>
@@ -62,7 +65,7 @@ export const Footer = () => {
                 href="https://github.com/EndYou01/my-portfolio"
                 rel="noreferrer"
               >
-                See source code.
+                {text("footer.source")}
               </a>
             </div>
           </Link>

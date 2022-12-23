@@ -1,11 +1,14 @@
 import React from 'react'
 import { Fade } from "react-awesome-reveal";
+import {useTranslation} from 'react-i18next'
 
 export const Skills = () => {
+  const [text, i18n] = useTranslation("global")
+
     return (
         <div className='content'>
       <Fade>
-        <h1>Skills.</h1>
+        <h1>{text("skills.h1")}</h1>
         <br></br>
         <div className='columns'>
           <ul>
