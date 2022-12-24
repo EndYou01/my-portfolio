@@ -30,6 +30,7 @@
         "h1": "I'm a Front-End software engineer with experience in building production ready applications."
     },
     "work":{
-        "h1": "Work."
+        "h1": "University Works.",
+        "lm": "Learn More"
     }
 }

@@ -17,58 +17,50 @@ export const Footer = () => {
         <div className='contact_content'>
           <h2>{text("footer.contactMe")}</h2>
           <ul className='contact_information_list'>
-            <Link>
               <li>
                 <HiOutlineMail className= 'icon'/>
-                <a
-                  href="jorgesenjudo@gmail.com"
+                <Link
+                  to="jorgesenjudo@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                 >
                   jorgesenjudo@gmail.com
-                </a>
+                </Link>
               </li>
-            </Link>
 
-            <Link>
               <li>
                 <FaGithub className= 'icon'/>
-                <a
-                  href="https://github.com/EndYou01"
+                <Link
+                  to="https://github.com/EndYou01"
                   target="_blank"
                   rel="noreferrer"
                 >
                     EndYou01
-                </a>
+                </Link>
               </li>
-            </Link>
 
-            <Link>
               <li>
                 <AiFillLinkedin className= 'icon'/>
-                <a
-                  href="https://www.linkedin.com/in/jorge-senjudo-25122525b/"
+                <Link
+                  to="https://www.linkedin.com/in/jorge-senjudo-25122525b/"
                   target="_blank"
                   rel="noreferrer"
                 >
                   {text("footer.linkedin")}
-                </a>
+                </Link>
               </li>
-            </Link>
           </ul>
           <br></br>
-          <Link>
             <div className='this_page_source_container' >
               <BsCodeSlash className= 'icon'/>
-              <a
+              <Link
                 target="_blank"
-                href="https://github.com/EndYou01/my-portfolio"
+                to="https://github.com/EndYou01/my-portfolio"
                 rel="noreferrer"
               >
                 {text("footer.source")}
-              </a>
+              </Link>
             </div>
-          </Link>
         </div>
       </Fade>
     </footer>

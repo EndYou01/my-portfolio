@@ -14,37 +14,115 @@ export const Work = () => {
             <h1 className='header'>{text("work.h1")}</h1>
           </Fade>
         
-        <div>
+          <div>
           <section className='projects_section'>
-            <Fade>
+                <Fade>
+                    <div className='project_container'>
+                      
+                        <LazyLoadImage
+                          className='bg_image'
+                          alt="TMF Image"
+                          src="tmf/tmf1.png"
+                        />
+
+                      <div className='project_image_container'>
+                        <LazyLoadImage
+                          effect="blur"
+                          className='project_image'
+                          alt="TMF Logo"
+                          src="logos/tmf_logo.png"
+                        />
+                      </div>
+                      
+                      <div className='project_info_container'>
+                        <h2>Tu Mandalorian Favorito</h2>
+                        <p>
+                          SNB 2022 is a desktop app built to help basketball
+                          fans to stay up to date with everything in the league.
+                          Features an in-game chat, personalized notifications for
+                          favorite teams and players, real time shot-chart that can be
+                          targeted to specific players with play-by-play info alongside
+                          it.
+                        </p>
+                          <Link href="/basketball-center">
+                            <button className='learn_more_button'>
+                              {text("work.lm")}
+                            </button>
+                          </Link>
+                      </div>
+                    </div>
+                  </Fade>
+              </section>
+
+              <br/>
+
+              <section className='projects_section'>
+                <Fade>
+                    <div className='project_container'>
+                      
+                        <LazyLoadImage
+                          className='bg_image'
+                          alt="SNB 2022 Image"
+                          src="snb2022/snb1.jpg"
+                        />
+
+                      <div className='project_image_container'>
+                        <LazyLoadImage
+                          effect="blur"
+                          className='project_image'
+                          alt="Basketball Center Logo"
+                          src="logos/snb_logo1x5.png"
+                        />
+                      </div>
+                      
+                      <div className='project_info_container'>
+                        <h2>SNB 2022</h2>
+                        <p>
+                          SNB 2022 is a desktop app built to help basketball
+                          fans to stay up to date with everything in the league.
+                          Features an in-game chat, personalized notifications for
+                          favorite teams and players, real time shot-chart that can be
+                          targeted to specific players with play-by-play info alongside
+                          it.
+                        </p>
+                          <Link href="/basketball-center">
+                            <button className='learn_more_button'>
+                              {text("work.lm")}
+                            </button>
+                          </Link>
+                      </div>
+                    </div>
+                  </Fade>
+              </section>
+
+              <br/>
+
+              <Fade>
+                <h2 className='header'>Freelance Projects.</h2>
+              </Fade>
+              
+            <section className='projects_section'>
+              <Fade>
                 <div className='project_container'>
-                  
-                  <Link href="/snb2022">
                     <LazyLoadImage
                       className='bg_image'
-                      alt="SNB 2022 Image"
-                      src="snb2022/snb1.jpg"
+                      alt="CitasApp Image"
+                      src="freelance/citasApp/citas1.png"
                     />
-                  </Link>
 
                   <div className='project_image_container'>
                     <LazyLoadImage
                       effect="blur"
                       className='project_image'
-                      alt="Basketball Center Logo"
-                      src="logos/snb_logo1x5.png"
+                      alt="CitasApp Logo"
+                      src="logos/citas_logo.png"
                     />
                   </div>
-                  
                   <div className='project_info_container'>
-                    <h2>SNB 2022</h2>
+                    <h2>CitasApp</h2>
                     <p>
-                      SNB 2022 is a desktop app built to help basketball
-                      fans to stay up to date with everything in the league.
-                      Features an in-game chat, personalized notifications for
-                      favorite teams and players, real time shot-chart that can be
-                      targeted to specific players with play-by-play info alongside
-                      it.
+                      DLSFixit is a doors and locks repair and installation company
+                      located in the south Florida area.
                     </p>
                       <Link href="/basketball-center">
                         <button className='learn_more_button'>
@@ -54,9 +132,9 @@ export const Work = () => {
                   </div>
                 </div>
               </Fade>
-          </section>
+              </section>
+            </div>
           
-          </div>
         </div>
     )
 }

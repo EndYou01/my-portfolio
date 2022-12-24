@@ -1,16 +1,19 @@
 import React from 'react'
 import {useTranslation} from 'react-i18next'
+import { Fade } from "react-awesome-reveal";
 
 export const About = () => {
   const [text ] = useTranslation("global")
 
     return (
         <div id="about" className='about_container'>
+          <Fade>
           <h1 className='center'>{text("about.a&e")}</h1>
           <br></br>
           <p>
             {text("about.a&et")}
           </p>
+          
           
           <br></br>
           <h2 className='center'>{text("about.profExp")}</h2>
@@ -80,6 +83,7 @@ export const About = () => {
               </div>
             </div>
           </div>
+          </Fade>
       </div>
 
             

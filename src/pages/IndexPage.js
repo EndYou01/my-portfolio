@@ -13,9 +13,9 @@ export const IndexPage = () => {
         <div className='indexContainer'>
             
             <head>
-                <title>Jorge L. Senjudo Web Developer Portfolio</title>
+                <title>Jorge Senjudo Web Developer Portfolio</title>
                 <meta
-                    lang="en"
+                    lang={(lastLang)}
                     name="description"
                     content="Jorge Senjudo, Front-End software engineer with experience in building production ready applications."
                 />
