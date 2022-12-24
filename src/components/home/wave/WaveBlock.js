@@ -7,13 +7,12 @@ export const WaveBlock = () => {
   const [text] = useTranslation("global")
 
     return (
-      <div className='wcontainer'>
-      <div className='wcontent'>
+      <div className='wavecontainer'>
+      <div className='wavecontent'>
         <Fade>
 
           <h3 className='animate__animated animate__fadeInDown animate__delay-1s animate__slow'>{text("waveB.h3")}</h3>
           
-          {/* <h1 className='animate__animated animate__backInUp animate__delay-2s animate__slow'>I'm a fullstack software engineer with 3+ years of experience building production ready applications.</h1> */}
           <h1 className='animate__animated animate__backInUp animate__delay-2s animate__slow'>{text("waveB.h1")}</h1>
 
           <button className='button'>

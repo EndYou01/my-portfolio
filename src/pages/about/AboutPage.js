@@ -2,6 +2,7 @@ import React from 'react'
 
 export const AboutPage = () => {
 
+
     const lastLang = localStorage.getItem('lastLang')||'en'
     
     return (

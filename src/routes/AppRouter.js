@@ -4,20 +4,25 @@ import {
     Routes,
     Route         
     } from "react-router-dom";
+    
+
+import { Header } from '../components/header/Header'
+import { Footer } from '../components/footer/Footer'
 
 import { IndexPage } from '../pages/IndexPage';
 
 export const AppRouter = () => {
     return (
-        
-
         <BrowserRouter>
-            <Routes>
+            <Header/>
 
-                <Route path='/*' element={<IndexPage/>}/>
-
-            </Routes>
+                <Routes>
+                    <Route path='/*' element={<IndexPage/>}/>
+                </Routes>
+                
+            <div className='contain-footer'>
+            <Footer/>
+            </div>
         </BrowserRouter>
-        
     )
 }

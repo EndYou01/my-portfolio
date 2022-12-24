@@ -62,7 +62,7 @@ export const Header = () => {
                     <span 
                         onClick={scrollToTop} 
                         style={{ cursor: "pointer" }} 
-                        className="navbar-brand header_title" 
+                        className="header_title" 
                         >
                             {text("header.portofolio")}
                     </span>
@@ -105,15 +105,15 @@ export const Header = () => {
 
                         <li className='nav-item '>
                         <NavLink
+                            className='nav-link navigation_button contactWhite'
                             onClick={scrollToBottom}
-                            className='nav-link navigation_button'
                         > 
                             <MdPermContactCalendar className='menu_icon' />
-                            {text("header.contact")}
+                            <p className='contactWhite'>{text("header.contact")}</p>
                         </NavLink>
                         </li>
 
-                        <li className='nav-item '>
+                        {/* <li className='nav-item '>
                             <button className='btn-lg navigation_button' 
                                     type="button"
                                     onClick={toEnglish}
@@ -127,7 +127,17 @@ export const Header = () => {
                                     onClick={toSpanish}
                             >Es
                             </button>
-                        </li>
+                        </li> */}
+
+                        <div class="nav-item dropdown">
+                            <button class="btn btn-lg navigation_button btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><Link class="dropdown-item" href="#">Action</Link></li>
+                                <li><Link class="dropdown-item" href="#">Another action</Link></li>
+                            </ul>
+                        </div>
 
                     </div>
                 </div>    
