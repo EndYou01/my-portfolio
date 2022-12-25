@@ -31,7 +31,7 @@ export const Footer = () => {
             <li>
               <FaGithub className='icon' />
               <Link
-                to="https://github.com/EndYou01"
+                to="/https://github.com/EndYou01"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -42,7 +42,7 @@ export const Footer = () => {
             <li>
               <AiFillLinkedin className='icon' />
               <Link
-                to="https://www.linkedin.com/in/jorge-senjudo-25122525b/"
+                to="/https://www.linkedin.com/in/jorge-senjudo-25122525b/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -55,7 +55,7 @@ export const Footer = () => {
             <BsCodeSlash className='icon' />
             <Link
               target="_blank"
-              to="https://github.com/EndYou01/my-portfolio"
+              to="/https://github.com/EndYou01/my-portfolio"
               rel="noreferrer"
             >
               {text("footer.source")}

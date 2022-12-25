@@ -75,7 +75,7 @@ export const CitasApp = () => {
               <BsCodeSlash className='icon' />
               <Link
                 target="_blank"
-                to="https://github.com/Panik-Attack/Citas"
+                to="/https://github.com/Panik-Attack/Citas"
                 rel="noreferrer"
               >
                 {text("footer.source")}
