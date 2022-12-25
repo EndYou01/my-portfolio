@@ -1,16 +1,16 @@
 {
-    "header":{
+    "header": {
         "portofolio": "Portafólio.",
         "about": "Acerca",
         "work": "Proyectos",
         "contact": "Contáctame"
     },
-    "footer":{
+    "footer": {
         "contactMe": "Contáctame.",
         "linkedin": "Mi perfil de Linkedin",
         "source": "Ver código fuente."
     },
-    "about":{
+    "about": {
         "a&e": "Acerca y Experiencia.",
         "a&et": "Soy Jorge L. Senjudo, desarrollador Front-End con experiencia en desarrollo y construcción de sitios web. Eh trabajado solo y con otros desarrolladores en la creación de los mismos, siempre teniendo como objetivo la superación personal y profesional, para lograr el despliegue de softwares con la calidad adecuada. Trabajo principalmente usando codigo de ReactJS, con capacidad para aprender cualquier framework de JS o herramienta. También tengo breve experiencia con lenguajes backend como JAVA y bases de datos como MySQL. Como meta quiero alcanzar a ser un desarrollador fullstack y poder llevar una vida plena.",
         "profExp": "Experiencia Profesional.",
@@ -25,7 +25,7 @@
         "fronp1": "Desde hace un año comencé mi preparación como desarrollador fullstack, decidí comenzar por esta rama, y en ella eh comprendido como funciona la web y los sistemas informáticos. Eh trabajado para varios clientes, haciendo principalmente componentes de páginas web, acumulando experiencia durante este período y me creo capaz de poder plasmar en codigo, el diseño que se me dé. ",
         "fronh4": "Responsabilidades clave."
     },
-    "skills":{
+    "skills": {
         "h1": "Habilidades.",
         "UI": "Diseño UI",
         "FS": "Español Fluido",
@@ -36,15 +36,15 @@
         "creative": "Creativo",
         "worker": "Trabajador"
     },
-    "waveB":{
+    "waveB": {
         "h3": "Hola, soy Jorge!",
         "h1": "Soy un ingeniero de software con experiencia en la creación de aplicaciones web y de escritorio listas para producción."
     },
-    "work":{
+    "work": {
         "h1": "Proyectos Universitarios.",
         "lm": "Leer Más"
     },
-    "snb":{
+    "snb": {
         "p1": "SNB 2022 es un proyecto desarrollado usando el entorno de desarrollo Net.Beans, usando Java como lenguaje principal. Es un juego orientado principalmente a mi formación como ingeniero de software, en el se aplican complejos algoritmos como Fisher Yates, para la aleatorización de numeros aleatorios.",
         "l1": "Calificación del Proyecto: 5/5 puntos",
         "l2": "Compañero de Trabajo:",
@@ -53,20 +53,16 @@
         "p3": "En este lado del proyecto, usamos MySql como base de datos a la cual realizamos las peticiones y manipulamos la información que teníamos que distribuir en las distintas interfaces.",
         "b": "Atrás"
     },
-    "tmf":{
+    "tmf": {
         "h2": "Tu Mandalorian Favorito",
         "p1": "Puedo considerarlo mi primer proyecto relacionado con la programación. Con él, asenté las bases de la programación estructurada que aprendí con C++, con toques artísticos orientados al universo cinematográfico de Star Wars.",
         "l1": "Compañero de Trabajo:",
         "p2": "Creado desde los mismos simientos del aprendizaje, el proyecto no tuvo una interfaz como tal, nos apoyamos en la terminal del Visual Studio Code para poder llegar al usuario. Se nos dio la posibilidad de hechar a andar nuestra imaginación y fue ahí donde encontramos el mundo de ASCII Art, arte a traves de terminales de consola.",
         "p3": "Por detrás de la bella interfaz, hay código desplegado con C++, no muy complejos."
     },
-    "citas":{
+    "citas": {
         "p1": "CitasApp es un componente dentro de un proyecto de mayor envergadura, en el cual participé. Está compuesto por una validación de formularios y consultas al localStorage, construido con Reactjs y AntDesign.",
         "p2": "A nivel de complejidad creativa, es un componente sencillo y de facil creación.",
         "p3": "Hubo que realizar validaciones a cada uno de los campos de formulario que habían, y adecuarlos segun las especificaciones del cliente."
     }
 }
-
-
-
-

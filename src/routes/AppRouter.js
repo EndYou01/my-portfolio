@@ -1,10 +1,10 @@
 import React from 'react'
-import { 
+import {
     BrowserRouter,
     Routes,
-    Route         
-    } from "react-router-dom";
-    
+    Route
+} from "react-router-dom";
+
 
 import { Header } from '../components/header/Header'
 import { Footer } from '../components/footer/Footer'
@@ -20,20 +20,20 @@ import { CitasApp } from '../pages/citasApp/CitasApp';
 export const AppRouter = () => {
     return (
         <BrowserRouter>
-            <Header/>
+            <Header />
 
-                <Routes>
-                    <Route path='/*' element={<IndexPage/>}/>
-                    <Route path='/about' element={<AboutPage/>}/>
-                    <Route path='/work' element={<WorkPage/>}/>
+            <Routes>
+                <Route path='/*' element={<IndexPage />} />
+                <Route path='/about' element={<AboutPage />} />
+                <Route path='/work' element={<WorkPage />} />
 
-                    <Route path='/snb' element={<Snb2022Page/>}/>
-                    <Route path='/mandalorian' element={<Mandalorian/>}/>
-                    <Route path='/citasApp' element={<CitasApp/>}/>
-                </Routes>
-                
+                <Route path='/snb' element={<Snb2022Page />} />
+                <Route path='/mandalorian' element={<Mandalorian />} />
+                <Route path='/citasApp' element={<CitasApp />} />
+            </Routes>
+
             <div className='contain-footer'>
-            <Footer/>
+                <Footer />
             </div>
         </BrowserRouter>
     )

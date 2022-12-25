@@ -5,7 +5,7 @@ export const WorkPage = () => {
 
     return (
         <>
-            <Work/>
+            <Work />
         </>
     )
 }

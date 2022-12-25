@@ -9,24 +9,24 @@ import { useLocation } from 'react-router-dom';
 export const IndexPage = () => {
     const [scrollPosition] = useState(0);
 
-    const {pathname} = useLocation()
-    localStorage.setItem('lastLocation', pathname )
+    const { pathname } = useLocation()
+    localStorage.setItem('lastLocation', pathname)
 
     return (
         <div className='indexContainer'>
             <main className='main'>
-                <WaveBlock/>
-                
+                <WaveBlock />
+
                 <div className={
                     scrollPosition > 20
-                    ? 'hidden_animated_arrow'
-                    : 'animated_arrow'
+                        ? 'hidden_animated_arrow'
+                        : 'animated_arrow'
                 }>
                     <BsChevronDown />
                 </div>
                 <About />
-                <Work/>
-                <Skills/>  
+                <Work />
+                <Skills />
             </main>
         </div>
     )

@@ -6,8 +6,8 @@ export const AboutPage = () => {
 
     return (
         <>
-        <About/>
-        <Skills/>
+            <About />
+            <Skills />
         </>
     )
 }

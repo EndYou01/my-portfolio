@@ -1,29 +1,29 @@
-
-h1{
+h1 {
     display: flex;
     justify-content: center;
 }
 
-.container{
+.container {
     width: 70%;
     max-width: 120rem;
     margin: 0 auto;
 }
-.indexcontainer{
+
+.indexcontainer {
     overflow: hidden;
 }
 
-.contain{
+.contain {
     background-color: rgba(11, 11, 11, 0.66);
     border-radius: 5%;
 }
 
-.contain-footer{
+.contain-footer {
     background-color: rgba(11, 11, 11, 0.66);
 }
 
 @media only screen and (max-width: 500px) {
-    .container{
+    .container {
         width: 80%;
         max-width: 120rem;
         margin: 0 auto;
@@ -31,7 +31,7 @@ h1{
 }
 
 @media only screen and (max-width: 1200px) {
-    .container{
+    .container {
         width: 90%;
         max-width: 120rem;
         margin: 0 auto;

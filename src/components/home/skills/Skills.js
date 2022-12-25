@@ -1,12 +1,12 @@
 import React from 'react'
 import { Fade } from "react-awesome-reveal";
-import {useTranslation} from 'react-i18next'
+import { useTranslation } from 'react-i18next'
 
 export const Skills = () => {
-  const [text ] = useTranslation("global")
+  const [text] = useTranslation("global")
 
-    return (
-        <div className='content'>
+  return (
+    <div className='content'>
       <Fade>
         <h1>{text("skills.h1")}</h1>
         <br></br>
@@ -63,23 +63,22 @@ export const Skills = () => {
             </li>
             <li>
               <span>{text("skills.comunicative")}</span>
-              </li>
+            </li>
             <li>
               <span>{text("skills.TE")}</span>
-              </li>
+            </li>
             <li>
               <span>{text("skills.GA")}</span>
-              </li>
+            </li>
             <li>
               <span>{text("skills.creative")}</span>
-              </li>
+            </li>
             <li>
               <span>{text("skills.worker")}</span>
-              </li>
+            </li>
           </ul>
         </div>
       </Fade>
     </div>
-    )
+  )
 }
- 

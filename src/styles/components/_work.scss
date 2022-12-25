@@ -5,19 +5,21 @@
     padding: 40px;
     position: relative;
   }
+
   .header {
     text-align: center;
     font-size: 2rem;
     margin: 2rem;
     margin-bottom: 10px;
   }
-  
+
   .project_container {
     display: flex;
     align-items: flex-start;
     margin-bottom: 10px;
     /* margin-top: 30px; */
   }
+
   .project_image_container {
     width: 70px;
     height: 70px;
@@ -27,11 +29,13 @@
     justify-content: center;
     align-items: flex-start;
   }
+
   .project_image {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
+
   .project_info_container {
     width: calc(100%);
     margin-left: 15px;
@@ -39,6 +43,7 @@
     flex-direction: column;
     justify-content: center;
   }
+
   .learn_more_button {
     width: 100%;
     padding: 10px;
@@ -51,6 +56,7 @@
     transition: 200ms;
     border-radius: 5px;
   }
+
   .learn_more_button:hover {
     opacity: 0.7;
     transition: 200ms;
@@ -59,6 +65,7 @@
   .bg_image {
     display: none;
   }
+
   .projects_section {
     background-color: rgb(10, 10, 10);
     padding: 20px;
@@ -66,6 +73,7 @@
     border-radius: 20px;
   }
 }
+
 @media only screen and (min-width: 1201px) {
   .work_container {
     margin: auto;
@@ -73,11 +81,13 @@
     padding: 40px;
     position: relative;
   }
+
   .header {
     text-align: center;
     font-size: 2rem;
     margin: 2rem;
   }
+
   .project_container {
     display: flex;
     align-items: flex-start;
@@ -85,6 +95,7 @@
     height: 400px;
     align-items: center;
   }
+
   .project_image_container {
     width: 150px;
     height: 100px;
@@ -94,6 +105,7 @@
     justify-content: center;
     align-items: center;
   }
+
   .project_image {
     width: 100%;
     height: 100%;
@@ -108,6 +120,7 @@
     transition: 200ms;
     cursor: pointer;
   }
+
   .bg_image:hover {
     /* z-index: 110; */
     transform: scale(1.01);
@@ -128,6 +141,7 @@
     z-index: 100;
     border-radius: 15px;
   }
+
   .learn_more_button {
     width: 200px;
     padding: 15px;
@@ -140,22 +154,27 @@
     transition: 200ms;
     border-radius: 5px;
   }
+
   .learn_more_button:hover {
     opacity: 0.7;
     transition: 200ms;
   }
-} ;
-  @media only screen and (min-width: 901px) {
-    .work_container {
-      max-width: 1000px;
-      margin: auto;
-      margin-top: 150px;
-    }
+}
+
+;
+
+@media only screen and (min-width: 901px) {
+  .work_container {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 150px;
   }
-  @media only screen and (max-width: 900px) {
-    .work_container {
-      max-width: 1000px;
-      margin: auto;
-      margin-top: 50px;
-    }
+}
+
+@media only screen and (max-width: 900px) {
+  .work_container {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 50px;
   }
+}

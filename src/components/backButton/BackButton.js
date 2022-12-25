@@ -12,8 +12,8 @@ export const BackButton = () => {
     console.log(lastLocation)
     return (
         <button className='bg_transparent my-element'>
-            <div onClick={()=>{navigate(lastLocation)}}>
-                <IoMdArrowBack className='icon'/>{text("snb.b")}
+            <div onClick={() => { navigate(lastLocation) }}>
+                <IoMdArrowBack className='icon' />{text("snb.b")}
             </div>
         </button>
     )
