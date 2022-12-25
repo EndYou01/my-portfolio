@@ -1,26 +1,20 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-import { IoMdArrowBack } from "react-icons/io";
-import { useNavigate } from "react-router-dom";
 import { scrollToTop } from '../../functions/scrollToTop';
 import { BsCodeSlash } from "react-icons/bs";
 import { useTranslation } from 'react-i18next';
+import { BackButton } from '../../components/backButton/BackButton';
   
 export const CitasApp = () => {
     scrollToTop()
-    const navigate = useNavigate();
     const [text] = useTranslation("global")
 
     return (
         <div className='container'>
               <main className='main'>
               
-                <button className='bg_transparent my-element'>
-                    <div onClick={()=>{navigate('/')}}>
-                        <IoMdArrowBack className='icon'/>{text("snb.b")}
-                    </div>
-                </button>
+                <BackButton/>
 
                 <div>
                   <h1 className='Colorh1'>CitasApp</h1>

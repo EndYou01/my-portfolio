@@ -26,9 +26,14 @@ export const AppRouter = () => {
                     <Route path='/*' element={<IndexPage/>}/>
                     <Route path='/about' element={<AboutPage/>}/>
                     <Route path='/work' element={<WorkPage/>}/>
+
                     <Route path='/snb' element={<Snb2022Page/>}/>
                     <Route path='/mandalorian' element={<Mandalorian/>}/>
                     <Route path='/citasApp' element={<CitasApp/>}/>
+
+                    <Route path='/work/snb' element={<Snb2022Page/>}/>
+                    <Route path='/work/mandalorian' element={<Mandalorian/>}/>
+                    <Route path='/work/citasApp' element={<CitasApp/>}/>
                 </Routes>
                 
             <div className='contain-footer'>

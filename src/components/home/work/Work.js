@@ -3,6 +3,7 @@ import {useTranslation} from 'react-i18next'
 import { Fade } from "react-awesome-reveal";
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { LearnMoreButton } from '../../learnMoreButton/LearnMoreButton';
 
 export const Work = () => {
   const [text] = useTranslation("global")
@@ -39,11 +40,7 @@ export const Work = () => {
                         <p>
                           {text("tmf.p1")}
                         </p>
-                        <Link to="/mandalorian">
-                          <button className='learn_more_button'>
-                            {text("work.lm")}
-                          </button>
-                        </Link>
+                        <LearnMoreButton pathname='/mandalorian'/>
                       </div>
                     </div>
                   </Fade>
@@ -74,11 +71,7 @@ export const Work = () => {
                         <h2>SNB 2022</h2>
                         <p>{text("snb.p1")}
                         </p>
-                          <Link to="/snb">
-                            <button className='learn_more_button'>
-                              {text("work.lm")}
-                            </button>
-                          </Link>
+                        <LearnMoreButton pathname='/snb'/>
                       </div>
                     </div>
                   </Fade>
@@ -111,11 +104,7 @@ export const Work = () => {
                     <h2>CitasApp</h2>
                     <p>{text("citas.p1")}
                     </p>
-                      <Link to="/citasApp">
-                        <button className='learn_more_button'>
-                         {text("work.lm")}
-                        </button>
-                      </Link>
+                    <LearnMoreButton pathname='/citasApp'/>
                   </div>
                 </div>
               </Fade>
