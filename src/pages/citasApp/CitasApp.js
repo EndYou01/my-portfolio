@@ -14,18 +14,6 @@ export const CitasApp = () => {
 
     return (
         <div className='container'>
-              <head>
-                  <title>
-                    Basketball Center | Jorge Senjudo Developer Portfolio
-                  </title>
-                  <meta
-                    lang="en"
-                    name="description"
-                    content="Description and information about the project Basketball Center, developed by Anthony Fernandez"
-                  />
-                  <link rel="icon" href="/favicon.ico" />
-              </head>
-
               <main className='main'>
               
                 <button className='bg_transparent my-element'>
@@ -44,25 +32,25 @@ export const CitasApp = () => {
                   </ul>
                   <br />
                 </div>
-                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner SNBcarousel">
-                          <div class="carousel-item active">
-                            <img src="freelance/citasApp/citas1.png" class="d-block w-100" alt="freelance/citasApp/citas1.png"/>
+                <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div className="carousel-inner SNBcarousel">
+                          <div className="carousel-item active">
+                            <img src="freelance/citasApp/citas1.png" className="d-block w-100" alt="freelance/citasApp/citas1.png"/>
                           </div>
-                          <div class="carousel-item">
-                            <img src="freelance/citasApp/citas2.png" class="d-block w-100" alt="freelance/citasApp/citas1.png"/>
+                          <div className="carousel-item">
+                            <img src="freelance/citasApp/citas2.png" className="d-block w-100" alt="freelance/citasApp/citas1.png"/>
                           </div>
-                          <div class="carousel-item">
-                            <img src="freelance/citasApp/citas3.png" class="d-block w-100" alt="freelance/citasApp/citas1.png"/>
+                          <div className="carousel-item">
+                            <img src="freelance/citasApp/citas3.png" className="d-block w-100" alt="freelance/citasApp/citas1.png"/>
                           </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
+                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span className="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
+                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span className="visually-hidden">Next</span>
                     </button>
                   </div>     
                 <br/>

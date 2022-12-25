@@ -14,18 +14,6 @@ export const Snb2022Page = () => {
 
     return (
         <div className='container'>
-              <head>
-                  <title>
-                    Basketball Center | Jorge Senjudo Developer Portfolio
-                  </title>
-                  <meta
-                    lang="en"
-                    name="description"
-                    content="Description and information about the project Basketball Center, developed by Anthony Fernandez"
-                  />
-                  <link rel="icon" href="/favicon.ico" />
-              </head>
-
               <main className='main'>
               
                 <button className='bg_transparent my-element'>
@@ -45,37 +33,37 @@ export const Snb2022Page = () => {
                     <li>{text("snb.l2")} <Link to=''>Alejandro Martinez</Link></li>
                   </ul>
                 </div>
-                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner SNBcarousel">
-                          <div class="carousel-item active">
-                            <img src="snb2022/snb1.png" class="d-block w-100" alt="snb2022/snb1.png"/>
+                <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div className="carousel-inner SNBcarousel">
+                          <div className="carousel-item active">
+                            <img src="snb2022/snb1.png" className="d-block w-100" alt="snb2022/snb1.png"/>
                           </div>
-                          <div class="carousel-item">
-                            <img src="snb2022/snb2.png" class="d-block w-100" alt="snb2022/snb1.png"/>
+                          <div className="carousel-item">
+                            <img src="snb2022/snb2.png" className="d-block w-100" alt="snb2022/snb1.png"/>
                           </div>
-                          <div class="carousel-item">
-                            <img src="snb2022/snb3.png" class="d-block w-100" alt="snb2022/snb1.png"/>
+                          <div className="carousel-item">
+                            <img src="snb2022/snb3.png" className="d-block w-100" alt="snb2022/snb1.png"/>
                           </div>
-                          <div class="carousel-item">
-                              <img src="snb2022/snb4.png" class="d-block w-100" alt="snb2022/snb1.png"/>
+                          <div className="carousel-item">
+                              <img src="snb2022/snb4.png" className="d-block w-100" alt="snb2022/snb1.png"/>
                             </div>
-                          <div class="carousel-item">
-                              <img src="snb2022/snb5.png" class="d-block w-100" alt="snb2022/snb1.png"/>
+                          <div className="carousel-item">
+                              <img src="snb2022/snb5.png" className="d-block w-100" alt="snb2022/snb1.png"/>
                             </div>
-                          <div class="carousel-item">
-                              <img src="snb2022/snb6.png" class="d-block w-100" alt="snb2022/snb1.png"/>
+                          <div className="carousel-item">
+                              <img src="snb2022/snb6.png" className="d-block w-100" alt="snb2022/snb1.png"/>
                             </div>
-                          <div class="carousel-item">
-                              <img src="snb2022/snb7.png" class="d-block w-100" alt="snb2022/snb1.png"/>
+                          <div className="carousel-item">
+                              <img src="snb2022/snb7.png" className="d-block w-100" alt="snb2022/snb1.png"/>
                           </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
+                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span className="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
+                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span className="visually-hidden">Next</span>
                     </button>
                   </div>     
                 <br/>

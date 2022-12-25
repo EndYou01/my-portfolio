@@ -5,7 +5,7 @@ h1{
 }
 
 .container{
-    width: 67%;
+    width: 70%;
     max-width: 120rem;
     margin: 0 auto;
 }
@@ -20,4 +20,20 @@ h1{
 
 .contain-footer{
     background-color: rgba(11, 11, 11, 0.66);
+}
+
+@media only screen and (max-width: 500px) {
+    .container{
+        width: 80%;
+        max-width: 120rem;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .container{
+        width: 90%;
+        max-width: 120rem;
+        margin: 0 auto;
+    }
 }

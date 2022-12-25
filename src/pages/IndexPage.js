@@ -7,7 +7,6 @@ import { BsChevronDown } from "react-icons/bs";
 import { useLocation } from 'react-router-dom';
 
 export const IndexPage = () => {
-    const lastLang = localStorage.getItem('lastLang')||'EN'
     const [scrollPosition] = useState(0);
 
     const {pathname} = useLocation()
@@ -15,17 +14,6 @@ export const IndexPage = () => {
 
     return (
         <div className='indexContainer'>
-            
-            <head>
-                <title>Jorge Senjudo Web Developer Portfolio</title>
-                <meta
-                    lang={(lastLang)}
-                    name="description"
-                    content="Jorge Senjudo, Front-End software engineer with experience in building production ready applications."
-                />
-                <link rel="icon" href="/favicon.ico" />
-            </head>
-
             <main className='main'>
                 <WaveBlock/>
                 
