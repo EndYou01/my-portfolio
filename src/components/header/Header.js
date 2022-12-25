@@ -1,11 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate, NavLink } from 'react-router-dom';
-import { GiHamburgerMenu } from "react-icons/gi";
-
-import { MdWeb } from "react-icons/md";
-import { AiOutlineInfoCircle } from "react-icons/ai";
-import { MdPermContactCalendar } from "react-icons/md";
-import { AiOutlineClose } from "react-icons/ai";
 
 import { useTranslation } from 'react-i18next'
 import { scrollToTop } from '../../functions/scrollToTop';
@@ -13,6 +7,13 @@ import { scrollToBottom } from '../../functions/scrollToBottom';
 
 import { motion } from "framer-motion";
 import { isMobile } from "react-device-detect";
+
+//Icons
+import { GiHamburgerMenu } from "react-icons/gi";
+import { MdWeb } from "react-icons/md";
+import { AiOutlineInfoCircle } from "react-icons/ai";
+import { MdPermContactCalendar } from "react-icons/md";
+import { AiOutlineClose } from "react-icons/ai";
 
 const sideMenuVariants = {
     open: {
