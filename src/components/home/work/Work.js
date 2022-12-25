@@ -35,20 +35,15 @@ export const Work = () => {
                       </div>
                       
                       <div className='project_info_container'>
-                        <h2>Tu Mandalorian Favorito</h2>
+                        <h2>{text("tmf.h2")}</h2>
                         <p>
-                          SNB 2022 is a desktop app built to help basketball
-                          fans to stay up to date with everything in the league.
-                          Features an in-game chat, personalized notifications for
-                          favorite teams and players, real time shot-chart that can be
-                          targeted to specific players with play-by-play info alongside
-                          it.
+                          {text("tmf.p1")}
                         </p>
-                          <Link to="/basketball-center">
-                            <button className='learn_more_button'>
-                              {text("work.lm")}
-                            </button>
-                          </Link>
+                        <Link to="/mandalorian">
+                          <button className='learn_more_button'>
+                            {text("work.lm")}
+                          </button>
+                        </Link>
                       </div>
                     </div>
                   </Fade>
@@ -77,13 +72,7 @@ export const Work = () => {
                       
                       <div className='project_info_container'>
                         <h2>SNB 2022</h2>
-                        <p>
-                          SNB 2022 is a desktop app built to help basketball
-                          fans to stay up to date with everything in the league.
-                          Features an in-game chat, personalized notifications for
-                          favorite teams and players, real time shot-chart that can be
-                          targeted to specific players with play-by-play info alongside
-                          it.
+                        <p>{text("snb.p1")}
                         </p>
                           <Link to="/snb">
                             <button className='learn_more_button'>
@@ -120,13 +109,11 @@ export const Work = () => {
                   </div>
                   <div className='project_info_container'>
                     <h2>CitasApp</h2>
-                    <p>
-                      DLSFixit is a doors and locks repair and installation company
-                      located in the south Florida area.
+                    <p>{text("citas.p1")}
                     </p>
-                      <Link to="/basketball-center">
+                      <Link to="/citasApp">
                         <button className='learn_more_button'>
-                          Learn More
+                         {text("work.lm")}
                         </button>
                       </Link>
                   </div>

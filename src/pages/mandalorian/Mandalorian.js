@@ -7,7 +7,7 @@ import { scrollToTop } from '../../functions/scrollToTop';
 import { BsCodeSlash } from "react-icons/bs";
 import { useTranslation } from 'react-i18next';
   
-export const Snb2022Page = () => {
+export const Mandalorian = () => {
     scrollToTop()
     const navigate = useNavigate();
     const [text] = useTranslation("global")
@@ -16,12 +16,12 @@ export const Snb2022Page = () => {
         <div className='container'>
               <head>
                   <title>
-                    Basketball Center | Jorge Senjudo Developer Portfolio
+                    Tu Mandalorian Favorito| Jorge Senjudo Developer Portfolio
                   </title>
                   <meta
                     lang="en"
                     name="description"
-                    content="Description and information about the project Basketball Center, developed by Anthony Fernandez"
+                    content="Description and information about the project Tu Mandalorian Favorito, developed by Jorge Senjudo"
                   />
                   <link rel="icon" href="/favicon.ico" />
               </head>
@@ -35,38 +35,26 @@ export const Snb2022Page = () => {
                 </button>
 
                 <div>
-                  <h1 className='Colorh1'>SNB 2022</h1>
+                  <h1 className='Colorh1'>{text("tmf.h2")}</h1>
                   <p>
-                    {text("snb.p1")}
+                    {text("tmf.p1")}
                   </p>
                   <br />
                   <ul>
                     <li>{text("snb.l1")}</li>
-                    <li>{text("snb.l2")} <Link to=''>Alejandro Martinez</Link></li>
+                    <li>{text("tmf.l1")} <Link to='https://github.com/Panik-Attack'>Eduardo Garcia Alfonso</Link></li>
                   </ul>
                 </div>
                 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-inner SNBcarousel">
                           <div class="carousel-item active">
-                            <img src="snb2022/snb1.png" class="d-block w-100" alt="snb2022/snb1.png"/>
+                            <img src="tmf/tmf1.png" class="d-block w-100" alt="tmf1"/>
                           </div>
                           <div class="carousel-item">
-                            <img src="snb2022/snb2.png" class="d-block w-100" alt="snb2022/snb1.png"/>
+                            <img src="tmf/tmf2.png" class="d-block w-100" alt="tmf1"/>
                           </div>
                           <div class="carousel-item">
-                            <img src="snb2022/snb3.png" class="d-block w-100" alt="snb2022/snb1.png"/>
-                          </div>
-                          <div class="carousel-item">
-                              <img src="snb2022/snb4.png" class="d-block w-100" alt="snb2022/snb1.png"/>
-                            </div>
-                          <div class="carousel-item">
-                              <img src="snb2022/snb5.png" class="d-block w-100" alt="snb2022/snb1.png"/>
-                            </div>
-                          <div class="carousel-item">
-                              <img src="snb2022/snb6.png" class="d-block w-100" alt="snb2022/snb1.png"/>
-                            </div>
-                          <div class="carousel-item">
-                              <img src="snb2022/snb7.png" class="d-block w-100" alt="snb2022/snb1.png"/>
+                            <img src="tmf/tmf3.png" class="d-block w-100" alt="tmf1"/>
                           </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -84,18 +72,18 @@ export const Snb2022Page = () => {
                   <h2>{text("snb.h2_1")}</h2>
                   <h3>Front End:</h3>
                   <p>
-                  {text("snb.p2")}
+                  {text("tmf.p2")}
                   </p>
                  
                   <ul>
-                    <li>Java</li>
+                    <li>C++</li>
                   </ul>
                   <h3>Back End:</h3>
                   <p>
-                  {text("snb.p3")}
+                  {text("tmf.p3")}
                   </p>
                   <ul>
-                    <li>MySql</li>
+                    <li>none</li>
                   </ul>
                   <br></br>
                   <br></br>
@@ -103,7 +91,7 @@ export const Snb2022Page = () => {
                       <BsCodeSlash className= 'icon'/>
                       <Link
                         target="_blank"
-                        to="https://github.com/EndYou01/my-portfolio"
+                        to="https://github.com/EndYou01/tu-mandalorian-favorito"
                         rel="noreferrer"
                       >
                         {text("footer.source")}

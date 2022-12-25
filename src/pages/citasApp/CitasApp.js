@@ -7,7 +7,7 @@ import { scrollToTop } from '../../functions/scrollToTop';
 import { BsCodeSlash } from "react-icons/bs";
 import { useTranslation } from 'react-i18next';
   
-export const Snb2022Page = () => {
+export const CitasApp = () => {
     scrollToTop()
     const navigate = useNavigate();
     const [text] = useTranslation("global")
@@ -35,38 +35,25 @@ export const Snb2022Page = () => {
                 </button>
 
                 <div>
-                  <h1 className='Colorh1'>SNB 2022</h1>
+                  <h1 className='Colorh1'>CitasApp</h1>
                   <p>
-                    {text("snb.p1")}
+                    {text("citas.p1")}
                   </p>
-                  <br />
                   <ul>
-                    <li>{text("snb.l1")}</li>
-                    <li>{text("snb.l2")} <Link to=''>Alejandro Martinez</Link></li>
+                    <li>{text("tmf.l1")} <Link to='https://github.com/Panik-Attack'>Eduardo Garcia Alfonso</Link></li>
                   </ul>
+                  <br />
                 </div>
                 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-inner SNBcarousel">
                           <div class="carousel-item active">
-                            <img src="snb2022/snb1.png" class="d-block w-100" alt="snb2022/snb1.png"/>
+                            <img src="freelance/citasApp/citas1.png" class="d-block w-100" alt="freelance/citasApp/citas1.png"/>
                           </div>
                           <div class="carousel-item">
-                            <img src="snb2022/snb2.png" class="d-block w-100" alt="snb2022/snb1.png"/>
+                            <img src="freelance/citasApp/citas2.png" class="d-block w-100" alt="freelance/citasApp/citas1.png"/>
                           </div>
                           <div class="carousel-item">
-                            <img src="snb2022/snb3.png" class="d-block w-100" alt="snb2022/snb1.png"/>
-                          </div>
-                          <div class="carousel-item">
-                              <img src="snb2022/snb4.png" class="d-block w-100" alt="snb2022/snb1.png"/>
-                            </div>
-                          <div class="carousel-item">
-                              <img src="snb2022/snb5.png" class="d-block w-100" alt="snb2022/snb1.png"/>
-                            </div>
-                          <div class="carousel-item">
-                              <img src="snb2022/snb6.png" class="d-block w-100" alt="snb2022/snb1.png"/>
-                            </div>
-                          <div class="carousel-item">
-                              <img src="snb2022/snb7.png" class="d-block w-100" alt="snb2022/snb1.png"/>
+                            <img src="freelance/citasApp/citas3.png" class="d-block w-100" alt="freelance/citasApp/citas1.png"/>
                           </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -84,18 +71,19 @@ export const Snb2022Page = () => {
                   <h2>{text("snb.h2_1")}</h2>
                   <h3>Front End:</h3>
                   <p>
-                  {text("snb.p2")}
+                  {text("citas.p2")}
                   </p>
                  
                   <ul>
-                    <li>Java</li>
+                    <li>AntDesign</li>
+                    <li>ReactJs</li>
                   </ul>
                   <h3>Back End:</h3>
                   <p>
-                  {text("snb.p3")}
+                  {text("citas.p3")}
                   </p>
                   <ul>
-                    <li>MySql</li>
+                    <li>Javascript</li>
                   </ul>
                   <br></br>
                   <br></br>
@@ -103,7 +91,7 @@ export const Snb2022Page = () => {
                       <BsCodeSlash className= 'icon'/>
                       <Link
                         target="_blank"
-                        to="https://github.com/EndYou01/my-portfolio"
+                        to="https://github.com/Panik-Attack/Citas"
                         rel="noreferrer"
                       >
                         {text("footer.source")}

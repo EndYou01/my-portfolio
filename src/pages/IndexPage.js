@@ -4,10 +4,14 @@ import { Skills } from '../components/home/skills/Skills'
 import { WaveBlock } from '../components/home/wave/WaveBlock'
 import { Work } from '../components/home/work/Work'
 import { BsChevronDown } from "react-icons/bs";
+import { useLocation } from 'react-router-dom';
 
 export const IndexPage = () => {
     const lastLang = localStorage.getItem('lastLang')||'EN'
-    const [scrollPosition, setScrollPosition] = useState(0);
+    const [scrollPosition] = useState(0);
+
+    const {pathname} = useLocation()
+    localStorage.setItem('lastLocation', pathname )
 
     return (
         <div className='indexContainer'>

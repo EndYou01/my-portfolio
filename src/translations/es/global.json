@@ -1,24 +1,24 @@
 {
     "header":{
-        "portofolio": "Portafolio.",
+        "portofolio": "Portafólio.",
         "about": "Acerca",
         "work": "Proyectos",
-        "contact": "Contactame"
+        "contact": "Contáctame"
     },
     "footer":{
-        "contactMe": "Contactame.",
+        "contactMe": "Contáctame.",
         "linkedin": "Mi perfil de Linkedin",
-        "source": "Ver codigo fuente."
+        "source": "Ver código fuente."
     },
     "about":{
         "a&e": "Acerca y Experiencia.",
-        "a&et": "Soy Jorge L. Senjudo, desarrollador Front-End con experiencia en desarrollo y construccion de sitios web. Eh trabajado solo y con otros desarrolladores en la creacion de los mismos, siempre teniendo como objetivo la superacion personal y profesional, para lograr el despliegue de softwares con la calidad adecuada. Trabajo principalmente usando codigo de ReactJS, con capacidad para aprender cualquier framework de JS o herramienta. Tambien tengo breve experiencia con lenguajes backend como JAVA y bases de datos como MySQL. Como meta quiero alcanzar a ser un desarrollador fullstack y poder llevar una vida plena.",
+        "a&et": "Soy Jorge L. Senjudo, desarrollador Front-End con experiencia en desarrollo y construcción de sitios web. Eh trabajado solo y con otros desarrolladores en la creación de los mismos, siempre teniendo como objetivo la superación personal y profesional, para lograr el despliegue de softwares con la calidad adecuada. Trabajo principalmente usando codigo de ReactJS, con capacidad para aprender cualquier framework de JS o herramienta. También tengo breve experiencia con lenguajes backend como JAVA y bases de datos como MySQL. Como meta quiero alcanzar a ser un desarrollador fullstack y poder llevar una vida plena.",
         "profExp": "Experiencia Profesional.",
-        "education": "Educacion.",
+        "education": "Educación.",
         "2020": "2020-09 - presente",
-        "h3": "Estudiante de Ingenieria en Ciencias Informaticas.",
-        "uci": "Universidad de las Ciencias Informaticas, Habana, CUB",
-        "graduation1": "Graduacion:",
+        "h3": "Estudiante de Ingeniería en Ciencias Informáticas.",
+        "uci": "Universidad de las Ciencias Informáticas, Habana, CUB",
+        "graduation1": "Graduación:",
         "graduation2": "en proceso.",
         "average": "Promedio:"
     },
@@ -27,20 +27,32 @@
     },
     "waveB":{
         "h3": "Hola, soy Jorge!",
-        "h1": "Soy un ingeniero de software Front-End con experiencia en la creación de aplicaciones listas para producción."
+        "h1": "Soy un ingeniero de software con experiencia en la creación de aplicaciones web y de escritorio listas para producción."
     },
     "work":{
         "h1": "Proyectos Universitarios.",
-        "lm": "Leer Mas"
+        "lm": "Leer Más"
     },
     "snb":{
-        "p1": "SNB 2022 es un proyecto desarrollado usando el entorno de desarrollo Net.Beans, usando Java como lenguaje principal. Es un juego orientado principalmente a mi formacion como ingeniero de software, en el se aplican complejos algoritmos como Fisher Yates, para la aleatorizacion de numeros aleatorios.",
-        "l1": "Calificacion del Proyecto: 5/5 puntos",
-        "l2": "Compannero de Trabajo: Alejandro Martinez",
-        "h2_1": "Tecnologias usadas:",
-        "p2": "La aplicacion fue desplegada solo en formato de escritorio, y para ello se implemento Java en su desarrollo. No fue usada ninguna libreria puesto que tenia como meta, el dominio del lenguaje desde sus bases. Para la maquetacion del proyecto nos apoyamos en un disennador grafico.",
-        "p3": "En este lado del proyecto, usamos MySql como base de datos a la cual realizamos las peticiones y manipulamos la informacion que teniamos que distribuir en las distintas interfaces.",
-        "b": "Atras"
+        "p1": "SNB 2022 es un proyecto desarrollado usando el entorno de desarrollo Net.Beans, usando Java como lenguaje principal. Es un juego orientado principalmente a mi formación como ingeniero de software, en el se aplican complejos algoritmos como Fisher Yates, para la aleatorización de numeros aleatorios.",
+        "l1": "Calificación del Proyecto: 5/5 puntos",
+        "l2": "Compañero de Trabajo:",
+        "h2_1": "Tecnologías usadas:",
+        "p2": "La aplicación fue desplegada solo en formato de escritorio, y para ello se implementó Java en su desarrollo. No fue usada ninguna librería puesto que tenía como meta, el dominio del lenguaje desde sus bases. Para la maquetación del proyecto nos apoyamos en un diseñador gráfico.",
+        "p3": "En este lado del proyecto, usamos MySql como base de datos a la cual realizamos las peticiones y manipulamos la información que teníamos que distribuir en las distintas interfaces.",
+        "b": "Atrás"
+    },
+    "tmf":{
+        "h2": "Tu Mandalorian Favorito",
+        "p1": "Puedo considerarlo mi primer proyecto relacionado con la programación. Con él, asenté las bases de la programación estructurada que aprendí con C++, con toques artísticos orientados al universo cinematográfico de Star Wars.",
+        "l1": "Compañero de Trabajo:",
+        "p2": "Creado desde los mismos simientos del aprendizaje, el proyecto no tuvo una interfaz como tal, nos apoyamos en la terminal del Visual Studio Code para poder llegar al usuario. Se nos dio la posibilidad de hechar a andar nuestra imaginación y fue ahí donde encontramos el mundo de ASCII Art, arte a traves de terminales de consola.",
+        "p3": "Por detrás de la bella interfaz, hay código desplegado con C++, no muy complejos."
+    },
+    "citas":{
+        "p1": "CitasApp es un componente dentro de un proyecto de mayor envergadura, en el cual participé. Está compuesto por una validación de formularios y consultas al localStorage, construido con Reactjs y AntDesign.",
+        "p2": "A nivel de complejidad creativa, es un componente sencillo y de facil creación.",
+        "p3": "Hubo que realizar validaciones a cada uno de los campos de formulario que habían, y adecuarlos segun las especificaciones del cliente."
     }
 }
 

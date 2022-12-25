@@ -40,9 +40,9 @@ a {
     text-decoration: none;
   }
   .Colorh1{
-    font-size: 4.5rem;
     justify-content: left;
     color: rgb(226, 70, 48);
+    font-size: 3rem;
   }
   .link {
     color: var(--third-color);
@@ -67,6 +67,7 @@ a {
     margin: 0px;
     color: rgb(200, 200, 200);
     line-height: 2rem;
+    font-size: 1.15rem;
   }
   
   @media only screen and (min-width: 500px) {

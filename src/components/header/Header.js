@@ -44,7 +44,7 @@ export const Header = () => {
     }
 
     const lang = localStorage.getItem('lastLang')||'EN'
-    
+
     return (
         <header className={
                     scrollPosition < 10
@@ -110,13 +110,13 @@ export const Header = () => {
                         </NavLink>
                         </li>
 
-                        <li class="dropdown">
-                            <button class="navigation_button dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li className="dropdown">
+                            <button className="navigation_button dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 {lang}
                             </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><button class="dropdown-item" onClick={toSpanish}>ES</button></li>
-                                <li><button class="dropdown-item" onClick={toEnglish}>EN</button></li>
+                            <ul className="dropdown-menu dropdown-menu-dark">
+                                <li><button className="dropdown-item" onClick={toSpanish}>ES</button></li>
+                                <li><button className="dropdown-item" onClick={toEnglish}>EN</button></li>
                             </ul>
                         </li>
 

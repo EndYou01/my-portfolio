@@ -9,7 +9,7 @@ export const WaveBlock = () => {
     return (
       <div className='wavecontainer'>
       <div className='wavecontent'>
-        <Fade>
+        <Fade cascade>
 
           <h3 className='animate__animated animate__fadeInDown animate__delay-1s animate__slow'>{text("waveB.h3")}</h3>
           
