@@ -13,14 +13,37 @@ html, body {
     overflow-x: hidden;
     
   }
-
+  .swiper {
+    width: 600px;
+    height: 300px;
+  }
+  .my-element {
+    display: inline-block;
+    margin: 0 0.5rem;
   
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }
+
+  .bg_transparent{
+    background-color: transparent !important;
+    border-radius: none;
+    border: none;
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+    transition: 200ms;
+  }
 
 a {
     color: inherit;
     text-decoration: none;
   }
-  
+  .Colorh1{
+    font-size: 4.5rem;
+    justify-content: left;
+    color: rgb(226, 70, 48);
+  }
   .link {
     color: var(--third-color);
     text-decoration: underline;

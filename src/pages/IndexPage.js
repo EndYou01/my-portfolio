@@ -6,7 +6,7 @@ import { Work } from '../components/home/work/Work'
 import { BsChevronDown } from "react-icons/bs";
 
 export const IndexPage = () => {
-    const lastLang = localStorage.getItem('lastLang')||'en'
+    const lastLang = localStorage.getItem('lastLang')||'EN'
     const [scrollPosition, setScrollPosition] = useState(0);
 
     return (

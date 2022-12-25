@@ -44,7 +44,7 @@ export const Work = () => {
                           targeted to specific players with play-by-play info alongside
                           it.
                         </p>
-                          <Link href="/basketball-center">
+                          <Link to="/basketball-center">
                             <button className='learn_more_button'>
                               {text("work.lm")}
                             </button>
@@ -63,7 +63,7 @@ export const Work = () => {
                         <LazyLoadImage
                           className='bg_image'
                           alt="SNB 2022 Image"
-                          src="snb2022/snb1.jpg"
+                          src="snb2022/snb_1.jpg"
                         />
 
                       <div className='project_image_container'>
@@ -85,7 +85,7 @@ export const Work = () => {
                           targeted to specific players with play-by-play info alongside
                           it.
                         </p>
-                          <Link href="/basketball-center">
+                          <Link to="/snb">
                             <button className='learn_more_button'>
                               {text("work.lm")}
                             </button>
@@ -124,7 +124,7 @@ export const Work = () => {
                       DLSFixit is a doors and locks repair and installation company
                       located in the south Florida area.
                     </p>
-                      <Link href="/basketball-center">
+                      <Link to="/basketball-center">
                         <button className='learn_more_button'>
                           Learn More
                         </button>

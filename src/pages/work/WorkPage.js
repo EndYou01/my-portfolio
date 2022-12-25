@@ -2,7 +2,7 @@ import React from 'react'
 import { Work } from '../../components/home/work/Work'
 
 export const WorkPage = () => {
-    const lastLang = localStorage.getItem('lastLang')||'en'
+    const lastLang = localStorage.getItem('lastLang')||'EN'
 
     return (
         <>

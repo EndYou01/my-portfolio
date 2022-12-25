@@ -12,6 +12,7 @@ import { Footer } from '../components/footer/Footer'
 import { IndexPage } from '../pages/IndexPage';
 import { AboutPage } from '../pages/about/AboutPage';
 import { WorkPage } from '../pages/work/WorkPage';
+import { Snb2022Page } from '../pages/snb2022/Snb2022Page';
 
 export const AppRouter = () => {
     return (
@@ -22,6 +23,7 @@ export const AppRouter = () => {
                     <Route path='/*' element={<IndexPage/>}/>
                     <Route path='/about' element={<AboutPage/>}/>
                     <Route path='/work' element={<WorkPage/>}/>
+                    <Route path='/snb' element={<Snb2022Page/>}/>
                 </Routes>
                 
             <div className='contain-footer'>

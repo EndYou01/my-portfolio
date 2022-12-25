@@ -30,7 +30,16 @@
         "h1": "I'm a Front-End software engineer with experience in building production ready applications."
     },
     "work":{
-        "h1": "University Works.",
+        "h1": "University Projects.",
         "lm": "Learn More"
+    },
+    "snb":{
+        "p1": "SNB 2022 is a project developed using the Net.Beans development environment, using Java as a language main. It is a game oriented mainly to my training as a software engineer, in which they apply complex algorithms such as Fisher Yates, for randomization of random numbers.",
+        "l1": "Project Rating: 5/5 points",
+        "l2": "Work Partner: Alejandro Martinez",
+        "h2_1": "Technologies used:",
+        "p2": "The application was deployed only in desktop format, and for this Java was implemented in its development. No library was used since it had as its goal, the mastery of language from its bases. For the layout of the project we rely on a graphic designer.",
+        "p3": "On this side of the project, we use MySql as the database to which we make requests and manipulate the information we had to distribute in the different interfaces.",
+        "b": "Back"
     }
 }

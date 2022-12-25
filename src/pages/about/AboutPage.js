@@ -4,7 +4,7 @@ import { Skills } from '../../components/home/skills/Skills'
 
 export const AboutPage = () => {
 
-    const lastLang = localStorage.getItem('lastLang')||'en'
+    const lastLang = localStorage.getItem('lastLang')||'EN'
     
     return (
         <>

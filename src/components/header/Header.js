@@ -7,6 +7,8 @@ import { AiOutlineInfoCircle } from "react-icons/ai";
 import { MdPermContactCalendar } from "react-icons/md";
 
 import {useTranslation} from 'react-i18next'
+import { scrollToTop } from '../../functions/scrollToTop';
+import { scrollToBottom } from '../../functions/scrollToBottom';
 
 export const Header = () => {
 
@@ -14,14 +16,6 @@ export const Header = () => {
 
     const [scrollPosition, setScrollPosition] = useState(0);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
- 
-    const scrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      };
-
-    const scrollToBottom = () => {
-        window.scrollTo({ top: 100000, behavior: "smooth" });
-      };
 
     const handleScroll = () => {
         const position = window.pageYOffset;
@@ -39,16 +33,18 @@ export const Header = () => {
     const toSpanish = () =>{
         // window.location.reload();
         scrollToTop()
-        localStorage.setItem('lastLang', 'es')
+        localStorage.setItem('lastLang', 'ES')
         i18n.changeLanguage("es")
     }
     const toEnglish = () =>{
         scrollToTop()
         // window.location.reload();
-        localStorage.setItem('lastLang', 'en')
+        localStorage.setItem('lastLang', 'EN')
         i18n.changeLanguage("en")
     }
 
+    const lang = localStorage.getItem('lastLang')||'EN'
+    
     return (
         <header className={
                     scrollPosition < 10
@@ -85,6 +81,7 @@ export const Header = () => {
                         <li>
                         <NavLink 
                             className="navigation_button" 
+                            onClick={scrollToTop}
                             to="/about"
                         >
                             <AiOutlineInfoCircle className='menu_icon' />
@@ -95,6 +92,7 @@ export const Header = () => {
                         <li>
                         <NavLink 
                             className="navigation_button" 
+                            onClick={scrollToTop}
                             to="/work"
                         >
                             <MdWeb className='menu_icon' />
@@ -112,20 +110,14 @@ export const Header = () => {
                         </NavLink>
                         </li>
 
-                        <li>
-                            <button className='navigation_button' 
-                                    type="button"
-                                    onClick={toEnglish}
-                            >En
+                        <li class="dropdown">
+                            <button class="navigation_button dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                {lang}
                             </button>
-                        </li>
-
-                        <li>
-                            <button className='navigation_button' 
-                                    type="button"
-                                    onClick={toSpanish}
-                            >Es
-                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><button class="dropdown-item" onClick={toSpanish}>ES</button></li>
+                                <li><button class="dropdown-item" onClick={toEnglish}>EN</button></li>
+                            </ul>
                         </li>
 
                     </ul>

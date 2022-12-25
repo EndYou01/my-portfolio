@@ -32,6 +32,15 @@
     "work":{
         "h1": "Proyectos Universitarios.",
         "lm": "Leer Mas"
+    },
+    "snb":{
+        "p1": "SNB 2022 es un proyecto desarrollado usando el entorno de desarrollo Net.Beans, usando Java como lenguaje principal. Es un juego orientado principalmente a mi formacion como ingeniero de software, en el se aplican complejos algoritmos como Fisher Yates, para la aleatorizacion de numeros aleatorios.",
+        "l1": "Calificacion del Proyecto: 5/5 puntos",
+        "l2": "Compannero de Trabajo: Alejandro Martinez",
+        "h2_1": "Tecnologias usadas:",
+        "p2": "La aplicacion fue desplegada solo en formato de escritorio, y para ello se implemento Java en su desarrollo. No fue usada ninguna libreria puesto que tenia como meta, el dominio del lenguaje desde sus bases. Para la maquetacion del proyecto nos apoyamos en un disennador grafico.",
+        "p3": "En este lado del proyecto, usamos MySql como base de datos a la cual realizamos las peticiones y manipulamos la informacion que teniamos que distribuir en las distintas interfaces.",
+        "b": "Atras"
     }
 }
 
