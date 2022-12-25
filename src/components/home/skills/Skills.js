@@ -16,9 +16,6 @@ export const Skills = () => {
               <span>HTML5/CSS</span>
             </li>
             <li>
-              <span>TypeScript</span>
-            </li>
-            <li>
               <span>React</span>
             </li>
             <li>
@@ -31,22 +28,16 @@ export const Skills = () => {
               <span>Redux</span>
             </li>
             <li>
-              <span>Git</span>
-            </li>
-            <li>
-              <span>UI Design</span>
+              <span>Git/Github</span>
             </li>
             <li>
               <span>Bootstrap</span>
             </li>
             <li>
-              <span>Web sockets</span>
+              <span>MVC</span>
             </li>
             <li>
               <span>APIs</span>
-            </li>
-            <li>
-              <span>Jest</span>
             </li>
             <li>
               <span>Sass</span>
@@ -57,6 +48,34 @@ export const Skills = () => {
             <li>
               <span>C++</span>
             </li>
+
+
+
+
+            <li>
+              <span>{text("skills.UI")}</span>
+            </li>
+            <li>
+              <span>{text("skills.FS")}</span>
+            </li>
+            <li>
+              <span>{text("skills.EB2")}</span>
+            </li>
+            <li>
+              <span>{text("skills.comunicative")}</span>
+              </li>
+            <li>
+              <span>{text("skills.TE")}</span>
+              </li>
+            <li>
+              <span>{text("skills.GA")}</span>
+              </li>
+            <li>
+              <span>{text("skills.creative")}</span>
+              </li>
+            <li>
+              <span>{text("skills.worker")}</span>
+              </li>
           </ul>
         </div>
       </Fade>

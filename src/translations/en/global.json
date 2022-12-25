@@ -20,10 +20,21 @@
         "uci": "University of Computer Science, Havana, CUB",
         "graduation1": "Graduation:",
         "graduation2": "not, yet.",
-        "average": "Average:"
+        "average": "Average:",
+        "fronh3": "Frontend Software Engineer",
+        "fronp1": "A year ago I started my preparation as a fullstack developer, I decided to start with this branch, and in it I have understood how the web and computer systems work. I have worked for several clients, doing mainly components of web pages, accumulating experience during this period and I believe I can translate into code, the design that is given to me.",
+        "fronh4": "Key Responsibilities."
     },
     "skills":{
-        "h1": "Skills."
+        "h1": "Skills.",
+        "UI": "UI Design",
+        "FS": "Fluid Spanish",
+        "EB2": "English B2",
+        "comunicative": "Communicative",
+        "TE": "Teamwork",
+        "GA": "Desire to Learn",
+        "creative": "Creative",
+        "worker": "Worker"
     },
     "waveB":{
         "h3": "Hi, I'm Jorge!",

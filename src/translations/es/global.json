@@ -20,10 +20,21 @@
         "uci": "Universidad de las Ciencias Informáticas, Habana, CUB",
         "graduation1": "Graduación:",
         "graduation2": "en proceso.",
-        "average": "Promedio:"
+        "average": "Promedio:",
+        "fronh3": "Ingeniero de Software Frontend",
+        "fronp1": "Desde hace un año comencé mi preparación como desarrollador fullstack, decidí comenzar por esta rama, y en ella eh comprendido como funciona la web y los sistemas informáticos. Eh trabajado para varios clientes, haciendo principalmente componentes de páginas web, acumulando experiencia durante este período y me creo capaz de poder plasmar en codigo, el diseño que se me dé. ",
+        "fronh4": "Responsabilidades clave."
     },
     "skills":{
-        "h1": "Habilidades."
+        "h1": "Habilidades.",
+        "UI": "Diseño UI",
+        "FS": "Español Fluido",
+        "EB2": "Inglés B2",
+        "comunicative": "Comunicativo",
+        "TE": "Trabajo en Equipo",
+        "GA": "Ganas de Aprender",
+        "creative": "Creativo",
+        "worker": "Trabajador"
     },
     "waveB":{
         "h3": "Hola, soy Jorge!",

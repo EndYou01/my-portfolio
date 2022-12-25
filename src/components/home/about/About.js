@@ -19,14 +19,14 @@ export const About = () => {
           <h2 className='center'>{text("about.profExp")}</h2>
           <div className='table'>
             <div style={{ border: "none" }} className='tr'>
-              <div className='first_td'><p>2020 - Present</p></div>
+              <div className='first_td'><p>{text("about.2020")}</p></div>
               <div className='second_td'>
-                <h3>Frontend Software Engineer/Analyst</h3>
-                <p>United Automobile Insurance Company, Miami Gardens, FL</p>
+                <h3>{text("about.fronh3")}</h3>
+                <p>{text("about.fronp1")}</p>
                 <br></br>
-                <h4>Key Responsibilities.</h4>
+                {/* <h4>{text("about.fronh4")}</h4> */}
 
-                <ul>
+                {/* <ul>
                   <li>
                     As a front-end engineer, I was assigned to design and develop
                     robust user experiences.
@@ -61,7 +61,7 @@ export const About = () => {
                     Worked with object oriented (OOP) backend codebases in PHP and
                     JAVA
                   </li>
-                </ul>
+                </ul> */}
               </div>
             </div>
           </div>
@@ -75,7 +75,7 @@ export const About = () => {
                 <p>{text("about.uci")}</p>
                 <br></br>
                 <p>
-                  <strong>{text("about.graduation1")}:</strong> {text("about.graduation2")}
+                  <strong>{text("about.graduation1")}</strong> {text("about.graduation2")}
                 </p>
                 <p>
                   <strong>{text("about.average")}</strong> 4.5
