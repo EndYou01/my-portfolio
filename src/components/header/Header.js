@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { Link, NavLink } from 'react-router-dom';
+import { Link, useNavigate, NavLink } from 'react-router-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
 
 import { MdWeb } from "react-icons/md";
@@ -30,6 +30,8 @@ const sideMenuVariants = {
 export const Header = () => {
 
     const [text, i18n] = useTranslation("global")
+
+    const navigate = useNavigate()
 
     const [scrollPosition, setScrollPosition] = useState(0);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -86,16 +88,15 @@ export const Header = () => {
                 }>
                          
             <div className="header_content">
-                <Link to='/'>
                     <span 
-                        onClick={scrollToTop} 
+                        onClick={()=>{  navigate('/')
+                                        scrollToTop()}} 
                         style={{ cursor: "pointer" }} 
                         className="header_title" 
                         >
                             {text("header.portofolio")}
                     </span>
                     
-                </Link>
                 
                 
                 <span
