@@ -5,10 +5,27 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { MdWeb } from "react-icons/md";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import { MdPermContactCalendar } from "react-icons/md";
+import { AiOutlineClose } from "react-icons/ai";
 
 import {useTranslation} from 'react-i18next'
 import { scrollToTop } from '../../functions/scrollToTop';
 import { scrollToBottom } from '../../functions/scrollToBottom';
+
+import { motion } from "framer-motion";
+import { isMobile } from "react-device-detect";
+
+const sideMenuVariants = {
+    open: {
+      opacity: 1,
+      x: "-100%",
+      transition: { duration: 0.6, type: "spring" },
+    },
+    closed: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.4, type: "spring" },
+    },
+  };
 
 export const Header = () => {
 
@@ -45,13 +62,29 @@ export const Header = () => {
 
     const lang = localStorage.getItem('lastLang')||'EN'
 
+    var langx
+
+    if(lang === 'ES'){
+        langx = 'EN';
+    }else{
+        langx = 'ES';
+    }
+
+    const changeLanguaje = () => {
+        if(lang === 'ES'){
+            toEnglish();
+        }else{
+            toSpanish();
+        }
+    }
+
     return (
         <header className={
                     scrollPosition < 10
                     ? 'header_container_light'
                     : 'header_container'
                 }>
-            
+                         
             <div className="header_content">
                 <Link to='/'>
                     <span 
@@ -61,8 +94,10 @@ export const Header = () => {
                         >
                             {text("header.portofolio")}
                     </span>
+                    
                 </Link>
-
+                
+                
                 <span
                     onClick={() => setIsMenuOpen(true)}
                     className='hamburger_menu'
@@ -70,12 +105,22 @@ export const Header = () => {
                     <GiHamburgerMenu />
                 </span>
 
-                <div className={
-                    isMenuOpen ? 'nav_bg_open' : 'nav_bg_closed'
-                    }
+                <div 
                     onClick={()=>{
-                        setIsMenuOpen(false)
-                    }}>
+                    setIsMenuOpen(false)
+                    }}
+                    className={isMenuOpen ? 'nav_bg_open' : 'nav_bg_closed'}
+                    >
+                    <motion.div
+                    animate={isMobile && (isMenuOpen ? "open" : "closed")}
+                    variants={sideMenuVariants}
+                    className='nav_container_open'
+                    initial={false}
+                    >
+                    <AiOutlineClose
+                        onClick={() => setIsMenuOpen(false)}
+                        className='close_menu_button'
+                    />
 
                     <ul className="navigation_list">
                         <li>
@@ -111,16 +156,13 @@ export const Header = () => {
                         </li>
 
                         <li className="dropdown">
-                            <button className="navigation_button dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                {lang}
+                            <button className="navigation_button dropdown-toggle" onClick={changeLanguaje}>
+                                {langx}
                             </button>
-                            <ul className="dropdown-menu dropdown-menu-dark">
-                                <li><button className="dropdown-item" onClick={toSpanish}>ES</button></li>
-                                <li><button className="dropdown-item" onClick={toEnglish}>EN</button></li>
-                            </ul>
                         </li>
 
                     </ul>
+                    </motion.div>
                 </div>    
                 
             </div>
