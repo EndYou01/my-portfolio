@@ -1,7 +1,6 @@
 import React from 'react'
 import {useTranslation} from 'react-i18next'
 import { Fade } from "react-awesome-reveal";
-import { Link } from 'react-router-dom';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { LearnMoreButton } from '../../learnMoreButton/LearnMoreButton';
 
