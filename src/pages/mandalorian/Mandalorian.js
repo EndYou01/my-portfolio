@@ -75,7 +75,7 @@ export const Mandalorian = () => {
               <BsCodeSlash className='icon' />
               <Link
                 target="_blank"
-                to="https://github.com/EndYou01/tu-mandalorian-favorito"
+                to="/https://github.com/EndYou01/tu-mandalorian-favorito"
                 rel="noreferrer"
               >
                 {text("footer.source")}
