@@ -5,8 +5,8 @@ import './styles/styles.scss'
 import { I18nextProvider } from 'react-i18next'
 import i18next from 'i18next'
 
-import global_es from './translations/ES/global.json'
-import global_en from './translations/EN/global.json'
+import global_es from './translations/es/global.json'
+import global_en from './translations/en/global.json'
 
 const lastLang = localStorage.getItem('lastLang') || 'en'
 var lang
