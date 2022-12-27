@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 
 import { Fade } from "react-awesome-reveal";
 import { HiOutlineMail } from "react-icons/hi";
@@ -19,47 +18,47 @@ export const Footer = () => {
           <ul className='contact_information_list'>
             <li>
               <HiOutlineMail className='icon' />
-              <Link
-                to="jorgesenjudo@gmail.com"
+              <a
+                href="mailto:jorgesenjudo@gmail.com"
                 target="_blank"
                 rel="noreferrer"
               >
                 jorgesenjudo@gmail.com
-              </Link>
+              </a>
             </li>
 
             <li>
               <FaGithub className='icon' />
-              <Link
-                to="/https://github.com/EndYou01"
+              <a
+                href="https://github.com/EndYou01"
                 target="_blank"
                 rel="noreferrer"
               >
                 EndYou01
-              </Link>
+              </a>
             </li>
 
             <li>
               <AiFillLinkedin className='icon' />
-              <Link
-                to="/https://www.linkedin.com/in/jorge-senjudo-25122525b/"
+              <a
+                href="https://www.linkedin.com/in/jorge-senjudo-25122525b/"
                 target="_blank"
                 rel="noreferrer"
               >
                 {text("footer.linkedin")}
-              </Link>
+              </a>
             </li>
           </ul>
           <br></br>
           <div className='this_page_source_container' >
             <BsCodeSlash className='icon' />
-            <Link
+            <a
               target="_blank"
-              to="/https://github.com/EndYou01/my-portfolio"
+              href="https://github.com/EndYou01/my-portfolio"
               rel="noreferrer"
             >
               {text("footer.source")}
-            </Link>
+            </a>
           </div>
         </div>
       </Fade>

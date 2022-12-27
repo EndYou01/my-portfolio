@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import { Fade } from "react-awesome-reveal";
 
 import { scrollToTop } from '../../functions/scrollToTop';
@@ -24,7 +23,7 @@ export const CitasApp = () => {
               {text("citas.p1")}
             </p>
             <ul>
-              <li>{text("tmf.l1")} <Link to='https://github.com/Panik-Attack'>Eduardo Garcia Alfonso</Link></li>
+              <li>{text("tmf.l1")} <a href='https://github.com/Panik-Attack'>Eduardo Garcia Alfonso</a></li>
             </ul>
             <br />
           </div>
@@ -73,13 +72,13 @@ export const CitasApp = () => {
             <br></br>
             <div className='this_page_source_container' >
               <BsCodeSlash className='icon' />
-              <Link
+              <a
                 target="_blank"
-                to="/https://github.com/Panik-Attack/Citas"
+                href="https://github.com/Panik-Attack/Citas"
                 rel="noreferrer"
               >
                 {text("footer.source")}
-              </Link>
+              </a>
             </div>
           </div>
         </main>

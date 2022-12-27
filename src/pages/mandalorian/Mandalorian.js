@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import { Fade } from "react-awesome-reveal";
 
 import { scrollToTop } from '../../functions/scrollToTop';
@@ -26,7 +25,7 @@ export const Mandalorian = () => {
             <br />
             <ul>
               <li>{text("snb.l1")}</li>
-              <li>{text("tmf.l1")} <Link to='https://github.com/Panik-Attack'>Eduardo Garcia Alfonso</Link></li>
+              <li>{text("tmf.l1")} <a href='https://github.com/Panik-Attack'>Eduardo Garcia Alfonso</a></li>
             </ul>
           </div>
           <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -73,13 +72,13 @@ export const Mandalorian = () => {
             <br></br>
             <div className='this_page_source_container' >
               <BsCodeSlash className='icon' />
-              <Link
+              <a
                 target="_blank"
-                to="/https://github.com/EndYou01/tu-mandalorian-favorito"
+                href="https://github.com/EndYou01/tu-mandalorian-favorito"
                 rel="noreferrer"
               >
                 {text("footer.source")}
-              </Link>
+              </a>
             </div>
           </div>
         </main>

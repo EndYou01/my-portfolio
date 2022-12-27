@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import { Fade } from "react-awesome-reveal";
 
 import { scrollToTop } from '../../functions/scrollToTop';
@@ -26,7 +25,7 @@ export const Snb2022Page = () => {
             <br />
             <ul>
               <li>{text("snb.l1")}</li>
-              <li>{text("snb.l2")} <Link to=''>Alejandro Martinez</Link></li>
+              <li>{text("snb.l2")} <a href=''>Alejandro Martinez</a></li>
             </ul>
           </div>
           <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -85,13 +84,13 @@ export const Snb2022Page = () => {
             <br></br>
             <div className='this_page_source_container' >
               <BsCodeSlash className='icon' />
-              <Link
+              <a
                 target="_blank"
-                to="/https://github.com/EndYou01/Snb2022"
+                href="https://github.com/EndYou01/Snb2022"
                 rel="noreferrer"
               >
                 {text("footer.source")}
-              </Link>
+              </a>
             </div>
           </div>
         </main>
