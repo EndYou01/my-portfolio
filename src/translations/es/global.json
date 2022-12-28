@@ -16,14 +16,13 @@
         "profExp": "Experiencia Profesional.",
         "education": "Educación.",
         "2020": "2020-09 - presente",
-        "h3": "Estudiante de Ingeniería en Ciencias Informáticas.",
+        "h4": "Estudiante de Ingeniería en Ciencias Informáticas.",
         "uci": "Universidad de las Ciencias Informáticas, Habana, Cuba",
         "graduation1": "Graduación:",
         "graduation2": "en proceso.",
         "average": "Promedio:",
-        "fronh3": "Ingeniero de Software Frontend",
-        "fronp1": "Desde hace un año comencé mi preparación como desarrollador fullstack, decidí comenzar por esta rama, y en ella he comprendido como funciona la web y los sistemas informáticos. He trabajado para varios clientes, haciendo principalmente componentes de páginas web, acumulando experiencia durante este período y me creo capaz de poder plasmar en codigo, el diseño que se me dé. ",
-        "fronh4": "Responsabilidades clave."
+        "fronh4": "Ingeniero de Software Frontend",
+        "fronp1": "Desde hace un año comencé mi preparación como desarrollador fullstack, decidí comenzar por esta rama, y en ella he comprendido como funciona la web y los sistemas informáticos. He trabajado para varios clientes, haciendo principalmente componentes de páginas web, acumulando experiencia durante este período y me creo capaz de poder plasmar en codigo, el diseño que se me dé. "
     },
     "skills": {
         "h1": "Habilidades.",

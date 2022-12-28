@@ -16,32 +16,38 @@ export const About = () => {
 
         <br></br>
         <h2 className='center'>{text("about.profExp")}</h2>
-        <div className='table'>
-          <div style={{ border: "none" }} className='tr'>
-            <div className='first_td'><p>{text("about.2020")}</p></div>
-            <div className='second_td'>
-              <h3>{text("about.fronh3")}</h3>
-              <p>{text("about.fronp1")}</p>
-              <br></br>
-            </div>
+
+        <div className='infoContain'>
+          <div className='infoRow'>
+            <h4>{text("about.fronh4")}</h4>
+            <p>{text("about.2020")}</p>
+          </div>
+          <br />
+          <div className='info'>
+            <p>{text("about.fronp1")}</p>
           </div>
         </div>
+
         <br></br>
+
         <h2 className='center'>{text("about.education")}</h2>
-        <div className='table'>
-          <div className='tr'>
-            <div className='first_td'><p>{text("about.2020")}</p></div>
-            <div className='second_td'>
-              <h3>{text("about.h3")}</h3>
-              <p>{text("about.uci")}</p>
-              <br></br>
-              <p>
-                <strong>{text("about.graduation1")}</strong> {text("about.graduation2")}
-              </p>
-              <p>
-                <strong>{text("about.average")}</strong> 4.5
-              </p>
-            </div>
+
+        <div className='infoContain'>
+          <div className='infoRow'>
+            <h4>{text("about.h4")}</h4>
+            <p>{text("about.2020")}</p>
+          </div>
+
+          <br />
+          <div className='info'>
+            <p>{text("about.uci")}</p>
+            <br />
+            <p>
+              <strong>{text("about.graduation1")}</strong> {text("about.graduation2")}
+            </p>
+            <p>
+              <strong>{text("about.average")}</strong> 4.5
+            </p>
           </div>
         </div>
       </Fade>

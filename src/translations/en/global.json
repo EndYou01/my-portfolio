@@ -16,14 +16,13 @@
         "profExp": "Professional Experience.",
         "education": "Education.",
         "2020": "2020-09 - present",
-        "h3": "Student of Computer Science Engineer.",
+        "h4": "Student of Computer Science Engineer.",
         "uci": "University of Computer Science, Havana, Cuba",
         "graduation1": "Graduation:",
         "graduation2": "not, yet.",
         "average": "Average:",
-        "fronh3": "Frontend Software Engineer",
-        "fronp1": "A year ago I started my preparation as a fullstack developer, I decided to start with this branch, and in it I have understood how the web and computer systems work. I have worked for several clients, doing mainly components of web pages, accumulating experience during this period and I believe I can translate into code, the design that is given to me.",
-        "fronh4": "Key Responsibilities."
+        "fronh4": "Frontend Software Engineer",
+        "fronp1": "A year ago I started my preparation as a fullstack developer, I decided to start with this branch, and in it I have understood how the web and computer systems work. I have worked for several clients, doing mainly components of web pages, accumulating experience during this period and I believe I can translate into code, the design that is given to me."
     },
     "skills": {
         "h1": "Skills.",
