@@ -1,19 +1,17 @@
 import React from 'react'
-import { IoMdArrowBack } from "react-icons/io";
+import { IoIosArrowBack } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
-import { useTranslation } from 'react-i18next';
 
 export const BackButton = () => {
 
     const navigate = useNavigate();
-    const [text] = useTranslation("global")
 
     const lastLocation = localStorage.getItem('lastLocation')
 
     return (
-        <button className='bg_transparent my-element'>
+        <button className='bg_transparent my-element bckBtn'>
             <div onClick={() => { navigate(lastLocation) }}>
-                <IoMdArrowBack className='icon' />{text("snb.b")}
+                <IoIosArrowBack className='icon' />
             </div>
         </button>
     )
