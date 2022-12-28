@@ -86,7 +86,7 @@ export const Snb2022Page = () => {
               <BsCodeSlash className='icon' />
               <a
                 target="_blank"
-                href="https://github.com/EndYou01/Snb2022"
+                href="https://www.github.com/EndYou01/Snb2022"
                 rel="noreferrer"
               >
                 {text("footer.source")}

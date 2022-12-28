@@ -12,7 +12,7 @@ export const WaveBlock = () => {
         <Fade cascade>
 
           <h3 className='animate__animated animate__fadeInDown animate__delay-1s animate__slow'>{text("waveB.h3")}</h3>
-
+          <br />
           <h1 className='animate__animated animate__backInUp animate__delay-2s animate__slow'>{text("waveB.h1")}</h1>
 
           <button className='button'>

@@ -11,20 +11,18 @@
   align-items: center;
   padding: 30px;
   height: 100vh;
-  padding-top: 25vh;
+  padding-top: 20vh;
   max-width: 500px;
   margin: auto;
   position: relative;
 }
 
 .content h3 {
-  font-weight: normal;
   text-align: center;
 }
 
 .content h1 {
   text-align: center;
-  font-size: 2rem;
   margin-top: 0;
   margin-bottom: 30px;
 }
@@ -38,6 +36,7 @@
   text-align: center;
   transition: 200ms;
   border-radius: 5px;
+  border: none;
 }
 
 .button:hover {
@@ -55,7 +54,6 @@
 
 .background_text_mobile {
   position: absolute;
-  font-size: 7rem;
   width: 300vw;
   bottom: 230px;
   left: 0px;
@@ -68,8 +66,8 @@
   position: absolute;
   bottom: -100px;
   width: 100vw !important;
-  max-height: 200px;
-  height: 30%;
+  max-height: 250px;
+  height: 70%;
 }
 
 @media only screen and (min-width: 901px) {
@@ -78,7 +76,6 @@
   }
 
   .wavecontent h1 {
-    font-size: 40px;
   }
 }
 

@@ -13,7 +13,7 @@ export const About = () => {
         <p>
           {text("about.a&et")}
         </p>
-
+        
 
         <br></br>
         <h2 className='center'>{text("about.profExp")}</h2>
