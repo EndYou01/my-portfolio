@@ -13,9 +13,9 @@ export const WaveBlock = () => {
 
           <h3 className='animate__animated animate__fadeInDown animate__delay-1s animate__slow'>{text("waveB.h3")}</h3>
           <br />
-          <h1 className='animate__animated animate__backInUp animate__delay-2s animate__slow'>{text("waveB.h1")}</h1>
+          <h1 className='animate__animated animate__backInUp animate__delay-1s animate__slow'>{text("waveB.h1")}</h1>
 
-          <button className='button'>
+          <button className='button animate__animated animate__fadeInDown animate__delay-2s animate__slow'>
             <a
               target="_blank"
               href="mailto:jorgesenjudo@gmail.com"

@@ -9,7 +9,6 @@ export const Skills = () => {
     <div className='content'>
       <Fade>
         <h1>{text("skills.h1")}</h1>
-        <br></br>
         <div className='columns'>
           <ul>
             <li>
@@ -48,34 +47,12 @@ export const Skills = () => {
             <li>
               <span>C++</span>
             </li>
-
-
-
-
-            <li>
-              <span>{text("skills.UI")}</span>
-            </li>
-            <li>
-              <span>{text("skills.FS")}</span>
-            </li>
             <li>
               <span>{text("skills.EB2")}</span>
             </li>
             <li>
-              <span>{text("skills.comunicative")}</span>
-            </li>
-            <li>
               <span>{text("skills.TE")}</span>
-            </li>
-            <li>
-              <span>{text("skills.GA")}</span>
-            </li>
-            <li>
-              <span>{text("skills.creative")}</span>
-            </li>
-            <li>
-              <span>{text("skills.worker")}</span>
-            </li>
+            </li> 
           </ul>
         </div>
       </Fade>

@@ -1,5 +1,9 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react'
 import { Fade } from "react-awesome-reveal";
+import Zoom from "react-medium-image-zoom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper";
 
 import { scrollToTop } from '../../functions/scrollToTop';
 import { BsCodeSlash } from "react-icons/bs";
@@ -16,7 +20,6 @@ export const Mandalorian = () => {
         <main className='main'>
 
           <BackButton />
-
           <div>
             <h1 className='Colorh1'>{text("tmf.h2")}</h1>
             <p>
@@ -27,7 +30,11 @@ export const Mandalorian = () => {
               <li>{text("snb.l1")}</li>
               <li>{text("tmf.l1")} <a href='https://github.com/Panik-Attack'>Eduardo Garcia Alfonso</a></li>
             </ul>
+            
           </div>
+
+          //Carousel
+          
           <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
             <div className="carousel-inner SNBcarousel">
               <div className="carousel-item active">

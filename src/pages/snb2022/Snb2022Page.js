@@ -25,7 +25,7 @@ export const Snb2022Page = () => {
             <br />
             <ul>
               <li>{text("snb.l1")}</li>
-              <li>{text("snb.l2")} <a href=''>Alejandro Martinez</a></li>
+              <li>{text("snb.l2")} <a href='https://www.linkedin.com/in/alejandro-martinez-66766725b'>Alejandro Martínez</a></li>
             </ul>
           </div>
           <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">

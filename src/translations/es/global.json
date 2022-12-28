@@ -1,6 +1,6 @@
 {
     "header": {
-        "portofolio": "Portafólio.",
+        "portofolio": "Portafólio",
         "about": "Acerca",
         "work": "Proyectos",
         "contact": "Contáctame"
@@ -12,29 +12,23 @@
     },
     "about": {
         "a&e": "Acerca y Experiencia.",
-        "a&et": "Soy Jorge L. Senjudo, desarrollador Front-End con experiencia en desarrollo y construcción de sitios web. Eh trabajado solo y con otros desarrolladores en la creación de los mismos, siempre teniendo como objetivo la superación personal y profesional, para lograr el despliegue de softwares con la calidad adecuada. Trabajo principalmente usando codigo de ReactJS, con capacidad para aprender cualquier framework de JS o herramienta. También tengo breve experiencia con lenguajes backend como JAVA y bases de datos como MySQL. Como meta quiero alcanzar a ser un desarrollador fullstack y poder llevar una vida plena.",
+        "a&et": "Soy Jorge L. Senjudo, desarrollador Front-End con experiencia en desarrollo y construcción de sitios web. He trabajado solo y con otros desarrolladores en la creación de los mismos, siempre teniendo como objetivo la superación personal y profesional, para lograr el despliegue de softwares con la calidad adecuada. Trabajo principalmente usando codigo de ReactJS, con capacidad para aprender cualquier framework de JS o herramienta. También tengo breve experiencia con lenguajes backend como JAVA y bases de datos como MySQL. Como meta quiero alcanzar a ser un desarrollador fullstack y poder llevar una vida plena.",
         "profExp": "Experiencia Profesional.",
         "education": "Educación.",
         "2020": "2020-09 - presente",
         "h3": "Estudiante de Ingeniería en Ciencias Informáticas.",
-        "uci": "Universidad de las Ciencias Informáticas, Habana, CUB",
+        "uci": "Universidad de las Ciencias Informáticas, Habana, Cuba",
         "graduation1": "Graduación:",
         "graduation2": "en proceso.",
         "average": "Promedio:",
         "fronh3": "Ingeniero de Software Frontend",
-        "fronp1": "Desde hace un año comencé mi preparación como desarrollador fullstack, decidí comenzar por esta rama, y en ella eh comprendido como funciona la web y los sistemas informáticos. Eh trabajado para varios clientes, haciendo principalmente componentes de páginas web, acumulando experiencia durante este período y me creo capaz de poder plasmar en codigo, el diseño que se me dé. ",
+        "fronp1": "Desde hace un año comencé mi preparación como desarrollador fullstack, decidí comenzar por esta rama, y en ella he comprendido como funciona la web y los sistemas informáticos. He trabajado para varios clientes, haciendo principalmente componentes de páginas web, acumulando experiencia durante este período y me creo capaz de poder plasmar en codigo, el diseño que se me dé. ",
         "fronh4": "Responsabilidades clave."
     },
     "skills": {
         "h1": "Habilidades.",
-        "UI": "Diseño UI",
-        "FS": "Español Fluido",
         "EB2": "Inglés B2",
-        "comunicative": "Comunicativo",
-        "TE": "Trabajo en Equipo",
-        "GA": "Ganas de Aprender",
-        "creative": "Creativo",
-        "worker": "Trabajador"
+        "TE": "Trabajo en Equipo"
     },
     "waveB": {
         "h3": "Hola, soy Jorge!",
@@ -46,7 +40,7 @@
         "freelance": "Proyectos Freelance."
     },
     "snb": {
-        "p1": "SNB 2022 es un proyecto desarrollado usando el entorno de desarrollo Net.Beans, usando Java como lenguaje principal. Es un juego orientado principalmente a mi formación como ingeniero de software, en el se aplican complejos algoritmos como Fisher Yates, para la aleatorización de numeros aleatorios. El logo que puede ver en el proyecto es Lens, nombre que elegimos el equipo de desarrolladores que convivimos en la universidad.",
+        "p1": "SNB 2022 es un proyecto desarrollado usando el entorno de desarrollo Net.Beans, usando Java como lenguaje principal. Es un juego orientado principalmente a mi formación como ingeniero de software, en el se aplican complejos algoritmos como Fisher Yates, para la aleatorización de números aleatorios. El logo que puede ver en el proyecto es Lens, nombre que elegimos el equipo de desarrolladores que convivimos en la universidad.",
         "l1": "Calificación del Proyecto: 5/5 puntos",
         "l2": "Compañero de Trabajo:",
         "h2_1": "Tecnologías usadas:",

@@ -1,6 +1,6 @@
 {
     "header": {
-        "portofolio": "Portofolio.",
+        "portofolio": "Portofolio",
         "about": "About",
         "work": "Work",
         "contact": "Contact"
@@ -17,7 +17,7 @@
         "education": "Education.",
         "2020": "2020-09 - present",
         "h3": "Student of Computer Science Engineer.",
-        "uci": "University of Computer Science, Havana, CUB",
+        "uci": "University of Computer Science, Havana, Cuba",
         "graduation1": "Graduation:",
         "graduation2": "not, yet.",
         "average": "Average:",
@@ -27,14 +27,8 @@
     },
     "skills": {
         "h1": "Skills.",
-        "UI": "UI Design",
-        "FS": "Fluid Spanish",
         "EB2": "English B2",
-        "comunicative": "Communicative",
-        "TE": "Teamwork",
-        "GA": "Desire to Learn",
-        "creative": "Creative",
-        "worker": "Worker"
+        "TE": "Teamwork"
     },
     "waveB": {
         "h3": "Hi, I'm Jorge!",

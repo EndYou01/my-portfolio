@@ -6576,6 +6576,11 @@ nwsapi@^2.2.0:
   resolved "https://registry.yarnpkg.com/nwsapi/-/nwsapi-2.2.2.tgz#e5418863e7905df67d51ec95938d67bf801f0bb0"
   integrity sha512-90yv+6538zuvUMnN+zCr8LuV6bPFdq50304114vJYJ8RDyK8D5O9Phpbd6SZWgI7PwzmmfN1upeOJlvybDSgCw==
 
+object-assign@^2.0.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-2.1.1.tgz#43c36e5d569ff8e4816c4efa8be02d26967c18aa"
+  integrity sha512-CdsOUYIh5wIiozhJ3rLQgmUTgcyzFwZZrqhkKhODMoGtPKM+wt0h0CNIoauJWMsS9822EdzPsF/6mb4nLvPN5g==
+
 object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
@@ -7717,6 +7722,11 @@ react-lazy-load-image-component@^1.5.6:
     lodash.debounce "^4.0.8"
     lodash.throttle "^4.1.1"
 
+react-medium-image-zoom@^5.1.2:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/react-medium-image-zoom/-/react-medium-image-zoom-5.1.2.tgz#ff13b8cf37e3348c36a2fc6deade84912fdad8ce"
+  integrity sha512-Lk9TDqd+vUpQVP77p45jXgh1LGjClLfyLJnTemCfpI+5Zp3X7MX7iGP5VmSdLGXy9mhdlZiByHOyp4Irf4N8vg==
+
 react-refresh@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0.tgz#77198b944733f0f1f1a90e791de4541f9f074046"
@@ -7798,6 +7808,13 @@ react-scroll-parallax@^3.3.2:
   integrity sha512-mLgcLqyFhrIp31gLjz11yYmWEwS8NJoOoCZ15ZFXPOcpPQK8R+jZfeuO59Trm9bReok/iDUyx3ZyCCZjkxj37Q==
   dependencies:
     parallax-controller "^1.5.0"
+
+react-swiper@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/react-swiper/-/react-swiper-0.1.5.tgz#459d95baa284d56983e96ddc55106546e5c5052e"
+  integrity sha512-6ejmuzood/uh1vTvWryMUR2GeRA4XTjBDAk6i3W4qUf9+calY/TdlIAtqSFkTaHpyn6A7bI9SfFNi+pr+fZJcQ==
+  dependencies:
+    object-assign "^2.0.0"
 
 react-wavify@^1.6.3:
   version "1.6.3"

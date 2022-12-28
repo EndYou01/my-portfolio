@@ -15,6 +15,7 @@ export const Footer = () => {
       <Fade>
         <div className='contact_content'>
           <h2>{text("footer.contactMe")}</h2>
+          <br/>
           <ul className='contact_information_list'>
             <li>
               <HiOutlineMail className='icon' />

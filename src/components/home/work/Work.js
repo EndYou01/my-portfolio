@@ -79,7 +79,7 @@ export const Work = () => {
         <br />
 
         <Fade>
-          <h2 className='header'>{text("work.freelance")}</h2>
+          <h1 className='header'>{text("work.freelance")}</h1>
         </Fade>
 
         <section className='projects_section'>
