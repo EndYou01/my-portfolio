@@ -20,7 +20,7 @@ export const CarouselImage = ({images}) => {
           navigation={true}
           pagination={{ clickable: true }}
           spaceBetween={10}
-          slidesPerView="auto"
+          slidesPerView='auto'
           className='container' 
     >
           {images.map((image, index)=>{

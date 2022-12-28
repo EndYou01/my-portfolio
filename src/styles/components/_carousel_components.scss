@@ -1,13 +1,13 @@
 @media only screen and (min-width: 901px) {
   .slide_portrait {
-    width: 200px !important;
+    width: 400px !important;
   }
   .image_portrait {
     height: 100%;
     width: 100%;
   }
   .slide_landscape {
-    width: 500px !important;
+    width: 400px !important;
   }
   .image_landscape {
     height: 100%;
@@ -17,15 +17,15 @@
 
 @media only screen and (max-width: 900px) {
   .slide_portrait {
-    width: 200px !important;
+    width: 400px !important;
   }
   .image_portrait {
     height: 100%;
     width: 100%;
   }
   .slide_landscape {
-    width: 500px !important;
-    max-width: 100% !important;
+    max-width: 400px !important;
+    // max-width: 100% !important;
   }
   .image_landscape {
     height: 100%;
