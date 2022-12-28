@@ -42,7 +42,8 @@
     },
     "work": {
         "h1": "University Projects.",
-        "lm": "Learn More"
+        "lm": "Learn More",
+        "freelance": "Freelance Projects."
     },
     "snb": {
         "p1": "SNB 2022 is a project developed using the Net.Beans development environment, using Java as a language main. It is a game oriented mainly to my training as a software engineer, in which they apply complex algorithms such as Fisher Yates, for randomization of random numbers. The logo you can see on the project is Lens, the name chosen by the team of developers who live at the university.",
