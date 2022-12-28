@@ -5,10 +5,19 @@ import { scrollToTop } from '../../functions/scrollToTop';
 import { BsCodeSlash } from "react-icons/bs";
 import { useTranslation } from 'react-i18next';
 import { BackButton } from '../../components/backButton/BackButton';
+import { CarouselImage } from '../../components/carouselImage/CarouselImage';
+
+
 
 export const CitasApp = () => {
   scrollToTop()
   const [text] = useTranslation("global")
+
+  const images = [
+    "freelance/citasApp/citas1.png",
+    "freelance/citasApp/citas2.png",
+    "freelance/citasApp/citas3.png"
+  ]
 
   return (
     <Fade>
@@ -27,27 +36,8 @@ export const CitasApp = () => {
             </ul>
             <br />
           </div>
-          <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div className="carousel-inner SNBcarousel">
-              <div className="carousel-item active">
-                <img src="freelance/citasApp/citas1.png" className="d-block w-100" alt="freelance/citasApp/citas1.png" />
-              </div>
-              <div className="carousel-item">
-                <img src="freelance/citasApp/citas2.png" className="d-block w-100" alt="freelance/citasApp/citas1.png" />
-              </div>
-              <div className="carousel-item">
-                <img src="freelance/citasApp/citas3.png" className="d-block w-100" alt="freelance/citasApp/citas1.png" />
-              </div>
-            </div>
-            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span className="carousel-control-next-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Next</span>
-            </button>
-          </div>
+
+          <CarouselImage images={images}/>
           <br />
 
           <div className='project_info'>

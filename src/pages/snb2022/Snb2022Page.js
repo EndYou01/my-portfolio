@@ -5,10 +5,22 @@ import { scrollToTop } from '../../functions/scrollToTop';
 import { BsCodeSlash } from "react-icons/bs";
 import { useTranslation } from 'react-i18next';
 import { BackButton } from '../../components/backButton/BackButton';
+import { CarouselImage } from '../../components/carouselImage/CarouselImage';
 
 export const Snb2022Page = () => {
+
   scrollToTop()
   const [text] = useTranslation("global")
+
+  const images = [
+    "snb2022/snb1.png",
+    "snb2022/snb2.png",
+    "snb2022/snb3.png",
+    "snb2022/snb4.png",
+    "snb2022/snb5.png",
+    "snb2022/snb6.png",
+    "snb2022/snb7.png"
+  ]
 
   return (
     <Fade>
@@ -28,39 +40,8 @@ export const Snb2022Page = () => {
               <li>{text("snb.l2")} <a href='https://www.linkedin.com/in/alejandro-martinez-66766725b'>Alejandro Martínez</a></li>
             </ul>
           </div>
-          <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div className="carousel-inner SNBcarousel">
-              <div className="carousel-item active">
-                <img src="snb2022/snb1.png" className="d-block w-100" alt="snb2022/snb1.png" />
-              </div>
-              <div className="carousel-item">
-                <img src="snb2022/snb2.png" className="d-block w-100" alt="snb2022/snb1.png" />
-              </div>
-              <div className="carousel-item">
-                <img src="snb2022/snb3.png" className="d-block w-100" alt="snb2022/snb1.png" />
-              </div>
-              <div className="carousel-item">
-                <img src="snb2022/snb4.png" className="d-block w-100" alt="snb2022/snb1.png" />
-              </div>
-              <div className="carousel-item">
-                <img src="snb2022/snb5.png" className="d-block w-100" alt="snb2022/snb1.png" />
-              </div>
-              <div className="carousel-item">
-                <img src="snb2022/snb6.png" className="d-block w-100" alt="snb2022/snb1.png" />
-              </div>
-              <div className="carousel-item">
-                <img src="snb2022/snb7.png" className="d-block w-100" alt="snb2022/snb1.png" />
-              </div>
-            </div>
-            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span className="carousel-control-next-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Next</span>
-            </button>
-          </div>
+
+          <CarouselImage images={images} />
           <br />
 
           <div className='project_info'>

@@ -1,18 +1,22 @@
-/* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react'
 import { Fade } from "react-awesome-reveal";
-import Zoom from "react-medium-image-zoom";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
 
 import { scrollToTop } from '../../functions/scrollToTop';
 import { BsCodeSlash } from "react-icons/bs";
 import { useTranslation } from 'react-i18next';
 import { BackButton } from '../../components/backButton/BackButton';
+import { CarouselImage } from '../../components/carouselImage/CarouselImage';
 
 export const Mandalorian = () => {
+
   scrollToTop()
   const [text] = useTranslation("global")
+
+  const images = [
+    "tmf/tmf1.png",
+    "tmf/tmf2.png",
+    "tmf/tmf3.png"
+  ]
 
   return (
     <Fade>
@@ -33,30 +37,7 @@ export const Mandalorian = () => {
             
           </div>
 
-          //Carousel
-          
-          <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div className="carousel-inner SNBcarousel">
-              <div className="carousel-item active">
-                <img src="tmf/tmf1.png" className="d-block w-100" alt="tmf1" />
-              </div>
-              <div className="carousel-item">
-                <img src="tmf/tmf2.png" className="d-block w-100" alt="tmf1" />
-              </div>
-              <div className="carousel-item">
-                <img src="tmf/tmf3.png" className="d-block w-100" alt="tmf1" />
-              </div>
-            </div>
-            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span className="carousel-control-next-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Next</span>
-            </button>
-          </div>
-          <br />
+          <CarouselImage images={images} />
 
           <div className='project_info'>
             <h2>{text("snb.h2_1")}</h2>

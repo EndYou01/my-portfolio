@@ -9,7 +9,7 @@ export const BackButton = () => {
     const [text] = useTranslation("global")
 
     const lastLocation = localStorage.getItem('lastLocation')
-    console.log(lastLocation)
+
     return (
         <button className='bg_transparent my-element'>
             <div onClick={() => { navigate(lastLocation) }}>
