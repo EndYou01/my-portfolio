@@ -61,3 +61,13 @@ a {
 @media only screen and (min-width: 500px) {}
 
 @media only screen and (min-width: 1200px) {}
+
+@media only screen and (max-width: 900px) {
+  p,
+  li,
+  a {
+    margin: 0px;
+    color: rgb(200, 200, 200);
+    font-size: 0.9rem;
+  }
+}
