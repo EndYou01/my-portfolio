@@ -32,10 +32,10 @@ export const WaveBlock = () => {
           fill="rgb(20,20,20)"
           paused={false}
           options={{
-            height: 20,
-            amplitude: 60,
+            height: 60,
+            amplitude: 30,
             speed: 0.15,
-            points: 3,
+            points: 3 ,
           }}
         />
       </div>
