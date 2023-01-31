@@ -108,6 +108,35 @@ export const Work = () => {
             </div>
           </Fade>
         </section>
+        
+        <br />
+
+        <section className='projects_section'>
+          <Fade>
+            <div className='project_container'>
+              <LazyLoadImage
+                className='bg_image'
+                alt="Confort Image"
+                src="freelance/confort/Pantalla_Principal.jpg"
+              />
+
+              <div className='project_image_container'>
+                <LazyLoadImage
+                  effect="blur"
+                  className='project_image'
+                  alt="Confort Logo"
+                  src="logos/confort_logo.png"
+                />
+              </div>
+              <div className='project_info_container'>
+                <h2>Confort</h2>
+                <p>{text("confort.p")}
+                </p>
+                <LearnMoreButton pathname='/confort' />
+              </div>
+            </div>
+          </Fade>
+        </section>
       </div>
 
     </div>

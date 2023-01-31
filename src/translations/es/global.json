@@ -8,7 +8,8 @@
     "footer": {
         "contactMe": "Contáctame.",
         "linkedin": "Mi perfil de Linkedin",
-        "source": "Ver código fuente."
+        "source": "Ver código fuente.",
+        "nosource": "Código no disponible"
     },
     "about": {
         "a&e": "Acerca y Experiencia.",
@@ -58,5 +59,12 @@
         "p1": "CitasApp es un componente dentro de un proyecto de mayor envergadura, en el cual participé. Está compuesto por una validación de formularios y consultas al localStorage, construido con Reactjs y AntDesign.",
         "p2": "A nivel de complejidad creativa, es un componente sencillo y de facil creación.",
         "p3": "Hubo que realizar validaciones a cada uno de los campos de formulario que habían, y adecuarlos segun las especificaciones del cliente."
+    },
+    "confort":{
+        "h2": "Confort",
+        "p": "Primer sitio de comercio electrónico en el que trabajé junto al equipo de desarrollo Go Django Development.",
+        "p1": "Mi rol en este proyecto fue el de desarrollar el front-end, a petición del cliente (y de mi superior de ese entonces, para medir mis habilidades) fue construido en su totalidad con HTML5, CSS y Javascript, y usando Bootstrap como única herramienta para apoyarme en ella. Realicé solo el front-end, haciendo todas las funcionalidades y diseños de la página. Fue el proyecto, con el que puse en práctica, las bases de los conocimientos que se necesitan para comenzar a adentrarse en el mundo del desarrollo web.",
+        "p2": "Trabajé en conjunto con una diseñadora, creadora del diseño del sitio web, con la que aclaré dudas y preguntas relacionadas al mismo. Se realizaron dos vistas, Mobile y Desktop, usando los media query de css.",
+        "p3": "Realizado en su totalidad por el grupo de desarrollo Go Django Development, usando Django, un framework de Python dedicado al trabajo back-end con la web. Realizando a consultas a APIs para realizar los micropagos y consultar a la Base de Datos para cargar los productos de manera dinámica."
     }
 }
