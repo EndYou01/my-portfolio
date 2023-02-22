@@ -8,35 +8,57 @@ export const Skills = () => {
   return (
     <div className='content'>
       <Fade>
-        <h1>{text("skills.h1")}</h1>
+        <h1 className='skills_h1'>{text("skills.soft-skills")}</h1>
         <div className='columns'>
           <ul>
             <li>
               <span>HTML5/CSS</span>
             </li>
             <li>
+              <span>MVC</span>
+            </li>
+            <li>
+              <span>APIs</span>
+            </li>
+            <li>
+              <span>Git/Github</span>
+            </li>
+            <li>
+              <span>{text("skills.EB2")}</span>
+            </li>
+            <li>
+              <span>{text("skills.TE")}</span>
+            </li>
+            <li>
+              <span>{text("skills.Friendly")}</span>
+            </li>
+            <li>
+              <span>{text("skills.FL")}</span>
+            </li>
+            <li>
+              <span>{text("skills.PA")}</span>
+            </li>
+          </ul>
+        </div>
+
+        <h1 className='skills_h1'>{text("skills.hard-skills")}</h1>
+
+        <div className='columns'>
+          <ul>
+            <li>
               <span>React</span>
             </li>
             <li>
-              <span>JavaScript</span>
+              <span>Javascript</span>
+            </li>
+            <li>
+              <span>Typescript</span>
             </li>
             <li>
               <span>REST APIs</span>
             </li>
             <li>
               <span>Redux</span>
-            </li>
-            <li>
-              <span>Git/Github</span>
-            </li>
-            <li>
-              <span>Bootstrap</span>
-            </li>
-            <li>
-              <span>MVC</span>
-            </li>
-            <li>
-              <span>APIs</span>
             </li>
             <li>
               <span>Sass</span>
@@ -48,11 +70,8 @@ export const Skills = () => {
               <span>C++</span>
             </li>
             <li>
-              <span>{text("skills.EB2")}</span>
+              <span>Bootstrap</span>
             </li>
-            <li>
-              <span>{text("skills.TE")}</span>
-            </li> 
           </ul>
         </div>
       </Fade>
