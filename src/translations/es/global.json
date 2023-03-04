@@ -16,11 +16,11 @@
         "a&et": "Soy Jorge L. Senjudo, desarrollador Front-End con experiencia en desarrollo y construcción de sitios web, en los cuales he trabajado en solitario y con otros desarrolladores, siempre en busca de pulir mis habilidades tanto en el ámbito personal como profesional, para lograr el despliegue de softwares con la calidad adecuada. Trabajo principalmente usando código de ReactJS, con capacidad para aprender cualquier framework de JS o herramienta. Tengo breve experiencia con lenguajes backend como JAVA y bases de datos como MySQL. Como meta tengo trazado alcanzar a ser un desarrollador fullstack, y poder llevar una vida plena.",
         "profExp": "Experiencia Profesional",
         "education": "Educación",
-        "2020": "2020-09 - presente",
+        "2020": "2020-09/ 2022-12",
         "h4": "Estudiante de Ingeniería en Ciencias Informáticas.",
         "uci": "Universidad de las Ciencias Informáticas, Habana, Cuba",
         "graduation1": "Graduación:",
-        "graduation2": "en proceso",
+        "graduation2": "Abandoné la universidad",
         "average": "Promedio:",
         "fronh4": "Ingeniero de Software Frontend",
         "fronp1": "Comencé mi preparación como desarrollador fullstack y decidí comenzar por esta rama, y en ella he comprendido como funciona la web y los sistemas informáticos. He trabajado para varios clientes, haciendo principalmente componentes de páginas web, acumulando experiencia durante este período y me creo capaz de poder plasmar en codigo, el diseño que se me dé. "
@@ -70,5 +70,9 @@
         "p1": "Mi rol en este proyecto fue el de desarrollar el front-end, a petición del cliente (y de mi superior de ese entonces, para medir mis habilidades) fue construido en su totalidad con HTML5, CSS y Javascript, y usando Bootstrap como única herramienta para apoyarme en ella. Realicé solo el front-end, haciendo todas las funcionalidades y diseños de la página. Fue el proyecto, con el que puse en práctica, las bases de los conocimientos que se necesitan para comenzar a adentrarse en el mundo del desarrollo web.",
         "p2": "Trabajé en conjunto con una diseñadora, creadora del diseño del sitio web, con la que aclaré dudas y preguntas relacionadas al mismo. Se realizaron dos vistas, Mobile y Desktop, usando los media query de css.",
         "p3": "Realizado en su totalidad por el grupo de desarrollo Go Django Development, usando Django, un framework de Python dedicado al trabajo back-end con la web. Realizando a consultas a APIs para realizar los micropagos y consultar a la Base de Datos para cargar los productos de manera dinámica."
+    },
+    "coremant":{
+        "p": "Sitio web dinámico, de la empresa del mismo nombre, el cual se lanzó con el objetivo de ampliar sus fronteras y darse a conocer por este medio.",
+        "p1": "El proyecto fue creado desde cero, donde pasó por etapas de diseño, planificación y reuniones con el cliente, etapas en las cuales estuve al frente de la operación. En la fase de desarrollo estuvimos involucrados dos desarrolladores para la creación del sitio en el menor tiempo posible, no resultó dificultoso puesto que solo era necesario un equipo de trabajo Front-End. Con este trabajo sentí más presión con aspectos como el liderazgo frente a un equipo y ser quien da la cara al cliente, que en el proceso de desarrollo."
     }
 }

@@ -66,13 +66,7 @@ export const Confort = () => {
             <br></br>
             <div className='this_page_source_container' >
               <BsCodeSlash className='icon' />
-              <a
-                target="_blank"
-                href="https://github.com/EndYou01/tu-mandalorian-favorito"
-                rel="noreferrer"
-              >
                 {text("footer.nosource")}
-              </a>
             </div>
           </div>
         </main>

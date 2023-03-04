@@ -16,6 +16,7 @@ import { Snb2022Page } from '../pages/snb2022/Snb2022Page';
 import { Mandalorian } from '../pages/mandalorian/Mandalorian';
 import { CitasApp } from '../pages/citasApp/CitasApp';
 import { Confort } from '../pages/confort/Confort';
+import { Coremant } from '../pages/coremant/Coremant';
 
 
 export const AppRouter = () => {
@@ -32,6 +33,7 @@ export const AppRouter = () => {
                 <Route path='/mandalorian' element={<Mandalorian />} />
                 <Route path='/citasApp' element={<CitasApp />} />
                 <Route path='/confort' element={<Confort />} />
+                <Route path='/coremant' element={<Coremant />} />
             </Routes>
 
             <div className='contain-footer'>

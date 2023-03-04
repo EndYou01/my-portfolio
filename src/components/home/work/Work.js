@@ -137,6 +137,35 @@ export const Work = () => {
             </div>
           </Fade>
         </section>
+        
+        <br />
+
+        <section className='projects_section'>
+          <Fade>
+            <div className='project_container'>
+              <LazyLoadImage
+                className='bg_image'
+                alt="Coremant Image"
+                src="freelance/coremant/coremant.png"
+              />
+
+              <div className='project_image_container'>
+                <LazyLoadImage
+                  effect="blur"
+                  className='project_image'
+                  alt="Coremant Logo"
+                  src="logos/coremant_logo.png"
+                />
+              </div>
+              <div className='project_info_container'>
+                <h2>Coremant</h2>
+                <p>{text("coremant.p")}
+                </p>
+                <LearnMoreButton pathname='/coremant' />
+              </div>
+            </div>
+          </Fade>
+        </section>
       </div>
 
     </div>

@@ -16,11 +16,11 @@
         "a&et": "I am Jorge L. Senjudo, Front-End developer with experience in development and construction of websites, in which I have worked alone and with other developers, always looking to polish my skills both personally and professionally, to achieve the deployment of software with the appropriate quality. I work mainly using ReactJS code, with the ability to learn any JS framework or tool. I have brief experience with backend languages like JAVA and databases like MySQL. As a goal I have set out to reach to be a fullstack developer, and to be able to lead a full life.",
         "profExp": "Professional Experience",
         "education": "Education",
-        "2020": "2020-09 - present",
+        "2020": "2020-09/ 2022-12",
         "h4": "Student of Computer Science Engineer",
         "uci": "University of Computer Science, Havana, Cuba",
         "graduation1": "Graduation:",
-        "graduation2": "not, yet",
+        "graduation2": "Drop out of college",
         "average": "Average:",
         "fronh4": "Frontend Software Engineer",
         "fronp1": "I started my preparation as a fullstack developer and I decided to start with this branch, and in it I have understood how the web and computer systems work. I have worked for several clients, doing mainly components of web pages, accumulating experience during this period and I believe I can translate into code, the design that is given to me."
@@ -70,5 +70,9 @@
         "p1": "My role in this project was to develop the front-end, at the request of the client (and my superior at the time, to measure my skills) it was built entirely with HTML5, CSS and Javascript, and using Bootstrap as the only tool to support me. I made only the front-end, doing all the functionalities and designs of the page. It was the project, with which I put into practice, the bases of knowledge that are needed to start entering the world of web development.",
         "p2": "I worked together with a designer, creator of the design of the website, with whom I clarified doubts and questions related to it. Two views were made, Mobile and Desktop, using the css media query.",
         "p3": "Made entirely by the Go Django Development development group, using Django, a Python framework dedicated to back-end work with the web. Querying APIs to make micropayments and querying the Database to load the products dynamically."
+    },
+    "coremant":{
+        "p": "Dynamic website, from the company of the same name, which was launched with the aim of expanding its borders and making itself known by this means.",
+        "p1": "The project was created from scratch, where it went through stages of design, planning and meetings with the client, stages in which I was in charge of the operation. In the development phase we were involved two developers for the creation of the site in the shortest possible time, it was not difficult since only a Front-End team was necessary. With this work I felt more pressure with aspects such as leadership in front of a team and being the one who faces the client, than the development process."
     }
 }

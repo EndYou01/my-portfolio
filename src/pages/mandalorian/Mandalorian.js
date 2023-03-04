@@ -32,7 +32,7 @@ export const Mandalorian = () => {
             <br />
             <ul>
               <li>{text("snb.l1")}</li>
-              <li>{text("tmf.l1")} <a href='https://github.com/Panik-Attack'>Eduardo Garcia Alfonso</a></li>
+              <li>{text("tmf.l1")} <a className='link' href='https://github.com/Panik-Attack'>Eduardo Garcia Alfonso</a></li>
             </ul>
             
           </div>
