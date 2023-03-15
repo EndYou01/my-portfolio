@@ -10,7 +10,7 @@ export const About = () => {
       <Fade>
         <h1 className='center'>{text("about.a&e")}</h1>
         <br></br>
-        <p>
+        <p className='about_container_text'>
           {text("about.a&et")}
         </p>
 

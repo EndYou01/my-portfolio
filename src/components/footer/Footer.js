@@ -11,7 +11,7 @@ export const Footer = () => {
   const [text] = useTranslation("global")
 
   return (
-    <footer id="contact">
+    <footer id="contact" className='footer_section'>
       <Fade>
         <div className='contact_content'>
           <h2>{text("footer.contactMe")}</h2>

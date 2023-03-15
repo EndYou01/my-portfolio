@@ -67,7 +67,7 @@
   }
 
   .projects_section {
-    background-color: rgb(10, 10, 10);
+    background-color: $project_section;
     padding: 20px;
     border: 1px solid rgb(30, 30, 30);
     border-radius: 20px;
@@ -178,4 +178,11 @@
     margin: auto;
     margin-top: 50px;
   }
+}
+
+
+.project_info_container_dark {
+  background-color: rgba(10, 10, 10, 0.8);
+  backdrop-filter: brgba(10, 10, 10, 0.366);
+  border: 1px solid rgb(30, 30, 30);
 }

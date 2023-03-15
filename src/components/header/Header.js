@@ -14,6 +14,11 @@ import { MdWeb } from "react-icons/md";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import { MdPermContactCalendar } from "react-icons/md";
 import { AiOutlineClose } from "react-icons/ai";
+import { HiMoon } from "react-icons/hi";
+import { HiSun } from "react-icons/hi";
+import { useContext } from 'react';
+import { FillContext } from '../../helpers/FillContext';
+import { activateDarkMode } from '../../functions/activateDarkMode';
 
 const sideMenuVariants = {
     open: {
@@ -30,17 +35,40 @@ const sideMenuVariants = {
 
 export const Header = () => {
 
+	const {setFillVariable} = useContext(FillContext)
+
     const [text, i18n] = useTranslation("global")
 
     const navigate = useNavigate()
 
     const [scrollPosition, setScrollPosition] = useState(0);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(false);
 
+    
     const handleScroll = () => {
         const position = window.pageYOffset;
         setScrollPosition(position);
     };
+
+    const handleDarkModeToggle = () => {
+        handleStorageChange()
+        setIsDarkMode(!isDarkMode);
+        activateDarkMode()
+    };
+
+     const handleStorageChange = () => {
+        let fillVariable = localStorage.getItem('FillVariable')
+
+        if(fillVariable !== 'rgb(20,20,20)'){
+            localStorage.setItem('FillVariable', 'rgb(20,20,20)')
+            setFillVariable(false)
+        }else{
+            localStorage.setItem('FillVariable', 'rgb(255,255,255)')
+            setFillVariable(true)
+        }
+        // setMyVariable(localStorage.getItem('myVariable'));
+     };
 
     useEffect(() => {
         window.addEventListener("scroll", handleScroll, { passive: true });
@@ -84,7 +112,9 @@ export const Header = () => {
     return (
         <header className={
             scrollPosition < 10
-                ? 'header_container_light'
+                ? ((isDarkMode) 
+                    ?'header_container'
+                    :'header_container_light')
                 : 'header_container'
         }>
 
@@ -164,6 +194,26 @@ export const Header = () => {
                                     {langx}
                                 </button>
                             </li>
+
+                            {
+                                (isDarkMode)
+                                    ?   (<li>
+                                            <button type='checkbox' className='navigation_button' onClick={()=>{ 
+                                                handleDarkModeToggle()
+                                                }
+                                               }>
+                                                Dark <span><HiMoon/></span>
+                                            </button>
+                                        </li>)
+                                    :   (<li>
+                                            <button type='checkbox' className='navigation_button' onClick={()=>{ 
+                                                handleDarkModeToggle()
+                                                }
+                                               }>
+                                                Ligth <span><HiSun/></span>
+                                            </button>
+                                        </li>)
+                            }
 
                         </ul>
                     </motion.div>

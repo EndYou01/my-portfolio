@@ -140,6 +140,18 @@
     margin-right: 5px;
   }
 
+  .theme_icon{
+    margin-left: 5px;
+    width: auto;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: 100ms;
+    &:hover {
+      color: rgb(226, 70, 48);
+    }
+  }
+
   .footer_container {
     position: absolute;
     width: 100%;
