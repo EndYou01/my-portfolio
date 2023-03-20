@@ -14,6 +14,11 @@ import { MdWeb } from "react-icons/md";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import { MdPermContactCalendar } from "react-icons/md";
 import { AiOutlineClose } from "react-icons/ai";
+import { HiMoon } from "react-icons/hi";
+import { HiSun } from "react-icons/hi";
+import { useContext } from 'react';
+import { FillContext } from '../../context/FillContext';
+import { activateDarkMode } from '../../functions/activateDarkMode';
 
 const sideMenuVariants = {
     open: {
@@ -28,7 +33,15 @@ const sideMenuVariants = {
     },
 };
 
+const initializeHeader = () => {
+    localStorage.setItem('FillVariable', 'rgb(20,20,20)')
+}
+
+initializeHeader()
+
 export const Header = () => {
+
+    const { setFillVariable } = useContext(FillContext)
 
     const [text, i18n] = useTranslation("global")
 
@@ -36,10 +49,32 @@ export const Header = () => {
 
     const [scrollPosition, setScrollPosition] = useState(0);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
 
     const handleScroll = () => {
         const position = window.pageYOffset;
         setScrollPosition(position);
+    };
+
+    const handleDarkModeToggle = () => {
+        handleStorageChange()
+        setIsDarkMode(!isDarkMode);
+        activateDarkMode()
+    };
+
+    const handleStorageChange = () => {
+        let fillVariable = localStorage.getItem('FillVariable')
+
+        if (fillVariable === 'rgb(20,20,20)') {
+            localStorage.setItem('FillVariable', 'rgb(255,255,255)')
+            setFillVariable(false)
+        }
+        if (fillVariable === 'rgb(255,255,255)') {
+            localStorage.setItem('FillVariable', 'rgb(20,20,20)')
+            setFillVariable(true)
+        }
+        // setMyVariable(localStorage.getItem('myVariable'));
     };
 
     useEffect(() => {
@@ -84,7 +119,9 @@ export const Header = () => {
     return (
         <header className={
             scrollPosition < 10
-                ? 'header_container_light'
+                ? ((isDarkMode)
+                    ? 'header_container'
+                    : 'header_container_light')
                 : 'header_container'
         }>
 
@@ -103,7 +140,10 @@ export const Header = () => {
 
 
                 <span
-                    onClick={() => setIsMenuOpen(true)}
+                    onClick={() => {
+                        setIsMenuOpen(true)
+                        console.log('HM  '+isMenuOpen)
+                    }}
                     className='hamburger_menu'
                 >
                     <GiHamburgerMenu />
@@ -113,7 +153,7 @@ export const Header = () => {
                     onClick={() => {
                         setIsMenuOpen(false)
                     }}
-                    className={isMenuOpen ? 'nav_bg_open' : 'nav_bg_closed'}
+                    className={(isMenuOpen) ? 'nav_bg_open' : 'nav_bg_closed'}
                 >
                     <motion.div
                         animate={isMobile && (isMenuOpen ? "open" : "closed")}
@@ -164,6 +204,28 @@ export const Header = () => {
                                     {langx}
                                 </button>
                             </li>
+
+                            {
+                                (isDarkMode)
+                                    ? (<li className='li_icon'>
+                                        <button type='checkbox' className='navigation_button li_mr-2' onClick={() => {
+                                            handleDarkModeToggle()
+                                        }
+                                        }>
+                                            Dark 
+                                        </button>
+                                        <span><HiMoon className='header_icon'/></span>
+                                    </li>)
+                                    : (<li className='li_icon'>
+                                        <button type='checkbox' className='navigation_button li_mr-2' onClick={() => {
+                                            handleDarkModeToggle()
+                                        }
+                                        }>
+                                            Ligth
+                                        </button>
+                                        <span><HiSun className='header_icon'/></span>
+                                    </li>)
+                            }
 
                         </ul>
                     </motion.div>

@@ -17,28 +17,45 @@ import { Mandalorian } from '../pages/mandalorian/Mandalorian';
 import { CitasApp } from '../pages/citasApp/CitasApp';
 import { Confort } from '../pages/confort/Confort';
 import { Coremant } from '../pages/coremant/Coremant';
+import { FillContext } from '../context/FillContext';
+import { useState } from 'react';
+import { activateDarkMode } from '../functions/activateDarkMode';
 
 
 export const AppRouter = () => {
+
+    const [fillVariable, setFillVariable] = useState(true)
+
+    // if(!fillVariable){
+    //     activateDarkMode()
+    // }
+
     return (
-        <BrowserRouter>
-            <Header />
 
-            <Routes>
-                <Route path='/*' element={<IndexPage />} />
-                <Route path='/about' element={<AboutPage />} />
-                <Route path='/work' element={<WorkPage />} />
+        <FillContext.Provider value={{
+            fillVariable,
+            setFillVariable,
+        }}>
+            <BrowserRouter>
+                <Header />
 
-                <Route path='/snb' element={<Snb2022Page />} />
-                <Route path='/mandalorian' element={<Mandalorian />} />
-                <Route path='/citasApp' element={<CitasApp />} />
-                <Route path='/confort' element={<Confort />} />
-                <Route path='/coremant' element={<Coremant />} />
-            </Routes>
+                <Routes>
+                    <Route path='/*' element={<IndexPage />} />
+                    <Route path='/about' element={<AboutPage />} />
+                    <Route path='/work' element={<WorkPage />} />
 
-            <div className='contain-footer'>
-                <Footer />
-            </div>
-        </BrowserRouter>
+                    <Route path='/snb' element={<Snb2022Page />} />
+                    <Route path='/mandalorian' element={<Mandalorian />} />
+                    <Route path='/citasApp' element={<CitasApp />} />
+                    <Route path='/confort' element={<Confort />} />
+                    <Route path='/coremant' element={<Coremant />} />
+                </Routes>
+
+                <div className='contain-footer'>
+                    <Footer />
+                </div>
+            </BrowserRouter>
+        </FillContext.Provider>
+        
     )
 }

@@ -140,10 +140,29 @@
     margin-right: 5px;
   }
 
+  .theme_icon{
+    margin-left: 5px;
+    width: auto;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: 100ms;
+    &:hover {
+      color: rgb(226, 70, 48);
+    }
+  }
+
   .footer_container {
     position: absolute;
     width: 100%;
     bottom: 400px;
+  }
+
+  .header_icon{
+    width: 25px;
+    height: 25px;
+    margin-bottom: 8px;
+    margin-left: 10px;
   }
 
 }
@@ -247,4 +266,28 @@
     display: none;
   }
 
+  .header_icon{
+    width: 25px;
+    height: 25px;
+    margin-bottom: 6px;
+    margin-left: 0px;
+  }
+
 }
+
+
+.li_icon{
+  display: flex;
+  align-items: center;
+}
+
+.li_mr-2{
+  margin-right: 2px!important;
+}
+
+// .header_icon{
+//   width: 25px;
+//   height: 25px;
+//   margin-bottom: 8px;
+//   margin-left: 10px;
+// }

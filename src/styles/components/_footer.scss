@@ -43,9 +43,6 @@
 }
 
 @media only screen and (min-width: 500px) {
-  .contact_content>h1 {
-  }
-
   .contact_content {
     max-width: 600px;
     margin: auto;
@@ -59,4 +56,8 @@
     margin: auto;
     padding: 30px;
   }
+}
+
+.footerDark{
+  background-color: rgb(20, 20, 20)!important;
 }

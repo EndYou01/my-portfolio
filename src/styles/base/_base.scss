@@ -14,6 +14,26 @@ body {
   overflow-x: hidden;
 }
 
+.body-dark-mode{
+  background-color: rgb(255, 255, 255);
+
+  .about_container_text{
+    color: black;
+  }
+
+  h1{
+    color: var(--secondary-color);
+  }
+
+  .wavecontent h1{
+    color: white;
+  }
+
+  .center{
+    color: var(--secondary-color);
+  }
+}
+
 .swiper {
   width: 600px;
   height: 300px;
