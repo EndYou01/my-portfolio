@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Fade } from "react-awesome-reveal";
 
 import { scrollToTop } from '../../functions/scrollToTop';
@@ -6,73 +6,84 @@ import { BsCodeSlash } from "react-icons/bs";
 import { useTranslation } from 'react-i18next';
 import { BackButton } from '../../components/backButton/BackButton';
 import { CarouselImage } from '../../components/carouselImage/CarouselImage';
+import { FillContext } from '../../context/FillContext';
 
 
 
 export const CitasApp = () => {
-  scrollToTop()
-  const [text] = useTranslation("global")
+	scrollToTop()
+	const [text] = useTranslation("global")
 
-  const images = [
-    "freelance/citasApp/citas1.png",
-    "freelance/citasApp/citas2.png",
-    "freelance/citasApp/citas3.png"
-  ]
+	const { fillVariable } = useContext(FillContext)
 
-  return (
-    <Fade>
-      <div className='container'>
-        <main className='main'>
+	const images = [
+		"freelance/citasApp/citas1.png",
+		"freelance/citasApp/citas2.png",
+		"freelance/citasApp/citas3.png"
+	]
 
-          <BackButton />
+	return (
+		<Fade>
+			<div className={
+				(fillVariable)
+					? 'container'
+					: 'container color_dark'
+			}>
+				<main className='main'>
 
-          <div>
-            <h1 className='Colorh1'>CitasApp</h1>
-            <p>
-              {text("citas.p1")}
-            </p>
-            <ul>
-              <li>{text("tmf.l1")} <a className='link' href='https://github.com/Panik-Attack'>Eduardo Garcia Alfonso</a></li>
-            </ul>
-            <br />
-          </div>
+					<BackButton />
 
-          <CarouselImage images={images}/>
-          <br />
+					<div>
+						<h1 className='Colorh1'>CitasApp</h1>
+						<p>
+							{text("citas.p1")}
+						</p>
+						<ul>
+							<li>{text("tmf.l1")} <a className='link' href='https://github.com/Panik-Attack'>Eduardo Garcia Alfonso</a></li>
+						</ul>
+						<br />
+					</div>
 
-          <div className='project_info'>
-            <h2>{text("snb.h2_1")}</h2>
-            <h3>Front End:</h3>
-            <p>
-              {text("citas.p2")}
-            </p>
+					<CarouselImage images={images} />
+					<br />
 
-            <ul>
-              <li>AntDesign</li>
-              <li>ReactJs</li>
-            </ul>
-            <h3>Back End:</h3>
-            <p>
-              {text("citas.p3")}
-            </p>
-            <ul>
-              <li>Javascript</li>
-            </ul>
-            <br></br>
-            <br></br>
-            <div className='this_page_source_container' >
-              <BsCodeSlash className='icon' />
-              <a
-                target="_blank"
-                href="https://github.com/Panik-Attack/Citas"
-                rel="noreferrer"
-              >
-                {text("footer.source")}
-              </a>
-            </div>
-          </div>
-        </main>
-      </div>
-    </Fade>
-  )
+					<div className='project_info'>
+						<h2>{text("snb.h2_1")}</h2>
+						<h3>Front End:</h3>
+						<p>
+							{text("citas.p2")}
+						</p>
+
+						<ul>
+							<li>AntDesign</li>
+							<li>ReactJs</li>
+						</ul>
+						<h3>Back End:</h3>
+						<p>
+							{text("citas.p3")}
+						</p>
+						<ul>
+							<li>Javascript</li>
+						</ul>
+						<br></br>
+						<br></br>
+						<div className='this_page_source_container' >
+							<BsCodeSlash className={
+								(fillVariable)
+									? 'icon'
+									: 'icon btn_icon_dark'
+							} />
+							<a
+								target="_blank"
+								href="https://github.com/Panik-Attack/Citas"
+								rel="noreferrer"
+							>
+								{text("footer.source")}
+							</a>
+						</div>
+					</div>
+				</main>
+			</div>
+		</Fade>
+	)
 }

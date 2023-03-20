@@ -54,7 +54,7 @@ a {
 }
 
 .link {
-  color: var(--third-color);
+  color: var(--third-color)!important;
   text-decoration: underline;
 }
 
@@ -93,5 +93,11 @@ a {
   }
   .Colorh1 {
     font-size: 2rem;
+  }
+}
+
+.color_dark{
+  p, li, a{
+    color: black;
   }
 }
