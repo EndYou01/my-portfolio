@@ -17,7 +17,7 @@ import { Mandalorian } from '../pages/mandalorian/Mandalorian';
 import { CitasApp } from '../pages/citasApp/CitasApp';
 import { Confort } from '../pages/confort/Confort';
 import { Coremant } from '../pages/coremant/Coremant';
-import { FillContext } from '../helpers/FillContext';
+import { FillContext } from '../context/FillContext';
 import { useState } from 'react';
 import { activateDarkMode } from '../functions/activateDarkMode';
 
@@ -34,7 +34,7 @@ export const AppRouter = () => {
 
         <FillContext.Provider value={{
             fillVariable,
-            setFillVariable
+            setFillVariable,
         }}>
             <BrowserRouter>
                 <Header />

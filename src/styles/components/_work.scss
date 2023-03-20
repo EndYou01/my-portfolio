@@ -72,6 +72,13 @@
     border: 1px solid rgb(30, 30, 30);
     border-radius: 20px;
   }
+  
+  .projects_section_dark {
+    border-radius: 20px;
+    background-color: rgba(10, 10, 10, 0.8)!important;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgb(30, 30, 30)!important;
+  }
 }
 
 @media only screen and (min-width: 1201px) {

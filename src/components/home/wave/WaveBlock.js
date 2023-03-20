@@ -2,18 +2,17 @@ import React from 'react'
 import Wave from 'react-wavify'
 import { Fade } from "react-awesome-reveal";
 import { useTranslation } from 'react-i18next'
-import { useState } from 'react';
+// import { useState } from 'react';
 import { useContext } from 'react';
-import { FillContext } from '../../../helpers/FillContext';
+import { FillContext } from '../../../context/FillContext';
 
 export const WaveBlock = () => {
 	const [text] = useTranslation("global")
 	
-	const [first, setfirst] = useState(true)
+	// const [first, setfirst] = useState(true)
 
 	let {fillVariable} = useContext(FillContext)
 
-	console.log(fillVariable)
 
 	return (
 		<div className='wavecontainer'>

@@ -17,7 +17,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { HiMoon } from "react-icons/hi";
 import { HiSun } from "react-icons/hi";
 import { useContext } from 'react';
-import { FillContext } from '../../helpers/FillContext';
+import { FillContext } from '../../context/FillContext';
 import { activateDarkMode } from '../../functions/activateDarkMode';
 
 const sideMenuVariants = {
@@ -33,9 +33,15 @@ const sideMenuVariants = {
     },
 };
 
+const initializeHeader = () => {
+    localStorage.setItem('FillVariable', 'rgb(20,20,20)')
+}
+
+initializeHeader()
+
 export const Header = () => {
 
-	const {setFillVariable} = useContext(FillContext)
+    const { setFillVariable } = useContext(FillContext)
 
     const [text, i18n] = useTranslation("global")
 
@@ -45,7 +51,7 @@ export const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isDarkMode, setIsDarkMode] = useState(false);
 
-    
+
     const handleScroll = () => {
         const position = window.pageYOffset;
         setScrollPosition(position);
@@ -57,18 +63,19 @@ export const Header = () => {
         activateDarkMode()
     };
 
-     const handleStorageChange = () => {
+    const handleStorageChange = () => {
         let fillVariable = localStorage.getItem('FillVariable')
 
-        if(fillVariable !== 'rgb(20,20,20)'){
-            localStorage.setItem('FillVariable', 'rgb(20,20,20)')
-            setFillVariable(false)
-        }else{
+        if (fillVariable === 'rgb(20,20,20)') {
             localStorage.setItem('FillVariable', 'rgb(255,255,255)')
+            setFillVariable(false)
+        }
+        if (fillVariable === 'rgb(255,255,255)') {
+            localStorage.setItem('FillVariable', 'rgb(20,20,20)')
             setFillVariable(true)
         }
         // setMyVariable(localStorage.getItem('myVariable'));
-     };
+    };
 
     useEffect(() => {
         window.addEventListener("scroll", handleScroll, { passive: true });
@@ -112,9 +119,9 @@ export const Header = () => {
     return (
         <header className={
             scrollPosition < 10
-                ? ((isDarkMode) 
-                    ?'header_container'
-                    :'header_container_light')
+                ? ((isDarkMode)
+                    ? 'header_container'
+                    : 'header_container_light')
                 : 'header_container'
         }>
 
@@ -133,7 +140,10 @@ export const Header = () => {
 
 
                 <span
-                    onClick={() => setIsMenuOpen(true)}
+                    onClick={() => {
+                        setIsMenuOpen(true)
+                        console.log('HM  '+isMenuOpen)
+                    }}
                     className='hamburger_menu'
                 >
                     <GiHamburgerMenu />
@@ -143,7 +153,7 @@ export const Header = () => {
                     onClick={() => {
                         setIsMenuOpen(false)
                     }}
-                    className={isMenuOpen ? 'nav_bg_open' : 'nav_bg_closed'}
+                    className={(isMenuOpen) ? 'nav_bg_open' : 'nav_bg_closed'}
                 >
                     <motion.div
                         animate={isMobile && (isMenuOpen ? "open" : "closed")}
@@ -197,22 +207,24 @@ export const Header = () => {
 
                             {
                                 (isDarkMode)
-                                    ?   (<li>
-                                            <button type='checkbox' className='navigation_button' onClick={()=>{ 
-                                                handleDarkModeToggle()
-                                                }
-                                               }>
-                                                Dark <span><HiMoon/></span>
-                                            </button>
-                                        </li>)
-                                    :   (<li>
-                                            <button type='checkbox' className='navigation_button' onClick={()=>{ 
-                                                handleDarkModeToggle()
-                                                }
-                                               }>
-                                                Ligth <span><HiSun/></span>
-                                            </button>
-                                        </li>)
+                                    ? (<li className='li_icon'>
+                                        <button type='checkbox' className='navigation_button li_mr-2' onClick={() => {
+                                            handleDarkModeToggle()
+                                        }
+                                        }>
+                                            Dark 
+                                        </button>
+                                        <span><HiMoon className='header_icon'/></span>
+                                    </li>)
+                                    : (<li className='li_icon'>
+                                        <button type='checkbox' className='navigation_button li_mr-2' onClick={() => {
+                                            handleDarkModeToggle()
+                                        }
+                                        }>
+                                            Ligth
+                                        </button>
+                                        <span><HiSun className='header_icon'/></span>
+                                    </li>)
                             }
 
                         </ul>
