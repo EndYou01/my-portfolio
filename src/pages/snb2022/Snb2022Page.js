@@ -31,7 +31,7 @@ export const Snb2022Page = () => {
 				(fillVariable)
 					? 'container'
 					: 'container color_dark'
-			}></div><div className='container'>
+			}>
         <main className='main'>
 
           <BackButton />
