@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Fade } from "react-awesome-reveal";
 
 import { scrollToTop } from '../../functions/scrollToTop';
@@ -6,9 +6,13 @@ import { BsCodeSlash } from "react-icons/bs";
 import { useTranslation } from 'react-i18next';
 import { BackButton } from '../../components/backButton/BackButton';
 import { CarouselImage } from '../../components/carouselImage/CarouselImage';
+import { FillContext } from '../../context/FillContext';
 
 export const Mandalorian = () => {
 
+  const { fillVariable } = useContext(FillContext)
+
+  
   scrollToTop()
   const [text] = useTranslation("global")
 
@@ -20,7 +24,11 @@ export const Mandalorian = () => {
 
   return (
     <Fade>
-      <div className='container'>
+      <div className={
+				(fillVariable)
+					? 'container'
+					: 'container color_dark'
+			}>
         <main className='main'>
 
           <BackButton />
@@ -59,7 +67,11 @@ export const Mandalorian = () => {
             <br></br>
             <br></br>
             <div className='this_page_source_container' >
-              <BsCodeSlash className='icon' />
+              <BsCodeSlash className={
+								(fillVariable)
+									? 'icon'
+									: 'icon btn_icon_dark'
+							} />
               <a
                 target="_blank"
                 href="https://github.com/EndYou01/tu-mandalorian-favorito"
