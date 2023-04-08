@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 import { BackButton } from '../../components/backButton/BackButton';
 import { CarouselImage } from '../../components/carouselImage/CarouselImage';
 import { FillContext } from '../../context/FillContext';
+import { ShowTechIcons } from '../../components/showTechIcons/ShowTechIcons';
 
 export const Coremant = () => {
 
@@ -51,11 +52,9 @@ export const Coremant = () => {
           <div className='project_info'>
             <h2>{text("snb.h2_1")}</h2>
             <h3>Front End:</h3>
-            <ul>
-              <li>React</li>
-              <li>Vite</li>
-              <li>SASS</li>
-            </ul>
+
+            <ShowTechIcons technologies={["React", "Vite", "SASS"]}/>
+
             <h3>Back End:</h3>
             <ul>
               <li>none</li>

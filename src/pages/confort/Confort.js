@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 import { BackButton } from '../../components/backButton/BackButton';
 import { CarouselImage } from '../../components/carouselImage/CarouselImage';
 import { FillContext } from '../../context/FillContext';
+import { ShowTechIcons } from '../../components/showTechIcons/ShowTechIcons';
 
 export const Confort = () => {
 
@@ -57,18 +58,15 @@ export const Confort = () => {
 							{text("confort.p2")}
 						</p>
 
-						<ul>
-							<li>HTML5</li>
-							<li>CSS</li>
-							<li>Javascript</li>
-						</ul>
+						<ShowTechIcons technologies={["HTML", "CSS", "JavaScript"]}/>
+						
 						<h3>Back End:</h3>
 						<p>
 							{text("confort.p3")}
 						</p>
-						<ul>
-							<li>Django</li>
-						</ul>
+
+						<ShowTechIcons technologies={["Django", "Python"]}/>
+						
 						<br></br>
 						<br></br>
 						<div className='this_page_source_container' >
