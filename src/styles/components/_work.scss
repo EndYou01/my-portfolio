@@ -24,6 +24,7 @@
     height: 70px;
     border-radius: 10px;
     overflow: hidden;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -91,14 +92,14 @@
 
   .header {
     text-align: center;
-    margin: 2rem;
+    margin: 4rem;
   }
 
   .project_container {
     display: flex;
     align-items: flex-start;
     margin-top: 30px;
-    height: 400px;
+    height: 350px;
     align-items: center;
   }
 
@@ -107,6 +108,7 @@
     height: 120px;
     border-radius: 10px;
     overflow: hidden;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -177,7 +179,6 @@
   .work_container {
     max-width: 1000px;
     margin: auto;
-    margin-top: 150px;
   }
 }
 
@@ -185,7 +186,6 @@
   .work_container {
     max-width: 1000px;
     margin: auto;
-    margin-top: 50px;
   }
 }
 

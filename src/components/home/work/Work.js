@@ -215,7 +215,7 @@ export const Work = () => {
 							</div>
 							<div className='project_info_container'>
 								<h2>Cross Border Trade</h2>
-								<p>{text("coremant.p")}
+								<p>{text("crossBorder.p1")}
 								</p>
 								<LearnMoreButton pathname='/crossBorder' />
 							</div>

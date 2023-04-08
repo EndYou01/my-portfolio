@@ -17,13 +17,13 @@ export const CrossBorder = () => {
     const [text] = useTranslation("global")
 
     const images = [
-        "freelance/crossBorderTrade/aviso_legal.png",
         "freelance/crossBorderTrade/producto.png",
         "freelance/crossBorderTrade/productos.png",
         "freelance/crossBorderTrade/home.png",
         "freelance/crossBorderTrade/Sobre_nosotros.png",
-        "freelance/crossBorderTrade/politica_de_privacidad.png",
         "freelance/crossBorderTrade/Contacto.png",
+        "freelance/crossBorderTrade/politica_de_privacidad.png",
+        "freelance/crossBorderTrade/aviso_legal.png",
     ]
 
     return (
@@ -37,14 +37,14 @@ export const CrossBorder = () => {
 
                     <BackButton />
                     <div>
-                        <h1 className='Colorh1'>{text("tmf.h2")}</h1>
+                        <h1 className='Colorh1'>Cross Border Trade</h1>
                         <p>
-                            {text("tmf.p1")}
+                            {text("crossBorder.p1")}
                         </p>
                         <br />
                         <ul>
-                            <li>{text("snb.l1")}</li>
-                            <li>{text("tmf.l1")} <a className='link' href='https://github.com/Panik-Attack'>Eduardo Garcia Alfonso</a></li>
+                            <li>{text("crossBorder.l1")} <a className='link' href='https://github.com/Panik-Attack'>Eduardo Garcia Alfonso</a></li>
+                            <li>{text("crossBorder.l2")} <a className='link' href='https://github.com/YordanisPonce'>Yordanis Ponce</a></li>
                         </ul>
 
                     </div>
@@ -55,18 +55,24 @@ export const CrossBorder = () => {
                         <h2>{text("snb.h2_1")}</h2>
                         <h3>Front End:</h3>
                         <p>
-                            {text("tmf.p2")}
+                            {text("crossBorder.p2")}
                         </p>
 
                         <ul>
-                            <li>C++</li>
+                            <li>React</li>
+                            <li>Redux</li>
+                            <li>TypeScript</li>
+                            <li>Vite</li>
+                            <li>SASS</li>
+                            <li>Axios</li>
                         </ul>
                         <h3>Back End:</h3>
                         <p>
-                            {text("tmf.p3")}
+                            {text("crossBorder.p3")}
                         </p>
                         <ul>
-                            <li>none</li>
+                            <li>PHP</li>
+                            <li>Laravel</li>
                         </ul>
                         <br></br>
                         <br></br>
@@ -76,14 +82,8 @@ export const CrossBorder = () => {
                                     ? 'icon'
                                     : 'icon btn_icon_dark'
                             } />
-                            <div className='this_page_source_container' >
-                                <BsCodeSlash className={
-                                    (fillVariable)
-                                        ? 'icon'
-                                        : 'icon btn_icon_dark'
-                                } />
-                                <p>{text("footer.nosource")}</p>
-                            </div>
+
+                            <p>{text("footer.nosource")}</p>
                         </div>
                     </div>
                 </main>
