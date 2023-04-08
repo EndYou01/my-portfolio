@@ -46,7 +46,7 @@
     "snb": {
         "p1": "SNB 2022 is a project developed using the Net.Beans development environment, using Java as a language main. It is a game oriented mainly to my training as a software engineer, in which they apply complex algorithms such as Fisher Yates, for randomization of random numbers. The logo you can see on the project is Lens, the name chosen by the team of developers who live at the university.",
         "l1": "Project Rating: 5/5 points",
-        "l2": "Work Partner:",
+        "l2": "Workmate:",
         "h2_1": "Technologies used:",
         "p2": "The application was deployed only in desktop format, and for this Java was implemented in its development. No library was used since it had as its goal, the mastery of language from its bases. For the layout of the project we rely on a graphic designer.",
         "p3": "On this side of the project, we use MySql as the database to which we make requests and manipulate the information we had to distribute in the different interfaces.",
@@ -55,7 +55,7 @@
     "tmf": {
         "h2": "Your favorite Mandalorian",
         "p1": "I can consider it my first project related to programming. With it, I laid the foundation for the structured programming I learned with C++, with artistic touches oriented to the Star Wars cinematic universe.",
-        "l1": "Work Partner:",
+        "l1": "Workmate:",
         "p2": "Created from the same foundations of learning, the project did not have an interface as such, we rely on the Visual Studio Code terminal to reach the user. We were given the possibility to start our imagination and it was there that we found the world of ASCII Art, art through console terminals.",
         "p3": "Behind the beautiful interface, there is code deployed with C++, not very complex."
     },
@@ -72,7 +72,14 @@
         "p3": "Made entirely by the Go Django Development development group, using Django, a Python framework dedicated to back-end work with the web. Querying APIs to make micropayments and querying the Database to load the products dynamically."
     },
     "coremant":{
-        "p": "Dynamic website, from the company of the same name, which was launched with the aim of expanding its borders and making itself known by this means.",
+        "p": "Website, from the company of the same name, which was launched with the aim of expanding its borders and making itself known by this means.",
         "p1": "The project was created from scratch, where it went through stages of design, planning and meetings with the client, stages in which I was in charge of the operation. In the development phase we were involved two developers for the creation of the site in the shortest possible time, it was not difficult since only a Front-End team was necessary. With this work I felt more pressure with aspects such as leadership in front of a team and being the one who faces the client, than the development process."
-    }
+    },
+    "crossBorder": {
+        "p1": "Dynamic website, created by the Go Django Development development team to provide the backend. I was at the helm of the frontend development team.",
+        "l1": "Frontend Workmate: ",
+        "l2": "Backend Workmate: ",
+        "p2": "Once the development process began, I distributed the work together with the other frontend developer to speed it up. Redux was used for better management of the application and to load the endpoints provided by the backend team, we used Axios, which made all the products load dynamically. When it came to the visual part, some not too complicated animations were made, using tools provided by SASS to achieve this.",
+        "p3": "The developer who worked on this section of the project was a member of Go Django Development, a group with which he had previously worked. He was in charge of everything related to the database and the server side, making sure that all processes were running correctly to ensure proper functioning of the website."
+      }
 }

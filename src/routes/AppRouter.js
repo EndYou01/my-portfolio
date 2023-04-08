@@ -19,16 +19,11 @@ import { Confort } from '../pages/confort/Confort';
 import { Coremant } from '../pages/coremant/Coremant';
 import { FillContext } from '../context/FillContext';
 import { useState } from 'react';
-import { activateDarkMode } from '../functions/activateDarkMode';
-
+import { CrossBorder } from '../pages/crossBorder/CrossBorder';
 
 export const AppRouter = () => {
 
     const [fillVariable, setFillVariable] = useState(true)
-
-    // if(!fillVariable){
-    //     activateDarkMode()
-    // }
 
     return (
 
@@ -49,6 +44,7 @@ export const AppRouter = () => {
                     <Route path='/citasApp' element={<CitasApp />} />
                     <Route path='/confort' element={<Confort />} />
                     <Route path='/coremant' element={<Coremant />} />
+                    <Route path='/crossBorder' element={<CrossBorder />} />
                 </Routes>
 
                 <div className='contain-footer'>

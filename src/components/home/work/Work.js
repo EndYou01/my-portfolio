@@ -190,6 +190,38 @@ export const Work = () => {
 						</div>
 					</Fade>
 				</section>
+
+				
+				<section className={
+					(fillVariable)
+						? 'projects_section'
+						: 'projects_section projects_section_dark'
+				}>
+					<Fade>
+						<div className='project_container'>
+							<LazyLoadImage
+								className='bg_image'
+								alt="CrossBorderTrade Image"
+								src="freelance/crossBorderTrade/crossBorder.jpg"
+							/>
+
+							<div className='project_image_container'>
+								<LazyLoadImage
+									effect="blur"
+									className='project_image'
+									alt="CrossBorderTrade Logo"
+									src="logos/crossBorder_logo.png"
+								/>
+							</div>
+							<div className='project_info_container'>
+								<h2>Cross Border Trade</h2>
+								<p>{text("crossBorder.p1")}
+								</p>
+								<LearnMoreButton pathname='/crossBorder' />
+							</div>
+						</div>
+					</Fade>
+				</section>
 			</div>
 
 		</div>
