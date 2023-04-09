@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 import { BackButton } from '../../components/backButton/BackButton';
 import { CarouselImage } from '../../components/carouselImage/CarouselImage';
 import { FillContext } from '../../context/FillContext';
+import { ShowTechIcons } from '../../components/showTechIcons/ShowTechIcons';
 
 export const Mandalorian = () => {
 
@@ -54,9 +55,8 @@ export const Mandalorian = () => {
               {text("tmf.p2")}
             </p>
 
-            <ul>
-              <li>C++</li>
-            </ul>
+            <ShowTechIcons technologies={["C"]}/>
+
             <h3>Back End:</h3>
             <p>
               {text("tmf.p3")}

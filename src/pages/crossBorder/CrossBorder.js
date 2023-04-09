@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 import { BackButton } from '../../components/backButton/BackButton';
 import { CarouselImage } from '../../components/carouselImage/CarouselImage';
 import { FillContext } from '../../context/FillContext';
+import { ShowTechIcons } from '../../components/showTechIcons/ShowTechIcons';
 
 export const CrossBorder = () => {
 
@@ -58,22 +59,15 @@ export const CrossBorder = () => {
                             {text("crossBorder.p2")}
                         </p>
 
-                        <ul>
-                            <li>React</li>
-                            <li>Redux</li>
-                            <li>TypeScript</li>
-                            <li>Vite</li>
-                            <li>SASS</li>
-                            <li>Axios</li>
-                        </ul>
+                        <ShowTechIcons technologies={["React", "Redux", "Axios", "TypeScript", "Vite", "SASS"]}/>
+
                         <h3>Back End:</h3>
                         <p>
                             {text("crossBorder.p3")}
                         </p>
-                        <ul>
-                            <li>PHP</li>
-                            <li>Laravel</li>
-                        </ul>
+
+                        <ShowTechIcons technologies={["PHP", "Laravel"]}/>
+                        
                         <br></br>
                         <br></br>
                         <div className='this_page_source_container' >

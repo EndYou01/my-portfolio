@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 import { BackButton } from '../../components/backButton/BackButton';
 import { CarouselImage } from '../../components/carouselImage/CarouselImage';
 import { FillContext } from '../../context/FillContext';
+import { ShowTechIcons } from '../../components/showTechIcons/ShowTechIcons';
 
 
 
@@ -54,17 +55,15 @@ export const CitasApp = () => {
 							{text("citas.p2")}
 						</p>
 
-						<ul>
-							<li>AntDesign</li>
-							<li>ReactJs</li>
-						</ul>
+						<ShowTechIcons technologies={["AntDesign", "React"]}/>
+
 						<h3>Back End:</h3>
 						<p>
 							{text("citas.p3")}
 						</p>
-						<ul>
-							<li>Javascript</li>
-						</ul>
+
+						<ShowTechIcons technologies={["JavaScript"]}/>
+
 						<br></br>
 						<br></br>
 						<div className='this_page_source_container' >
