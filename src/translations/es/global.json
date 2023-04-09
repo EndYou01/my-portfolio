@@ -72,7 +72,14 @@
         "p3": "Realizado en su totalidad por el grupo de desarrollo Go Django Development, usando Django, un framework de Python dedicado al trabajo back-end con la web. Realizando a consultas a APIs para realizar los micropagos y consultar a la Base de Datos para cargar los productos de manera dinámica."
     },
     "coremant":{
-        "p": "Sitio web dinámico, de la empresa del mismo nombre, el cual se lanzó con el objetivo de ampliar sus fronteras y darse a conocer por este medio.",
+        "p": "Sitio web, de la empresa del mismo nombre, el cual se lanzó con el objetivo de ampliar sus fronteras y darse a conocer por este medio.",
         "p1": "El proyecto fue creado desde cero, donde pasó por etapas de diseño, planificación y reuniones con el cliente, etapas en las cuales estuve al frente de la operación. En la fase de desarrollo estuvimos involucrados dos desarrolladores para la creación del sitio en el menor tiempo posible, no resultó dificultoso puesto que solo era necesario un equipo de trabajo Front-End. Con este trabajo sentí más presión con aspectos como el liderazgo frente a un equipo y ser quien da la cara al cliente, que en el proceso de desarrollo."
+    },
+    "crossBorder":{
+        "p1": "Sitio web Dinámico, creado por el equipo de desarrollo de Go Django Development para proporcionar el backend. Estuve al frente del equipo de desarrollo frontend.",
+        "l1": "Compañero de Trabajo FrontEnd: ",
+        "l2": "Compañero de Trabajo BackEnd: ",
+        "p2": "Una vez iniciado el proceso de desarrollo, distribuí el trabajo junto con el otro desarrollador frontend para acelerarlo. Se usó Redux para una mejor administración de la aplicación y para cargar los endpoints proporcionados por el equipo de backend, usamos Axios, lo que hizo que todos los productos se cargaran de forma dinámica. Cuando se trató de la parte visual, se realizaron algunas animaciones no demasiado complicadas, utilizando herramientas proporcionadas por SASS para lograrlo.",
+        "p3": "El desarrollador que trabajó en esta sección del proyecto era miembro de Go Django Development, grupo con el que había trabajado anteriormente. Se encargó de todo lo relacionado con la base de datos y con el lado del servidor, asegurándose de que todos los procesos estuvieran funcionando correctamente para asegurar un buen funcionamiento del sitio web."
     }
 }
