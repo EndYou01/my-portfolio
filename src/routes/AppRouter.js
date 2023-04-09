@@ -24,12 +24,15 @@ import { CrossBorder } from '../pages/crossBorder/CrossBorder';
 export const AppRouter = () => {
 
     const [fillVariable, setFillVariable] = useState(true)
+	const [imageLoaded, setImageLoaded] = useState(false)
 
     return (
 
         <FillContext.Provider value={{
             fillVariable,
             setFillVariable,
+            imageLoaded,
+            setImageLoaded
         }}>
             <BrowserRouter>
                 <Header />

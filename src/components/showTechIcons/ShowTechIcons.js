@@ -1,11 +1,12 @@
 
 import React from 'react'
+import { ImageLoaded } from '../imageLoaded/ImageLoaded'
 
 export const ShowTechIcons = ({ technologies }) => {
 
     const techIcons = [
         {
-            name: "AntDesign", 
+            name: "AntDesign",
             src: "icons/ant_design_icon.png"
         },
         {
@@ -77,13 +78,11 @@ export const ShowTechIcons = ({ technologies }) => {
     return (
         <ul className='techIconContainer'>
             {
-                techIcons.map( (e, index) => {
-                    if(technologies.includes(e.name)){
+                techIcons.map((e, index) => {
+                    if (technologies.includes(e.name)) {
                         return <li key={index}>
-                            <div>
-                                <img className='techIcon' src={e.src} alt='icon'/>
-                            </div>
-                            <p>{e.name}</p>                            
+                            <ImageLoaded effect={""} classname={"techIcon"} alt={"icon"} src={e.src}/>
+                            <p>{e.name}</p>
                         </li>
                     }
                     return ""
