@@ -2,32 +2,26 @@
 
 import React, { useState } from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import { Spinner } from './Spinner'
 
 export const ImageLoaded = ({ effect, classname, alt, src }) => {
 
-
-    const [imageLoaded, setImageLoaded] = useState(false)
-
+    let [imageLoaded, setImageLoaded] = useState(false)
 
     return (
-        <div className={
-            (classname === "bg_image") ? "ImageLoadedBackGround" : ""
-        }>
-            {!imageLoaded && 
-            <div class="spinner">
-                <div class="bounce1"></div>
-                <div class="bounce2"></div>
-                <div class="bounce3"></div>
-            </div>
-            }
+        <div
+            className={(classname === "bg_image") ? "ImageLoadedBackGround" : ""}
+        >
+            {!imageLoaded && <Spinner/>}
+            
             <LazyLoadImage
                 effect={effect}
                 className={(classname === "bg_image") ? "bg_imageImageLoaded" : classname}
                 alt={alt}
                 src={src}
-                onLoad={() =>
+                onLoad={() => {
                     setImageLoaded(true)
-                }
+                }}
             />
         </div>
     )

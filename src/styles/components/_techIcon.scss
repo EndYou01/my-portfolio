@@ -1,24 +1,23 @@
-
-
-.techIconContainer{
+.techIconContainer {
     display: flex;
     justify-content: flex-end;
     margin: 50px 100px 50px 0;
-    li{
+
+    li {
         text-decoration: none;
         list-style-type: none;
 
-        p{
+        p {
             text-align: center;
-            margin-bottom: 30px;
-            margin-left: 30px;
-
-            }
+            margin-bottom: 40px;
+            margin-top: 10px;
+            margin-left: 30px;      
+        }
     }
 
 }
 
-.techIcon{
+.techIcon {
     width: 80px;
     height: 80px;
 
@@ -26,24 +25,29 @@
 }
 
 @media only screen and (max-width: 1200px) {
-    .techIconContainer{
-        display: block;
-        columns: 3 10vw;
-        column-gap: 0.5em;
+    .techIconContainer {
+        display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		justify-content: center;
+		width: 100%;
         padding: 0;
         margin: 50px auto;
 
-        li{
-            p{
+        li {
+
+            p {
                 margin-bottom: 30px;
+                margin-left: 0;
             }
+
+
         }
     }
 
-    .techIcon{
+    .techIcon {
         width: 50px;
         height: 50px;
-    
+
         margin-left: 30px;
         margin-bottom: 10px;
 
