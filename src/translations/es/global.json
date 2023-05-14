@@ -36,7 +36,7 @@
     },
     "waveB": {
         "h3": "Hola, soy Jorge!",
-        "h1": "Soy un ingeniero de software con experiencia en la creación de aplicaciones web y de escritorio listas para producción."
+        "h1": "Soy un desarrollador web con experiencia en la creación de aplicaciones web listas para producción."
     },
     "work": {
         "h1": "Proyectos Universitarios",
@@ -68,7 +68,7 @@
         "h2": "Confort",
         "p": "Primer sitio de comercio electrónico en el que trabajé junto al equipo de desarrollo Go Django Development.",
         "p1": "Mi rol en este proyecto fue el de desarrollar el front-end, a petición del cliente (y de mi superior de ese entonces, para medir mis habilidades) fue construido en su totalidad con HTML5, CSS y Javascript, y usando Bootstrap como única herramienta para apoyarme en ella. Realicé solo el front-end, haciendo todas las funcionalidades y diseños de la página. Fue el proyecto, con el que puse en práctica, las bases de los conocimientos que se necesitan para comenzar a adentrarse en el mundo del desarrollo web.",
-        "p2": "Trabajé en conjunto con una diseñadora, creadora del diseño del sitio web, con la que aclaré dudas y preguntas relacionadas al mismo. Se realizaron dos vistas, Mobile y Desktop, usando los media query de css.",
+        "p2": "Me complace añadir a mi portafolio este proyecto en el que trabajé de manera coordinada con una diseñadora que se encargó del diseño del sitio web. Clarificamos conjuntamente dudas y preguntas relativas al mismo, creando además dos diferentes vistas, una para la versión móvil y otra para la versión de escritorio, agregando desde luego los media queries de CSS necesarios. Las diferentes secciones de la información contenida en el sitio web se cargaron de manera dinámica desde una API, así como los productos que allí se presentan, al igual que los diferentes elementos de la interfaz gráfica. Me esfuerzo por ofrecer soluciones de calidad basadas en el uso de las mejores prácticas en desarrollo web, trabajos remotos, metodologías ágiles y la rapidez con que entrego los resultados, con el mayor nivel de profesionalismo.",
         "p3": "Realizado en su totalidad por el grupo de desarrollo Go Django Development, usando Django, un framework de Python dedicado al trabajo back-end con la web. Realizando a consultas a APIs para realizar los micropagos y consultar a la Base de Datos para cargar los productos de manera dinámica."
     },
     "coremant":{

@@ -13,13 +13,15 @@
     border-radius: none;
     border: none;
     color: white;
-    margin-top: 70px;
+    margin-top: -40px;
     text-align: center;
     transition: 200ms;
   }
 
   .bckBtn{
     font-size: 1.3rem;
+    position: fixed;
+    z-index: 2;
   }
 
   .bckBtn_icon {

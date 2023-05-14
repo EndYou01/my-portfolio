@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { IoIosArrowBack } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 import { FillContext } from '../../context/FillContext';
+import { scrollToTop } from '../../functions/scrollToTop';
 
 export const BackButton = () => {
 
@@ -13,11 +14,14 @@ export const BackButton = () => {
 
     return (
         <button className='bg_transparent my-element bckBtn'>
-            <div onClick={() => { navigate(lastLocation) }}>
+            <div onClick={() => { 
+                navigate(lastLocation) 
+                scrollToTop()
+                }}>
                 <IoIosArrowBack className={
                     (fillVariable)
-                        ?   'bckBtn_icon'
-                        :   'btn_icon_dark'
+                        ? 'bckBtn_icon'
+                        : 'btn_icon_dark'
                 } />
             </div>
         </button>

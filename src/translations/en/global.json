@@ -36,7 +36,7 @@
     },
     "waveB": {
         "h3": "Hi, I'm Jorge!",
-        "h1": "I am a software engineer with experience in creating production-ready web and desktop applications."
+        "h1": "I am a web developer with experience in creating production-ready web applications."
     },
     "work": {
         "h1": "University Projects",
@@ -68,7 +68,7 @@
         "h2": "Confort",
         "p": "First e-commerce site I worked on alongside the Go Django Development team.",
         "p1": "My role in this project was to develop the front-end, at the request of the client (and my superior at the time, to measure my skills) it was built entirely with HTML5, CSS and Javascript, and using Bootstrap as the only tool to support me. I made only the front-end, doing all the functionalities and designs of the page. It was the project, with which I put into practice, the bases of knowledge that are needed to start entering the world of web development.",
-        "p2": "I worked together with a designer, creator of the design of the website, with whom I clarified doubts and questions related to it. Two views were made, Mobile and Desktop, using the css media query.",
+        "p2": "I am pleased to add to my portfolio this project in which I worked in coordination with a designer who was in charge of the design of the website. We jointly clarify doubts and questions related to it, also creating two different views, one for the mobile version and another for the desktop version, adding of course the necessary CSS media queries. The different sections of the information contained in the website were loaded dynamically from an API, as well as the products that are presented there, as well as the different elements of the graphical interface. I strive to offer quality solutions based on the use of best practices in web development, remote work, agile methodologies and the speed with which I deliver the results, with the highest level of professionalism.",
         "p3": "Made entirely by the Go Django Development development group, using Django, a Python framework dedicated to back-end work with the web. Querying APIs to make micropayments and querying the Database to load the products dynamically."
     },
     "coremant":{

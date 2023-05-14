@@ -1,30 +1,34 @@
 
 
-import React, { useState, useEffect } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Spinner } from './Spinner'
+import { FillContext } from '../../context/FillContext'
 
 export const ImageLoaded = ({ effect, classname, alt, src }) => {
 
     let [imageLoaded, setImageLoaded] = useState(false)
+    let { firstLoad, setFirstLoad } = useContext(FillContext)
 
-    // useEffect(() => {
-    //     // Read the state from local storage when the component is mounted
-    //     let localImageLoaded = localStorage.getItem("imageLoaded")
-    //     setImageLoaded(localImageLoaded)
-    // }, [])
-
-    // useEffect(() => {
-    //     // Save the state to local storage after the first rendering
-    //     localStorage.setItem("imageLoaded", imageLoaded)
-    // })
     return (
         <div
             className={(classname === "bg_image") ? "ImageLoadedBackGround" : ""}
         >
             {!imageLoaded && <Spinner />}
 
-            <LazyLoadImage
+            {!firstLoad && (<LazyLoadImage
+                effect={effect}
+                className={(classname === "bg_image") ? "bg_imageImageLoaded" : classname}
+                alt={alt}
+                src={src}
+                onLoad={() => {
+                    setImageLoaded(true)
+                    setFirstLoad(true);
+                }}
+            />)}
+
+
+            {firstLoad && <LazyLoadImage
                 effect={effect}
                 className={(classname === "bg_image") ? "bg_imageImageLoaded" : classname}
                 alt={alt}
@@ -32,7 +36,9 @@ export const ImageLoaded = ({ effect, classname, alt, src }) => {
                 onLoad={() => {
                     setImageLoaded(true)
                 }}
-            />
+            />}
+
+
         </div>
     )
 }
