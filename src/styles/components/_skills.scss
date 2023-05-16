@@ -2,7 +2,7 @@
   max-width: 600px;
   margin: auto;
   text-align: center;
-  margin-bottom: 100px;
+  // margin-bottom: 100px;
 }
 
 .columns>ul {
@@ -10,36 +10,65 @@
   flex-wrap: wrap;
   padding: 20px;
   padding-top: 0px;
+  margin: 0 auto;
+}
+
+.columns .techIcon {
+  margin-left: 0;
+}
+
+.columns .techIconContainer{
+  margin: 0 auto;
 }
 
 .columns>ul>li {
   width: 30%;
   margin: 0px;
   list-style-type: none;
-  margin: auto;
+  margin: 30px auto;
   text-align: center;
 }
 
-.skills_h1{
-  margin-bottom: 10px;
+.skills_h1 {
+  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 1201px) {
+
+  .columns>ul{
+    padding-inline-start: 0!important;
+    padding-left: 0;
+  }
+
+  .columns .techIconContainer{
+    margin: 0 auto;
+    padding-inline-start: 0!important;
+    padding-left: 0;
+  }
+
+  .columns .techIcon {
+    margin-left: 30px
+  }
+
   .content {
     max-width: 1000px;
   }
 
-  .columns>ul {}
+  .columns>ul {
+    margin: 50px auto;
+
+  }
 
   .columns>ul>li {
-    width: 20%;
+    width: 16%;
     text-align: center;
+    margin: auto;
   }
 }
 
 
-.liDark{
-  li{
-    color: black!important;
+.liDark {
+  li {
+    color: black !important;
   }
 }

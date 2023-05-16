@@ -32,10 +32,11 @@
         "TE": "Teamwork",
         "Friendly": "Friendly",
         "FL": "Fast learn",
-        "PA": "Proactive"
+        "PA": "Proactive",
+        "CO": "Commitment"
     },
     "waveB": {
-        "h3": "Hi, I'm Jorge!",
+        "h3": "Hi, I'm Jorge Senjudo!",
         "h1": "I am a web developer with experience in creating production-ready web applications."
     },
     "work": {

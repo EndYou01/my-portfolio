@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { Fade } from "react-awesome-reveal";
 import { useTranslation } from 'react-i18next'
 import { FillContext } from '../../../context/FillContext';
+import { ShowTechIcons } from '../../showTechIcons/ShowTechIcons';
 
 export const Skills = () => {
 	const [text] = useTranslation("global")
@@ -18,18 +19,7 @@ export const Skills = () => {
 						: 'columns'
 				}>
 					<ul>
-						<li>
-							<span>HTML5/CSS</span>
-						</li>
-						<li>
-							<span>MVC</span>
-						</li>
-						<li>
-							<span>APIs</span>
-						</li>
-						<li>
-							<span>Git/Github</span>
-						</li>
+						<ShowTechIcons technologies={["HTML", "CSS", "git", "github", "vite", 'Axios', 'bootstrap', 'antdesign', 'postman']} />
 						<li>
 							<span>{text("skills.EB2")}</span>
 						</li>
@@ -45,6 +35,9 @@ export const Skills = () => {
 						<li>
 							<span>{text("skills.PA")}</span>
 						</li>
+						<li>
+							<span>{text("skills.CO")}</span>
+						</li>
 					</ul>
 				</div>
 
@@ -56,6 +49,9 @@ export const Skills = () => {
 						: 'columns'
 				}>
 					<ul>
+						<ShowTechIcons technologies={["React", "TypeScript", "javascript", "SASS", "Redux", "REST API"]} />
+					</ul>
+					{/* <ul>
 						<li>
 							<span>React</span>
 						</li>
@@ -83,7 +79,7 @@ export const Skills = () => {
 						<li>
 							<span>Bootstrap</span>
 						</li>
-					</ul>
+					</ul> */}
 				</div>
 			</Fade>
 		</div>

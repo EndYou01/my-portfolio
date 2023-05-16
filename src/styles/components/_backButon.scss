@@ -22,6 +22,7 @@
     font-size: 1.3rem;
     position: fixed;
     z-index: 2;
+    left: 200px;
   }
 
   .bckBtn_icon {
@@ -31,4 +32,10 @@
   .btn_icon_dark{
     color: rgb(20, 20, 20);
     margin-right: 10px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .bckBtn{
+      left: 10px;
+    }
   }

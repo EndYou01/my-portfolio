@@ -1,6 +1,6 @@
 
 
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Spinner } from './Spinner'
 import { FillContext } from '../../context/FillContext'
