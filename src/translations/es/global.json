@@ -82,5 +82,6 @@
         "l2": "Compañero de Trabajo BackEnd: ",
         "p2": "Una vez iniciado el proceso de desarrollo, distribuí el trabajo junto con el otro desarrollador frontend para acelerarlo. Se usó Redux para una mejor administración de la aplicación y para cargar los endpoints proporcionados por el equipo de backend, usamos Axios, lo que hizo que todos los productos se cargaran de forma dinámica. Cuando se trató de la parte visual, se realizaron algunas animaciones no demasiado complicadas, utilizando herramientas proporcionadas por SASS para lograrlo.",
         "p3": "El desarrollador que trabajó en esta sección del proyecto era miembro de Go Django Development, grupo con el que había trabajado anteriormente. Se encargó de todo lo relacionado con la base de datos y con el lado del servidor, asegurándose de que todos los procesos estuvieran funcionando correctamente para asegurar un buen funcionamiento del sitio web."
-    }
+    },
+    "version": "Versión 1.2.0"
 }

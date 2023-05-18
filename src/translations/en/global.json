@@ -82,5 +82,7 @@
         "l2": "Backend Workmate: ",
         "p2": "Once the development process began, I distributed the work together with the other frontend developer to speed it up. Redux was used for better management of the application and to load the endpoints provided by the backend team, we used Axios, which made all the products load dynamically. When it came to the visual part, some not too complicated animations were made, using tools provided by SASS to achieve this.",
         "p3": "The developer who worked on this section of the project was a member of Go Django Development, a group with which he had previously worked. He was in charge of everything related to the database and the server side, making sure that all processes were running correctly to ensure proper functioning of the website."
-      }
+    },
+    "version": "Version 1.2.0"
+    
 }
