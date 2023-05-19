@@ -8,11 +8,17 @@ import { FillContext } from '../../../context/FillContext';
 
 export const WaveBlock = () => {
 	const [text] = useTranslation("global")
-	
+
 	// const [first, setfirst] = useState(true)
 
-	let {fillVariable} = useContext(FillContext)
+	let { fillVariable } = useContext(FillContext)
 
+	const DownloadCV = () => {
+		// window.location = 'https://github.com/EndYou01/my-portfolio/blob/master/public/portfolio/portafolio-jorge-senjudo.pdf';
+
+		window.location = 'https://github.com/EndYou01/my-portfolio/blob/master/public/portfolio/portafolio-jorge-senjudo.pdf';
+
+	}
 
 	return (
 		<div className='wavecontainer'>
@@ -25,11 +31,10 @@ export const WaveBlock = () => {
 
 					<button className='button animate__animated animate__fadeInDown animate__delay-1s animate__slow'>
 						<a
-							target="_blank"
-							href="mailto:jorgesenjudo@gmail.com"
-							rel="noreferrer"
+							href="/portfolio/portafolio_jorge_senjudo.pdf"
+							download="portafolio-jorge-senjudo.pdf"
 						>
-							{text("footer.contactMe")}
+							{text("footer.downloadCV")}
 						</a>
 					</button>
 				</Fade>
@@ -40,8 +45,8 @@ export const WaveBlock = () => {
 					className='wave'
 					fill={
 						(fillVariable)
-						? 	'rgb(20,20,20)'
-						:	'rgb(255,255,255)'	
+							? 'rgb(20,20,20)'
+							: 'rgb(255,255,255)'
 					}
 					paused={false}
 					options={{
