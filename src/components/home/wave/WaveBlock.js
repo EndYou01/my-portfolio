@@ -45,7 +45,7 @@ export const WaveBlock = () => {
 						speed: 0.15,
 						points: 3,
 					}}
-				/>``
+				/>
 
 			</div>
 		</div>
