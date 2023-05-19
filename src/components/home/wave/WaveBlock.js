@@ -2,23 +2,13 @@ import React from 'react'
 import Wave from 'react-wavify'
 import { Fade } from "react-awesome-reveal";
 import { useTranslation } from 'react-i18next'
-// import { useState } from 'react';
 import { useContext } from 'react';
 import { FillContext } from '../../../context/FillContext';
 
 export const WaveBlock = () => {
 	const [text] = useTranslation("global")
 
-	// const [first, setfirst] = useState(true)
-
 	let { fillVariable } = useContext(FillContext)
-
-	const DownloadCV = () => {
-		// window.location = 'https://github.com/EndYou01/my-portfolio/blob/master/public/portfolio/portafolio-jorge-senjudo.pdf';
-
-		window.location = 'https://github.com/EndYou01/my-portfolio/blob/master/public/portfolio/portafolio-jorge-senjudo.pdf';
-
-	}
 
 	return (
 		<div className='wavecontainer'>
