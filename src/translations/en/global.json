@@ -6,6 +6,7 @@
         "contact": "Contact"
     },
     "footer": {
+        "contactMe": "Contact me",
         "downloadCV": "Download CV",
         "linkedin": "My LinkedIn Profile",
         "source": "See source code",
@@ -13,7 +14,7 @@
     },
     "about": {
         "a&e": "About & Experience",
-        "a&et": "I am Jorge L. Senjudo, Front-End developer with experience in development and construction of websites, in which I have worked alone and with other developers, always looking to polish my skills both personally and professionally, to achieve the deployment of software with the appropriate quality. I work mainly using ReactJS code, with the ability to learn any JS framework or tool. I have brief experience with backend languages like JAVA and databases like MySQL. As a goal I have set out to reach to be a fullstack developer, and to be able to lead a full life.",
+        "a&et": "I am Jorge L. Senjudo, Front-End developer with experience in development and construction of websites, in which I have worked alone and with other developers, always looking to polish my skills both personally and professionally, to achieve the deployment of software with the appropriate quality. I work mainly using ReactJS code, with the ability to learn any JS framework or tool. I have brief experience with backend languages like JAVA and databases like MySQL. As a goal I have set out to reach to be a fullstack developer, and to be able to lead a full live.",
         "profExp": "Professional Experience",
         "education": "Education",
         "2020": "2020-09/ 2022-12",

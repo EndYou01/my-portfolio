@@ -105,9 +105,9 @@ export const Header = () => {
     var langx
 
     if (lang === 'ES') {
-        langx = 'EN';
-    } else {
         langx = 'ES';
+    } else {
+        langx = 'EN';
     }
 
     const changeLanguaje = () => {
@@ -208,7 +208,7 @@ export const Header = () => {
                             </li>
 
                             {
-                                (isDarkMode)
+                                (!isDarkMode)
                                     ? (<li className='li_icon'>
                                         <button type='checkbox' className='navigation_button li_mr-2' onClick={() => {
                                             handleDarkModeToggle()
