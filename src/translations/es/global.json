@@ -84,5 +84,10 @@
         "p2": "Una vez iniciado el proceso de desarrollo, distribuí el trabajo junto con el otro desarrollador frontend para acelerarlo. Se usó Redux para una mejor administración de la aplicación y para cargar los endpoints proporcionados por el equipo de backend, usamos Axios, lo que hizo que todos los productos se cargaran de forma dinámica. Cuando se trató de la parte visual, se realizaron algunas animaciones no demasiado complicadas, utilizando herramientas proporcionadas por SASS para lograrlo.",
         "p3": "El desarrollador que trabajó en esta sección del proyecto era miembro de Go Django Development, grupo con el que había trabajado anteriormente. Se encargó de todo lo relacionado con la base de datos y con el lado del servidor, asegurándose de que todos los procesos estuvieran funcionando correctamente para asegurar un buen funcionamiento del sitio web."
     },
+    "kidsrUs":{
+        "p1": "El proyecto es el resultado de la prueba técnica para programador front-end de la empresa chilena Business Bureau Digital, puesto para el cual apliqué.",
+        "p2": "La prueba consitió en crear este sitio en el plazo de una semana, para el cuál podía utilizar la tecnología con que me sintiera más cómodo. Me dieron las instrucciones de funcionalidades que querían que apareciecen y las imagenes de todos los productos. Al no brindarme ninguna API, archivo .JSON o base de datos tuve que realizar un Mock con todos los parámetros de cada producto para entonces poder trabajar.",
+        "p3": "Para la implementación de estados globales me basé en React-Redux, con lo que dominé la interfaz haciendo uso de dispatchs que modificaran estos estados. Las animaciones las fui creando conforme iban apareciendo, haciendo uso de librerías como react-image-magnify para el efecto zoom al hacer hover en la imagen de la pestaña ProductPage, animate.css para otras un poco más básicas y react-awesome-reveal para la primera aparición de los componentes."
+    },
     "version": "Versión 1.2.0"
 }

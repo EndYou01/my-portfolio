@@ -4,6 +4,7 @@ import {
     Routes,
     Route
 } from "react-router-dom";
+import { useState } from 'react';
 
 
 import { Header } from '../components/header/Header'
@@ -12,14 +13,14 @@ import { Footer } from '../components/footer/Footer'
 import { IndexPage } from '../pages/IndexPage';
 import { AboutPage } from '../pages/about/AboutPage';
 import { WorkPage } from '../pages/work/WorkPage';
-import { Snb2022Page } from '../pages/snb2022/Snb2022Page';
-import { Mandalorian } from '../pages/mandalorian/Mandalorian';
-import { CitasApp } from '../pages/citasApp/CitasApp';
-import { Confort } from '../pages/confort/Confort';
-import { Coremant } from '../pages/coremant/Coremant';
+import { Snb2022Page } from '../pages/proyects/snb2022/Snb2022Page';
+import { Mandalorian } from '../pages/proyects/mandalorian/Mandalorian';
+import { CitasApp } from '../pages/proyects/citasApp/CitasApp';
+import { Confort } from '../pages/proyects/confort/Confort';
+import { Coremant } from '../pages/proyects/coremant/Coremant';
 import { FillContext } from '../context/FillContext';
-import { useState } from 'react';
-import { CrossBorder } from '../pages/crossBorder/CrossBorder';
+import { CrossBorder } from '../pages/proyects/crossBorder/CrossBorder';
+import { KidsrUs } from '../pages/proyects/kidsrUs/KidsrUs';
 
 export const AppRouter = () => {
 
@@ -48,6 +49,7 @@ export const AppRouter = () => {
                     <Route path='/confort' element={<Confort />} />
                     <Route path='/coremant' element={<Coremant />} />
                     <Route path='/crossBorder' element={<CrossBorder />} />
+                    <Route path='/kidsrus' element={<KidsrUs />} />
                 </Routes>
 
                 <div className='contain-footer'>

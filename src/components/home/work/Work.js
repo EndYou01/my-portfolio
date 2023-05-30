@@ -186,6 +186,32 @@ export const Work = () => {
 						</div>
 					</Fade>
 				</section>
+
+				<br />
+
+				<section className={
+					(fillVariable)
+						? 'projects_section'
+						: 'projects_section projects_section_dark'
+				}>
+					<Fade>
+						<div className='project_container'>
+							<ImageLoaded effect={"blur"} classname={"bg_image"} alt={"CrossBorderTrade Image"} src={"freelance/kidsrUs/KidsrUs_image.png"} />
+
+							<div className='project_image_container'>
+
+								<ImageLoaded effect={"blur"} classname={"project_image"} alt={"KidsrUs Logo"} src={"logos/kidsrUs_logo.png"} />
+
+							</div>
+							<div className='project_info_container'>
+								<h2>Kids'R'Us</h2>
+								<p>{text("kidsrUs.p1")}
+								</p>
+								<LearnMoreButton pathname='/kidsrUs' />
+							</div>
+						</div>
+					</Fade>
+				</section>
 			</div>
 
 		</div>
