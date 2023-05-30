@@ -1,26 +1,27 @@
-import React, { useContext } from 'react'
-import { Fade } from "react-awesome-reveal";
 
-import { scrollToTop } from '../../functions/scrollToTop';
+import React, { useContext } from 'react'
 import { BsCodeSlash } from "react-icons/bs";
 import { useTranslation } from 'react-i18next';
-import { BackButton } from '../../components/backButton/BackButton';
-import { CarouselImage } from '../../components/carouselImage/CarouselImage';
-import { FillContext } from '../../context/FillContext';
-import { ShowTechIcons } from '../../components/showTechIcons/ShowTechIcons';
+import { Fade } from "react-awesome-reveal";
 
+import { scrollToTop } from '../../../functions/scrollToTop';
+import { BackButton } from '../../../components/backButton/BackButton';
+import { CarouselImage } from '../../../components/carouselImage/CarouselImage';
+import { FillContext } from '../../../context/FillContext';
+import { ShowTechIcons } from '../../../components/showTechIcons/ShowTechIcons';
 
-
-export const CitasApp = () => {
-	scrollToTop()
-	const [text] = useTranslation("global")
+export const Coremant = () => {
 
 	const { fillVariable } = useContext(FillContext)
 
+	scrollToTop()
+	const [text] = useTranslation("global")
+
 	const images = [
-		"freelance/citasApp/citas1.png",
-		"freelance/citasApp/citas2.png",
-		"freelance/citasApp/citas3.png"
+		"freelance/coremant/coremant2.jpg",
+		"freelance/coremant/coremant3.jpg",
+		"freelance/coremant/coremant4.jpg",
+		"freelance/coremant/coremant1.jpg",
 	]
 
 	return (
@@ -33,37 +34,31 @@ export const CitasApp = () => {
 				<main className='main'>
 
 					<BackButton />
-
 					<div>
-						<h1 className='Colorh1'>CitasApp</h1>
+						<h1 className='Colorh1'>COREMANT</h1>
 						<p>
-							{text("citas.p1")}
+							{text("coremant.p1")}
 						</p>
+						<br />
+
 						<ul>
 							<li>{text("tmf.l1")} <a className='link' href='https://github.com/Panik-Attack'>Eduardo Garcia Alfonso</a></li>
 						</ul>
-						<br />
+
 					</div>
 
 					<CarouselImage images={images} />
-					<br />
 
 					<div className='project_info'>
 						<h2>{text("snb.h2_1")}</h2>
 						<h3>Front End:</h3>
-						<p>
-							{text("citas.p2")}
-						</p>
 
-						<ShowTechIcons technologies={["AntDesign", "React"]}/>
+						<ShowTechIcons technologies={["React", "Vite", "SASS"]} />
 
 						<h3>Back End:</h3>
-						<p>
-							{text("citas.p3")}
-						</p>
-
-						<ShowTechIcons technologies={["JavaScript"]}/>
-
+						<ul>
+							<li>none</li>
+						</ul>
 						<br></br>
 						<br></br>
 						<div className='this_page_source_container' >
@@ -74,7 +69,7 @@ export const CitasApp = () => {
 							} />
 							<a
 								target="_blank"
-								href="https://github.com/Panik-Attack/Citas"
+								href="https://github.com/EndYou01/Coremant"
 								rel="noreferrer"
 							>
 								{text("footer.source")}

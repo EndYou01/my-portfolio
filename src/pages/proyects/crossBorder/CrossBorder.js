@@ -1,13 +1,13 @@
 import React, { useContext } from 'react'
 import { Fade } from "react-awesome-reveal";
-
-import { scrollToTop } from '../../functions/scrollToTop';
 import { BsCodeSlash } from "react-icons/bs";
 import { useTranslation } from 'react-i18next';
-import { BackButton } from '../../components/backButton/BackButton';
-import { CarouselImage } from '../../components/carouselImage/CarouselImage';
-import { FillContext } from '../../context/FillContext';
-import { ShowTechIcons } from '../../components/showTechIcons/ShowTechIcons';
+
+import { scrollToTop } from '../../../functions/scrollToTop';
+import { BackButton } from '../../../components/backButton/BackButton';
+import { CarouselImage } from '../../../components/carouselImage/CarouselImage';
+import { FillContext } from '../../../context/FillContext';
+import { ShowTechIcons } from '../../../components/showTechIcons/ShowTechIcons';
 
 export const CrossBorder = () => {
 

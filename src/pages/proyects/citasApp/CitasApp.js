@@ -1,29 +1,26 @@
 import React, { useContext } from 'react'
 import { Fade } from "react-awesome-reveal";
-
-import { scrollToTop } from '../../functions/scrollToTop';
 import { BsCodeSlash } from "react-icons/bs";
 import { useTranslation } from 'react-i18next';
-import { BackButton } from '../../components/backButton/BackButton';
-import { CarouselImage } from '../../components/carouselImage/CarouselImage';
-import { FillContext } from '../../context/FillContext';
-import { ShowTechIcons } from '../../components/showTechIcons/ShowTechIcons';
 
-export const Snb2022Page = () => {
+import { scrollToTop } from '../../../functions/scrollToTop';
+import { BackButton } from '../../../components/backButton/BackButton';
+import { CarouselImage } from '../../../components/carouselImage/CarouselImage';
+import { FillContext } from '../../../context/FillContext';
+import { ShowTechIcons } from '../../../components/showTechIcons/ShowTechIcons';
 
-	const { fillVariable } = useContext(FillContext)
 
+
+export const CitasApp = () => {
 	scrollToTop()
 	const [text] = useTranslation("global")
 
+	const { fillVariable } = useContext(FillContext)
+
 	const images = [
-		"snb2022/snb1.png",
-		"snb2022/snb2.png",
-		"snb2022/snb3.png",
-		"snb2022/snb4.png",
-		"snb2022/snb5.png",
-		"snb2022/snb6.png",
-		"snb2022/snb7.png"
+		"freelance/citasApp/citas1.png",
+		"freelance/citasApp/citas2.png",
+		"freelance/citasApp/citas3.png"
 	]
 
 	return (
@@ -38,15 +35,14 @@ export const Snb2022Page = () => {
 					<BackButton />
 
 					<div>
-						<h1 className='Colorh1'>SNB 2022</h1>
+						<h1 className='Colorh1'>CitasApp</h1>
 						<p>
-							{text("snb.p1")}
+							{text("citas.p1")}
 						</p>
-						<br />
 						<ul>
-							<li>{text("snb.l1")}</li>
-							<li>{text("snb.l2")} <a className='link' href='https://www.linkedin.com/in/alejandro-martinez-66766725b'>Alejandro Martínez</a></li>
+							<li>{text("tmf.l1")} <a className='link' href='https://github.com/Panik-Attack'>Eduardo Garcia Alfonso</a></li>
 						</ul>
+						<br />
 					</div>
 
 					<CarouselImage images={images} />
@@ -56,17 +52,17 @@ export const Snb2022Page = () => {
 						<h2>{text("snb.h2_1")}</h2>
 						<h3>Front End:</h3>
 						<p>
-							{text("snb.p2")}
+							{text("citas.p2")}
 						</p>
 
-                        <ShowTechIcons technologies={["Java"]}/>
+						<ShowTechIcons technologies={["AntDesign", "React"]}/>
 
 						<h3>Back End:</h3>
 						<p>
-							{text("snb.p3")}
+							{text("citas.p3")}
 						</p>
 
-                        <ShowTechIcons technologies={["MySql"]}/>
+						<ShowTechIcons technologies={["JavaScript"]}/>
 
 						<br></br>
 						<br></br>
@@ -78,7 +74,7 @@ export const Snb2022Page = () => {
 							} />
 							<a
 								target="_blank"
-								href="https://www.github.com/EndYou01/Snb2022"
+								href="https://github.com/Panik-Attack/Citas"
 								rel="noreferrer"
 							>
 								{text("footer.source")}
