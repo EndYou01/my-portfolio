@@ -76,7 +76,7 @@ export const KidsrUs = () => {
 
                             <a
                                 target="_blank"
-                                href="https://github.com/EndYou01/BB_Digital_Chile"
+                                href="https://github.com/EndYou01/BB_Digital_KidsrUs"
                                 rel="noreferrer"
                             >
                                 {text("footer.source")}
