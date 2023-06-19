@@ -4,7 +4,7 @@ import { ImageLoaded } from '../imageLoaded/ImageLoaded'
 
 export const ShowTechIcons = ({ technologies }) => {
 
-    const technologiesToLowerCase = technologies.map( element => {
+    const technologiesToLowerCase = technologies.map(element => {
         return element.toLowerCase()
     })
 
@@ -96,6 +96,10 @@ export const ShowTechIcons = ({ technologies }) => {
         {
             name: "Laravel",
             src: "icons/laravel_plain_wordmark_logo_icon.png"
+        },
+        {
+            name: "Next",
+            src: "icons/NextJS_icon.png"
         }
     ]
 
@@ -105,7 +109,7 @@ export const ShowTechIcons = ({ technologies }) => {
                 techIcons.map((e, index) => {
                     if (technologiesToLowerCase.includes(e.name.toLowerCase())) {
                         return <li key={index}>
-                            <ImageLoaded effect={""} classname={"techIcon"} alt={"icon"} src={e.src}/>
+                            <ImageLoaded effect={""} classname={"techIcon"} alt={"icon"} src={e.src} />
                             <p>{e.name}</p>
                         </li>
                     }

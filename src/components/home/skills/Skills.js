@@ -18,8 +18,9 @@ export const Skills = () => {
 						? 'columns liDark'
 						: 'columns'
 				}>
+					{/* Soft Skills */}
 					<ul>
-						<ShowTechIcons technologies={["HTML", "CSS", "git", "github", "vite", 'Axios', 'bootstrap', 'antdesign', 'postman']} />
+						<ShowTechIcons technologies={['HTML', 'CSS', 'git', 'github', 'vite', 'Axios', 'bootstrap', 'antdesign', 'postman']} />
 						<li>
 							<span>{text("skills.EB2")}</span>
 						</li>
@@ -48,38 +49,10 @@ export const Skills = () => {
 						? 'columns liDark'
 						: 'columns'
 				}>
+					{/* Hard Skills */}
 					<ul>
-						<ShowTechIcons technologies={["React", "TypeScript", "javascript", "SASS", "Redux", "REST API"]} />
+						<ShowTechIcons technologies={["React", "TypeScript", "javascript", "SASS", "Redux", "REST API", "Next"]} />
 					</ul>
-					{/* <ul>
-						<li>
-							<span>React</span>
-						</li>
-						<li>
-							<span>Javascript</span>
-						</li>
-						<li>
-							<span>Typescript</span>
-						</li>
-						<li>
-							<span>REST APIs</span>
-						</li>
-						<li>
-							<span>Redux</span>
-						</li>
-						<li>
-							<span>Sass</span>
-						</li>
-						<li>
-							<span>Java</span>
-						</li>
-						<li>
-							<span>C++</span>
-						</li>
-						<li>
-							<span>Bootstrap</span>
-						</li>
-					</ul> */}
 				</div>
 			</Fade>
 		</div>
