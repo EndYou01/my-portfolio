@@ -4,7 +4,7 @@ body {
   --main-color: rgb(19, 48, 91);
   --secondary-color: rgb(226, 70, 48);
   --third-color: rgb(226, 70, 48);
-
+  transition: all 0.5s ease-in-out;
   background-color: rgb(20, 20, 20);
   color: rgb(200, 200, 200);
   padding: 0;
@@ -15,6 +15,7 @@ body {
 }
 
 .body-dark-mode{
+  transition: all 0.5s ease-in-out;
   background-color: rgb(255, 255, 255);
 
   .about_container_text{

@@ -17,7 +17,7 @@
   margin-left: 0;
 }
 
-.columns .techIconContainer{
+.columns .techIconContainer {
   margin: 0 auto;
 }
 
@@ -35,14 +35,14 @@
 
 @media only screen and (min-width: 1201px) {
 
-  .columns>ul{
-    padding-inline-start: 0!important;
+  .columns>ul {
+    padding-inline-start: 0 !important;
     padding-left: 0;
   }
 
-  .columns .techIconContainer{
+  .columns .techIconContainer {
     margin: 0 auto;
-    padding-inline-start: 0!important;
+    padding-inline-start: 0 !important;
     padding-left: 0;
   }
 
@@ -71,4 +71,13 @@
   li {
     color: black !important;
   }
+
+  p {
+    color: black !important;
+  }
+
+  span {
+    color: black !important;
+  }
+
 }
