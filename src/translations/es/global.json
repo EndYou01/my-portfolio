@@ -28,7 +28,8 @@
     },
     "skills": {
         "soft-skills": "Habilidades Blandas",
-        "hard-skills": "Habilidades Fuertes",
+        "support-technologies": "Tecnologías de Soporte",
+        "hard-technologies": "Tecnologías duras",
         "EB2": "Inglés B2",
         "TE": "Trabajo en Equipo",
         "Friendly": "Amistoso",

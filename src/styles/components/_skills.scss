@@ -1,83 +1,102 @@
 .content {
-  max-width: 600px;
-  margin: auto;
-  text-align: center;
-  // margin-bottom: 100px;
+	max-width: 600px;
+	margin: auto;
+	text-align: center;
+	// margin-bottom: 100px;
 }
 
 .columns>ul {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
-  padding-top: 0px;
-  margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+	padding-top: 0px;
+	margin: 0 auto;
 }
 
 .columns .techIcon {
-  margin-left: 0;
+	margin-left: 0;
+}
+
+.techIconSvgWhite {
+	filter: invert(100%)
+}
+
+.columns .techIconText {
+	margin-left: 0;
+	margin-top: 20px;
+}
+
+.techIconText{
+	text-align: center;
 }
 
 .columns .techIconContainer {
-  margin: 0 auto;
+	margin: 0 auto;
 }
 
 .columns>ul>li {
-  width: 30%;
-  margin: 0px;
-  list-style-type: none;
-  margin: 30px auto;
-  text-align: center;
+	width: 30%;
+	margin: 0px;
+	list-style-type: none;
+	margin: 30px auto;
+	text-align: center;
 }
 
 .skills_h1 {
-  margin-bottom: 20px;
+	margin-top: 40px;
 }
 
 @media only screen and (min-width: 1201px) {
 
-  .columns>ul {
-    padding-inline-start: 0 !important;
-    padding-left: 0;
-  }
+	.columns>ul {
+		padding-inline-start: 0 !important;
+		padding-left: 0;
+	}
 
-  .columns .techIconContainer {
-    margin: 0 auto;
-    padding-inline-start: 0 !important;
-    padding-left: 0;
-  }
+	.columns .techIconContainer {
+		margin: 0 auto;
+		padding-inline-start: 0 !important;
+		padding-left: 0;
+	}
 
-  .columns .techIcon {
-    margin-left: 30px
-  }
+	.columns .techIcon {
+		margin-left: 30px
+	}
 
-  .content {
-    max-width: 1000px;
-  }
+	.columns .techIconText {
+		margin-left: 30px;
+		margin-top: 20px;
+	}
 
-  .columns>ul {
-    margin: 50px auto;
+	.content {
+		max-width: 1000px;
+	}
 
-  }
+	.columns>ul {
+		margin: 50px auto;
 
-  .columns>ul>li {
-    width: 16%;
-    text-align: center;
-    margin: auto;
-  }
+	}
+
+	.columns>ul>li {
+		width: 18%;
+		text-align: center;
+		margin: auto;
+		margin-top: 40px;
+	}
 }
 
 
 .liDark {
-  li {
-    color: black !important;
-  }
+	li {
+		color: black !important;
+	}
 
-  p {
-    color: black !important;
-  }
+	p {
+		color: black !important;
+	}
 
-  span {
-    color: black !important;
-  }
+	span {
+		color: black !important;
+	}
 
 }

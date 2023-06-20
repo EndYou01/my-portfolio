@@ -1,8 +1,12 @@
 
-import React from 'react'
 import { ImageLoaded } from '../imageLoaded/ImageLoaded'
+import { Row, Col } from 'react-bootstrap'
 
-export const ShowTechIcons = ({ technologies }) => {
+export const ShowTechIcons = ({ technologies, position }) => {
+
+    console.log(position)
+
+    let fillVariable = localStorage.getItem('FillVariable')
 
     const technologiesToLowerCase = technologies.map(element => {
         return element.toLowerCase()
@@ -82,6 +86,10 @@ export const ShowTechIcons = ({ technologies }) => {
             src: "icons/reduxIcon.png"
         },
         {
+            name: "Redux ToolKit",
+            src: "icons/reduxIcon.png"
+        },
+        {
             name: "SASS",
             src: "icons/sassIcon.png"
         },
@@ -98,24 +106,39 @@ export const ShowTechIcons = ({ technologies }) => {
             src: "icons/laravel_plain_wordmark_logo_icon.png"
         },
         {
-            name: "Next",
-            src: "icons/NextJS_icon.png"
+            name: "Next.js",
+            src: "icons/NextJS_icon.svg"
+        },
+        {
+            name: "SWR",
+            src: "icons/SWR_icon.svg"
+        },
+        {
+            name: "React Bootstrap",
+            src: "icons/react_bootstrap_icon.png"
         }
     ]
 
     return (
-        <ul className='techIconContainer'>
+        <Row xs={3} sm={4} lg={5} xl={6} className={`techIcons_container g-4 justify-content-${position !== undefined ? position : 'end'}`}>
             {
                 techIcons.map((e, index) => {
+
                     if (technologiesToLowerCase.includes(e.name.toLowerCase())) {
-                        return <li key={index}>
-                            <ImageLoaded effect={""} classname={"techIcon"} alt={"icon"} src={e.src} />
-                            <p>{e.name}</p>
-                        </li>
+                        return <Col key={index} className='d-flex flex-column align-items-center'>
+                            <ImageLoaded
+                                effect={""}
+                                classname={e.src.includes(".svg")
+                                    ? fillVariable === "rgb(20,20,20)" ? "techIconSvgWhite techIcon" : "techIcon"
+                                    : "techIcon"}
+                                alt={"icon"}
+                                src={e.src} />
+                            <p className='techIconText'>{e.name}</p>
+                        </Col>
                     }
                     return ""
                 })
             }
-        </ul>
+        </Row>
     )
 }

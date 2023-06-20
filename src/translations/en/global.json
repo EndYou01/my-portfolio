@@ -28,7 +28,8 @@
     },
     "skills": {
         "soft-skills": "Soft Skills",
-        "hard-skills": "Hard Skills",
+        "support-technologies": "Support Technologies",
+        "hard-technologies": "Hard Technologies",
         "EB2": "English B2",
         "TE": "Teamwork",
         "Friendly": "Friendly",

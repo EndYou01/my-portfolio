@@ -59,14 +59,14 @@ export const Confort = () => {
 							{text("confort.p2")}
 						</p>
 
-						<ShowTechIcons technologies={["HTML", "CSS", "JavaScript"]}/>
+						<ShowTechIcons technologies={["HTML", "CSS", "JavaScript"]} position='end'/>
 						
 						<h3>Back End:</h3>
 						<p>
 							{text("confort.p3")}
 						</p>
 
-						<ShowTechIcons technologies={["Django", "Python"]}/>
+						<ShowTechIcons technologies={["Django", "Python"]} position='end'/>
 						
 						<br></br>
 						<br></br>

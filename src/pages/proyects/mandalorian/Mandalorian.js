@@ -55,7 +55,7 @@ export const Mandalorian = () => {
               {text("tmf.p2")}
             </p>
 
-            <ShowTechIcons technologies={["C"]}/>
+            <ShowTechIcons technologies={["C"]} position='end'/>
 
             <h3>Back End:</h3>
             <p>

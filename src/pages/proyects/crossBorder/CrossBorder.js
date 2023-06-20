@@ -59,14 +59,14 @@ export const CrossBorder = () => {
                             {text("crossBorder.p2")}
                         </p>
 
-                        <ShowTechIcons technologies={["React", "Redux", "Axios", "TypeScript", "Vite", "SASS"]}/>
+                        <ShowTechIcons technologies={["React", "Redux", "Axios", "TypeScript", "Vite", "SASS"]} position='end'/>
 
                         <h3>Back End:</h3>
                         <p>
                             {text("crossBorder.p3")}
                         </p>
 
-                        <ShowTechIcons technologies={["PHP", "Laravel"]}/>
+                        <ShowTechIcons technologies={["PHP", "Laravel"]} position='end'/>
                         
                         <br></br>
                         <br></br>

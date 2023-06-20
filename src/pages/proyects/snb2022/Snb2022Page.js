@@ -59,14 +59,14 @@ export const Snb2022Page = () => {
 							{text("snb.p2")}
 						</p>
 
-                        <ShowTechIcons technologies={["Java"]}/>
+                        <ShowTechIcons technologies={["Java"]} position='end'/>
 
 						<h3>Back End:</h3>
 						<p>
 							{text("snb.p3")}
 						</p>
 
-                        <ShowTechIcons technologies={["MySql"]}/>
+                        <ShowTechIcons technologies={["MySql"]} position='end'/>
 
 						<br></br>
 						<br></br>

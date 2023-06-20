@@ -58,7 +58,7 @@ export const KidsrUs = () => {
                             {text("kidsrUs.p3")}
                         </p>
 
-                        <ShowTechIcons technologies={["React", "Redux", "Vite", "SASS"]} />
+                        <ShowTechIcons technologies={["React", "Redux", "Vite", "SASS"]} position='end'/>
 
                         <h3>Back End:</h3>
                         <ul>

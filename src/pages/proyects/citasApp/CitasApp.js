@@ -62,7 +62,7 @@ export const CitasApp = () => {
 							{text("citas.p3")}
 						</p>
 
-						<ShowTechIcons technologies={["JavaScript"]}/>
+						<ShowTechIcons technologies={["JavaScript"]} position='end'/>
 
 						<br></br>
 						<br></br>

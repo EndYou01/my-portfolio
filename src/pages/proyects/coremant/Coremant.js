@@ -53,7 +53,7 @@ export const Coremant = () => {
 						<h2>{text("snb.h2_1")}</h2>
 						<h3>Front End:</h3>
 
-						<ShowTechIcons technologies={["React", "Vite", "SASS"]} />
+						<ShowTechIcons technologies={["React", "Vite", "SASS"]} position='end'/>
 
 						<h3>Back End:</h3>
 						<ul>

@@ -12,15 +12,14 @@ export const Skills = () => {
 	return (
 		<div className='content'>
 			<Fade>
+				{/* Soft Skills */}
 				<h1 className='skills_h1'>{text("skills.soft-skills")}</h1>
 				<div className={
 					(!fillVariable)
 						? 'columns liDark'
 						: 'columns'
 				}>
-					{/* Soft Skills */}
 					<ul>
-						<ShowTechIcons technologies={['HTML', 'CSS', 'git', 'github', 'vite', 'Axios', 'bootstrap', 'antdesign', 'postman']} />
 						<li>
 							<span>{text("skills.EB2")}</span>
 						</li>
@@ -42,8 +41,25 @@ export const Skills = () => {
 					</ul>
 				</div>
 
-				<h1 className='skills_h1'>{text("skills.hard-skills")}</h1>
 
+				{/* Support Technologies */}
+				<h1 className='skills_h1'>{text("skills.support-technologies")}</h1>
+				<br />
+				<div className={
+					(!fillVariable)
+						? 'columns liDark'
+						: 'columns'
+				}>
+					<ShowTechIcons
+						technologies={["git", "github", "vite", "Axios", "bootstrap", "React Bootstrap", "antdesign", "postman", "swr", "SASS", "Redux", "Redux ToolKit"]}
+						position='center'
+					/>
+				</div>
+
+
+				{/* Hard Technologies */}
+				<h1 className='skills_h1'>{text("skills.hard-technologies")}</h1>
+				<br />
 				<div className={
 					(!fillVariable)
 						? 'columns liDark'
@@ -51,7 +67,10 @@ export const Skills = () => {
 				}>
 					{/* Hard Skills */}
 					<ul>
-						<ShowTechIcons technologies={["React", "TypeScript", "javascript", "SASS", "Redux", "REST API", "Next"]} />
+						<ShowTechIcons
+							technologies={["HTML", "CSS", "React", "TypeScript", "javascript", "REST API", "Next.js"]}
+							position='center'
+						/>
 					</ul>
 				</div>
 			</Fade>
