@@ -54,6 +54,7 @@ export const Skills = () => {
 						technologies={["git", "github", "vite", "Axios", "bootstrap", "React Bootstrap", "antdesign", "postman", "swr", "SASS", "Redux", "Redux ToolKit", "Tailwind"]}
 						position='center'
 					/>
+
 				</div>
 
 
@@ -66,12 +67,10 @@ export const Skills = () => {
 						: 'columns'
 				}>
 					{/* Hard Skills */}
-					<ul>
-						<ShowTechIcons
-							technologies={["HTML", "CSS", "React", "TypeScript", "javascript", "REST API", "Next.js"]}
-							position='center'
-						/>
-					</ul>
+					<ShowTechIcons
+						technologies={["HTML", "CSS", "React", "TypeScript", "javascript", "REST API", "Next.js"]}
+						position='center'
+					/>
 				</div>
 			</Fade>
 		</div>
