@@ -51,7 +51,7 @@ export const Skills = () => {
 						: 'columns'
 				}>
 					<ShowTechIcons
-						technologies={["git", "github", "vite", "Axios", "bootstrap", "React Bootstrap", "antdesign", "postman", "swr", "SASS", "Redux", "Redux ToolKit"]}
+						technologies={["git", "github", "vite", "Axios", "bootstrap", "React Bootstrap", "antdesign", "postman", "swr", "SASS", "Redux", "Redux ToolKit", "Tailwind"]}
 						position='center'
 					/>
 				</div>

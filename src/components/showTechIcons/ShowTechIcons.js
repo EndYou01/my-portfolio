@@ -107,15 +107,19 @@ export const ShowTechIcons = ({ technologies, position }) => {
         },
         {
             name: "Next.js",
-            src: "icons/NextJS_icon.svg"
+            src: "icons/NextJS_black&white_icon.svg"
         },
         {
             name: "SWR",
-            src: "icons/SWR_icon.svg"
+            src: "icons/SWR_black&white_icon.svg"
         },
         {
             name: "React Bootstrap",
             src: "icons/react_bootstrap_icon.png"
+        },
+        {
+            name: "Tailwind",
+            src: "icons/tailwind_icon.svg"
         }
     ]
 
@@ -128,7 +132,7 @@ export const ShowTechIcons = ({ technologies, position }) => {
                         return <Col key={index} className='d-flex flex-column align-items-center'>
                             <ImageLoaded
                                 effect={""}
-                                classname={e.src.includes(".svg")
+                                classname={e.src.includes("black&white")
                                     ? fillVariable === "rgb(20,20,20)" ? "techIconSvgWhite techIcon" : "techIcon"
                                     : "techIcon"}
                                 alt={"icon"}
