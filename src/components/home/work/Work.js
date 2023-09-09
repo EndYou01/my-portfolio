@@ -114,7 +114,7 @@ export const Work = () => {
 						<>
 							<br />
 							<br />
-							<Link to={"/work"} className='seeMore'>See more</Link>
+							<Link to={"/work"} className='seeMore'>{text("general.seeMore")}</Link>
 						</>
 					)
 				}

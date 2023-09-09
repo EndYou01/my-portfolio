@@ -52,7 +52,7 @@ export const About = () => {
 				<br />
 				{
 					!location && (
-						<Link to={"/about"} className='seeMore'>See more</Link>
+						<Link to={"/about"} className='seeMore'>{text("general.seeMore")}</Link>
 					)
 				}
 			</Fade>

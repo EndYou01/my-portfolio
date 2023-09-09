@@ -2,7 +2,8 @@
     "general": {
         "FrontendWebDeveloper": "Frontend Web Developer",
         "present": "Present",
-        "KeyResponsibilities": "Key Responsibilities"
+        "KeyResponsibilities": "Key Responsibilities",
+        "seeMore": "See more"
     },
     "header": {
         "portofolio": "Portfolio",
