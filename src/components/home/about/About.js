@@ -2,16 +2,19 @@ import React, { useContext } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Fade } from "react-awesome-reveal";
 import { FillContext } from '../../../context/FillContext';
+import { Link, useLocation } from 'react-router-dom';
 
 export const About = () => {
 	const [text] = useTranslation("global")
 
 	const { fillVariable } = useContext(FillContext)
 
+	const location = useLocation().pathname.includes('about')
+
 	return (
 		<div id="about" className='about_container'>
 			<Fade>
-				
+
 				<h1 className='center'>{text("about.a&e")}</h1>
 				<br></br>
 				<p className='about_container_text'>
@@ -44,6 +47,14 @@ export const About = () => {
 						</p>
 					</div>
 				</div>
+
+				<br />
+				<br />
+				{
+					!location && (
+						<Link to={"/about"} className='seeMore'>See more</Link>
+					)
+				}
 			</Fade>
 
 		</div>

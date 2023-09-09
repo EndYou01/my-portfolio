@@ -3,12 +3,18 @@ import { useTranslation } from 'react-i18next'
 import { About } from '../../components/home/about/About'
 import { Skills } from '../../components/home/skills/Skills'
 import { FillContext } from '../../context/FillContext';
+import { useEffect } from 'react';
+import { scrollToTop } from '../../functions/scrollToTop';
 
 export const AboutPage = () => {
 
     const [text] = useTranslation("global")
 
-    const { fillVariable } = useContext(FillContext)
+    useEffect(() => {
+
+        scrollToTop()
+
+    }, []);
 
     return (
         <>
