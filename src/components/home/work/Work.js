@@ -212,6 +212,31 @@ export const Work = () => {
 						</div>
 					</Fade>
 				</section>
+				<br />
+
+				<section className={
+					(fillVariable)
+						? 'projects_section'
+						: 'projects_section projects_section_dark'
+				}>
+					<Fade>
+						<div className='project_container'>
+							<ImageLoaded effect={"blur"} classname={"bg_image"} alt={"Lyn-Arte-Gráfico Image"} src={"freelance/lyn/lyn1.png"} />
+
+							<div className='project_image_container'>
+
+								<ImageLoaded effect={"blur"} classname={"project_image"} alt={"KidsrUs Logo"} src={"logos/lynLogo.png"} />
+
+							</div>
+							<div className='project_info_container'>
+								<h2>Lyn-Arte-Gráfico</h2>
+								<p>{text("lyn.p1")}
+								</p>
+								<LearnMoreButton pathname='/lyn' />
+							</div>
+						</div>
+					</Fade>
+				</section>
 			</div>
 
 		</div>

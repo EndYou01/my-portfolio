@@ -106,5 +106,11 @@
         "p2": "La prueba consitió en crear este sitio en el plazo de una semana, para el cuál podía utilizar la tecnología con que me sintiera más cómodo. Me dieron las instrucciones de funcionalidades que querían que apareciecen y las imagenes de todos los productos. Al no brindarme ninguna API, archivo .JSON o base de datos tuve que realizar un Mock con todos los parámetros de cada producto para entonces poder trabajar.",
         "p3": "Para la implementación de estados globales me basé en React-Redux, con lo que dominé la interfaz haciendo uso de dispatchs que modificaran estos estados. Las animaciones las fui creando conforme iban apareciendo, haciendo uso de librerías como react-image-magnify para el efecto zoom al hacer hover en la imagen de la pestaña ProductPage, animate.css para otras un poco más básicas y react-awesome-reveal para la primera aparición de los componentes."
     },
+    "lyn": {
+        "p1": "Primer sitio web elaborado desde cero con el equipo de desarrollo Tecopos.",
+        "p2": "Me complace compartir el primer sitio web que hemos desarrollado en colaboración con el equipo de Tecopos. En este proyecto, desempeñé el papel de diseñador, utilizando Tailwind UI para crear un diseño moderno y atractivo. Además, también asumí la responsabilidad de la programación del sitio web, asegurando su funcionalidad y usabilidad.",
+        "p3": "Durante el proceso de desarrollo, tuvimos varias reuniones con el cliente para entender sus necesidades y expectativas. En estas reuniones, se acordaron cambios y modificaciones en el diseño y la funcionalidad del sitio web. Nuestro objetivo principal fue garantizar la satisfacción del cliente y brindar una experiencia óptima a los usuarios finales.",
+        "p4": "En este proyecto, el equipo de Tecopos se encargó del desarrollo del backend. Utilizando sus conocimientos y experiencia en tecnologías específicas, implementaron soluciones eficientes, seguras y escalables que permitieron el almacenamiento y la recuperación de datos de manera confiable. Los datos mostrados en el sitio web son reales y fueron generados utilizando las tecnologías desarrolladas por Tecopos."
+    },
     "version": "Versión 1.2.0"
 }

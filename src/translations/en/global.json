@@ -106,5 +106,11 @@
         "p2": "The test consisted of creating this site within a week, for which I could use the technology with which I felt most comfortable. They gave me the instructions of functionalities that they wanted to appear and the images of all the products. By not providing me with any API,. JSON or database I had to make a Mock with all the parameters of each product to then be able to work.",
         "p3": "For the implementation of global states I relied on React-Redux, so I dominated the interface using dispatches that modified these states. I created the animations as they appeared, making use of libraries such as react-image-magnify for the zoom effect when hover the image of the ProductPage tab, animate.css for others a little more basic and react-awesome-reveal for the first appearance of the components."
     },
+    "lyn": {
+        "p1": "First website developed from scratch with the Tecopos development team.",
+        "p2": "I am pleased to share the first website we have developed in collaboration with the Tecopos team. In this project, I played the role of designer, using Tailwind UI to create a modern and attractive design. In addition, I also assumed responsibility for the programming of the website, ensuring its functionality and usability.",
+        "p3": "During the development process, we had several meetings with the client to understand their needs and expectations. In these meetings, changes and modifications to the design and functionality of the website were agreed. Our main goal was to ensure customer satisfaction and provide an optimal experience to end users.",
+        "p4": "In this project, the Tecopos team was in charge of the development of the backend. Using their knowledge and experience in specific technologies, they implemented efficient, secure and scalable solutions that enabled reliable data storage and retrieval. The data shown on the website is real and was generated using technologies developed by Tecopos."
+    },
     "version": "Version 1.2.0"
 }
