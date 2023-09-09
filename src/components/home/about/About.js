@@ -11,6 +11,7 @@ export const About = () => {
 	return (
 		<div id="about" className='about_container'>
 			<Fade>
+				
 				<h1 className='center'>{text("about.a&e")}</h1>
 				<br></br>
 				<p className='about_container_text'>
@@ -18,31 +19,13 @@ export const About = () => {
 				</p>
 
 				<br></br>
-				<h2 className='center'>{text("about.profExp")}</h2>
-
-				<div className={
-					(fillVariable)
-						? 	'infoContain'
-						:	'infoContain project_info_container_dark'
-				}>
-					<div className='infoRow'>
-						<h4>{text("about.fronh4")}</h4>
-						<p>{text("about.2020")}</p>
-					</div>
-					<br />
-					<div className='info'>
-						<p>{text("about.fronp1")}</p>
-					</div>
-				</div>
-
-				<br></br>
 
 				<h2 className='center'>{text("about.education")}</h2>
 
 				<div className={
 					(fillVariable)
-						? 	'infoContain'
-						:	'infoContain project_info_container_dark'
+						? 'infoContain'
+						: 'infoContain project_info_container_dark'
 				}>
 					<div className='infoRow'>
 						<h4>{text("about.h4")}</h4>
@@ -62,6 +45,7 @@ export const About = () => {
 					</div>
 				</div>
 			</Fade>
+
 		</div>
 
 

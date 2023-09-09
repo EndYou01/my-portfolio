@@ -1,3 +1,8 @@
+
+.secundary_color {
+  color: var(--secondary-color);
+}
+
 .center {
   text-align: center;
   margin-top: 40px;
@@ -29,13 +34,52 @@
   border-radius: 25px;
 }
 
-.infoContainDark{
+.infoContainDark {
   background-color: rgb(19, 48, 91);
 }
 
 .info {
   padding-left: 10px;
   width: calc(75% - 20px);
+}
+
+.table {
+  width: 100%;
+  background-color: rgb(10, 10, 10);
+  padding: 20px;
+  border: 1px solid rgb(30, 30, 30);
+  padding-top: 0px;
+  margin-top: 10px;
+  border-radius: 25px;
+}
+
+.first_td {
+  width: 25% !important;
+  color: white !important;
+  margin-top: 15px;
+}
+
+.second_td {
+  padding-left: 10px;
+  width: calc(75% - 20px);
+  border-left: 1px solid rgb(30, 30, 30);
+}
+
+.second_td_empressContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.second_td_empressIMG{
+  max-height: 50px;
+}
+
+.tr {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 10px;
+  margin-top: 10px;
 }
 
 @media only screen and (min-width: 1201px) {
@@ -49,7 +93,8 @@
     padding-left: 10px;
     width: 100%;
   }
+
   .infoRow {
-  flex-direction: column-reverse;
-}
+    flex-direction: column-reverse;
+  }
 }

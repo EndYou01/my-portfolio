@@ -12,6 +12,8 @@ export const IndexPage = () => {
     const { pathname } = useLocation()
     localStorage.setItem('lastLocation', pathname)
 
+    console.log(process.env)
+
     return (
         <div className='indexContainer'>
             <main className='main'>

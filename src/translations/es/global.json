@@ -1,4 +1,9 @@
 {
+    "general": {
+        "FrontendWebDeveloper": "Desarrollador Web Frontend",
+        "present": "Presente",
+        "KeyResponsibilities": "Responsabilidades clave"
+    },
     "header": {
         "portofolio": "Portafólio",
         "about": "Acerca",
@@ -24,10 +29,21 @@
         "graduation2": "Abandoné la universidad",
         "average": "Promedio:",
         "fronh4": "Ingeniero de Software Frontend",
-        "fronp1": "Comencé mi preparación como desarrollador fullstack y decidí comenzar por esta rama, y en ella he comprendido como funciona la web y los sistemas informáticos. He trabajado para varios clientes, haciendo principalmente componentes de páginas web, acumulando experiencia durante este período y me creo capaz de poder plasmar en codigo, el diseño que se me dé. "
+        "fronp1": "Comencé mi preparación como desarrollador fullstack y decidí comenzar por esta rama, y en ella he comprendido como funciona la web y los sistemas informáticos. He trabajado para varios clientes, haciendo principalmente componentes de páginas web, acumulando experiencia durante este período y me creo capaz de poder plasmar en codigo, el diseño que se me dé. ",
+        "PreparationAndFreelanceWork": "Preparación y trabajo freelance",
+        "worksInfo": {
+            "text1": "Como ingeniero front-end, me asignaron diseñar y desarrollar experiencias de usuario sólidas.",
+            "text2": "Diseñé y desarrollé múltiples páginas de inicio construidas desde cero usando HTML, CSS y Javascript en primera instancia y luego ReactJS y TypeScript. Con SEO muy mejorado e interacción con el usuario.",
+            "text3": "Migramos varios sitios web internos y herramientas de bases de código antiguas para usar nuevas tecnologías, hasta los nuevos estándares de la industria.",
+            "text4": "El trabajo era en modalidad no presencial por lo que me encargaba de organizar reuniones previas a la realización de nuevos proyectos.",
+            "text5": "Creación de nuevos componentes y funcionalidades en el sistema principal de la empresa, dedicado a la gestión de inventarios en almacenes.",
+            "text6": "El sistema funciona integrado en una API donde se realizan pruebas constantes para detectar errores.",
+            "text7": "Reuniones con clientes que estarían interesados en consumir los servicios de la empresa.",
+            "text8": "Creación de sitios web dinámicos no asociados al sistema, que se construyen desde cero utilizando ReactJS, TypeScript y Tailwind."
+        }
     },
     "skills": {
-        "soft-skills": "Habilidades Blandas",
+        "skills": "Habilidades",
         "support-technologies": "Tecnologías de Soporte",
         "hard-technologies": "Tecnologías duras",
         "EB2": "Inglés B2",
@@ -67,25 +83,25 @@
         "p2": "A nivel de complejidad creativa, es un componente sencillo y de facil creación.",
         "p3": "Hubo que realizar validaciones a cada uno de los campos de formulario que habían, y adecuarlos segun las especificaciones del cliente."
     },
-    "confort":{
+    "confort": {
         "h2": "Confort",
         "p": "Primer sitio de comercio electrónico en el que trabajé junto al equipo de desarrollo Go Django Development.",
         "p1": "Mi rol en este proyecto fue el de desarrollar el front-end, a petición del cliente (y de mi superior de ese entonces, para medir mis habilidades) fue construido en su totalidad con HTML5, CSS y Javascript, y usando Bootstrap como única herramienta para apoyarme en ella. Realicé solo el front-end, haciendo todas las funcionalidades y diseños de la página. Fue el proyecto, con el que puse en práctica, las bases de los conocimientos que se necesitan para comenzar a adentrarse en el mundo del desarrollo web.",
         "p2": "Me complace añadir a mi portafolio este proyecto en el que trabajé de manera coordinada con una diseñadora que se encargó del diseño del sitio web. Clarificamos conjuntamente dudas y preguntas relativas al mismo, creando además dos diferentes vistas, una para la versión móvil y otra para la versión de escritorio, agregando desde luego los media queries de CSS necesarios. Las diferentes secciones de la información contenida en el sitio web se cargaron de manera dinámica desde una API, así como los productos que allí se presentan, al igual que los diferentes elementos de la interfaz gráfica. Me esfuerzo por ofrecer soluciones de calidad basadas en el uso de las mejores prácticas en desarrollo web, trabajos remotos, metodologías ágiles y la rapidez con que entrego los resultados, con el mayor nivel de profesionalismo.",
         "p3": "Realizado en su totalidad por el grupo de desarrollo Go Django Development, usando Django, un framework de Python dedicado al trabajo back-end con la web. Realizando a consultas a APIs para realizar los micropagos y consultar a la Base de Datos para cargar los productos de manera dinámica."
     },
-    "coremant":{
+    "coremant": {
         "p": "Sitio web, de la empresa del mismo nombre, el cual se lanzó con el objetivo de ampliar sus fronteras y darse a conocer por este medio.",
         "p1": "El proyecto fue creado desde cero, donde pasó por etapas de diseño, planificación y reuniones con el cliente, etapas en las cuales estuve al frente de la operación. En la fase de desarrollo estuvimos involucrados dos desarrolladores para la creación del sitio en el menor tiempo posible, no resultó dificultoso puesto que solo era necesario un equipo de trabajo Front-End. Con este trabajo sentí más presión con aspectos como el liderazgo frente a un equipo y ser quien da la cara al cliente, que en el proceso de desarrollo."
     },
-    "crossBorder":{
+    "crossBorder": {
         "p1": "Sitio web Dinámico, creado por el equipo de desarrollo de Go Django Development para proporcionar el backend. Estuve al frente del equipo de desarrollo frontend.",
         "l1": "Compañero de Trabajo FrontEnd: ",
         "l2": "Compañero de Trabajo BackEnd: ",
         "p2": "Una vez iniciado el proceso de desarrollo, distribuí el trabajo junto con el otro desarrollador frontend para acelerarlo. Se usó Redux para una mejor administración de la aplicación y para cargar los endpoints proporcionados por el equipo de backend, usamos Axios, lo que hizo que todos los productos se cargaran de forma dinámica. Cuando se trató de la parte visual, se realizaron algunas animaciones no demasiado complicadas, utilizando herramientas proporcionadas por SASS para lograrlo.",
         "p3": "El desarrollador que trabajó en esta sección del proyecto era miembro de Go Django Development, grupo con el que había trabajado anteriormente. Se encargó de todo lo relacionado con la base de datos y con el lado del servidor, asegurándose de que todos los procesos estuvieran funcionando correctamente para asegurar un buen funcionamiento del sitio web."
     },
-    "kidsrUs":{
+    "kidsrUs": {
         "p1": "El proyecto es el resultado de la prueba técnica para programador front-end de la empresa chilena Business Bureau Digital, puesto para el cual apliqué.",
         "p2": "La prueba consitió en crear este sitio en el plazo de una semana, para el cuál podía utilizar la tecnología con que me sintiera más cómodo. Me dieron las instrucciones de funcionalidades que querían que apareciecen y las imagenes de todos los productos. Al no brindarme ninguna API, archivo .JSON o base de datos tuve que realizar un Mock con todos los parámetros de cada producto para entonces poder trabajar.",
         "p3": "Para la implementación de estados globales me basé en React-Redux, con lo que dominé la interfaz haciendo uso de dispatchs que modificaran estos estados. Las animaciones las fui creando conforme iban apareciendo, haciendo uso de librerías como react-image-magnify para el efecto zoom al hacer hover en la imagen de la pestaña ProductPage, animate.css para otras un poco más básicas y react-awesome-reveal para la primera aparición de los componentes."
