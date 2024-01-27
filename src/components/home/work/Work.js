@@ -241,7 +241,7 @@ export const Work = () => {
 
 										<div className='project_image_container'>
 
-											<ImageLoaded effect={"blur"} classname={"project_image"} alt={"KidsrUs Logo"} src={"logos/lynLogo.png"} />
+											<ImageLoaded effect={"blur"} classname={"project_image"} alt={"Lyn-Arte-Gráfico Logo"} src={"logos/lynLogo.png"} />
 
 										</div>
 										<div className='project_info_container'>
@@ -253,6 +253,34 @@ export const Work = () => {
 									</div>
 								</Fade>
 							</section>
+							<br />
+
+
+							<section className={
+								(fillVariable)
+									? 'projects_section'
+									: 'projects_section projects_section_dark'
+							}>
+								<Fade>
+									<div className='project_container'>
+										<ImageLoaded effect={"blur"} classname={"bg_image"} alt={"sinterceros Image"} src={"freelance/sinterceros/st1.png"} />
+
+										<div className='project_image_container'>
+
+											<ImageLoaded effect={"blur"} classname={"project_image"} alt={"sinterceros Logo"} src={"logos/sintercerosLogo.png"} />
+
+										</div>
+										<div className='project_info_container'>
+											<h2>Sin terceros</h2>
+											<p>{text("lyn.p1")}
+											</p>
+											<LearnMoreButton pathname='/sinterceros' />
+										</div>
+									</div>
+								</Fade>
+							</section>
+							<br />
+
 						</>
 					)
 				}

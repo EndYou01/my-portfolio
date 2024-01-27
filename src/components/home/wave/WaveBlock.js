@@ -36,7 +36,7 @@ export const WaveBlock = () => {
 					fill={
 						(fillVariable)
 							? 'rgb(20,20,20)'
-							: 'rgb(255,255,255)'
+							: 'rgba(255, 255, 255, 0.967)'
 					}
 					paused={false}
 					options={{
