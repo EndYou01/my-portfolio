@@ -271,7 +271,7 @@ export const Work = () => {
 
 										</div>
 										<div className='project_info_container'>
-											<h2>Sin terceros</h2>
+											<h2>SinTerceros</h2>
 											<p>{text("lyn.p1")}
 											</p>
 											<LearnMoreButton pathname='/sinterceros' />
