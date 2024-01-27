@@ -1,6 +1,7 @@
 {
     "general": {
         "FrontendWebDeveloper": "Frontend Web Developer",
+        "ChiefoftheWebDepartment": "Chief of the Web Department",
         "present": "Present",
         "KeyResponsibilities": "Key Responsibilities",
         "seeMore": "See more"
@@ -40,7 +41,12 @@
             "text5": "Creation of new components and functionalities in the main system of the company, dedicated to inventory management in warehouses.",
             "text6": "The system works integrated into an API where constant tests are carried out to detect errors.",
             "text7": "Meetings with clients who would be interested in consuming the company's services.",
-            "text8": "Creation of dynamic websites not associated with the system, which are built from scratch using ReactJS, TypeScript and Tailwind."
+            "text8": "Creation of dynamic websites not associated with the system, which are built from scratch using ReactJS, TypeScript and Tailwind.",
+            "text9": "Conduct regular meetings in your area to discuss ways to enhance products associated with your department and share solutions that may be cross-cutting.",
+            "text10": "Train new members joining the area.",
+            "text11": "Propose to management the technological changes deemed necessary to elevate the quality of the final products.",
+            "text12": "Collaborate with other departments to ensure the integration of developments into the ecosystem.",
+            "text13": "Evaluate the performance of subordinate specialists."
         }
     },
     "skills": {

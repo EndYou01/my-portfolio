@@ -1,6 +1,7 @@
 {
     "general": {
         "FrontendWebDeveloper": "Desarrollador Web Frontend",
+        "ChiefoftheWebDepartment": "Jefe del Departamento Web",
         "present": "Presente",
         "KeyResponsibilities": "Responsabilidades clave",
         "seeMore": "Ver más"
@@ -40,7 +41,12 @@
             "text5": "Creación de nuevos componentes y funcionalidades en el sistema principal de la empresa, dedicado a la gestión de inventarios en almacenes.",
             "text6": "El sistema funciona integrado en una API donde se realizan pruebas constantes para detectar errores.",
             "text7": "Reuniones con clientes que estarían interesados en consumir los servicios de la empresa.",
-            "text8": "Creación de sitios web dinámicos no asociados al sistema, que se construyen desde cero utilizando ReactJS, TypeScript y Tailwind."
+            "text8": "Creación de sitios web dinámicos no asociados al sistema, que se construyen desde cero utilizando ReactJS, TypeScript y Tailwind.",
+            "text9": "Realizar reuniones regulares en su área para discutir formas de mejorar los productos asociados a su departamento, así como compartir soluciones que puedan ser transversales.",
+            "text10": "Capacitar a los nuevos miembros que se incorporen al área",
+            "text11": "Proponer a la Dirección los cambios tecnológicos que considere necesarios para elevar la calidad de los productos finales.",
+            "text12": "Colaborar con otros departamentos para garantizar la integración de los desarrollos al ecosistema.",
+            "text13": "Evaluar el rendimiento de los especialistas subordinados."
         }
     },
     "skills": {
