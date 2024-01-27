@@ -24,6 +24,7 @@ const SinTerceros = () => {
         "freelance/sinterceros/st3.png",
         "freelance/sinterceros/st4.png",
         "freelance/sinterceros/st5.png",
+        "freelance/sinterceros/st6.png",
     ]
 
     return (
@@ -39,12 +40,12 @@ const SinTerceros = () => {
                     <div>
                         <h1 className='Colorh1'>SinTerceros</h1>
                         <p>
-                            {text("lyn.p2")}
+                            {text("sinterceros.p2")}
                         </p>
                         <br />
                         {/* <ul>
-                    <li>{text("lyn.l1")} <a className='link' href='https://github.com/Panik-Attack'>Eduardo Garcia Alfonso</a></li>
-                    <li>{text("lyn.l2")} <a className='link' href='https://github.com/YordanisPonce'>Yordanis Ponce</a></li>
+                    <li>{text("sinterceros.l1")} <a className='link' href='https://github.com/Panik-Attack'>Eduardo Garcia Alfonso</a></li>
+                    <li>{text("sinterceros.l2")} <a className='link' href='https://github.com/YordanisPonce'>Yordanis Ponce</a></li>
                 </ul> */}
 
                     </div>
@@ -55,7 +56,7 @@ const SinTerceros = () => {
                         <h2>{text("snb.h2_1")}</h2>
                         <h3>Front End:</h3>
                         <p>
-                            {text("lyn.p3")}
+                            {text("sinterceros.p3")}
                         </p>
 
                         <ShowTechIcons technologies={["React", "Vite", "Axios", "Tailwind", "TypeScript"]} position='end' />
@@ -63,7 +64,7 @@ const SinTerceros = () => {
                         <h3>Back End:</h3>
 
                         <p>
-                            {text("lyn.p4")}
+                            {text("sinterceros.p4")}
                         </p>
                         {/* <ul>
                     <li>none</li>

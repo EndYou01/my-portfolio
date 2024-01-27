@@ -113,5 +113,11 @@
         "p3": "Durante el proceso de desarrollo, tuvimos varias reuniones con el cliente para entender sus necesidades y expectativas. En estas reuniones, se acordaron cambios y modificaciones en el diseño y la funcionalidad del sitio web. Nuestro objetivo principal fue garantizar la satisfacción del cliente y brindar una experiencia óptima a los usuarios finales.",
         "p4": "En este proyecto, el equipo de Tecopos se encargó del desarrollo del backend. Utilizando sus conocimientos y experiencia en tecnologías específicas, implementaron soluciones eficientes, seguras y escalables que permitieron el almacenamiento y la recuperación de datos de manera confiable. Los datos mostrados en el sitio web son reales y fueron generados utilizando las tecnologías desarrolladas por Tecopos."
     },
+    "sinterceros": {
+        "p1": "Buscador definitivo de productos y servicios en tiempo real. Tiene la misión de facilitarte la vida conectándote con los mejores negocios indexados a Tecopos. Explora una amplia gama de productos y servicios, todo en un solo lugar y con información actualizada al momento.",
+        "p2": " Con funciones de paginación, ordenamiento y filtros, encontrar lo que necesitas es más fácil que nunca, posibilidad de ajustar las columnas y redireccionarte directamente al negocio de Tecopos con el producto existente. Estas fueron las funcionalidades que se implementan en el sitio.",
+        "p3": "Nuestro proyecto utiliza tecnologías de vanguardia como React para una interfaz interactiva, Vite para un desarrollo rápido, Axios para gestión de solicitudes al servidor, TypeScript para seguridad y tipificación, y Tailwind para un diseño moderno. Esta combinación garantiza un rendimiento óptimo y una experiencia de usuario excepcional.",
+        "p4": "El equipo de backend lideró el desarrollo de las bases de datos y el servidor para asegurar un funcionamiento sólido y eficiente. Todas las productos presentes son reales y provienen exclusivamente de Tecopos, garantizando autenticidad y calidad."
+    },
     "version": "Versión 1.2.0"
 }

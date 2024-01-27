@@ -113,5 +113,11 @@
         "p3": "During the development process, we had several meetings with the client to understand their needs and expectations. In these meetings, changes and modifications to the design and functionality of the website were agreed. Our main goal was to ensure customer satisfaction and provide an optimal experience to end users.",
         "p4": "In this project, the Tecopos team was in charge of the development of the backend. Using their knowledge and experience in specific technologies, they implemented efficient, secure and scalable solutions that enabled reliable data storage and retrieval. The data shown on the website is real and was generated using technologies developed by Tecopos."
     },
+    "sinterceros": {
+        "p1": "Ultimate real-time product and service finder. Its mission is to make your life easier by connecting you with the best businesses indexed in Tecopos. Explore a wide range of products and services, all in one place and with up-to-the-minute information.",
+        "p2": "With pagination, sorting, and filtering features, finding what you need is easier than ever. There's the possibility to adjust columns and redirect directly to Tecopos' business with the existing product. These were the functionalities implemented on the site.",
+        "p3": "Our project leverages cutting-edge technologies such as React for an interactive interface, Vite for rapid development, Axios for server request management, TypeScript for security and typing, and Tailwind for modern design. This combination ensures optimal performance and an exceptional user experience.",
+        "p4": "The backend team led the development of databases and the server to ensure a robust and efficient operation. All the present products are real and exclusively sourced from Tecopos, guaranteeing authenticity and quality."
+    },
     "version": "Version 1.2.0"
 }
