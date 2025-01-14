@@ -51,6 +51,14 @@ export const Work = () => {
 
   const projects = [
     {
+      title: "Tecopos Administracion",
+      description: t("sinterceros.p1"),
+      bgImage: "freelance/tecopos/tecopos9.png",
+      logoImage: "logos/TecoposLogo.png",
+      buttonPath: "/tecoposadmin",
+      altText: "TecoposAdmin",
+    },
+    {
       title: "SinTerceros",
       description: t("sinterceros.p1"),
       bgImage: "freelance/sinterceros/st1.png",
@@ -65,14 +73,6 @@ export const Work = () => {
       logoImage: "logos/gelatologo.jpg",
       buttonPath: "/sinterceros",
       altText: "Gelato",
-    },
-    {
-      title: "Tecopos Administracion",
-      description: t("sinterceros.p1"),
-      bgImage: "freelance/tecopos/tecopos1.png",
-      logoImage: "logos/TecoposLogo.png",
-      buttonPath: "/sinterceros",
-      altText: "TecoposAdmin",
     },
     ...(isWorkLocation
       ? [

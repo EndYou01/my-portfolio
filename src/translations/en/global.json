@@ -65,7 +65,7 @@
         "h1": "I am a web developer with experience in creating production-ready web applications."
     },
     "work": {
-        "h1": "University Projects",
+        "h1": "Projects",
         "lm": "Learn More",
         "freelance": "Freelance Projects"
     },
@@ -124,6 +124,12 @@
         "p2": "With pagination, sorting, and filtering features, finding what you need is easier than ever. There's the possibility to adjust columns and redirect directly to Tecopos' business with the existing product. These were the functionalities implemented on the site.",
         "p3": "Our project leverages cutting-edge technologies such as React for an interactive interface, Vite for rapid development, Axios for server request management, TypeScript for security and typing, and Tailwind for modern design. This combination ensures optimal performance and an exceptional user experience.",
         "p4": "The backend team led the development of databases and the server to ensure a robust and efficient operation. All the present products are real and exclusively sourced from Tecopos, guaranteeing authenticity and quality."
+    },
+    "tecoposadmin": {
+        "p1": "p1",
+        "p2": "p2",
+        "p3": "The project's frontend is developed using **React** as the main framework for building dynamic user interfaces, complemented by **React Router Dom** for navigation in single-page applications (SPAs). For design, **TailwindCSS** is used as a utility-first CSS framework that enables fast and customizable styling, along with extensions like **@tailwindcss/forms** and icon libraries such as **Heroicons** and **FontAwesome**, which provide a modern aesthetic. State management is handled by **Redux** and **Redux Toolkit**, ensuring efficient data handling, while **Redux Persist** facilitates state persistence in local storage. User interaction is enhanced with dynamic components and tools like **React Hook Form**, **Formik**, and **Yup** for validated forms, as well as data visualization libraries like **Chart.js**, **ApexCharts**, and **React Big Calendar**, which are ideal for interactive charts and calendars. File handling is optimized with **React Dropzone** for file uploads and **File Saver** for downloads, along with support for generating and rendering PDF documents using **React PDF**. All of this is backed by modern development tools such as **Babel**, **TypeScript**, and **Jest**, ensuring clean, scalable, and well-tested code. This technology stack combines efficiency, functionality, and design to deliver a seamless and attractive user experience.",
+        "p4": "The backend of this project was developed using **Express**, a powerful and flexible JavaScript framework widely recognized for building fast and scalable server-side applications. It provides a lightweight and efficient structure for handling HTTP requests, managing middleware, and creating robust APIs. For the database, the team chose **MongoDB**, a NoSQL database that integrates seamlessly with Express, offering flexibility and high performance for managing large datasets and dynamic schemas. This backend implementation was designed and built by a dedicated development team, independent from my involvement in the project. Their expertise ensured the backend is well-structured, secure, and capable of supporting the demands of the application, including handling user authentication, data management, and integration with the frontend."
     },
     "version": "Version 1.2.0"
 }

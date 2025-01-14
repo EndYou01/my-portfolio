@@ -22,6 +22,7 @@ import { FillContext } from '../context/FillContext';
 import { CrossBorder } from '../pages/proyects/crossBorder/CrossBorder';
 import { KidsrUs } from '../pages/proyects/kidsrUs/KidsrUs';
 import { Lyn } from '../pages/proyects/lyn/Lyn';
+import { TecoposAdmin } from '../pages/proyects/tecopos/TecoposAdmin';
 import SinTerceros from '../pages/proyects/sinterceros/SinTerceros';
 
 export const AppRouter = () => {
@@ -53,6 +54,7 @@ export const AppRouter = () => {
                     <Route path='/crossBorder' element={<CrossBorder />} />
                     <Route path='/kidsrus' element={<KidsrUs />} />
                     <Route path='/lyn' element={<Lyn />} />
+                    <Route path='/tecoposadmin' element={<TecoposAdmin />} />
                     <Route path='/sinterceros' element={<SinTerceros />} />
                 </Routes>
 
