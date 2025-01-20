@@ -126,10 +126,25 @@
         "p4": "The backend team led the development of databases and the server to ensure a robust and efficient operation. All the present products are real and exclusively sourced from Tecopos, guaranteeing authenticity and quality."
     },
     "tecoposadmin": {
-        "p1": "p1",
-        "p2": "p2",
+        "t1": "Tecopos Admin",
+        "p1": "Real-time inventory management and administration site, designed to meet the diverse needs of a business. It integrates key aspects of economics, accounting, and administration, offering a comprehensive and efficient solution.",
+        "p2": "Project in which I worked for two years, providing maintenance, support, and developing new features until it reached its peak. It personally represents the result of years of study and dedication, where my knowledge and skills proved their worth.",
         "p3": "The project's frontend is developed using **React** as the main framework for building dynamic user interfaces, complemented by **React Router Dom** for navigation in single-page applications (SPAs). For design, **TailwindCSS** is used as a utility-first CSS framework that enables fast and customizable styling, along with extensions like **@tailwindcss/forms** and icon libraries such as **Heroicons** and **FontAwesome**, which provide a modern aesthetic. State management is handled by **Redux** and **Redux Toolkit**, ensuring efficient data handling, while **Redux Persist** facilitates state persistence in local storage. User interaction is enhanced with dynamic components and tools like **React Hook Form**, **Formik**, and **Yup** for validated forms, as well as data visualization libraries like **Chart.js**, **ApexCharts**, and **React Big Calendar**, which are ideal for interactive charts and calendars. File handling is optimized with **React Dropzone** for file uploads and **File Saver** for downloads, along with support for generating and rendering PDF documents using **React PDF**. All of this is backed by modern development tools such as **Babel**, **TypeScript**, and **Jest**, ensuring clean, scalable, and well-tested code. This technology stack combines efficiency, functionality, and design to deliver a seamless and attractive user experience.",
         "p4": "The backend of this project was developed using **Express**, a powerful and flexible JavaScript framework widely recognized for building fast and scalable server-side applications. It provides a lightweight and efficient structure for handling HTTP requests, managing middleware, and creating robust APIs. For the database, the team chose **MongoDB**, a NoSQL database that integrates seamlessly with Express, offering flexibility and high performance for managing large datasets and dynamic schemas. This backend implementation was designed and built by a dedicated development team, independent from my involvement in the project. Their expertise ensured the backend is well-structured, secure, and capable of supporting the demands of the application, including handling user authentication, data management, and integration with the frontend."
+    },
+    "gelato": {
+        "t1": "The Gelato",
+        "p1": "E-commerce online store specializing in ice cream, focused on international payments and the creation of orders with included messaging service.",
+        "p2": "This store is a project I was entrusted with while working at Tecopos. The data displayed is sourced directly from their servers.",
+        "p3": "I worked alone on the front-end development. The data loads from the beginning, displaying a loading... indicator before the categories and products appear. The page saves each customer's purchase form information to enhance the user experience, preventing them from having to fill it out repeatedly. It also retains other data, such as the selected currency for product prices, and ensures the shopping cart persists even if the user leaves the page and returns later. In terms of complexity, this project requires precise integration of all components, as it renders a large amount of information on the screen.",
+        "p4": "Developed and provided by Tecopos' backend team."
+    },
+    "elgaban": {
+        "t1": "The Gaban",
+        "p1": "Online store for restaurant, designed to display the menu to diners and streamline order creation through integration with the WhatsApp API.",
+        "p2": "This store is a project I was entrusted with while working at Tecopos. The data displayed is sourced directly from their servers.",
+        "p3": "While it may not seem like a complex project at first glance, it is fully configured to function either as an e-commerce online store with real-time orders, user creation and authentication, or as a basic menu. This design allows the business to modify it according to their specific needs.",
+        "p4": "Developed and provided by Tecopos' backend team."
     },
     "version": "Version 1.2.0"
 }

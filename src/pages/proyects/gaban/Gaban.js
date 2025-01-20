@@ -1,7 +1,7 @@
 
 import React, { useContext } from 'react'
 import { Fade } from "react-awesome-reveal";
-import { BsCodeSlash } from "react-icons/bs";
+import { BsCodeSlash, BsBoxArrowInUpRight } from "react-icons/bs";
 import { useTranslation } from 'react-i18next';
 
 import { scrollToTop } from '../../../functions/scrollToTop';
@@ -10,7 +10,7 @@ import { CarouselImage } from '../../../components/carouselImage/CarouselImage';
 import { FillContext } from '../../../context/FillContext';
 import { ShowTechIcons } from '../../../components/showTechIcons/ShowTechIcons';
 
-export const TecoposAdmin = () => {
+export const Gaban = () => {
 
     const { fillVariable } = useContext(FillContext)
 
@@ -19,14 +19,11 @@ export const TecoposAdmin = () => {
     const [text] = useTranslation("global")
 
     const images = [
-        "freelance/tecopos/tecopos1.png",
-        "freelance/tecopos/tecopos2.png",
-        "freelance/tecopos/tecopos9.png",
-        "freelance/tecopos/tecopos4.png",
-        "freelance/tecopos/tecopos5.png",
-        "freelance/tecopos/tecopos6.png",
-        "freelance/tecopos/tecopos7.png",
-        "freelance/tecopos/tecopos8.png",
+        "freelance/elgaban/elgaban1.png",
+        "freelance/elgaban/elgaban2.jpg",
+        "freelance/elgaban/elgaban3.jpg",
+        "freelance/elgaban/elgaban4.jpg",
+        "freelance/elgaban/elgaban5.jpg",
     ]
 
     return (
@@ -40,9 +37,9 @@ export const TecoposAdmin = () => {
 
                     <BackButton />
                     <div>
-                        <h1 className='Colorh1'>{text("tecoposadmin.t1")}</h1>
+                        <h1 className='Colorh1'>{text("elgaban.t1")}</h1>
                         <p>
-                            {text("tecoposadmin.p2")}
+                            {text("elgaban.p2")}
                         </p>
                         <br />
                     </div>
@@ -53,15 +50,15 @@ export const TecoposAdmin = () => {
                         <h2>{text("snb.h2_1")}</h2>
                         <h3>Front End:</h3>
                         <p>
-                            {text("tecoposadmin.p3")}
+                            {text("elgaban.p3")}
                         </p>
 
-                        <ShowTechIcons technologies={["React", "Redux", "Redux ToolKit", "Axios", "Tailwind", "TypeScript"]} position='end' />
+                        <ShowTechIcons technologies={["React", "Axios", "Tailwind", "TypeScript"]} position='end' />
 
                         <h3>Back End:</h3>
 
                         <p>
-                            {text("tecoposadmin.p4")}
+                            {text("elgaban.p4")}
                         </p>
                         {/* <ul>
                             <li>none</li>
@@ -77,6 +74,16 @@ export const TecoposAdmin = () => {
                             } />
 
                             <p>{text("footer.nosource")}</p>
+                        </div>
+
+                        <div className='this_page_source_container' >
+                            <BsBoxArrowInUpRight className={
+                                (fillVariable)
+                                    ? 'icon'
+                                    : 'icon btn_icon_dark'
+                            } />
+
+                            <a href='https://elgabanoficial.com'>Visitar sitio</a>
                         </div>
                     </div>
                 </main>

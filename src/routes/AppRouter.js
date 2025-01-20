@@ -24,6 +24,8 @@ import { KidsrUs } from '../pages/proyects/kidsrUs/KidsrUs';
 import { Lyn } from '../pages/proyects/lyn/Lyn';
 import { TecoposAdmin } from '../pages/proyects/tecopos/TecoposAdmin';
 import SinTerceros from '../pages/proyects/sinterceros/SinTerceros';
+import { Gelato } from '../pages/proyects/gelato/Gelato';
+import { Gaban } from '../pages/proyects/gaban/Gaban';
 
 export const AppRouter = () => {
 
@@ -55,7 +57,9 @@ export const AppRouter = () => {
                     <Route path='/kidsrus' element={<KidsrUs />} />
                     <Route path='/lyn' element={<Lyn />} />
                     <Route path='/tecoposadmin' element={<TecoposAdmin />} />
+                    <Route path='/gelato' element={<Gelato />} />
                     <Route path='/sinterceros' element={<SinTerceros />} />
+                    <Route path='/elgaban' element={<Gaban />} />
                 </Routes>
 
                 <div className='contain-footer'>
