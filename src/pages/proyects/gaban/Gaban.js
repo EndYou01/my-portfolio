@@ -83,7 +83,7 @@ export const Gaban = () => {
                                     : 'icon btn_icon_dark'
                             } />
 
-                            <a href='https://elgabanoficial.com'>Visitar sitio</a>
+                            <a href='https://elgabanoficial.com'>{text("general.visitSite")}</a>
                         </div>
                     </div>
                 </main>

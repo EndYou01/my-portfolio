@@ -93,7 +93,7 @@ const ProfesionalExperience = () => {
 
 
                     <div style={{ border: "none" }} className={"tr"}>
-                        <div className={"first_td"}>2023/12 - {text("general.present")}</div>
+                        <div className={"first_td"}>2023/12 - 2025/01</div>
 
                         <div className={fillVariable ? "second_td" : "second_td_dark"}>
                             <h3>{text("general.ChiefoftheWebDepartment")}</h3>

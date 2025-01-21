@@ -4,7 +4,8 @@
         "ChiefoftheWebDepartment": "Jefe del Departamento Web",
         "present": "Presente",
         "KeyResponsibilities": "Responsabilidades clave",
-        "seeMore": "Ver más"
+        "seeMore": "Ver más",
+        "visitSite": "Visitar sitio"
     },
     "header": {
         "portofolio": "Portafólio",
@@ -144,6 +145,12 @@
         "p1": "Tienda online para restaurante, diseñada para mostrar el menú a los comensales y facilitar la creación de órdenes mediante la integración con la API de WhatsApp.",
         "p2": "Esta tienda es un proyecto que me fue encargado durante mi trabajo en la empresa Tecopos. Los datos que se muestran son proporcionados directamente desde sus servidores.",
         "p3": "Aunque a simple vista no parece un proyecto complicado, está completamente configurado para funcionar como una tienda online de comercio electrónico con pedidos en tiempo real, creación y autenticación de usuarios, o como un simple menú en su modo básico. Esta flexibilidad permite que el negocio lo adapte fácilmente a sus necesidades específicas.",
+        "p4": "Desarrollado y proporcionado por el equipo de backend de Tecopos."
+    },
+    "celebren": {
+        "p1": "Celebren es un proyecto ambicioso que combina cuatro de los negocios de esta emrpesa en una sola página web, unificando toda su información en un home page y de ahi nacen los cuatro negocios.",
+        "p2": "Una sola página principal que unifica a todas es la raiz de este proyecto, ahi se muestra información de la empresa de forma general, y en la sección de servicios redirige a cada uno de los cuatro negocios dependiendo de cual fue el seleccionado. Individualmente cada uno funciona con su propia forma de obtener su información y muestra variados productos y servicios, en escencia dos de los negocios integrados funcionan como páginas de comercio electrónico y los otros dos como páginas de reservaciones.",
+        "p3": "Proyecto individual en el cual tuve que separar la lógica del front para que funcionara cada negocio de forma independiente a la página principal entrando por su respectiva ruta, cada lógica de negocio por detrás tiene sus propias características y especificaciones. Complicado de realizar y larga duración para acabarlo.",
         "p4": "Desarrollado y proporcionado por el equipo de backend de Tecopos."
     },
     "version": "Versión 1.2.0"

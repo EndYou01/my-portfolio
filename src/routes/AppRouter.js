@@ -26,6 +26,7 @@ import { TecoposAdmin } from '../pages/proyects/tecopos/TecoposAdmin';
 import SinTerceros from '../pages/proyects/sinterceros/SinTerceros';
 import { Gelato } from '../pages/proyects/gelato/Gelato';
 import { Gaban } from '../pages/proyects/gaban/Gaban';
+import { Celebren } from '../pages/proyects/celebrebn/Celebren';
 
 export const AppRouter = () => {
 
@@ -60,6 +61,7 @@ export const AppRouter = () => {
                     <Route path='/gelato' element={<Gelato />} />
                     <Route path='/sinterceros' element={<SinTerceros />} />
                     <Route path='/elgaban' element={<Gaban />} />
+                    <Route path='/celebren' element={<Celebren />} />
                 </Routes>
 
                 <div className='contain-footer'>

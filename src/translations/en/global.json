@@ -4,7 +4,8 @@
         "ChiefoftheWebDepartment": "Chief of the Web Department",
         "present": "Present",
         "KeyResponsibilities": "Key Responsibilities",
-        "seeMore": "See more"
+        "seeMore": "See more",
+        "visitSite": "Visit site"
     },
     "header": {
         "portofolio": "Portfolio",
@@ -144,6 +145,12 @@
         "p1": "Online store for restaurant, designed to display the menu to diners and streamline order creation through integration with the WhatsApp API.",
         "p2": "This store is a project I was entrusted with while working at Tecopos. The data displayed is sourced directly from their servers.",
         "p3": "While it may not seem like a complex project at first glance, it is fully configured to function either as an e-commerce online store with real-time orders, user creation and authentication, or as a basic menu. This design allows the business to modify it according to their specific needs.",
+        "p4": "Developed and provided by Tecopos' backend team."
+    },
+    "celebren": {
+        "p1": "Celebren is an ambitious project that combines four of the businesses of this company on a single website, unifying all its information on a home page and from there the four businesses are born.",
+        "p2": "A single main page that unifies all of them is the root of this project, there is information about the company in a general way, and in the services section it redirects to each of the four businesses depending on which one was selected. Individually each one works with its own way of obtaining its information and shows various products and services, in essence two of the integrated businesses function as e-commerce pages and the other two as reservation pages.",
+        "p3": "Individual project in which I had to separate the logic from the front so that each business would work independently of the main page entering through its respective route, each business logic behind has its own characteristics and specifications. Complicated to make and long lasting to finish.",
         "p4": "Developed and provided by Tecopos' backend team."
     },
     "version": "Version 1.2.0"

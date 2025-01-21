@@ -10,7 +10,7 @@ import { CarouselImage } from '../../../components/carouselImage/CarouselImage';
 import { FillContext } from '../../../context/FillContext';
 import { ShowTechIcons } from '../../../components/showTechIcons/ShowTechIcons';
 
-export const Gelato = () => {
+export const Celebren = () => {
 
     const { fillVariable } = useContext(FillContext)
 
@@ -19,13 +19,12 @@ export const Gelato = () => {
     const [text] = useTranslation("global")
 
     const images = [
-        "freelance/gelato/gelato1.png",
-        "freelance/gelato/gelato2.jpg",
-        "freelance/gelato/gelato3.jpg",
-        "freelance/gelato/gelato4.jpg",
-        "freelance/gelato/gelato5.jpg",
-        "freelance/gelato/gelato6.jpg",
-        "freelance/gelato/gelato7.jpg",
+        "freelance/celebren/celebren1.png",
+        "freelance/celebren/celebren2.jpg",
+        "freelance/celebren/celebren3.jpg",
+        "freelance/celebren/celebren4.jpg",
+        "freelance/celebren/celebren5.jpg",
+        "freelance/celebren/celebren6.jpg",
     ]
 
     return (
@@ -39,9 +38,9 @@ export const Gelato = () => {
 
                     <BackButton />
                     <div>
-                        <h1 className='Colorh1'>{text("gelato.t1")}</h1>
+                        <h1 className='Colorh1'>Celebren</h1>
                         <p>
-                            {text("gelato.p2")}
+                            {text("celebren.p2")}
                         </p>
                         <br />
                     </div>
@@ -52,15 +51,15 @@ export const Gelato = () => {
                         <h2>{text("snb.h2_1")}</h2>
                         <h3>Front End:</h3>
                         <p>
-                            {text("gelato.p3")}
+                            {text("celebren.p3")}
                         </p>
 
-                        <ShowTechIcons technologies={["React", "Axios", "Tailwind", "TypeScript"]} position='end' />
+                        <ShowTechIcons technologies={["React", "Axios", "Vite", "Tailwind", "TypeScript"]} position='end' />
 
                         <h3>Back End:</h3>
 
                         <p>
-                            {text("gelato.p4")}
+                            {text("celebren.p4")}
                         </p>
                         {/* <ul>
                             <li>none</li>
@@ -85,7 +84,7 @@ export const Gelato = () => {
                                     : 'icon btn_icon_dark'
                             } />
 
-                            <a href='https://elgelatooficial.com'>{text("general.visitSite")}</a>
+                            <a href='https://celebrenstore.com/'>{text("general.visitSite")}</a>
                         </div>
                     </div>
                 </main>

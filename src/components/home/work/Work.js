@@ -51,7 +51,7 @@ export const Work = () => {
 
   const projects = [
     {
-      title: "Tecopos Administracion",
+      title: t("tecoposadmin.t1"),
       description: t("tecoposadmin.p1"),
       bgImage: "freelance/tecopos/tecopos9.png",
       logoImage: "logos/TecoposLogo.png",
@@ -110,10 +110,10 @@ export const Work = () => {
           },
           {
             title: "Celebren Web",
-            description: t("sinterceros.p1"),
+            description: t("celebren.p1"),
             bgImage: "freelance/celebren/celebren1.png",
             logoImage: "logos/celebrenlogo.png",
-            buttonPath: "/sinterceros",
+            buttonPath: "/celebren",
             altText: "CelebrenWeb",
           },
           {
