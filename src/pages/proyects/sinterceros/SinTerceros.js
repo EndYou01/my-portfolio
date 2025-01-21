@@ -1,7 +1,7 @@
 
 import React, { useContext } from 'react'
 import { Fade } from "react-awesome-reveal";
-import { BsCodeSlash } from "react-icons/bs";
+import { BsCodeSlash, BsBoxArrowInUpRight } from "react-icons/bs";
 import { useTranslation } from 'react-i18next';
 
 import { scrollToTop } from '../../../functions/scrollToTop';
@@ -80,6 +80,16 @@ const SinTerceros = () => {
                             } />
 
                             <p>{text("footer.nosource")}</p>
+                        </div>
+
+                        <div className='this_page_source_container' >
+                            <BsBoxArrowInUpRight className={
+                                (fillVariable)
+                                    ? 'icon'
+                                    : 'icon btn_icon_dark'
+                            } />
+
+                            <a href='https://sinterceros.com/'>{text("general.visitSite")}</a>
                         </div>
                     </div>
                 </main>
