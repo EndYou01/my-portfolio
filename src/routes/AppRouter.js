@@ -27,11 +27,14 @@ import SinTerceros from '../pages/proyects/sinterceros/SinTerceros';
 import { Gelato } from '../pages/proyects/gelato/Gelato';
 import { Gaban } from '../pages/proyects/gaban/Gaban';
 import { Celebren } from '../pages/proyects/celebrebn/Celebren';
+import { FuegoAbiertoPage } from '../pages/proyects/fuegoAbierto/FuegoAbiertoPage';
+import { CugrancaPage } from '../pages/proyects/cugranca/CugrancaPage';
+import { RedCollegePage } from '../pages/proyects/redCollege/RedCollegePage';
 
 export const AppRouter = () => {
 
     const [fillVariable, setFillVariable] = useState(true)
-	const [firstLoad, setFirstLoad] = useState(false)
+    const [firstLoad, setFirstLoad] = useState(false)
 
     return (
 
@@ -49,6 +52,9 @@ export const AppRouter = () => {
                     <Route path='/about' element={<AboutPage />} />
                     <Route path='/work' element={<WorkPage />} />
 
+                    <Route path='/redcollege' element={<RedCollegePage />} />
+                    <Route path='/fuegoabierto' element={<FuegoAbiertoPage />} />
+                    <Route path='/cugranca' element={<CugrancaPage />} />
                     <Route path='/snb' element={<Snb2022Page />} />
                     <Route path='/mandalorian' element={<Mandalorian />} />
                     <Route path='/citasApp' element={<CitasApp />} />
@@ -69,6 +75,6 @@ export const AppRouter = () => {
                 </div>
             </BrowserRouter>
         </FillContext.Provider>
-        
+
     )
 }
