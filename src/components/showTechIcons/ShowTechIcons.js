@@ -2,9 +2,7 @@
 import { ImageLoaded } from '../imageLoaded/ImageLoaded'
 import { Row, Col } from 'react-bootstrap'
 
-export const ShowTechIcons = ({ technologies, position }) => {
-
-    console.log(position)
+export const ShowTechIcons = ({ technologies, position, lite = false }) => {
 
     let fillVariable = localStorage.getItem('FillVariable')
 
@@ -152,7 +150,7 @@ export const ShowTechIcons = ({ technologies, position }) => {
     ]
 
     return (
-        <Row xs={3} sm={4} lg={5} xl={6} className={`techIcons_container g-4 justify-content-${position !== undefined ? position : 'end'}`}>
+        <Row xs={3} sm={4} lg={5} xl={6} className={`techIcons_container g-4 justify-content-end`}>
             {
                 techIcons.map((e, index) => {
 
@@ -161,11 +159,12 @@ export const ShowTechIcons = ({ technologies, position }) => {
                             <ImageLoaded
                                 effect={""}
                                 classname={e.src.includes("black&white")
-                                    ? fillVariable === "rgb(20,20,20)" ? "techIconSvgWhite techIcon" : "techIcon"
-                                    : "techIcon"}
+                                    ? fillVariable === "rgb(20,20,20)" ? (lite ? "techIconSvgWhite techIconLite" : "techIconSvgWhite techIcon") : (lite ? "techIconLite" : "techIcon")
+                                    : (lite ? "techIconLite" : "techIcon")}
                                 alt={"icon"}
                                 src={e.src} />
-                            <p className='techIconText'>{e.name}</p>
+                            {lite === true ? <></> : <p className='techIconText'>{e.name}</p>}
+
                         </Col>
                     }
                     return ""

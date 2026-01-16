@@ -220,3 +220,35 @@
 	backdrop-filter: brgba(10, 10, 10, 0.366);
 	border: 1px solid rgb(30, 30, 30);
 }
+
+.project_tech_container {
+	width: 100%;
+	margin: 10px 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	align-items: end;
+}
+
+.project_meta {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	font-size: 0.9rem;
+	color: #888;
+	
+	strong {
+		color: var(--text-color);
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.project_tech_container {
+		justify-content: flex-end;
+	}
+	
+	.project_meta {
+		font-size: 0.8rem;
+	}
+}
