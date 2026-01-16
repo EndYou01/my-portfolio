@@ -17,11 +17,11 @@ export const RedCollegePage = () => {
     const [text] = useTranslation("global")
 
     const images = [
-        "redcollege/redcollege1.png",
-        "redcollege/redcollege2.png",
-        "redcollege/redcollege3.png",
-        "redcollege/redcollege4.png",
-        "redcollege/redcollege5.png",
+        "redcollege/redcollege1.jpg",
+        "redcollege/redcollege2.jpg",
+        "redcollege/redcollege3.jpg",
+        "redcollege/redcollege4.jpg",
+        "redcollege/redcollege5.jpg",
     ]
 
     return (
@@ -36,15 +36,11 @@ export const RedCollegePage = () => {
                     <BackButton />
 
                     <div>
-                        <h1 className='Colorh1'>SNB 2022</h1>
+                        <h1 className='Colorh1'>RedCollege</h1>
                         <p>
-                            {text("snb.p1")}
+                            {text("redcollege.p2")}
                         </p>
                         <br />
-                        <ul>
-                            <li>{text("snb.l1")}</li>
-                            <li>{text("snb.l2")} <a className='link' href='https://www.linkedin.com/in/alejandro-martinez-66766725b'>Alejandro Martínez</a></li>
-                        </ul>
                     </div>
 
                     <CarouselImage images={images} />
@@ -54,17 +50,17 @@ export const RedCollegePage = () => {
                         <h2>{text("snb.h2_1")}</h2>
                         <h3>Front End:</h3>
                         <p>
-                            {text("snb.p2")}
+                            {text("redcollege.p3")}
                         </p>
 
-                        <ShowTechIcons technologies={["Java"]} position='end'/>
+                        <ShowTechIcons technologies={["Tailwind", "TypeScript", "Vue", "Nuxt"]} position='end'/>
 
                         <h3>Back End:</h3>
                         <p>
-                            {text("snb.p3")}
+                            {text("redcollege.p4")}
                         </p>
 
-                        <ShowTechIcons technologies={["MySql"]} position='end'/>
+                        <ShowTechIcons technologies={["PostgreSql", "AdonisJs"]} position='end'/>
 
                         <br></br>
                         <br></br>
@@ -76,10 +72,10 @@ export const RedCollegePage = () => {
                             } />
                             <a
                                 target="_blank"
-                                href="https://www.github.com/EndYou01/Snb2022"
+                                href="https://redcollege.cl"
                                 rel="noreferrer"
                             >
-                                {text("footer.source")}
+                                {text("footer.visit")}
                             </a>
                         </div>
                     </div>

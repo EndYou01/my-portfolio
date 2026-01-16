@@ -35,15 +35,11 @@ export const CugrancaPage = () => {
                     <BackButton />
 
                     <div>
-                        <h1 className='Colorh1'>SNB 2022</h1>
-                        <p>
-                            {text("snb.p1")}
+                        <h1 className='Colorh1'>CugrancaXXI</h1>
+                        <p style={{marginTop: 10}}>
+                            {text("cugranca.p2")}
                         </p>
                         <br />
-                        <ul>
-                            <li>{text("snb.l1")}</li>
-                            <li>{text("snb.l2")} <a className='link' href='https://www.linkedin.com/in/alejandro-martinez-66766725b'>Alejandro Martínez</a></li>
-                        </ul>
                     </div>
 
                     <CarouselImage images={images} />
@@ -53,34 +49,21 @@ export const CugrancaPage = () => {
                         <h2>{text("snb.h2_1")}</h2>
                         <h3>Front End:</h3>
                         <p>
-                            {text("snb.p2")}
+                            {text("cugranca.p3")}
                         </p>
 
-                        <ShowTechIcons technologies={["Java"]} position='end' />
+                        <ShowTechIcons technologies={["Typescript", "React", "Tailwind", "Vite"]} position='end' />
 
                         <h3>Back End:</h3>
                         <p>
-                            {text("snb.p3")}
+                            {text("cugranca.p4")}
                         </p>
 
-                        <ShowTechIcons technologies={["MySql"]} position='end' />
+                        <ShowTechIcons technologies={["MySql", "NestJS", "TypeORM"]} position='end' />
 
                         <br></br>
                         <br></br>
-                        <div className='this_page_source_container' >
-                            <BsCodeSlash className={
-                                (fillVariable)
-                                    ? 'icon'
-                                    : 'icon btn_icon_dark'
-                            } />
-                            <a
-                                target="_blank"
-                                href="https://www.github.com/EndYou01/Snb2022"
-                                rel="noreferrer"
-                            >
-                                {text("footer.source")}
-                            </a>
-                        </div>
+                      
                     </div>
                 </main>
             </div>

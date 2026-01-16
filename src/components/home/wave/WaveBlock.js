@@ -6,9 +6,21 @@ import { useContext } from 'react';
 import { FillContext } from '../../../context/FillContext';
 
 export const WaveBlock = () => {
-	const [text] = useTranslation("global")
+	const [text, i18n] = useTranslation("global")
 
 	let { fillVariable } = useContext(FillContext)
+
+	const getCVFileName = () => {
+		return i18n.language === 'en' 
+			? 'portafolio_jorge_senjudo_english.pdf'
+			: 'portafolio_jorge_senjudo.pdf'
+	}
+
+	const getDownloadName = () => {
+		return i18n.language === 'en'
+			? 'portfolio-jorge-senjudo-english.pdf'
+			: 'portafolio-jorge-senjudo.pdf'
+	}
 
 	return (
 		<div className='wavecontainer'>
@@ -21,8 +33,8 @@ export const WaveBlock = () => {
 
 					<button className='button animate__animated animate__fadeInDown animate__faster'>
 						<a
-							href="/portfolio/portafolio_jorge_senjudo.pdf"
-							download="portafolio-jorge-senjudo.pdf"
+							href={`/portfolio/${getCVFileName()}`}
+							download={getDownloadName()}
 						>
 							{text("footer.downloadCV")}
 						</a>

@@ -51,7 +51,7 @@ export const Work = () => {
   const projects = [
     {
       title: "Fuego Abierto GelSoft",
-      description: "",
+      description: t("fuegoabierto.p1"),
       bgImage: "fuegoAbierto/fuegoabierto1.png",
       logoImage: "logos/fuegoabierto_logo.png",
       buttonPath: "/fuegoabierto",
@@ -59,7 +59,7 @@ export const Work = () => {
     },
     {
       title: "CugrancaXXI",
-      description: "",
+      description: t("cugranca.p1"),
       bgImage: "cugranca/cugrancaxxi1.png",
       logoImage: "logos/cugranca_logo.png",
       buttonPath: "/cugranca",
@@ -67,7 +67,7 @@ export const Work = () => {
     },
     {
       title: "RedCollege",
-      description: "",
+      description: t("redcollege.p1"),
       bgImage: "redcollege/redcollege1.jpg",
       logoImage: "logos/redcollege_logo.png",
       buttonPath: "/redcollege",
@@ -93,6 +93,14 @@ export const Work = () => {
           altText: "SinTerceros",
         },
         {
+          title: t("gelato.t1"),
+          description: t("gelato.p1"),
+          bgImage: "freelance/gelato/gelato1.png",
+          logoImage: "logos/gelatologo.jpg",
+          buttonPath: "/gelato",
+          altText: "Gelato",
+        },
+         {
           title: "Celebren Web",
           description: t("celebren.p1"),
           bgImage: "freelance/celebren/celebren1.png",
@@ -101,28 +109,20 @@ export const Work = () => {
           altText: "CelebrenWeb",
         },
         {
-          title: t("gelato.t1"),
-          description: t("gelato.p1"),
-          bgImage: "freelance/gelato/gelato1.png",
-          logoImage: "logos/gelatologo.jpg",
-          buttonPath: "/gelato",
-          altText: "Gelato",
-        },
-        {
-          title: t("tecoposadmin.t1"),
-          description: t("tecoposadmin.p1"),
-          bgImage: "freelance/tecopos/tecopos9.png",
-          logoImage: "logos/TecoposLogo.png",
-          buttonPath: "/tecoposadmin",
-          altText: "TecoposAdmin",
-        },
-        {
           title: "Lyn-Arte-Gráfico",
           description: t("lyn.p1"),
           bgImage: "freelance/lyn/lyn1.png",
           logoImage: "logos/lynLogo.png",
           buttonPath: "/lyn",
           altText: "Lyn-Arte-Gráfico",
+        },
+          {
+          title: t("tecoposadmin.t1"),
+          description: t("tecoposadmin.p1"),
+          bgImage: "freelance/tecopos/tecopos9.png",
+          logoImage: "logos/TecoposLogo.png",
+          buttonPath: "/tecoposadmin",
+          altText: "TecoposAdmin",
         },
         {
           title: "Kids'R'Us",

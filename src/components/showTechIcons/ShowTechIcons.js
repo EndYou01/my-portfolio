@@ -18,12 +18,24 @@ export const ShowTechIcons = ({ technologies, position }) => {
             src: "icons/ant_design_icon.png"
         },
         {
+            name: "AdonisJs",
+            src: "icons/adonisjs.png"
+        },
+        {
             name: "Bootstrap",
             src: "icons/bootstrap_logo_icon.png"
         },
         {
             name: "Postman",
             src: "icons/postman_icon.png"
+        },
+        {
+            name: "PostgreSql",
+            src: "icons/postgresql.png"
+        },
+        {
+            name: "Express",
+            src: "icons/express.png"
         },
         {
             name: "MySql",
@@ -98,6 +110,14 @@ export const ShowTechIcons = ({ technologies, position }) => {
             src: "icons/typescriptIcon.png"
         },
         {
+            name: "Vue",
+            src: "icons/vue_icon.png"
+        },
+        {
+            name: "Nuxt",
+            src: "icons/nuxt_icon.png"
+        },
+        {
             name: "Vite",
             src: "icons/viteIcon.png"
         },
@@ -108,6 +128,14 @@ export const ShowTechIcons = ({ technologies, position }) => {
         {
             name: "Next.js",
             src: "icons/NextJS_black&white_icon.svg"
+        },
+        {
+            name: "NestJS",
+            src: "icons/nestjs.png"
+        },
+        {
+            name: "TypeORM",
+            src: "icons/typeorm-logo.png"
         },
         {
             name: "SWR",
