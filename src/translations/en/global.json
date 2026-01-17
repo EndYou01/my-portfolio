@@ -6,7 +6,11 @@
         "KeyResponsibilities": "Key Responsibilities",
         "seeMore": "See more",
         "visitSite": "Visit site",
-        "period": "Period"
+        "period": "Period",
+        "FullstackProgrammer": "Fullstack Programmer",
+        "SoftwareArchitectFullstack": "Software Architect & Fullstack Developer",
+        "Freelance": "Freelance",
+        "Present": "Present"
     },
     "header": {
         "portofolio": "Portfolio",
@@ -61,7 +65,15 @@
             "text10": "Train new members joining the area.",
             "text11": "Propose to management the technological changes deemed necessary to elevate the quality of the final products.",
             "text12": "Collaborate with other departments to ensure the integration of developments into the ecosystem.",
-            "text13": "Evaluate the performance of subordinate specialists."
+            "text13": "Evaluate the performance of subordinate specialists.",
+            "text14": "Development and maintenance of fullstack applications for international educational startup (754 GitHub contributions).",
+            "text15": "Creation of reusable internal module in Nuxt, reducing development time for new features by 25%.",
+            "text16": "Implementation of key modules: academic planning and evaluations with automatic reports (+30% UX improvement).",
+            "text17": "Collaboration in international remote team under agile sprints.",
+            "text18": "End-to-end design and development of complete enterprise systems (logistics and operational management).",
+            "text19": "Implementation of logistics system for Importadora CugrancaXXI, +35% operational efficiency through comprehensive automation of container cycle.",
+            "text20": "Development of management platform for Fuego Abierto GelSoft, +40% profit control with modules for players, matches, leagues and statistics.",
+            "text21": "Full cycle responsibility: architecture, database modeling, frontend, backend and production deployment."
         }
     },
     "skills": {

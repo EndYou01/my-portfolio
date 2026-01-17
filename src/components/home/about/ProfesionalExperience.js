@@ -1,6 +1,3 @@
-
-
-
 import React, { useContext } from 'react'
 import { useTranslation } from 'react-i18next'
 import { FillContext } from '../../../context/FillContext'
@@ -105,11 +102,6 @@ const ProfesionalExperience = () => {
                             <ul>
                                 <li>
                                     {text("about.worksInfo.text9")}
-                                    {/* <ul>
-                                        <li>
-                                            {text("about.worksInfo.text6")}
-                                        </li>
-                                    </ul> */}
                                 </li>
                                 <li>
                                     {text("about.worksInfo.text10")}
@@ -126,6 +118,58 @@ const ProfesionalExperience = () => {
                             </ul>
                         </div>
                     </div>
+
+                    <div style={{ border: "none" }} className={"tr"}>
+                        <div className={"first_td"}>2025/01 - 2025/06</div>
+
+                        <div className={fillVariable ? "second_td" : "second_td_dark"}>
+                            <h3>{text("general.FullstackProgrammer")}</h3>
+                            <div className='second_td_empressContainer'>
+                                <a className='secundary_color' href="https://www.redcollege.net/">RedCollege, Santiago, Chile (Remoto)</a>
+                                <img className='second_td_empressIMG' src="logos/redcollege_logo.png" alt="..." />
+                            </div>
+                            <h4>{text("general.KeyResponsibilities")}.</h4>
+                            <ul>
+                                <li>
+                                    {text("about.worksInfo.text14")}
+                                </li>
+                                <li>
+                                    {text("about.worksInfo.text15")}
+                                </li>
+                                <li>
+                                    {text("about.worksInfo.text16")}
+                                </li>
+                                <li>
+                                    {text("about.worksInfo.text17")}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div style={{ border: "none" }} className={"tr"}>
+                        <div className={"first_td"}>2025/06 - {text("general.Present")}</div>
+
+                        <div className={fillVariable ? "second_td" : "second_td_dark"}>
+                            <h3>{text("general.SoftwareArchitectFullstack")}</h3>
+                            <p className='secundary_color'>{text("general.Freelance")}</p>
+                            <h4>{text("general.KeyResponsibilities")}.</h4>
+                            <ul>
+                                <li>
+                                    {text("about.worksInfo.text18")}
+                                </li>
+                                <li>
+                                    {text("about.worksInfo.text19")}
+                                </li>
+                                <li>
+                                    {text("about.worksInfo.text20")}
+                                </li>
+                                <li>
+                                    {text("about.worksInfo.text21")}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>

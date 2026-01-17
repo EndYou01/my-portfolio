@@ -6,7 +6,11 @@
         "KeyResponsibilities": "Responsabilidades clave",
         "seeMore": "Ver más",
         "visitSite": "Visitar sitio",
-        "period": "Período"
+        "period": "Período",
+        "FullstackProgrammer": "Programador Fullstack",
+        "SoftwareArchitectFullstack": "Arquitecto de Software y Desarrollador Fullstack",
+        "Freelance": "Independiente",
+        "Present": "Presente"
     },
     "header": {
         "portofolio": "Portafólio",
@@ -61,7 +65,15 @@
             "text10": "Capacitar a los nuevos miembros que se incorporen al área",
             "text11": "Proponer a la Dirección los cambios tecnológicos que considere necesarios para elevar la calidad de los productos finales.",
             "text12": "Colaborar con otros departamentos para garantizar la integración de los desarrollos al ecosistema.",
-            "text13": "Evaluar el rendimiento de los especialistas subordinados."
+            "text13": "Evaluar el rendimiento de los especialistas subordinados.",
+            "text14": "Desarrollo y mantenimiento de aplicaciones fullstack para startup educativa internacional (754 contribuciones en GitHub).",
+            "text15": "Creación de módulo interno reutilizable en Nuxt, reduciendo en 25% el tiempo de desarrollo de nuevas features.",
+            "text16": "Implementación de módulos clave: planificación académica y evaluaciones con reportes automáticos (+30% mejora en UX).",
+            "text17": "Colaboración en equipo remoto internacional bajo sprints ágiles.",
+            "text18": "Diseño y desarrollo end-to-end de sistemas empresariales completos (logística y gestión operativa).",
+            "text19": "Implementación de sistema logístico para Importadora CugrancaXXI, +35% eficiencia operacional mediante automatización integral del ciclo de contenedores.",
+            "text20": "Desarrollo de plataforma de gestión para Fuego Abierto GelSoft, +40% control de ganancias con módulos de jugadores, partidas, ligas y estadísticas.",
+            "text21": "Responsabilidad total del ciclo: arquitectura, modelado de BD, frontend, backend y despliegue en producción."
         }
     },
     "skills": {
