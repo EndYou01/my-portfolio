@@ -1,6 +1,5 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { Fade } from "react-awesome-reveal";
-import { BsCodeSlash } from "react-icons/bs";
 import { useTranslation } from 'react-i18next';
 
 import { scrollToTop } from '../../../functions/scrollToTop';

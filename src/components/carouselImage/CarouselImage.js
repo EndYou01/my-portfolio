@@ -1,9 +1,7 @@
-import React from 'react'
 import Zoom from "react-medium-image-zoom";
 import 'react-medium-image-zoom/dist/styles.css'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from 'swiper';
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import 'swiper/scss';
 import 'swiper/scss/navigation';

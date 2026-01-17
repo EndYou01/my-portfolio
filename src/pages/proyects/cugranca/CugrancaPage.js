@@ -1,6 +1,5 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { Fade } from "react-awesome-reveal";
-import { BsCodeSlash } from "react-icons/bs";
 import { useTranslation } from 'react-i18next';
 
 import { scrollToTop } from '../../../functions/scrollToTop';
@@ -36,7 +35,7 @@ export const CugrancaPage = () => {
 
                     <div>
                         <h1 className='Colorh1'>CugrancaXXI</h1>
-                        <p style={{marginTop: 10}}>
+                        <p style={{ marginTop: 10 }}>
                             {text("cugranca.p2")}
                         </p>
                         <br />
@@ -63,7 +62,7 @@ export const CugrancaPage = () => {
 
                         <br></br>
                         <br></br>
-                      
+
                     </div>
                 </main>
             </div>
