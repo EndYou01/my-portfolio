@@ -180,8 +180,8 @@
 	}
 
 	.learn_more_button {
-		width: 200px;
-		padding: 15px;
+		width: 150px;
+		padding: 7px;
 		background-color: var(--secondary-color);
 		color: white;
 		outline: none;
@@ -243,6 +243,13 @@
 	}
 }
 
+.project_actions_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+}
+
 @media only screen and (max-width: 1200px) {
 	.project_tech_container {
 		justify-content: flex-end;
@@ -250,5 +257,13 @@
 	
 	.project_meta {
 		font-size: 0.8rem;
+	}
+
+	.project_actions_container {
+		display: block;
+		
+		.project_tech_container {
+			margin-bottom: 10px;
+		}
 	}
 }

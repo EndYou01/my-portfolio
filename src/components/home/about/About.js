@@ -14,7 +14,6 @@ export const About = () => {
 	return (
 		<div id="about" className='about_container'>
 			<Fade>
-
 				<h1 className='center'>{text("about.a&e")}</h1>
 				<br></br>
 				<p className='about_container_text'>

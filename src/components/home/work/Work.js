@@ -59,14 +59,15 @@ const ProjectSection = ({
               )}
             </div>
 
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-              <LearnMoreButton pathname={buttonPath} />
+            <div className="project_actions_container">
 
               {technologies && (
                 <div className="project_tech_container">
                   <ShowTechIcons technologies={technologies} position='start' lite={true} />
                 </div>
               )}
+              <LearnMoreButton pathname={buttonPath} />
+
             </div>
           </div>
         </div>
@@ -285,3 +286,5 @@ export const Work = () => {
     </div>
   );
 };
+
+

@@ -22,9 +22,21 @@
         "nosource": "Code not available",
         "visit": "Visit site"
     },
+    "statsCards": {
+        "experience": "Experience",
+        "projectsCompleted": "Projects Completed",
+        "technologies": "Technologies",
+        "constantGrowth": "Constant growth",
+        "buildingEnterpriseSolutions": "Building enterprise solutions",
+        "successfullyDelivered": "Successfully delivered",
+        "fromConceptToProduction": "From concept to production",
+        "masteredTools": "Mastered tools",
+        "modernTechStack": "Modern tech stack",
+        "years": "Years"
+    },
     "about": {
         "a&e": "About & Experience",
-        "a&et": "I am Jorge L. Senjudo, Front-End developer with experience in development and construction of websites, in which I have worked alone and with other developers, always looking to polish my skills both personally and professionally, to achieve the deployment of software with the appropriate quality. I work mainly using ReactJS code, with the ability to learn any JS framework or tool. I have brief experience with backend languages like JAVA and databases like MySQL. As a goal I have set out to reach to be a fullstack developer, and to be able to lead a full live.",
+        "a&et": "I'm Jorge L. Senjudo, a software architect and fullstack developer with over 4 years of experience in designing and developing complete enterprise solutions. My career spans from frontend development to the architecture of complex business management systems. I have led development teams implementing agile methodologies (SCRUM), increasing productivity through effective sprint planning and code standards. My experience includes transforming manual processes into scalable digital platforms, such as logistics systems that improve operational efficiency and management platforms that increase profit control. I primarily work with React, Vue, TypeScript, NestJS, MySQL, and PostgreSQL, with expertise in microservices architecture and RESTful APIs. I'm characterized by taking end-to-end responsibility in projects: from database modeling and software architecture to frontend/backend development and production deployment. I constantly seek to refine my technical skills, staying updated with best practices to deliver innovative solutions that generate real value for organizations.",
         "profExp": "Professional Experience",
         "education": "Education",
         "2020": "2020-09/ 2022-12",
@@ -65,7 +77,7 @@
     },
     "waveB": {
         "h3": "Hi, I'm Jorge Senjudo!",
-        "h1": "I am a web developer with experience in creating production-ready web applications."
+        "h1": "I'm a fullstack web developer specialized in software architecture and building tools that automate business processes."
     },
     "work": {
         "h1": "Recent projects",

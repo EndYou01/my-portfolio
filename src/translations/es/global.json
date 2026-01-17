@@ -22,9 +22,21 @@
         "nosource": "Código no disponible",
         "visit": "Visitar sitio"
     },
+    "statsCards": {
+        "experience": "Experiencia",
+        "projectsCompleted": "Proyectos Completados",
+        "technologies": "Tecnologías",
+        "constantGrowth": "Crecimiento constante",
+        "buildingEnterpriseSolutions": "Construyendo soluciones empresariales",
+        "successfullyDelivered": "Entregados con éxito",
+        "fromConceptToProduction": "De concepto a producción",
+        "masteredTools": "Herramientas dominadas",
+        "modernTechStack": "Stack tecnológico moderno",
+        "years": "Años"
+    },
     "about": {
         "a&e": "Acerca y Experiencia",
-        "a&et": "Soy Jorge L. Senjudo, desarrollador Front-End con experiencia en desarrollo y construcción de sitios web, en los cuales he trabajado en solitario y con otros desarrolladores, siempre en busca de pulir mis habilidades tanto en el ámbito personal como profesional, para lograr el despliegue de softwares con la calidad adecuada. Trabajo principalmente usando código de ReactJS, con capacidad para aprender cualquier framework de JS o herramienta. Tengo breve experiencia con lenguajes backend como JAVA y bases de datos como MySQL. Como meta tengo trazado alcanzar a ser un desarrollador fullstack, y poder llevar una vida plena.",
+        "a&et": "Soy Jorge L. Senjudo, arquitecto de software y desarrollador fullstack con más de 4 años de experiencia en el diseño y desarrollo de soluciones empresariales completas. Mi trayectoria abarca desde el desarrollo frontend hasta la arquitectura de sistemas complejos de gestión empresarial. He liderado equipos de desarrollo implementando metodologías ágiles (SCRUM), incrementando la productividad mediante planificación efectiva de sprints y estándares de código. Mi experiencia incluye la transformación de procesos manuales en plataformas digitales escalables, como sistemas logísticos que mejoran la eficiencia operacional y plataformas de gestión que aumentan el control de ganancias. Trabajo principalmente con React, Vue, TypeScript, NestJS, MySQL y PostgreSQL, con dominio de arquitectura de microservicios y APIs RESTful. Me caracterizo por asumir responsabilidad end-to-end en proyectos: desde el modelado de bases de datos y arquitectura de software hasta el desarrollo frontend/backend y despliegue en producción. Busco constantemente pulir mis habilidades técnicas, manteniéndome actualizado con las mejores prácticas para ofrecer soluciones innovadoras que generen valor real a las organizaciones.",
         "profExp": "Experiencia Profesional",
         "education": "Educación",
         "2020": "2020-09/ 2022-12",
@@ -65,7 +77,7 @@
     },
     "waveB": {
         "h3": "Hola, soy Jorge Senjudo!",
-        "h1": "Soy un desarrollador web con experiencia en la creación de aplicaciones web listas para producción."
+        "h1": "Soy desarrollador web fullstack especializado en arquitectura de software y en la creación de herramientas que automatizan procesos empresariales."
     },
     "work": {
         "h1": "Proyectos recientes",

@@ -5,14 +5,14 @@ import { WaveBlock } from '../components/home/wave/WaveBlock'
 import { Work } from '../components/home/work/Work'
 import { BsChevronDown } from "react-icons/bs";
 import { useLocation } from 'react-router-dom';
+import { StatsCards } from '../components/statsCards/StatsCards'
+
 
 export const IndexPage = () => {
     const [scrollPosition] = useState(0);
 
     const { pathname } = useLocation()
     localStorage.setItem('lastLocation', pathname)
-
-    console.log(process.env)
 
     return (
         <div className='indexContainer'>
@@ -26,6 +26,8 @@ export const IndexPage = () => {
                 }>
                     <BsChevronDown />
                 </div>
+
+                <StatsCards />
                 <About />
                 <Work />
                 <Skills />
