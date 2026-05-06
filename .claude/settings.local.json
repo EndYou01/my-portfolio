@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Select-String -Pattern \"tailwind|postcss|babel|jsconfig|tsconfig\" -SimpleMatch)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Jorge Senjudo\\\\Desktop\\\\my-portfolio\" -Recurse -Directory)",
+      "Bash(Select-Object FullName)",
+      "Bash(npm install *)",
+      "Bash(npm run *)"
+    ]
+  }
+}

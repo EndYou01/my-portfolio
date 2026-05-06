@@ -1,0 +1,38 @@
+export const skills = [
+  'React JS',
+  'NextJs',
+  'JavaScript',
+  'REST APIs',
+  'Redux',
+  'React Hook Form',
+  'Git/Github',
+  'UI Design',
+  'Firebase',
+  'TypeScript',
+  'SASS',
+  'English B1',
+  'Español',
+  'HTML5/CSS',
+  'AntDesign',
+  'Bootstrap',
+  'Postman',
+  'Axios',
+  'Redux ToolKit',
+  'Vite',
+  'Tailwind',
+  'NestJS',
+  'MySQL',
+  'Postgress',
+  'NodeJS',
+  'Express',
+  'Vue',
+  'Nuxt',
+  'AdonisJS',
+  'Java',
+  'JWT',
+  'TypeORM',
+] as const
+
+export type Skill = (typeof skills)[number]
+
+export default skills
