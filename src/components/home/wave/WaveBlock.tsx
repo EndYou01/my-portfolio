@@ -1,6 +1,6 @@
 import Wave from 'react-wavify'
-import { Fade } from 'react-awesome-reveal'
 import { useTranslation } from 'react-i18next'
+import { HiArrowDownTray } from 'react-icons/hi2'
 
 import { useDarkMode } from '../../../hooks/useDarkMode'
 
@@ -19,29 +19,21 @@ export const WaveBlock = () => {
   return (
     <div className="wavecontainer">
       <div className="wavecontent">
-        <Fade cascade>
-          <h3 className="animate__animated animate__fadeInDown animate__faster">
-            {text('waveB.h3')}
-          </h3>
-          <br />
-          <h1 className="animate__animated animate__backInUp animate__faster">
-            {text('waveB.h1')}
-          </h1>
-          <button
-            type="button"
-            className="button animate__animated animate__fadeInDown animate__faster"
-          >
-            <a href={`/portfolio/${cvFileName}`} download={downloadName}>
-              {text('footer.downloadCV')}
-            </a>
-          </button>
-        </Fade>
+        <h3 className="hero-eyebrow">{text('waveB.h3')}</h3>
+        <h1 className="hero-title">{text('waveB.h1')}</h1>
 
-        <br />
+        <a
+          href={`/portfolio/${cvFileName}`}
+          download={downloadName}
+          className="button hero-cta"
+        >
+          <HiArrowDownTray aria-hidden="true" />
+          <span>{text('footer.downloadCV')}</span>
+        </a>
 
         <Wave
           className="wave"
-          fill={isDark ? 'rgb(20,20,20)' : 'rgba(255, 255, 255, 0.967)'}
+          fill={isDark ? 'rgb(12,13,17)' : 'rgba(252, 252, 248, 0.985)'}
           paused={false}
           options={{
             height: 60,
