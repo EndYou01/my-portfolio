@@ -1,20 +1,24 @@
 import { useEffect, useState } from 'react'
-import { useNavigate, NavLink } from 'react-router-dom'
+import { useNavigate, NavLink, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { MdWeb, MdPermContactCalendar } from 'react-icons/md'
 import { AiOutlineInfoCircle, AiOutlineClose } from 'react-icons/ai'
 import { HiMoon, HiSun } from 'react-icons/hi'
+import { FaWhatsapp } from 'react-icons/fa'
 
 import { scrollToTop, scrollToBottom } from '../../utils/scroll'
 import { useDarkMode } from '../../hooks/useDarkMode'
 import { useLanguage } from '../../hooks/useLanguage'
 import { useIsMobile } from '../../hooks/useMediaQuery'
+import { WhatsAppCTA } from '../whatsappCTA/WhatsAppCTA'
 
 export const Header = () => {
   const [text] = useTranslation('global')
   const navigate = useNavigate()
+  const location = useLocation()
+  const isHome = location.pathname === '/'
   const { isDark, toggle: toggleTheme } = useDarkMode()
   const { lang, toggle: toggleLang } = useLanguage()
   const isMobile = useIsMobile()
@@ -42,8 +46,11 @@ export const Header = () => {
         : 'header_container_light'
       : 'header_container'
 
-  const menuTransform =
-    isMobile && !isMenuOpen ? 'translateX(0)' : 'translateX(-100%)'
+  const menuTransform = !isMobile
+    ? 'translateX(0)'
+    : isMenuOpen
+    ? 'translateX(-100%)'
+    : 'translateX(0)'
 
   return (
     <header className={headerClass}>
@@ -57,21 +64,42 @@ export const Header = () => {
           {text('header.portofolio')}
         </button>
 
-        <button
-          type="button"
-          onClick={() => setIsMenuOpen(true)}
-          className="hamburger_menu"
-          aria-label="Open navigation menu"
-          aria-expanded={isMenuOpen}
-          style={{ background: 'none', border: 'none' }}
-        >
-          <GiHamburgerMenu />
-        </button>
+        <div className="header_right">
+          {isHome && (
+            <div className="header_home_cta">
+              <WhatsAppCTA
+                variant="primary"
+                size="sm"
+                label={text('header.bookCall') as string}
+                className="header_home_cta_text"
+              />
+              <WhatsAppCTA
+                variant="primary"
+                size="sm"
+                label=""
+                className="header_home_cta_icon"
+                aria-label={text('header.bookCall') as string}
+              >
+                <FaWhatsapp aria-hidden />
+              </WhatsAppCTA>
+            </div>
+          )}
 
-        <div
-          onClick={closeMenu}
-          className={isMenuOpen ? 'nav_bg_open' : 'nav_bg_closed'}
-        >
+          <button
+            type="button"
+            onClick={() => setIsMenuOpen(true)}
+            className="hamburger_menu"
+            aria-label="Open navigation menu"
+            aria-expanded={isMenuOpen}
+            style={{ background: 'none', border: 'none' }}
+          >
+            <GiHamburgerMenu />
+          </button>
+
+          <div
+            onClick={closeMenu}
+            className={isMenuOpen ? 'nav_bg_open' : 'nav_bg_closed'}
+          >
           <div
             className="nav_container_open"
             style={{
@@ -161,6 +189,7 @@ export const Header = () => {
               </li>
             </ul>
           </div>
+        </div>
         </div>
       </div>
     </header>

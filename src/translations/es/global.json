@@ -18,7 +18,8 @@
         "work": "Proyectos",
         "contact": "Contáctame",
         "dark": "Oscuro",
-        "light": "Claro"
+        "light": "Claro",
+        "bookCall": "Agendar llamada"
     },
     "footer": {
         "contactMe": "Contáctame",
@@ -200,5 +201,172 @@
         "p3": "Stack tecnológico moderno y bien estructurado. Utiliza React 19 con TypeScript para tipado fuerte, Vite como bundler ultrarrápido, y TailwindCSS v4 para estilización eficiente. La arquitectura incluye Zustand con persistencia para manejo de estado global, React Hook Form con Zod para validación robusta de formularios, y React Router v7 para navegación. Implementas hooks personalizados como useApi y useMutation para manejo asíncrono, y utilizas Axios con retry para comunicaciones HTTP resilientes. El proyecto también incorpora TanStack Table para tablas complejas, Recharts para visualización de datos, y Sonner para notificaciones elegantes, mostrando dominio de librerías especializadas y mejores prácticas de desarrollo frontend moderno.",
         "p4": "Arquitectura enterprise robusta con NestJS como framework principal, implementando patrones de diseño avanzados. Utilizas TypeORM con MySQL para persistencia de datos con configuración asíncrona y conexión SSL configurable. La seguridad está implementada con JWT y estrategias Passport (local y JWT), junto con bcrypt para hashing de contraseñas. La aplicación sigue principios SOLID con módulos separados por dominio (clientes, equipos, torneos, partidas), inyección de dependencias, y un sistema de políticas de negocio con patrón Singleton. Implementas validación global con class-validator y class-transformer, CORS configurable, y un servicio de inicialización automática para setup de desarrollo. La arquitectura incluye manejo robusto de errores con HttpException, paginación personalizada, y transacciones de base de datos para mantener integridad referencial, demostrando experiencia en desarrollo backend escalable y mantenible."
     },
-    "version": "Versión 1.2.0"
+    "version": "Versión 1.2.0",
+    "home": {
+        "meta": {
+            "title": "Jorge L. Senjudo · Desarrollo web y sistemas a medida",
+            "description": "Construyo tiendas online, menús digitales, sistemas de gestión y webs profesionales para PyMEs. Trabajo directo, sin agencias ni intermediarios. Español e inglés."
+        },
+        "whatsapp": {
+            "defaultMessage": "Hola Jorge, vi tu web y me gustaría agendar una llamada contigo. Quería contarte sobre un proyecto en el que estoy pensando.",
+            "defaultLabel": "Agendar llamada"
+        },
+        "hero": {
+            "eyebrow": "> WEBS · TIENDAS · SISTEMAS A MEDIDA",
+            "headline": "Tu próximo proyecto web, construido por una sola persona. Sin agencias caras. Sin freelancers que desaparecen.",
+            "subheadline": "Construyo tiendas online, sistemas de gestión y webs profesionales para negocios que necesitan que su tecnología funcione, no que les dé problemas. Hablas conmigo, construyo yo, tú no peleas con nada.",
+            "ctaPrimary": "📅 Agendar llamada gratis (30 min)",
+            "ctaPrimaryMessage": "Hola Jorge, vi tu web y me gustaría agendar la llamada gratis de 30 minutos. Quería contarte sobre un proyecto en el que estoy pensando.",
+            "ctaSecondary": "Ver servicios y precios ↓"
+        },
+        "killer": {
+            "f1": "Respuesta en menos de 24h",
+            "f2": "Presupuesto cerrado sin compromiso",
+            "f3": "Pago fraccionado disponible",
+            "f4": "El código es tuyo desde el día 1"
+        },
+        "services": {
+            "title": "Lo que construyo",
+            "subtitle": "Servicios con alcance y precio claros. Si no encaja exacto, hacemos uno a medida.",
+            "learnMore": "Saber más →",
+            "from": "Desde",
+            "custom": "A medida",
+            "s1": {
+                "name": "Tienda online",
+                "desc": "Vendes online con pasarela de pago, gestión de pedidos y panel para que lleves tú el negocio sin tener que llamarme cada vez que añades un producto.",
+                "price": "Desde $700 USD",
+                "message": "Hola Jorge, me interesa el servicio de tienda online. ¿Podemos hablar?"
+            },
+            "s2": {
+                "name": "Menú digital para restaurantes",
+                "desc": "Tus clientes ven la carta desde el móvil escaneando un QR. Pedidos directos a WhatsApp. Cero comisiones por pedido.",
+                "price": "Desde $250 USD",
+                "message": "Hola Jorge, me interesa el servicio de menú digital para restaurantes. ¿Podemos hablar?"
+            },
+            "s3": {
+                "name": "Sistema de gestión a medida",
+                "desc": "Clientes, inventario, facturación, lo que tu negocio necesite. Construido para tu flujo de trabajo real, no para el de otro.",
+                "price": "Desde $750 USD",
+                "message": "Hola Jorge, me interesa el servicio de sistema de gestión a medida. ¿Podemos hablar?"
+            },
+            "s4": {
+                "name": "Web profesional",
+                "desc": "La página corporativa que necesitas para aparecer en Google y dar buena imagen sin pagar agencia ni quedarte atado a una plantilla.",
+                "price": "Desde $350 USD",
+                "message": "Hola Jorge, me interesa el servicio de web profesional. ¿Podemos hablar?"
+            },
+            "s5": {
+                "name": "Mantenimiento y soporte",
+                "desc": "Tu web o sistema funcionando mes a mes sin sorpresas: actualizaciones, backups, cambios menores, respuesta rápida cuando algo falla.",
+                "price": "Desde $35 USD/mes",
+                "message": "Hola Jorge, me interesa el servicio de mantenimiento y soporte. ¿Podemos hablar?"
+            },
+            "s6": {
+                "name": "Posicionamiento web (SEO)",
+                "desc": "Hago que tu web aparezca en Google cuando tus clientes buscan lo que ofreces. Auditoría técnica, optimización on-page y configuración correcta desde el día 1.",
+                "price": "Desde $150 USD",
+                "message": "Hola Jorge, me interesa el servicio de posicionamiento web (SEO). ¿Podemos hablar?"
+            }
+        },
+        "process": {
+            "title": "Cómo trabajo",
+            "subtitle": "Cuatro pasos. Sin intermediarios. Sin sorpresas.",
+            "p1": {
+                "name": "Hablamos",
+                "desc": "Agendas una llamada gratis de 30 min. Me cuentas qué necesitas, te digo si encaja conmigo y qué se puede hacer."
+            },
+            "p2": {
+                "name": "Te paso presupuesto",
+                "desc": "En 48h tienes un presupuesto cerrado por escrito con alcance, plazo y precio. Lo firmas o no, pero lo sabes todo de antemano."
+            },
+            "p3": {
+                "name": "Construyo",
+                "desc": "Trabajamos en sprints semanales. Tú ves el avance cada semana, validas, opinas. Yo construyo."
+            },
+            "p4": {
+                "name": "Te lo entrego",
+                "desc": "Recibes el proyecto funcionando, el código fuente y la documentación. El código es tuyo. Si quieres, te llevo el mantenimiento."
+            }
+        },
+        "faq": {
+            "title": "Preguntas frecuentes",
+            "q1": {
+                "q": "¿Cuánto cuesta una web o tienda online?",
+                "a": "Depende del alcance, pero los rangos están en la sección de servicios. Una web profesional arranca en $350, una tienda online en $700, un sistema de gestión a medida en $750. Un proyecto puede subir desde ahí según complejidad y mercado. Lo que sí te garantizo: precio cerrado por escrito antes de empezar, sin sorpresas."
+            },
+            "q2": {
+                "q": "¿Cuánto tarda?",
+                "a": "Web profesional: 2-3 semanas. Tienda online: 4-6 semanas. Sistema a medida: depende del alcance, lo definimos juntos. Trabajo en sprints semanales, así que ves avance cada semana."
+            },
+            "q3": {
+                "q": "¿Trabajas con clientes de cualquier país?",
+                "a": "Sí. Trabajo en remoto con clientes en cualquier parte del mundo. Reuniones por videollamada o WhatsApp, comunicación por email o el canal que prefieras. Hablo español e inglés con fluidez."
+            },
+            "q4": {
+                "q": "¿De quién es el código una vez entregado?",
+                "a": "Tuyo, al 100%. Te entrego el repositorio Git, las credenciales, el código fuente y la documentación. Puedes seguir conmigo en mantenimiento o irte con cualquier otro desarrollador. Cero lock-in."
+            },
+            "q5": {
+                "q": "¿Qué pago inicial necesitas?",
+                "a": "Para proyectos cerrados: 40% al firmar el presupuesto, 30% en el punto medio del proyecto, 30% al entregar. Pago fraccionado disponible si lo necesitas. Para mantenimiento: cuota mensual por adelantado. Acepto transferencia, USDT, PayPal y otros métodos según país."
+            },
+            "q6": {
+                "q": "¿Ofreces mantenimiento después de entregar?",
+                "a": "Sí, desde $35/mes. Incluye actualizaciones de seguridad, backups, monitorización y un número de horas mensuales para cambios menores. Si no quieres contratarlo, te entrego el proyecto en un estado en el que cualquier desarrollador puede seguir."
+            },
+            "q7": {
+                "q": "¿Por qué trabajar contigo y no con una agencia?",
+                "a": "Con una agencia hablas con un comercial, te promete el oro y te entregan a un junior. Conmigo hablas con quien construye, todo el rato. Sin teléfono roto, sin diluciones, sin 'déjame consultar con mi equipo'. Si necesitas un equipo grande para un proyecto enorme, no soy yo. Si necesitas algo profesional bien hecho, sí."
+            },
+            "q8": {
+                "q": "¿Y si no me gusta el resultado?",
+                "a": "En cada sprint validamos juntos, así que problemas grandes los detectamos pronto. Si en algún punto consideras que el proyecto no va bien, paramos, evaluamos y decidimos. He cerrado proyectos en buenos términos con clientes para los que mi enfoque no era el correcto. Cero drama."
+            }
+        },
+        "finalCta": {
+            "title": "¿Te ayudo con tu proyecto?",
+            "subtitle": "Soy yo, Jorge. Cuéntame por WhatsApp qué tienes en mente y te respondo en menos de 24 horas. Si encaja, agendamos una llamada gratis de 30 min.",
+            "button": "📅 Agendar llamada ahora",
+            "message": "Hola Jorge, vi tu web y quiero agendar la llamada gratis de 30 minutos para contarte sobre mi proyecto.",
+            "finePrint": "Sin formularios · Sin compromisos · Sin venta agresiva"
+        },
+        "manifesto1": {
+            "lead": "Tu tecnología debería trabajar",
+            "accent": "para ti",
+            "trail": ", no al revés."
+        },
+        "manifesto2": {
+            "lead": "Hablas conmigo. Construyo yo. Tú no peleas",
+            "accent": "con nada",
+            "trail": "."
+        },
+        "manifesto3": {
+            "lead": "Una persona. Tu proyecto.",
+            "accent": "Cero intermediarios",
+            "trail": "."
+        },
+        "servicesMarquee": "Tiendas online · Menús digitales · Sistemas de gestión · Webs corporativas · Landing pages · E-commerce · Aplicaciones a medida · Integración con WhatsApp · Pasarelas de pago · Customización Odoo · Migración a nuevas plataformas · Mantenimiento web · Posicionamiento SEO · Auditorías técnicas · Optimización de velocidad · APIs y backends · Bases de datos · Dashboards administrativos · Multi-idioma · Reservas online",
+        "logos": {
+            "eyebrow": "> CONFIANZA DE"
+        },
+        "flagship": {
+            "sectionTitle": "El proyecto más pedido",
+            "badge": "MÁS POPULAR",
+            "title": "Tienda online completa",
+            "desc": "Una tienda profesional lista para vender desde el día 1. Diseñada a medida para tu marca, con todo lo que necesitas para procesar pedidos, cobrar online y manejar tu negocio sin depender de mí cada vez que añades un producto.",
+            "f1": "Diseño a medida",
+            "f2": "Pasarela de pago integrada",
+            "f3": "Panel de gestión",
+            "f4": "Múltiples métodos de pago",
+            "f5": "Optimizada para móvil",
+            "f6": "Posicionamiento SEO básico",
+            "oldPrice": "",
+            "price": "$700",
+            "currency": "USD · pago único",
+            "delivery": "Entrega en 4-6 semanas",
+            "cta": "Lo quiero, hablemos",
+            "ctaMessage": "Hola Jorge, me interesa la tienda online completa de $700 USD. ¿Hablamos?",
+            "finePrint": "Sin compromiso · Presupuesto en 48h"
+        }
+    }
 }

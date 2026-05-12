@@ -18,7 +18,8 @@
         "work": "Work",
         "contact": "Contact",
         "dark": "Dark",
-        "light": "Light"
+        "light": "Light",
+        "bookCall": "Book a call"
     },
     "footer": {
         "contactMe": "Contact me",
@@ -200,5 +201,172 @@
         "p3": "Modern and well-structured technology stack. Uses React 19 with TypeScript for strong typing, Vite as an ultra-fast bundler, and TailwindCSS v4 for efficient styling. The architecture includes Zustand with persistence for global state management, React Hook Form with Zod for robust form validation, and React Router v7 for navigation. Implements custom hooks like useApi and useMutation for asynchronous handling, and uses Axios with retry for resilient HTTP communications. The project also incorporates TanStack Table for complex tables, Recharts for data visualization, and Sonner for elegant notifications, showing mastery of specialized libraries and modern frontend development best practices.",
         "p4": "Robust enterprise architecture with NestJS as the main framework, implementing advanced design patterns. Uses TypeORM with MySQL for data persistence with asynchronous configuration and configurable SSL connection. Security is implemented with JWT and Passport strategies (local and JWT), along with bcrypt for password hashing. The application follows SOLID principles with modules separated by domain (clients, teams, tournaments, matches), dependency injection, and a business policy system with Singleton pattern. Implements global validation with class-validator and class-transformer, configurable CORS, and an automatic initialization service for development setup. The architecture includes robust error handling with HttpException, custom pagination, and database transactions to maintain referential integrity, demonstrating experience in scalable and maintainable backend development."
     },
-    "version": "Version 1.2.0"
+    "version": "Version 1.2.0",
+    "home": {
+        "meta": {
+            "title": "Jorge L. Senjudo · Web development and custom systems",
+            "description": "I build online stores, digital menus, management systems and professional websites for SMBs. Direct work, no agencies or middlemen. Spanish and English."
+        },
+        "whatsapp": {
+            "defaultMessage": "Hi Jorge, I saw your website and I'd like to schedule a call. I wanted to tell you about a project I'm considering.",
+            "defaultLabel": "Schedule a call"
+        },
+        "hero": {
+            "eyebrow": "> WEBSITES · ONLINE STORES · CUSTOM SYSTEMS",
+            "headline": "Your next web project, built by a single person. No expensive agencies. No freelancers that disappear.",
+            "subheadline": "I build online stores, management systems and professional websites for businesses that need their technology to work, not give them problems. You talk to me, I build, you don't fight with anything.",
+            "ctaPrimary": "📅 Schedule a free call (30 min)",
+            "ctaPrimaryMessage": "Hi Jorge, I saw your website and I'd like to book the free 30-minute call. I wanted to tell you about a project I'm considering.",
+            "ctaSecondary": "See services and pricing ↓"
+        },
+        "killer": {
+            "f1": "Reply in under 24h",
+            "f2": "Fixed quote with no commitment",
+            "f3": "Payment plans available",
+            "f4": "Your code is yours from day 1"
+        },
+        "services": {
+            "title": "What I build",
+            "subtitle": "Services with clear scope and pricing. If none fits exactly, we build one to measure.",
+            "learnMore": "Learn more →",
+            "from": "From",
+            "custom": "Custom quote",
+            "s1": {
+                "name": "Online store",
+                "desc": "Sell online with payment gateway, order management and a panel so you run the business without having to call me every time you add a product.",
+                "price": "From $700 USD",
+                "message": "Hi Jorge, I'm interested in the online store service. Can we talk?"
+            },
+            "s2": {
+                "name": "Digital menu for restaurants",
+                "desc": "Customers see your menu on their phone by scanning a QR. Direct orders to WhatsApp. Zero per-order commissions.",
+                "price": "From $250 USD",
+                "message": "Hi Jorge, I'm interested in the digital menu for restaurants service. Can we talk?"
+            },
+            "s3": {
+                "name": "Custom management system",
+                "desc": "Clients, inventory, invoicing, whatever your business needs. Built for your real workflow, not someone else's.",
+                "price": "From $750 USD",
+                "message": "Hi Jorge, I'm interested in the custom management system service. Can we talk?"
+            },
+            "s4": {
+                "name": "Professional website",
+                "desc": "The corporate website you need to show up on Google and look professional without paying an agency or being stuck with a template.",
+                "price": "From $350 USD",
+                "message": "Hi Jorge, I'm interested in the professional website service. Can we talk?"
+            },
+            "s5": {
+                "name": "Maintenance and support",
+                "desc": "Your site or system running month-to-month with no surprises: updates, backups, minor changes, fast response when something fails.",
+                "price": "From $35 USD/month",
+                "message": "Hi Jorge, I'm interested in the maintenance and support service. Can we talk?"
+            },
+            "s6": {
+                "name": "SEO",
+                "desc": "I get your site to show up on Google when your customers search for what you offer. Technical audit, on-page optimization, and proper setup from day 1.",
+                "price": "From $150 USD",
+                "message": "Hi Jorge, I'm interested in the SEO service. Can we talk?"
+            }
+        },
+        "process": {
+            "title": "How I work",
+            "subtitle": "Four steps. No middlemen. No surprises.",
+            "p1": {
+                "name": "We talk",
+                "desc": "You schedule a free 30-min call. You tell me what you need, I tell you if it's a fit and what we can do."
+            },
+            "p2": {
+                "name": "I send you a quote",
+                "desc": "In 48h you have a fixed written quote with scope, timeline and price. You sign it or you don't, but you know everything upfront."
+            },
+            "p3": {
+                "name": "I build",
+                "desc": "We work in weekly sprints. You see progress every week, you validate, you give feedback. I build."
+            },
+            "p4": {
+                "name": "I deliver",
+                "desc": "You get the working project, the source code, and the documentation. The code is yours. If you want, I handle maintenance."
+            }
+        },
+        "faq": {
+            "title": "Frequently asked questions",
+            "q1": {
+                "q": "How much does a website or online store cost?",
+                "a": "It depends on scope, but ranges are in the services section. A professional website starts at $350, an online store at $700, a custom management system at $750. Projects can scale up from there depending on complexity and market. What I do guarantee: fixed written price before we start, no surprises."
+            },
+            "q2": {
+                "q": "How long does it take?",
+                "a": "Professional website: 2-3 weeks. Online store: 4-6 weeks. Custom system: depends on scope, we define it together. I work in weekly sprints, so you see progress every week."
+            },
+            "q3": {
+                "q": "Do you work with clients from any country?",
+                "a": "Yes. I work remotely with clients anywhere in the world. Meetings via video call or WhatsApp, communication by email or whichever channel you prefer. I speak fluent Spanish and English."
+            },
+            "q4": {
+                "q": "Who owns the code once delivered?",
+                "a": "You do, 100%. I hand over the Git repository, credentials, source code and documentation. You can stay with me for maintenance or move to any other developer. Zero lock-in."
+            },
+            "q5": {
+                "q": "What initial payment do you require?",
+                "a": "For fixed projects: 40% on signing the quote, 30% at project midpoint, 30% on delivery. Payment plans available if you need them. For maintenance: monthly fee in advance. I accept wire transfer, USDT, PayPal and other methods depending on country."
+            },
+            "q6": {
+                "q": "Do you offer maintenance after delivery?",
+                "a": "Yes, from $35/month. Includes security updates, backups, monitoring and a number of monthly hours for minor changes. If you don't want it, I deliver the project in a state where any developer can take over."
+            },
+            "q7": {
+                "q": "Why work with you and not an agency?",
+                "a": "With an agency you talk to a salesperson who promises you the world and hands you off to a junior. With me you talk to the person who builds, the whole time. No broken telephone, no dilutions, no 'let me check with my team'. If you need a big team for a massive project, I'm not your fit. If you need something professional, well done, I am."
+            },
+            "q8": {
+                "q": "What if I don't like the result?",
+                "a": "We validate together every sprint, so big problems get caught early. If at any point you think the project isn't going well, we stop, evaluate and decide. I've ended projects on good terms with clients for whom my approach wasn't the right fit. Zero drama."
+            }
+        },
+        "finalCta": {
+            "title": "Want me to help with your project?",
+            "subtitle": "It's me, Jorge. Tell me on WhatsApp what you have in mind and I'll reply in under 24 hours. If it fits, we schedule a free 30-min call.",
+            "button": "📅 Schedule call now",
+            "message": "Hi Jorge, I saw your website and I want to book the free 30-minute call to tell you about my project.",
+            "finePrint": "No forms · No commitment · No hard sell"
+        },
+        "manifesto1": {
+            "lead": "Your tech should work",
+            "accent": "for you",
+            "trail": ", not the other way around."
+        },
+        "manifesto2": {
+            "lead": "You talk to me. I build. You fight",
+            "accent": "with nothing",
+            "trail": "."
+        },
+        "manifesto3": {
+            "lead": "One person. Your project.",
+            "accent": "Zero middlemen",
+            "trail": "."
+        },
+        "servicesMarquee": "Online stores · Digital menus · Management systems · Corporate websites · Landing pages · E-commerce · Custom applications · WhatsApp integration · Payment gateways · Odoo customization · Platform migration · Web maintenance · SEO · Technical audits · Speed optimization · APIs and backends · Databases · Admin dashboards · Multi-language · Online bookings",
+        "logos": {
+            "eyebrow": "> TRUSTED BY"
+        },
+        "flagship": {
+            "sectionTitle": "The most requested project",
+            "badge": "MOST POPULAR",
+            "title": "Complete online store",
+            "desc": "A professional store ready to sell from day 1. Custom-designed for your brand, with everything you need to process orders, take payments online, and run your business without calling me every time you add a product.",
+            "f1": "Custom design",
+            "f2": "Payment gateway integrated",
+            "f3": "Management dashboard",
+            "f4": "Multiple payment methods",
+            "f5": "Mobile-optimized",
+            "f6": "Basic SEO setup",
+            "oldPrice": "",
+            "price": "$700",
+            "currency": "USD · one-time payment",
+            "delivery": "Delivery in 4-6 weeks",
+            "cta": "I want it, let's talk",
+            "ctaMessage": "Hi Jorge, I'm interested in the $700 USD complete online store. Can we talk?",
+            "finePrint": "No commitment · Quote in 48h"
+        }
+    }
 }
