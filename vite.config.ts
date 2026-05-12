@@ -23,6 +23,14 @@ export default defineConfig({
       loader: { '.js': 'jsx' },
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        quietDeps: true,
+        silenceDeprecations: ['legacy-js-api', 'import'],
+      },
+    },
+  },
   server: {
     port: 3000,
     open: true,
@@ -30,5 +38,16 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: true,
+    rollupOptions: {
+      onwarn(warning, warn) {
+        if (
+          warning.code === 'INVALID_ANNOTATION' &&
+          warning.message?.includes('/*#__PURE__*/')
+        ) {
+          return
+        }
+        warn(warning)
+      },
+    },
   },
 })
