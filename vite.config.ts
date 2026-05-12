@@ -23,14 +23,6 @@ export default defineConfig({
       loader: { '.js': 'jsx' },
     },
   },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        quietDeps: true,
-        silenceDeprecations: ['legacy-js-api', 'import'],
-      },
-    },
-  },
   server: {
     port: 3000,
     open: true,

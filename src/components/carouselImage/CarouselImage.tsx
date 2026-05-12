@@ -3,8 +3,8 @@ import 'react-medium-image-zoom/dist/styles.css'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper'
 
-import 'swiper/scss'
-import 'swiper/scss/navigation'
+import 'swiper/css'
+import 'swiper/css/navigation'
 
 import { ImageLoaded } from '../imageLoaded/ImageLoaded'
 import { useIsMobile } from '../../hooks/useMediaQuery'
