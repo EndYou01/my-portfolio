@@ -39,12 +39,19 @@ export const Header = () => {
 
   const closeMenu = () => setIsMenuOpen(false)
 
-  const headerClass =
+  const isAboutTop =
+    location.pathname === '/about' && scrollPosition < 10
+
+  const headerClass = [
     scrollPosition < 10
       ? isDark
         ? 'header_container'
         : 'header_container_light'
-      : 'header_container'
+      : 'header_container',
+    isAboutTop ? 'header_about_top' : '',
+  ]
+    .filter(Boolean)
+    .join(' ')
 
   const menuTransform = !isMobile
     ? 'translateX(0)'
