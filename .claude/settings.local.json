@@ -14,7 +14,9 @@
       "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless=new --disable-gpu --no-sandbox --window-size=1440,2000 --screenshot=/tmp/portfolio-screenshots/03-celebren.png --hide-scrollbars --virtual-time-budget=10000 http://localhost:5173/celebren)",
       "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless=new --disable-gpu --no-sandbox --window-size=1440,2000 --screenshot=/tmp/portfolio-screenshots/04-work.png --hide-scrollbars --virtual-time-budget=10000 http://localhost:5173/work)",
       "Bash(cp /tmp/portfolio-screenshots/*.png .tmp-screenshots/)",
-      "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless=new --disable-gpu --no-sandbox --window-size=1440,2000 --dump-dom http://localhost:5173/celebren)"
+      "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless=new --disable-gpu --no-sandbox --window-size=1440,2000 --dump-dom http://localhost:5173/celebren)",
+      "Bash(cat tailwind.config.ts)",
+      "Bash(ls vite.config.*)"
     ]
   }
 }
