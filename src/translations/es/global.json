@@ -19,7 +19,7 @@
         "contact": "Contáctame",
         "dark": "Oscuro",
         "light": "Claro",
-        "bookCall": "Agendar llamada"
+        "bookCall": "Solicitar llamada"
     },
     "footer": {
         "contactMe": "Contáctame",
@@ -205,23 +205,23 @@
     "home": {
         "meta": {
             "title": "Jorge L. Senjudo · Desarrollo web y sistemas a medida",
-            "description": "Construyo tiendas online, menús digitales, sistemas de gestión y webs profesionales para PyMEs. Trabajo directo, sin agencias ni intermediarios. Español e inglés."
+            "description": "Construyo tiendas online, menús digitales, sistemas de gestión y webs profesionales para PyMEs. Trato directo con quien construye tu proyecto. Español e inglés."
         },
         "whatsapp": {
-            "defaultMessage": "Hola Jorge, vi tu web y me gustaría agendar una llamada contigo. Quería contarte sobre un proyecto en el que estoy pensando.",
-            "defaultLabel": "Agendar llamada"
+            "defaultMessage": "Hola Jorge, vi tu web y me gustaría solicitar una llamada contigo. Quería contarte sobre un proyecto en el que estoy pensando.",
+            "defaultLabel": "Solicitar llamada"
         },
         "hero": {
             "eyebrow": "> WEBS · TIENDAS · SISTEMAS A MEDIDA",
-            "headline": "Tu próximo proyecto web, construido por una sola persona. Sin agencias caras. Sin freelancers que desaparecen.",
-            "subheadline": "Construyo tiendas online, sistemas de gestión y webs profesionales para negocios que necesitan que su tecnología funcione, no que les dé problemas. Hablas conmigo, construyo yo, tú no peleas con nada.",
-            "ctaPrimary": "📅 Agendar llamada gratis (30 min)",
-            "ctaPrimaryMessage": "Hola Jorge, vi tu web y me gustaría agendar la llamada gratis de 30 minutos. Quería contarte sobre un proyecto en el que estoy pensando.",
+            "headline": "Tu próximo proyecto web, construido por una sola persona. De principio a fin, hablas siempre con quien lo construye.",
+            "subheadline": "Construyo tiendas online, sistemas de gestión y webs profesionales para negocios que quieren una tecnología fiable y fácil de mantener. Hablas conmigo, construyo yo, y me ocupo del resto.",
+            "ctaPrimary": "Solicitar llamada gratis (30 min)",
+            "ctaPrimaryMessage": "Hola Jorge, vi tu web y me gustaría solicitar la llamada gratis de 30 minutos. Quería contarte sobre un proyecto en el que estoy pensando.",
             "ctaSecondary": "Ver servicios y precios ↓"
         },
         "killer": {
             "f1": "Respuesta en menos de 24h",
-            "f2": "Presupuesto cerrado sin compromiso",
+            "f2": "Presupuesto cerrado sin coste",
             "f3": "Pago fraccionado disponible",
             "f4": "El código es tuyo desde el día 1"
         },
@@ -251,7 +251,7 @@
             },
             "s4": {
                 "name": "Web profesional",
-                "desc": "La página corporativa que necesitas para aparecer en Google y dar buena imagen sin pagar agencia ni quedarte atado a una plantilla.",
+                "desc": "La página corporativa que necesitas para aparecer en Google y dar buena imagen, con diseño propio y código tuyo desde el día 1.",
                 "price": "Desde $350 USD",
                 "message": "Hola Jorge, me interesa el servicio de web profesional. ¿Podemos hablar?"
             },
@@ -270,10 +270,10 @@
         },
         "process": {
             "title": "Cómo trabajo",
-            "subtitle": "Cuatro pasos. Sin intermediarios. Sin sorpresas.",
+            "subtitle": "Cuatro pasos. Trato directo. Sin sorpresas.",
             "p1": {
                 "name": "Hablamos",
-                "desc": "Agendas una llamada gratis de 30 min. Me cuentas qué necesitas, te digo si encaja conmigo y qué se puede hacer."
+                "desc": "Solicitas una llamada gratis de 30 min. Me cuentas qué necesitas, te digo si encaja conmigo y qué se puede hacer."
             },
             "p2": {
                 "name": "Te paso presupuesto",
@@ -316,7 +316,7 @@
             },
             "q7": {
                 "q": "¿Por qué trabajar contigo y no con una agencia?",
-                "a": "Con una agencia hablas con un comercial, te promete el oro y te entregan a un junior. Conmigo hablas con quien construye, todo el rato. Sin teléfono roto, sin diluciones, sin 'déjame consultar con mi equipo'. Si necesitas un equipo grande para un proyecto enorme, no soy yo. Si necesitas algo profesional bien hecho, sí."
+                "a": "Conmigo hablas siempre con la persona que construye tu proyecto, de principio a fin. Una comunicación, un responsable, decisiones rápidas. Si tu proyecto necesita un equipo grande, te lo digo desde la primera llamada y te oriento. Si encaja conmigo, lo hago yo, con la calidad y el seguimiento de cualquier proyecto profesional."
             },
             "q8": {
                 "q": "¿Y si no me gusta el resultado?",
@@ -325,10 +325,10 @@
         },
         "finalCta": {
             "title": "¿Te ayudo con tu proyecto?",
-            "subtitle": "Soy yo, Jorge. Cuéntame por WhatsApp qué tienes en mente y te respondo en menos de 24 horas. Si encaja, agendamos una llamada gratis de 30 min.",
-            "button": "📅 Agendar llamada ahora",
-            "message": "Hola Jorge, vi tu web y quiero agendar la llamada gratis de 30 minutos para contarte sobre mi proyecto.",
-            "finePrint": "Sin formularios · Sin compromisos · Sin venta agresiva"
+            "subtitle": "Soy yo, Jorge. Cuéntame por WhatsApp qué tienes en mente y te respondo en menos de 24 horas. Si encaja, coordinamos una llamada gratis de 30 min.",
+            "button": "Solicitar llamada ahora",
+            "message": "Hola Jorge, vi tu web y quiero solicitar la llamada gratis de 30 minutos para contarte sobre mi proyecto.",
+            "finePrint": "Sin formularios · Primera llamada gratis · Sin venta agresiva"
         },
         "manifesto1": {
             "lead": "Tu tecnología debería trabajar",
@@ -336,13 +336,13 @@
             "trail": ", no al revés."
         },
         "manifesto2": {
-            "lead": "Hablas conmigo. Construyo yo. Tú no peleas",
-            "accent": "con nada",
+            "lead": "Hablas conmigo. Construyo yo.",
+            "accent": "Me ocupo de lo demás",
             "trail": "."
         },
         "manifesto3": {
             "lead": "Una persona. Tu proyecto.",
-            "accent": "Cero intermediarios",
+            "accent": "Trato directo",
             "trail": "."
         },
         "servicesMarquee": "Tiendas online · Menús digitales · Sistemas de gestión · Webs corporativas · Landing pages · E-commerce · Aplicaciones a medida · Integración con WhatsApp · Pasarelas de pago · Customización Odoo · Migración a nuevas plataformas · Mantenimiento web · Posicionamiento SEO · Auditorías técnicas · Optimización de velocidad · APIs y backends · Bases de datos · Dashboards administrativos · Multi-idioma · Reservas online",
@@ -366,7 +366,7 @@
             "delivery": "Entrega en 4-6 semanas",
             "cta": "Lo quiero, hablemos",
             "ctaMessage": "Hola Jorge, me interesa la tienda online completa de $700 USD. ¿Hablamos?",
-            "finePrint": "Sin compromiso · Presupuesto en 48h"
+            "finePrint": "Presupuesto gratuito · Entrega en 48h"
         }
     }
 }

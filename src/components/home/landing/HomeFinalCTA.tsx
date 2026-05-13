@@ -12,7 +12,7 @@ export const HomeFinalCTA = () => {
         <div className="home_final_cta_inner">
           <div className="home_final_cta_avatar">
             <img
-              src="/portfolio/jorge_avatar.jpg"
+              src="/portfolio/CVPhoto.jpg"
               alt="Jorge Senjudo"
               loading="lazy"
               onError={(e) => {

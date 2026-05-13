@@ -205,23 +205,23 @@
     "home": {
         "meta": {
             "title": "Jorge L. Senjudo · Web development and custom systems",
-            "description": "I build online stores, digital menus, management systems and professional websites for SMBs. Direct work, no agencies or middlemen. Spanish and English."
+            "description": "I build online stores, digital menus, management systems and professional websites for SMBs. You always talk directly with the developer who builds your project. Spanish and English."
         },
         "whatsapp": {
-            "defaultMessage": "Hi Jorge, I saw your website and I'd like to schedule a call. I wanted to tell you about a project I'm considering.",
-            "defaultLabel": "Schedule a call"
+            "defaultMessage": "Hi Jorge, I saw your website and I'd like to book a call. I wanted to tell you about a project I'm considering.",
+            "defaultLabel": "Book a call"
         },
         "hero": {
             "eyebrow": "> WEBSITES · ONLINE STORES · CUSTOM SYSTEMS",
-            "headline": "Your next web project, built by a single person. No expensive agencies. No freelancers that disappear.",
-            "subheadline": "I build online stores, management systems and professional websites for businesses that need their technology to work, not give them problems. You talk to me, I build, you don't fight with anything.",
-            "ctaPrimary": "📅 Schedule a free call (30 min)",
+            "headline": "Your next web project, built by a single person. From start to finish, you talk to the person who builds it.",
+            "subheadline": "I build online stores, management systems and professional websites for businesses that want reliable, easy-to-maintain technology. You talk to me, I build, and I handle the rest.",
+            "ctaPrimary": "Book a free call (30 min)",
             "ctaPrimaryMessage": "Hi Jorge, I saw your website and I'd like to book the free 30-minute call. I wanted to tell you about a project I'm considering.",
             "ctaSecondary": "See services and pricing ↓"
         },
         "killer": {
             "f1": "Reply in under 24h",
-            "f2": "Fixed quote with no commitment",
+            "f2": "Free fixed quote",
             "f3": "Payment plans available",
             "f4": "Your code is yours from day 1"
         },
@@ -251,7 +251,7 @@
             },
             "s4": {
                 "name": "Professional website",
-                "desc": "The corporate website you need to show up on Google and look professional without paying an agency or being stuck with a template.",
+                "desc": "The corporate website you need to show up on Google and look professional, with a custom design and source code that's yours from day 1.",
                 "price": "From $350 USD",
                 "message": "Hi Jorge, I'm interested in the professional website service. Can we talk?"
             },
@@ -270,10 +270,10 @@
         },
         "process": {
             "title": "How I work",
-            "subtitle": "Four steps. No middlemen. No surprises.",
+            "subtitle": "Four steps. Direct communication. No surprises.",
             "p1": {
                 "name": "We talk",
-                "desc": "You schedule a free 30-min call. You tell me what you need, I tell you if it's a fit and what we can do."
+                "desc": "You book a free 30-min call. You tell me what you need, I tell you if it's a fit and what we can do."
             },
             "p2": {
                 "name": "I send you a quote",
@@ -316,7 +316,7 @@
             },
             "q7": {
                 "q": "Why work with you and not an agency?",
-                "a": "With an agency you talk to a salesperson who promises you the world and hands you off to a junior. With me you talk to the person who builds, the whole time. No broken telephone, no dilutions, no 'let me check with my team'. If you need a big team for a massive project, I'm not your fit. If you need something professional, well done, I am."
+                "a": "With me, you always talk to the person who builds your project, from start to finish. One point of contact, one person accountable, fast decisions. If your project genuinely needs a larger team, I'll tell you on the first call and point you in the right direction. If it's a fit for how I work, you get the quality and follow-through you'd expect from any professional engagement."
             },
             "q8": {
                 "q": "What if I don't like the result?",
@@ -325,10 +325,10 @@
         },
         "finalCta": {
             "title": "Want me to help with your project?",
-            "subtitle": "It's me, Jorge. Tell me on WhatsApp what you have in mind and I'll reply in under 24 hours. If it fits, we schedule a free 30-min call.",
-            "button": "📅 Schedule call now",
+            "subtitle": "It's me, Jorge. Tell me on WhatsApp what you have in mind and I'll reply in under 24 hours. If it fits, we set up a free 30-min call.",
+            "button": "Book a call now",
             "message": "Hi Jorge, I saw your website and I want to book the free 30-minute call to tell you about my project.",
-            "finePrint": "No forms · No commitment · No hard sell"
+            "finePrint": "No forms · Free first call · No hard sell"
         },
         "manifesto1": {
             "lead": "Your tech should work",
@@ -336,13 +336,13 @@
             "trail": ", not the other way around."
         },
         "manifesto2": {
-            "lead": "You talk to me. I build. You fight",
-            "accent": "with nothing",
+            "lead": "You talk to me. I build.",
+            "accent": "I handle the rest",
             "trail": "."
         },
         "manifesto3": {
             "lead": "One person. Your project.",
-            "accent": "Zero middlemen",
+            "accent": "Direct, always",
             "trail": "."
         },
         "servicesMarquee": "Online stores · Digital menus · Management systems · Corporate websites · Landing pages · E-commerce · Custom applications · WhatsApp integration · Payment gateways · Odoo customization · Platform migration · Web maintenance · SEO · Technical audits · Speed optimization · APIs and backends · Databases · Admin dashboards · Multi-language · Online bookings",
@@ -366,7 +366,7 @@
             "delivery": "Delivery in 4-6 weeks",
             "cta": "I want it, let's talk",
             "ctaMessage": "Hi Jorge, I'm interested in the $700 USD complete online store. Can we talk?",
-            "finePrint": "No commitment · Quote in 48h"
+            "finePrint": "Free quote · Delivered in 48h"
         }
     }
 }
