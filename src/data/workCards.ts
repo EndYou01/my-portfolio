@@ -14,6 +14,18 @@ export type WorkCard = {
 
 export const workCards: WorkCard[] = [
   {
+    title: 'Köpenick S.A.',
+    descriptionKey: 'kopenick.p1',
+    logo: 'logos/kopenick_logo.png',
+    image: 'kopenick/kopenick-1.png',
+    altText: 'Köpenick S.A.',
+    url: '/kopenick',
+    role: 'Frontend',
+    period: 'Abr/2026 - May/2026',
+    stack: ['React', 'TypeScript', 'Vite', 'Tailwind', 'Zustand'],
+    featured: true,
+  },
+  {
     title: 'Fuego Abierto GelSoft',
     descriptionKey: 'fuegoabierto.p1',
     logo: 'logos/fuegoabierto_logo.png',

@@ -26,6 +26,27 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: 'kopenick',
+    title: 'Köpenick S.A.',
+    descriptionKey: 'kopenick.p2',
+    images: [
+      'kopenick/kopenick-1.png',
+      'kopenick/kopenick-2.png',
+      'kopenick/kopenick-3.png',
+      'kopenick/kopenick-4.png',
+      'kopenick/kopenick-5.png',
+    ],
+    frontEnd: {
+      descriptionKey: 'kopenick.p3',
+      tech: ['React', 'TypeScript', 'Vite', 'Tailwind', 'Zustand'],
+    },
+    backEnd: {
+      descriptionKey: 'kopenick.p4',
+      isNone: true,
+    },
+    source: { type: 'none' },
+  },
+  {
     slug: 'redcollege',
     title: 'RedCollege',
     descriptionKey: 'redcollege.p2',

@@ -16,7 +16,10 @@
       "Bash(cp /tmp/portfolio-screenshots/*.png .tmp-screenshots/)",
       "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless=new --disable-gpu --no-sandbox --window-size=1440,2000 --dump-dom http://localhost:5173/celebren)",
       "Bash(cat tailwind.config.ts)",
-      "Bash(ls vite.config.*)"
+      "Bash(ls vite.config.*)",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('src/translations/es/global.json','utf8'\\)\\); JSON.parse\\(require\\('fs'\\).readFileSync\\('src/translations/en/global.json','utf8'\\)\\); console.log\\('OK'\\);\")",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Jorge Senjudo\\\\Desktop\\\\my-portfolio\" -Force)",
+      "Bash(Select-Object Name, FullName)"
     ]
   }
 }
