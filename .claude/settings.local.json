@@ -19,7 +19,8 @@
       "Bash(ls vite.config.*)",
       "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('src/translations/es/global.json','utf8'\\)\\); JSON.parse\\(require\\('fs'\\).readFileSync\\('src/translations/en/global.json','utf8'\\)\\); console.log\\('OK'\\);\")",
       "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Jorge Senjudo\\\\Desktop\\\\my-portfolio\" -Force)",
-      "Bash(Select-Object Name, FullName)"
+      "Bash(Select-Object Name, FullName)",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('src/translations/es/global.json','utf8'\\)\\); JSON.parse\\(require\\('fs'\\).readFileSync\\('src/translations/en/global.json','utf8'\\)\\); console.log\\('JSON OK'\\)\")"
     ]
   }
 }

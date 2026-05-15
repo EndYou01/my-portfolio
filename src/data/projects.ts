@@ -26,6 +26,29 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: 'gocreate',
+    title: 'GoCreate',
+    descriptionKey: 'gocreate.p2',
+    images: [
+      'gocreate/gocreate-1.png',
+      'gocreate/gocreate-2.png',
+      'gocreate/gocreate-3.png',
+      'gocreate/gocreate-4.png',
+      'gocreate/gocreate-5.png',
+      'gocreate/gocreate-6.png',
+    ],
+    frontEnd: {
+      descriptionKey: 'gocreate.p3',
+      tech: ['Next.js', 'React', 'TypeScript', 'Tailwind', 'Zustand'],
+    },
+    backEnd: {
+      descriptionKey: 'gocreate.p4',
+      tech: ['NestJS', 'PostgreSQL', 'Prisma', 'Redis'],
+    },
+    source: { type: 'visit', url: 'https://www.gocreate.dev' },
+    liveUrl: 'https://app.gocreate.dev',
+  },
+  {
     slug: 'kopenick',
     title: 'Köpenick S.A.',
     descriptionKey: 'kopenick.p2',

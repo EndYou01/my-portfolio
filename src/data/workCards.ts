@@ -14,6 +14,18 @@ export type WorkCard = {
 
 export const workCards: WorkCard[] = [
   {
+    title: 'GoCreate',
+    descriptionKey: 'gocreate.p1',
+    logo: 'logos/gocreate_logo.png',
+    image: 'gocreate/gocreate-1.png',
+    altText: 'GoCreate',
+    url: '/gocreate',
+    role: 'FullStack',
+    period: 'Ene/2026 - May/2026',
+    stack: ['Next.js', 'React', 'TypeScript', 'NestJS', 'PostgreSQL'],
+    featured: true,
+  },
+  {
     title: 'Köpenick S.A.',
     descriptionKey: 'kopenick.p1',
     logo: 'logos/kopenick_logo.png',
