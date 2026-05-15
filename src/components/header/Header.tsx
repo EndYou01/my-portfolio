@@ -3,7 +3,7 @@ import { useNavigate, NavLink, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
 import { GiHamburgerMenu } from 'react-icons/gi'
-import { MdWeb, MdPermContactCalendar } from 'react-icons/md'
+import { MdWeb, MdPermContactCalendar, MdHome } from 'react-icons/md'
 import { AiOutlineInfoCircle, AiOutlineClose } from 'react-icons/ai'
 import { HiMoon, HiSun } from 'react-icons/hi'
 import { FaWhatsapp } from 'react-icons/fa'
@@ -19,6 +19,12 @@ export const Header = () => {
   const navigate = useNavigate()
   const location = useLocation()
   const isHome = location.pathname === '/' || location.pathname === '/en'
+  const showHomeLink = [
+    '/about',
+    '/en/about',
+    '/work',
+    '/en/work',
+  ].includes(location.pathname)
   const { isDark, toggle: toggleTheme } = useDarkMode()
   const { lang, toggle: toggleLang, localizePath } = useLanguage()
   const isMobile = useIsMobile()
@@ -127,6 +133,23 @@ export const Header = () => {
             </button>
 
             <ul className="navigation_list">
+              {showHomeLink && (
+                <li>
+                  <NavLink
+                    className="navigation_button"
+                    onClick={() => {
+                      scrollToTop()
+                      closeMenu()
+                    }}
+                    to={localizePath('/')}
+                    end
+                  >
+                    <MdHome className="menu_icon" />
+                    {text('header.home')}
+                  </NavLink>
+                </li>
+              )}
+
               <li>
                 <NavLink
                   className="navigation_button"
