@@ -5,7 +5,7 @@ type ExperienceItem = {
   period: string
   titleKey: string
   subtitleKey?: string
-  company?: { url: string; label: string; logo: string }
+  company?: { url: string; label: string; logo?: string }
   responsibilitiesKey?: string
   bullets: string[]
   bulletNested?: { parentKey: string; childKeys: string[] }
@@ -82,7 +82,7 @@ const EXPERIENCES: ExperienceItem[] = [
     ],
   },
   {
-    period: '2025/06 - {present}',
+    period: '2025/06 - 2026/02',
     titleKey: 'general.SoftwareArchitectFullstack',
     subtitleKey: 'general.Freelance',
     responsibilitiesKey: 'general.KeyResponsibilities',
@@ -91,6 +91,21 @@ const EXPERIENCES: ExperienceItem[] = [
       'about.worksInfo.text19',
       'about.worksInfo.text20',
       'about.worksInfo.text21',
+    ],
+  },
+  {
+    period: '2026/02 - {present}',
+    titleKey: 'general.SoftwareArchitectFullstack',
+    company: {
+      url: 'https://www.informagestudios.com/',
+      label: 'InforMage Studios, España (Remoto)',
+      logo: 'logos/infomage_logo.webp',
+    },
+    responsibilitiesKey: 'general.KeyResponsibilities',
+    bullets: [
+      'about.worksInfo.text22',
+      'about.worksInfo.text23',
+      'about.worksInfo.text24',
     ],
   },
 ]
@@ -127,11 +142,13 @@ const ProfesionalExperience = () => {
                     <a className="secundary_color" href={exp.company.url}>
                       {exp.company.label}
                     </a>
-                    <img
-                      className="second_td_empressIMG"
-                      src={exp.company.logo}
-                      alt={`${exp.company.label} logo`}
-                    />
+                    {exp.company.logo && (
+                      <img
+                        className="second_td_empressIMG"
+                        src={exp.company.logo}
+                        alt={`${exp.company.label} logo`}
+                      />
+                    )}
                   </div>
                 )}
 

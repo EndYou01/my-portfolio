@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 
 import skills from '../../constants/skills'
 
-const PROJECT_TARGET = 16
+const PROJECT_TARGET = 18
 const PROJECT_DURATION_MS = 2000
 const TECH_DURATION_MS = 2500
 const TICK_MS = 16

@@ -364,6 +364,10 @@
     "webp": "logos/GoDjangoLogo.webp"
   },
   {
+    "original": "logos/infomage_logo.png",
+    "webp": "logos/infomage_logo.webp"
+  },
+  {
     "original": "logos/kidsrUs_logo.png",
     "webp": "logos/kidsrUs_logo.webp"
   },
