@@ -42,4 +42,16 @@ export default defineConfig({
       },
     },
   },
+  ssr: {
+    noExternal: [
+      'react-icons',
+      'react-i18next',
+      'i18next',
+      'swiper',
+      'react-medium-image-zoom',
+      'react-awesome-reveal',
+      'react-lazy-load-image-component',
+      'react-wavify',
+    ],
+  },
 })

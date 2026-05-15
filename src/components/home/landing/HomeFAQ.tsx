@@ -3,7 +3,22 @@ import { useTranslation } from 'react-i18next'
 import { Fade } from 'react-awesome-reveal'
 import { TbChevronDown } from 'react-icons/tb'
 
-const FAQ_KEYS = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8'] as const
+export const HOME_FAQ_KEYS = [
+  'q1',
+  'q2',
+  'q3',
+  'q4',
+  'q5',
+  'q6',
+  'q7',
+  'q8',
+  'q9',
+  'q10',
+  'q11',
+  'q12',
+] as const
+
+const FAQ_KEYS = HOME_FAQ_KEYS
 
 export const HomeFAQ = () => {
   const { t } = useTranslation('global')

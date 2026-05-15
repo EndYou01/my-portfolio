@@ -18,9 +18,9 @@ export const Header = () => {
   const [text] = useTranslation('global')
   const navigate = useNavigate()
   const location = useLocation()
-  const isHome = location.pathname === '/'
+  const isHome = location.pathname === '/' || location.pathname === '/en'
   const { isDark, toggle: toggleTheme } = useDarkMode()
-  const { lang, toggle: toggleLang } = useLanguage()
+  const { lang, toggle: toggleLang, localizePath } = useLanguage()
   const isMobile = useIsMobile()
 
   const [scrollPosition, setScrollPosition] = useState(0)
@@ -33,14 +33,15 @@ export const Header = () => {
   }, [])
 
   const goHome = () => {
-    navigate('/')
+    navigate(localizePath('/'))
     scrollToTop()
   }
 
   const closeMenu = () => setIsMenuOpen(false)
 
   const isAboutTop =
-    location.pathname === '/about' && scrollPosition < 10
+    (location.pathname === '/about' || location.pathname === '/en/about') &&
+    scrollPosition < 10
 
   const headerClass = [
     scrollPosition < 10
@@ -133,7 +134,7 @@ export const Header = () => {
                     scrollToTop()
                     closeMenu()
                   }}
-                  to="/about"
+                  to={localizePath('/about')}
                 >
                   <AiOutlineInfoCircle className="menu_icon" />
                   {text('header.about')}
@@ -147,7 +148,7 @@ export const Header = () => {
                     scrollToTop()
                     closeMenu()
                   }}
-                  to="/work"
+                  to={localizePath('/work')}
                 >
                   <MdWeb className="menu_icon" />
                   {text('header.work')}

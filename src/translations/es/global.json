@@ -42,6 +42,10 @@
         "years": "Años"
     },
     "about": {
+        "meta": {
+            "title": "Sobre mí — Jorge Senjudo, programador web cubano | MIPYMES",
+            "description": "Quién soy: arquitecto de software y desarrollador fullstack cubano con +4 años creando paginas web, tiendas online y sistemas de gestión para MIPYMES y actores económicos. Stack moderno, trato directo."
+        },
         "a&e": "Acerca y Experiencia",
         "a&et": "Soy Jorge L. Senjudo, arquitecto de software y desarrollador fullstack con más de 4 años de experiencia en el diseño y desarrollo de soluciones empresariales completas. Mi trayectoria abarca desde el desarrollo frontend hasta la arquitectura de sistemas complejos de gestión empresarial. He liderado equipos de desarrollo implementando metodologías ágiles (SCRUM), incrementando la productividad mediante planificación efectiva de sprints y estándares de código. Mi experiencia incluye la transformación de procesos manuales en plataformas digitales escalables, como sistemas logísticos que mejoran la eficiencia operacional y plataformas de gestión que aumentan el control de ganancias. Trabajo principalmente con React, Vue, TypeScript, NestJS, MySQL y PostgreSQL, con dominio de arquitectura de microservicios y APIs RESTful. Me caracterizo por asumir responsabilidad end-to-end en proyectos: desde el modelado de bases de datos y arquitectura de software hasta el desarrollo frontend/backend y despliegue en producción. Busco constantemente pulir mis habilidades técnicas, manteniéndome actualizado con las mejores prácticas para ofrecer soluciones innovadoras que generen valor real a las organizaciones.",
         "profExp": "Experiencia Profesional",
@@ -95,6 +99,10 @@
         "h1": "Soy desarrollador web fullstack especializado en arquitectura de software y en la creación de herramientas que automatizan procesos empresariales."
     },
     "work": {
+        "meta": {
+            "title": "Proyectos — Paginas web, tiendas online y sistemas para MIPYMES | Jorge Senjudo",
+            "description": "Portafolio de paginas web, tiendas online, menús digitales y sistemas de gestión que he construido para MIPYMES, restaurantes y empresas en Cuba y otros países. Stack, capturas y detalle por proyecto."
+        },
         "h1": "Mis proyectos",
         "lm": "Leer Más",
         "freelance": "Proyectos Freelance",
@@ -207,11 +215,169 @@
         "p3": "Stack moderno y minimalista orientado a rendimiento, SEO y mantenibilidad. Utiliza React 19 con TypeScript para tipado fuerte y componentes desacoplados, Vite 7 como bundler ultrarrápido con soporte nativo de ESM, y Tailwind CSS 4 mediante el plugin oficial de Vite para una estilización eficiente y consistente con tokens de diseño personalizados. La gestión de estado global se resuelve con Zustand, ligero y sin boilerplate, ideal para el toggle de tema y la persistencia de preferencias del usuario en localStorage. La arquitectura está organizada en componentes cohesivos por sección (Hero, Projects, AboutUs, Products, Partners, WhyUs, Contact, Footer), favoreciendo la separación de responsabilidades y la reutilización. Implementa prerenderizado estático (SSG) mediante un script personalizado con entry-server.tsx que genera HTML estático en tiempo de build, mejorando el First Contentful Paint, el rendimiento en redes lentas y la indexación por motores de búsqueda. Incluye Google Fonts (Anton, JetBrains Mono) cargadas con display=swap, datos estructurados Schema.org embebidos en el HTML, fallback completo dentro de <noscript> para accesibilidad y SEO sin JavaScript, y ESLint con typescript-eslint y reglas de React Hooks para mantener un código limpio y consistente.",
         "p4": "Este proyecto no tiene backend. Al tratarse de una landing page corporativa estática, toda la información se sirve desde HTML prerenderizado y assets estáticos, eliminando la necesidad de servidor, base de datos o API. El formulario de contacto se resuelve mediante canales directos (correo y teléfono) expuestos en la propia interfaz, lo que reduce costos de infraestructura, simplifica el despliegue y maximiza la velocidad y disponibilidad del sitio."
     },
+    "menuDigital": {
+        "meta": {
+            "title": "Menú digital para restaurantes en Cuba | QR + WhatsApp | Jorge Senjudo",
+            "description": "Como hacer un menu digital para tu restaurante, cafetería o paladar cubano. Carta QR, pedidos por WhatsApp, cero comisiones por pedido. Desde $250 USD. Programador web en Cuba."
+        },
+        "hero": {
+            "eyebrow": "> MENÚ DIGITAL CUBA · CARTA QR · MIPYMES GASTRONÓMICAS",
+            "headline": "Menú digital para restaurantes, cafeterías y paladares en Cuba.",
+            "subheadline": "Tus clientes escanean un QR en la mesa, ven la carta desde su móvil y hacen el pedido por WhatsApp. Sin apps que descargar, sin comisiones por pedido, sin perder ventas porque la carta de papel está sucia o desactualizada.",
+            "ctaPrimary": "Quiero mi menú digital",
+            "ctaMessage": "Hola Jorge, quiero un menú digital para mi restaurante en Cuba. ¿Hablamos?"
+        },
+        "beneficios": {
+            "title": "Por qué un menú digital es lo siguiente para tu negocio",
+            "subtitle": "Pensado para MIPYMES gastronómicas y actores económicos cubanos.",
+            "b1": {
+                "name": "Pedidos por WhatsApp",
+                "desc": "El cliente arma el pedido en su móvil y te llega directo a WhatsApp. Cero comisiones de plataforma, cero apps externas, cero intermediarios."
+            },
+            "b2": {
+                "name": "Cambias precios en segundos",
+                "desc": "¿Subió el precio del pollo? Lo actualizas tú mismo desde un panel sencillo. No tienes que reimprimir cartas ni llamar a nadie."
+            },
+            "b3": {
+                "name": "Funciona con conexión débil",
+                "desc": "Optimizado para la realidad de la conectividad en Cuba: carga rápido, pesa poco, funciona con datos móviles."
+            },
+            "b4": {
+                "name": "Imagen profesional",
+                "desc": "Fotos buenas de tus platos, categorías claras, descripciones cuidadas. Tu carta deja de competir con la foto borrosa del local de al lado."
+            },
+            "b5": {
+                "name": "Aparece en Google",
+                "desc": "El menú digital se posiciona como pagina web propia. Cuando buscan \"pagina web para restaurante en cuba\" o el nombre de tu local, te encuentran."
+            },
+            "b6": {
+                "name": "Tuyo desde el día 1",
+                "desc": "El código y los datos son tuyos. Si decides irte conmigo o seguir solo, te llevas todo. Cero lock-in."
+            }
+        },
+        "ejemplos": {
+            "title": "Restaurantes y tiendas que ya tienen menú o tienda online conmigo",
+            "subtitle": "Proyectos reales con el mismo enfoque: carta o catálogo digital, pedidos directos, sin intermediarios."
+        },
+        "faq": {
+            "title": "Preguntas frecuentes sobre menú digital en Cuba",
+            "q1": {
+                "q": "¿Cuánto cuesta un menú digital para mi restaurante?",
+                "a": "Desde $250 USD, precio cerrado por escrito antes de empezar. Incluye diseño, programación, montaje del catálogo inicial, generación del código QR, integración con WhatsApp y entrega del proyecto funcionando."
+            },
+            "q2": {
+                "q": "¿Cuánto tiempo toma tenerlo listo?",
+                "a": "Entre 1 y 2 semanas, dependiendo de la cantidad de productos y de cuán rápido me hagas llegar el contenido (fotos, descripciones, precios)."
+            },
+            "q3": {
+                "q": "¿Cómo hace el cliente para pedir?",
+                "a": "Escanea el QR en la mesa, navega la carta desde su móvil, agrega lo que quiere al pedido y al confirmar se abre WhatsApp con el mensaje del pedido listo para enviarte. Tú lo recibes en el WhatsApp del negocio y lo gestionas como cualquier otro pedido."
+            },
+            "q4": {
+                "q": "¿Necesito comprar un dominio aparte?",
+                "a": "Recomendado pero no obligatorio. Si quieres tu menú en una dirección tipo turestaurante.com, te ayudo con la compra y configuración. Si prefieres usar un subdominio mío al inicio, también funciona."
+            },
+            "q5": {
+                "q": "¿Puedo actualizar los precios yo mismo?",
+                "a": "Sí. Te dejo un panel sencillo desde donde cambias precios, agregas o quitas productos, marcas algo como agotado, y los cambios se ven al instante en el menú que ven tus clientes."
+            },
+            "q6": {
+                "q": "¿Funciona también para cafeterías, paladares o tiendas de comida?",
+                "a": "Sí. El mismo formato sirve para cafetería, paladar, dulcería, tienda de comida congelada, panadería, etc. Cualquier negocio gastronómico cubano que quiera mostrar un catálogo y recibir pedidos por WhatsApp."
+            }
+        },
+        "cta": {
+            "title": "¿Hablamos de tu menú digital?",
+            "subtitle": "Cuéntame por WhatsApp qué tipo de local tienes, cuántos productos y cómo cobras. En 24h te paso un presupuesto cerrado.",
+            "button": "Pedir presupuesto por WhatsApp",
+            "message": "Hola Jorge, vi tu pagina y quiero pedirte presupuesto para un menú digital de mi restaurante.",
+            "finePrint": "Sin formularios · Presupuesto cerrado en 24h · Pago fraccionado disponible"
+        }
+    },
+    "restaurante": {
+        "meta": {
+            "title": "Pagina web para restaurante en Cuba | Menú, pedidos y reservas | Jorge Senjudo",
+            "description": "Pagina web profesional para tu restaurante en Cuba. Carta digital, pedidos por WhatsApp, reservas online y posicionamiento en Google. Para MIPYMES gastronómicas y paladares cubanos."
+        },
+        "hero": {
+            "eyebrow": "> PAGINA WEB PARA RESTAURANTE EN CUBA · MIPYMES GASTRONÓMICAS",
+            "headline": "Pagina web profesional para restaurantes y paladares cubanos.",
+            "subheadline": "Una pagina web hecha para que tu restaurante en Cuba aparezca en Google, transmita lo que es y convierta a quien la visita en cliente que reserva o pide. Carta digital integrada, fotos cuidadas, pedidos por WhatsApp y SEO local desde el primer día.",
+            "ctaPrimary": "Quiero una pagina para mi restaurante",
+            "ctaMessage": "Hola Jorge, quiero una pagina web para mi restaurante en Cuba. ¿Hablamos?"
+        },
+        "beneficios": {
+            "title": "Qué incluye la pagina web para tu restaurante",
+            "subtitle": "Pensada para MIPYMES gastronómicas que quieren convertir en cliente a quien las busca.",
+            "b1": {
+                "name": "Carta digital integrada",
+                "desc": "La carta vive dentro de la pagina, con fotos, categorías y precios actualizables. El visitante ve qué cocinas antes de decidir reservar o pedir."
+            },
+            "b2": {
+                "name": "Pedidos y reservas por WhatsApp",
+                "desc": "Botón de pedido o reserva en cada página, abre WhatsApp con un mensaje listo. Tú cierras la venta como ya sabes hacerlo."
+            },
+            "b3": {
+                "name": "Posicionamiento local en Google",
+                "desc": "Optimizada para keywords como \"restaurante en La Habana\", \"paladar cubano\" o el nombre de tu municipio. Aparece en Google cuando alguien busca dónde comer cerca."
+            },
+            "b4": {
+                "name": "Diseño que vende",
+                "desc": "Fotos grandes, tipografía cuidada y un recorrido pensado para que el visitante quiera entrar al local. Nada de plantillas genéricas."
+            },
+            "b5": {
+                "name": "Mobile-first",
+                "desc": "El 80% de quien busca un restaurante en Cuba lo hace desde el móvil. La pagina está construida primero para móvil, después para escritorio."
+            },
+            "b6": {
+                "name": "Tu marca, tu código",
+                "desc": "Diseño a medida con tu identidad y código fuente que es tuyo desde el día 1. Si quieres irte con otro desarrollador, te llevas todo."
+            }
+        },
+        "ejemplos": {
+            "title": "Ejemplos de proyectos gastronómicos que he construido",
+            "subtitle": "Restaurantes, tiendas y catálogos digitales con el mismo enfoque que te propongo."
+        },
+        "faq": {
+            "title": "Preguntas frecuentes sobre tu pagina web de restaurante",
+            "q1": {
+                "q": "¿Cuánto cuesta una pagina web para un restaurante en Cuba?",
+                "a": "La pagina web profesional de restaurante arranca en $450 USD. Incluye diseño a medida, carta digital integrada, integración con WhatsApp y posicionamiento SEO básico. Si solo necesitas el menú digital (sin pagina corporativa completa), tienes la opción desde $250 USD."
+            },
+            "q2": {
+                "q": "¿Cuánto tarda en estar online?",
+                "a": "Entre 2 y 4 semanas, dependiendo del alcance. Primero diseñamos juntos, después construyo, validas cada sprint semanal y al final entrego con todo configurado: dominio, hosting, panel de carta y QR si lo quieres."
+            },
+            "q3": {
+                "q": "¿Puedo recibir reservas por la pagina?",
+                "a": "Sí. La reserva puede llegar por WhatsApp con un mensaje pre-armado (más simple y suficiente para la mayoría) o como formulario que se guarda en un panel propio (si quieres trazabilidad completa)."
+            },
+            "q4": {
+                "q": "¿Funciona desde Cuba con conexión irregular?",
+                "a": "Sí. La pagina está optimizada para cargar rápido en datos móviles, las imágenes se sirven comprimidas y se prerenderiza para que aparezca al instante. Pensada para la realidad cubana."
+            },
+            "q5": {
+                "q": "¿Aparezco en Google cuando alguien busca mi restaurante?",
+                "a": "El SEO básico de búsqueda local va incluido: meta descripciones en español, datos estructurados Schema.org de tu restaurante (horarios, ubicación, plato típico), sitemap y enlaces internos. Para posicionarte en consultas más competitivas (\"mejor paladar en La Habana\", etc.) podemos sumar el servicio de SEO extendido."
+            },
+            "q6": {
+                "q": "¿Puedo cambiar yo mismo la carta o los horarios?",
+                "a": "Sí, te entrego un panel sencillo para que actualices la carta, los precios, las fotos y los horarios sin tener que llamarme."
+            }
+        },
+        "cta": {
+            "title": "¿Hablamos de tu restaurante online?",
+            "subtitle": "Cuéntame por WhatsApp cómo es tu local, qué cocinas y a quién quieres atraer. En 24h te paso un presupuesto cerrado, sin pelearte con formularios.",
+            "button": "Pedir presupuesto por WhatsApp",
+            "message": "Hola Jorge, vi tu pagina y quiero pedirte presupuesto para una pagina web de mi restaurante en Cuba.",
+            "finePrint": "Sin formularios · Presupuesto cerrado en 24h · Pago fraccionado disponible"
+        }
+    },
     "version": "Versión 1.2.0",
     "home": {
         "meta": {
             "title": "Jorge L. Senjudo · Desarrollo web y sistemas a medida",
-            "description": "Construyo tiendas online, menús digitales, sistemas de gestión y webs profesionales para PyMEs. Trato directo con quien construye tu proyecto. Español e inglés."
+            "description": "Programador web cubano. Hago paginas web, tiendas online, menús digitales y sistemas de gestión para MIPYMES, actores económicos y negocios privados en Cuba. Como vender por internet en Cuba sin complicaciones. Presupuesto fijo desde el inicio."
         },
         "whatsapp": {
             "defaultMessage": "Hola Jorge, vi tu web y me gustaría solicitar una llamada contigo. Quería contarte sobre un proyecto en el que estoy pensando.",
@@ -220,7 +386,7 @@
         "hero": {
             "eyebrow": "> WEBS · TIENDAS · SISTEMAS A MEDIDA",
             "headline": "Tu próximo proyecto web, construido por una sola persona. De principio a fin, hablas siempre con quien lo construye.",
-            "subheadline": "Construyo tiendas online, sistemas de gestión y webs profesionales para negocios que quieren una tecnología fiable y fácil de mantener. Hablas conmigo, construyo yo, y me ocupo del resto.",
+            "subheadline": "Si tienes una MIPYME, un restaurante, una cafetería o cualquier negocio privado en Cuba y te preguntas como hacer una pagina web para tu negocio, hablamos. Diseño y programo paginas web, tiendas virtuales y sistemas a medida para que aparezcas en Google y vendas por internet desde Cuba.",
             "ctaPrimary": "Solicitar llamada gratis (30 min)",
             "ctaPrimaryMessage": "Hola Jorge, vi tu web y me gustaría solicitar la llamada gratis de 30 minutos. Quería contarte sobre un proyecto en el que estoy pensando.",
             "ctaSecondary": "Ver servicios y precios ↓"
@@ -233,31 +399,31 @@
         },
         "services": {
             "title": "Lo que construyo",
-            "subtitle": "Servicios con alcance y precio claros. Si no encaja exacto, hacemos uno a medida.",
+            "subtitle": "Paginas web, tiendas virtuales y sistemas pensados para el día a día de un actor económico en Cuba. Alcance claro, presupuesto fijo y código tuyo desde el día 1.",
             "learnMore": "Saber más →",
             "from": "Desde",
             "custom": "A medida",
             "s1": {
                 "name": "Tienda online",
-                "desc": "Vendes online con pasarela de pago, gestión de pedidos y panel para que lleves tú el negocio sin tener que llamarme cada vez que añades un producto.",
+                "desc": "Como vender por internet en Cuba: una tienda online con catálogo, carrito, pasarela de pago y panel propio para que gestiones pedidos, productos y stock sin depender de mí cada semana.",
                 "price": "Desde $700 USD",
                 "message": "Hola Jorge, me interesa el servicio de tienda online. ¿Podemos hablar?"
             },
             "s2": {
                 "name": "Menú digital para restaurantes",
-                "desc": "Tus clientes ven la carta desde el móvil escaneando un QR. Pedidos directos a WhatsApp. Cero comisiones por pedido.",
+                "desc": "Carta QR y menú digital para tu restaurante, cafetería o paladar cubano. Tus clientes ven la carta desde el móvil escaneando un QR y hacen pedidos directos por WhatsApp. Sin comisiones por pedido.",
                 "price": "Desde $250 USD",
                 "message": "Hola Jorge, me interesa el servicio de menú digital para restaurantes. ¿Podemos hablar?"
             },
             "s3": {
                 "name": "Sistema de gestión a medida",
-                "desc": "Clientes, inventario, facturación, lo que tu negocio necesite. Construido para tu flujo de trabajo real, no para el de otro.",
+                "desc": "Automatización de clientes, inventario, facturación y operaciones para MIPYMES y actores económicos. Construido para tu flujo de trabajo real, no para el de otra empresa.",
                 "price": "Desde $750 USD",
                 "message": "Hola Jorge, me interesa el servicio de sistema de gestión a medida. ¿Podemos hablar?"
             },
             "s4": {
                 "name": "Web profesional",
-                "desc": "La página corporativa que necesitas para aparecer en Google y dar buena imagen, con diseño propio y código tuyo desde el día 1.",
+                "desc": "La pagina web corporativa que necesita tu negocio privado para aparecer en Google, dar buena imagen y convertir visitas en clientes. Diseño propio, contenido optimizado y código tuyo desde el primer día.",
                 "price": "Desde $350 USD",
                 "message": "Hola Jorge, me interesa el servicio de web profesional. ¿Podemos hablar?"
             },
@@ -269,7 +435,7 @@
             },
             "s6": {
                 "name": "Posicionamiento web (SEO)",
-                "desc": "Hago que tu web aparezca en Google cuando tus clientes buscan lo que ofreces. Auditoría técnica, optimización on-page y configuración correcta desde el día 1.",
+                "desc": "Como aparecer en Google cuando tus clientes buscan productos o servicios en Cuba. Auditoría técnica, optimización on-page, Schema.org y configuración correcta desde el día 1 para que tu MIPYME se vea.",
                 "price": "Desde $150 USD",
                 "message": "Hola Jorge, me interesa el servicio de posicionamiento web (SEO). ¿Podemos hablar?"
             }
@@ -327,6 +493,22 @@
             "q8": {
                 "q": "¿Y si no me gusta el resultado?",
                 "a": "En cada sprint validamos juntos, así que problemas grandes los detectamos pronto. Si en algún punto consideras que el proyecto no va bien, paramos, evaluamos y decidimos. He cerrado proyectos en buenos términos con clientes para los que mi enfoque no era el correcto. Cero drama."
+            },
+            "q9": {
+                "q": "¿Cuánto cuesta una pagina web en Cuba?",
+                "a": "Una pagina web profesional para una MIPYME cubana arranca en $350 USD. Una tienda online completa con catálogo y pasarela de pago, en $700. Un menú digital para restaurante, en $250. Un sistema de gestión a medida, desde $750. Todos los precios son cerrados por escrito antes de empezar, así sabes desde el primer día cuánto cuesta tu pagina web."
+            },
+            "q10": {
+                "q": "¿Como hago para que mi negocio aparezca en Google?",
+                "a": "Aparecer en Google no es cuestión de suerte: es una pagina web bien construida, con metadatos en español, contenido orientado a lo que tus clientes buscan (\"menú digital\", \"tienda online cuba\", el nombre de tu municipio, tu vertical) y datos estructurados Schema.org. Eso lo incluyo en cada proyecto. Si ya tienes una web y quieres posicionarla, el servicio de SEO la audita y la optimiza."
+            },
+            "q11": {
+                "q": "¿Trabajas con MIPYMES y actores económicos cubanos?",
+                "a": "Sí, es mi mercado principal. Conozco la realidad de un emprendedor cubano: trabajar con conexión irregular, cobrar desde y hacia el exterior, integrar WhatsApp como canal de pedidos, y mantener costos predecibles. Todas mis soluciones están pensadas para que una MIPYME, un actor económico o un negocio privado en Cuba pueda operar y crecer online."
+            },
+            "q12": {
+                "q": "¿Puedo vender por internet desde Cuba?",
+                "a": "Sí. Existen formas de cobrar online desde Cuba (USDT, transferencias internacionales, pasarelas accesibles para MIPYMES, pagos por canal directo) que se pueden integrar a una tienda virtual. La parte técnica la resuelvo yo: tú decides qué métodos quieres aceptar y a quién quieres vender, y la tienda queda configurada para eso desde el día 1."
             }
         },
         "finalCta": {
@@ -351,7 +533,7 @@
             "accent": "Trato directo",
             "trail": "."
         },
-        "servicesMarquee": "Tiendas online · Menús digitales · Sistemas de gestión · Webs corporativas · Landing pages · E-commerce · Aplicaciones a medida · Integración con WhatsApp · Pasarelas de pago · Customización Odoo · Migración a nuevas plataformas · Mantenimiento web · Posicionamiento SEO · Auditorías técnicas · Optimización de velocidad · APIs y backends · Bases de datos · Dashboards administrativos · Multi-idioma · Reservas online",
+        "servicesMarquee": "Paginas web MIPYME · Menú digital Cuba · Tienda online Cuba · Tienda virtual · Catálogo online · Sistemas de gestión · Pagina web restaurante · Pagina web cafetería · Pagina web barbería · Webs corporativas · Landing pages · E-commerce · Integración WhatsApp · Pasarelas de pago · Posicionamiento SEO · Como vender por internet en Cuba · Reservas online · Aplicaciones a medida · Dashboards administrativos · APIs y backends",
         "logos": {
             "eyebrow": "> CONFIANZA DE"
         },

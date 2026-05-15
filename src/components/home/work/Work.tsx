@@ -5,9 +5,11 @@ import { Link, useLocation } from 'react-router-dom'
 
 import { ProjectCard } from '../../projectCard/ProjectCard'
 import { workCards } from '../../../data/workCards'
+import { useLanguage } from '../../../hooks/useLanguage'
 
 export const Work = () => {
   const { t } = useTranslation('global')
+  const { localizePath } = useLanguage()
   const isWorkLocation = useLocation().pathname.includes('work')
 
   const cards = isWorkLocation
@@ -30,14 +32,14 @@ export const Work = () => {
               period={card.period}
               stack={card.stack}
               image={card.image}
-              url={card.url}
+              url={localizePath(card.url)}
               altText={card.altText}
             />
           </React.Fragment>
         ))}
       </div>
       {!isWorkLocation && (
-        <Link to="/work" className="seeMore">
+        <Link to={localizePath('/work')} className="seeMore">
           {t('general.seeMore')}
         </Link>
       )}

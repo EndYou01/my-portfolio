@@ -42,6 +42,10 @@
         "years": "Years"
     },
     "about": {
+        "meta": {
+            "title": "About — Jorge Senjudo, web developer for SMBs and Cuban MIPYMES",
+            "description": "Who I am: Cuban fullstack software architect with 4+ years building websites, online stores and management systems for SMBs and Cuban MIPYMES. Modern stack, direct communication."
+        },
         "a&e": "About & Experience",
         "a&et": "I'm Jorge L. Senjudo, a software architect and fullstack developer with over 4 years of experience in designing and developing complete enterprise solutions. My career spans from frontend development to the architecture of complex business management systems. I have led development teams implementing agile methodologies (SCRUM), increasing productivity through effective sprint planning and code standards. My experience includes transforming manual processes into scalable digital platforms, such as logistics systems that improve operational efficiency and management platforms that increase profit control. I primarily work with React, Vue, TypeScript, NestJS, MySQL, and PostgreSQL, with expertise in microservices architecture and RESTful APIs. I'm characterized by taking end-to-end responsibility in projects: from database modeling and software architecture to frontend/backend development and production deployment. I constantly seek to refine my technical skills, staying updated with best practices to deliver innovative solutions that generate real value for organizations.",
         "profExp": "Professional Experience",
@@ -95,6 +99,10 @@
         "h1": "I'm a fullstack web developer specialized in software architecture and building tools that automate business processes."
     },
     "work": {
+        "meta": {
+            "title": "Projects — Websites, online stores and management systems by Jorge Senjudo",
+            "description": "Portfolio of websites, online stores, digital menus and management systems I've built for SMBs, restaurants and companies in Cuba and other countries. Stack, screenshots and detail per project."
+        },
         "h1": "My projects",
         "lm": "Learn More",
         "freelance": "Freelance Projects",
@@ -327,6 +335,22 @@
             "q8": {
                 "q": "What if I don't like the result?",
                 "a": "We validate together every sprint, so big problems get caught early. If at any point you think the project isn't going well, we stop, evaluate and decide. I've ended projects on good terms with clients for whom my approach wasn't the right fit. Zero drama."
+            },
+            "q9": {
+                "q": "How much does a website cost in Cuba?",
+                "a": "A professional website for a Cuban MIPYME starts at $350 USD. A complete online store with catalog and payment gateway, $700. A digital menu for restaurants, $250. A custom management system, from $750. All prices are fixed in writing before we start, so you know upfront what your website costs."
+            },
+            "q10": {
+                "q": "How do I get my business to show up on Google?",
+                "a": "Showing up on Google isn't luck: it's a well-built site, Spanish/English metadata, content focused on what your customers actually search for, and Schema.org structured data. That's included in every project. If you already have a site and want to rank it, the SEO service audits and optimizes it."
+            },
+            "q11": {
+                "q": "Do you work with Cuban MIPYMES and small businesses?",
+                "a": "Yes, it's my main market. I know what it's like to run a small Cuban business: irregular connectivity, hard-to-set-up cross-border payments, WhatsApp as the main sales channel, and tight budgets. All my solutions are designed so a MIPYME, an actor económico or a private business in Cuba can operate and grow online."
+            },
+            "q12": {
+                "q": "Can I sell online from Cuba?",
+                "a": "Yes. There are realistic ways to take online payments from Cuba (USDT, international transfers, MIPYME-accessible gateways, direct-channel payments) that can be plugged into an online store. The technical side I handle; you decide which methods you want to accept and to whom you want to sell."
             }
         },
         "finalCta": {

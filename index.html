@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <meta name="author" content="Jorge L. Senjudo" />
+    <meta name="generator" content="Vite + React" />
     <meta
       name="description"
-      content="Jorge Senjudo, Front-End software engineer with experience in building production ready applications."
+      content="Páginas web, tiendas online y menús digitales para MIPYMES y actores económicos cubanos. Diseño, programación y SEO desde Cuba."
     />
 
     <link rel="icon" href="/favicon.ico" />
@@ -27,11 +29,66 @@
       href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
     />
 
-    <title>Jorge Senjudo Web Developer Portfolio</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jorge L. Senjudo",
+        "alternateName": "Jorge Senjudo",
+        "jobTitle": "Desarrollador web fullstack",
+        "url": "https://jorge-senjudo-portfolio.vercel.app",
+        "email": "info@informagestudios.com",
+        "image": "https://jorge-senjudo-portfolio.vercel.app/portfolio/CVPhoto.jpg",
+        "knowsLanguage": ["es", "en"],
+        "sameAs": [
+          "https://github.com/EndYou01",
+          "https://www.linkedin.com/in/jorge-senjudo-25122525b/",
+          "https://t.me/EndYou2701"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "InforMage Studios"
+        }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Jorge Senjudo — Desarrollo web para MIPYMES",
+        "description": "Diseño y desarrollo de páginas web, tiendas online, menús digitales y sistemas de gestión a medida para MIPYMES y actores económicos cubanos.",
+        "url": "https://jorge-senjudo-portfolio.vercel.app",
+        "image": "https://jorge-senjudo-portfolio.vercel.app/og-image.png",
+        "areaServed": [
+          { "@type": "Country", "name": "Cuba" },
+          { "@type": "Country", "name": "United States" },
+          { "@type": "Country", "name": "Spain" }
+        ],
+        "serviceType": [
+          "Diseño web",
+          "Desarrollo web",
+          "Tienda online",
+          "Menú digital",
+          "Sistemas de gestión",
+          "Posicionamiento SEO"
+        ],
+        "priceRange": "$$",
+        "provider": {
+          "@type": "Person",
+          "name": "Jorge L. Senjudo"
+        }
+      }
+    </script>
+
+    <!--app-head-->
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <noscript>
+      Necesitas habilitar JavaScript para ver esta aplicación, pero el
+      contenido principal ya está cargado en el HTML.
+    </noscript>
+    <div id="root"><!--app-html--></div>
+    <script type="module" src="/src/entry-client.tsx"></script>
   </body>
 </html>

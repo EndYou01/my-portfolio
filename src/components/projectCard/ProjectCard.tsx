@@ -34,7 +34,12 @@ export const ProjectCard = ({
   const location = useLocation()
 
   const handleClick = () => {
-    localStorage.setItem('lastLocation', location.pathname)
+    if (typeof window === 'undefined') return
+    try {
+      localStorage.setItem('lastLocation', location.pathname)
+    } catch {
+      /* ignore */
+    }
   }
 
   return (

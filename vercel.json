@@ -2,7 +2,18 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/kidsrus", "destination": "/kids-r-us", "permanent": true },
+    { "source": "/kidsrUs", "destination": "/kids-r-us", "permanent": true },
+    { "source": "/citasApp", "destination": "/citas-app", "permanent": true },
+    { "source": "/crossBorder", "destination": "/cross-border", "permanent": true },
+    { "source": "/tecoposadmin", "destination": "/tecopos-admin", "permanent": true },
+    { "source": "/sinterceros", "destination": "/sin-terceros", "permanent": true },
+    { "source": "/elgaban", "destination": "/el-gaban", "permanent": true },
+    { "source": "/snb", "destination": "/snb-2022", "permanent": true }
+  ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/((?!_next|api|assets|.*\\..*).*)", "destination": "/index.html" }
   ]
 }

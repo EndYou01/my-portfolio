@@ -9,7 +9,10 @@ export const BackButton = () => {
   const { isDark } = useDarkMode()
 
   const handleClick = () => {
-    const lastLocation = localStorage.getItem('lastLocation') || '/'
+    const lastLocation =
+      typeof window !== 'undefined'
+        ? localStorage.getItem('lastLocation') || '/'
+        : '/'
     navigate(lastLocation)
     scrollToTop()
   }
