@@ -1,6 +1,9 @@
 import { useTranslation } from 'react-i18next'
 import { useDarkMode } from '../../../hooks/useDarkMode'
 
+const normalizeSrc = (src: string): string =>
+  src.startsWith('/') || src.startsWith('http') ? src : `/${src}`
+
 type ExperienceItem = {
   period: string
   titleKey: string
@@ -145,7 +148,7 @@ const ProfesionalExperience = () => {
                     {exp.company.logo && (
                       <img
                         className="second_td_empressIMG"
-                        src={exp.company.logo}
+                        src={normalizeSrc(exp.company.logo)}
                         alt={`${exp.company.label} logo`}
                       />
                     )}

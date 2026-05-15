@@ -11,6 +11,9 @@ type Props = {
   src: string
 }
 
+const normalizeSrc = (src: string): string =>
+  src.startsWith('/') || src.startsWith('http') ? src : `/${src}`
+
 export const ImageLoaded = ({ effect, classname, alt, src }: Props) => {
   const [imageLoaded, setImageLoaded] = useState(false)
 
@@ -23,7 +26,7 @@ export const ImageLoaded = ({ effect, classname, alt, src }: Props) => {
         effect={effect as 'blur' | 'opacity' | undefined}
         className={isBackground ? 'bg_imageImageLoaded' : classname}
         alt={alt}
-        src={src}
+        src={normalizeSrc(src)}
         onLoad={() => setImageLoaded(true)}
       />
     </div>

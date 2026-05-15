@@ -69,7 +69,7 @@ export const Header = () => {
           className="header_title"
           style={{ background: 'none', border: 'none', cursor: 'pointer' }}
         >
-          {text('header.portofolio')}
+          {isHome ? text('header.services') : text('header.portofolio')}
         </button>
 
         <div className="header_right">

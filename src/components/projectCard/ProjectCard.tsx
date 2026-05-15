@@ -19,6 +19,9 @@ export type ProjectCardProps = {
 const formatPeriod = (raw: string): string =>
   raw.replace(/\//g, ' ').replace(/\s*-\s*/g, ' — ')
 
+const normalizeSrc = (src: string): string =>
+  src.startsWith('/') || src.startsWith('http') ? src : `/${src}`
+
 export const ProjectCard = ({
   logo,
   title,
@@ -47,7 +50,7 @@ export const ProjectCard = ({
       <article className="pcard">
         <img
           className="pcard_bg"
-          src={image}
+          src={normalizeSrc(image)}
           alt={`${altText} preview`}
           loading="lazy"
         />
@@ -57,7 +60,7 @@ export const ProjectCard = ({
           <div className="pcard_logo_box">
             <img
               className="pcard_logo"
-              src={logo}
+              src={normalizeSrc(logo)}
               alt={`${altText} logo`}
               loading="lazy"
             />
