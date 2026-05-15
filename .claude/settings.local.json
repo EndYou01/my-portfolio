@@ -20,7 +20,11 @@
       "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('src/translations/es/global.json','utf8'\\)\\); JSON.parse\\(require\\('fs'\\).readFileSync\\('src/translations/en/global.json','utf8'\\)\\); console.log\\('OK'\\);\")",
       "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Jorge Senjudo\\\\Desktop\\\\my-portfolio\" -Force)",
       "Bash(Select-Object Name, FullName)",
-      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('src/translations/es/global.json','utf8'\\)\\); JSON.parse\\(require\\('fs'\\).readFileSync\\('src/translations/en/global.json','utf8'\\)\\); console.log\\('JSON OK'\\)\")"
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('src/translations/es/global.json','utf8'\\)\\); JSON.parse\\(require\\('fs'\\).readFileSync\\('src/translations/en/global.json','utf8'\\)\\); console.log\\('JSON OK'\\)\")",
+      "Bash(node scripts/convert-images-to-webp.mjs)",
+      "Bash(node scripts/prune-bigger-webp.mjs)",
+      "Bash(node scripts/rewrite-paths-to-webp.mjs)",
+      "Bash(node -e \"const w=require\\('./scripts/webp-winners.json'\\); w.filter\\(x=>x.original.startsWith\\('logos/'\\)\\).forEach\\(x=>console.log\\(x.original\\)\\);\")"
     ]
   }
 }

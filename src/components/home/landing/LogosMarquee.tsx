@@ -5,11 +5,11 @@ import { Marquee } from './Marquee'
 type Logo = { name: string; src: string }
 
 const LOGOS: Logo[] = [
-  { name: 'RedCollege', src: '/logos/redcollege_logo.png' },
-  { name: 'CugrancaXXI', src: '/logos/cugranca_logo.png' },
-  { name: 'Fuego Abierto', src: '/logos/fuegoabierto_logo.png' },
-  { name: 'El Gabán', src: '/logos/gabanLogo.png' },
-  { name: 'The Gelato', src: '/logos/gelatologo.jpg' },
+  { name: 'RedCollege', src: '/logos/redcollege_logo.webp' },
+  { name: 'CugrancaXXI', src: '/logos/cugranca_logo.webp' },
+  { name: 'Fuego Abierto', src: '/logos/fuegoabierto_logo.webp' },
+  { name: 'El Gabán', src: '/logos/gabanLogo.webp' },
+  { name: 'The Gelato', src: '/logos/gelatologo.webp' },
   { name: 'Tecopos', src: '/logos/TecoposLogo.png' },
 ]
 

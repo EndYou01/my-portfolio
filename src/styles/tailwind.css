@@ -1365,44 +1365,154 @@
     margin: 1.5rem 0 2rem;
   }
 
-  .slide_portrait,
-  .slide_landscape {
-    width: 420px !important;
-  }
-  @media only screen and (max-width: 900px) {
-    .slide_portrait,
-    .slide_landscape {
-      max-width: 90vw !important;
-      width: 90vw !important;
-    }
+  .project_carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
   }
 
-  .slide_portrait img,
-  .slide_landscape img {
+  .project_carousel_main {
+    position: relative;
+    width: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 18px 42px -18px rgba(0, 0, 0, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 240px;
+  }
+
+  body.body-dark-mode .project_carousel_main {
+    background: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 18px 42px -22px rgba(0, 0, 0, 0.18);
+  }
+
+  .project_carousel_image {
     width: 100%;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 12px 32px -12px rgba(0, 0, 0, 0.6);
+    max-height: 70vh;
+    object-fit: contain;
+    display: block;
+    cursor: zoom-in;
+    animation: project_carousel_fade 220ms ease-out;
+  }
+
+  @keyframes project_carousel_fade {
+    from { opacity: 0; transform: scale(0.99); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+
+  .project_carousel_nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(226, 70, 48, 0.9);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    transition: background 180ms, transform 180ms;
+    backdrop-filter: blur(2px);
+  }
+  .project_carousel_nav:hover {
+    background: rgb(226, 70, 48);
+    transform: translateY(-50%) scale(1.05);
+  }
+  .project_carousel_nav_prev { left: 12px; }
+  .project_carousel_nav_next { right: 12px; }
+
+  .project_carousel_counter {
+    position: absolute;
+    bottom: 12px;
+    right: 14px;
+    z-index: 2;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    backdrop-filter: blur(4px);
+    pointer-events: none;
+  }
+
+  .project_carousel_thumbs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(226, 70, 48, 0.5) transparent;
+    padding-bottom: 4px;
+  }
+  .project_carousel_thumbs::-webkit-scrollbar { height: 6px; }
+  .project_carousel_thumbs::-webkit-scrollbar-thumb {
+    background: rgba(226, 70, 48, 0.5);
+    border-radius: 999px;
+  }
+
+  .project_carousel_thumb_item {
+    flex: 0 0 auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .project_carousel_thumb {
+    display: block;
+    padding: 0;
+    width: 110px;
+    height: 70px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    background: transparent;
+    opacity: 0.55;
+    transition: opacity 180ms, border-color 180ms, transform 180ms;
+  }
+  .project_carousel_thumb:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+  }
+  .project_carousel_thumb_active {
+    opacity: 1;
+    border-color: rgb(226, 70, 48);
+  }
+  .project_carousel_thumb_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
   }
 
-  .swiper-button-prev,
-  .swiper-button-next {
-    color: white !important;
-    background: rgba(226, 70, 48, 0.9);
-    width: 38px !important;
-    height: 38px !important;
-    border-radius: 50%;
-    transition: background 200ms;
-  }
-  .swiper-button-prev:hover,
-  .swiper-button-next:hover {
-    background: rgb(226, 70, 48);
-  }
-  .swiper-button-prev::after,
-  .swiper-button-next::after {
-    font-size: 14px !important;
-    font-weight: 800;
+  @media only screen and (max-width: 900px) {
+    .project_carousel_main { min-height: 180px; }
+    .project_carousel_image { max-height: 60vh; }
+    .project_carousel_nav {
+      width: 36px;
+      height: 36px;
+      font-size: 18px;
+    }
+    .project_carousel_nav_prev { left: 8px; }
+    .project_carousel_nav_next { right: 8px; }
+    .project_carousel_thumb { width: 84px; height: 56px; }
   }
 
   /* ============================================================
