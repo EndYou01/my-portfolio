@@ -82,6 +82,11 @@ const computeTags = (props: SEOProps): { tags: HeadTag[]; canonical: string } =>
   tags.push({ type: 'meta', property: 'og:type', content: 'website' })
   tags.push({ type: 'meta', property: 'og:url', content: fullUrl })
   tags.push({ type: 'meta', property: 'og:image', content: image })
+  tags.push({ type: 'meta', property: 'og:image:secure_url', content: image })
+  tags.push({ type: 'meta', property: 'og:image:type', content: 'image/png' })
+  tags.push({ type: 'meta', property: 'og:image:width', content: '1200' })
+  tags.push({ type: 'meta', property: 'og:image:height', content: '630' })
+  tags.push({ type: 'meta', property: 'og:image:alt', content: props.title })
   tags.push({ type: 'meta', property: 'og:locale', content: ogLocale })
   tags.push({ type: 'meta', property: 'og:site_name', content: 'Jorge Senjudo' })
 
