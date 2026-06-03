@@ -14,6 +14,18 @@ export type WorkCard = {
 
 export const workCards: WorkCard[] = [
   {
+    title: 'Yoss',
+    descriptionKey: 'yoss.p1',
+    logo: 'logos/yoss_logo.webp',
+    image: 'yoss/yoss-home.webp',
+    altText: 'Yoss',
+    url: '/yoss',
+    role: 'Frontend',
+    period: 'May/2026 - Jun/2026',
+    stack: ['Next.js', 'React', 'TypeScript', 'Tailwind', 'Motion'],
+    featured: true,
+  },
+  {
     title: 'GoCreate',
     descriptionKey: 'gocreate.p1',
     logo: 'logos/gocreate_logo.webp',

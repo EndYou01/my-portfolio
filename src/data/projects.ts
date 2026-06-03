@@ -26,6 +26,29 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: 'yoss',
+    title: 'Yoss',
+    descriptionKey: 'yoss.p2',
+    images: [
+      'yoss/yoss-home.webp',
+      'yoss/yoss-obra.webp',
+      'yoss/yoss-sobre.webp',
+      'yoss/yoss-otra-vida.webp',
+      'yoss/yoss-prensa.webp',
+      'yoss/yoss-contacto.webp',
+    ],
+    frontEnd: {
+      descriptionKey: 'yoss.p3',
+      tech: ['Next.js', 'React', 'TypeScript', 'Tailwind', 'Motion'],
+    },
+    backEnd: {
+      descriptionKey: 'yoss.p4',
+      isNone: true,
+    },
+    source: { type: 'visit', url: 'https://yossescritor.vercel.app/' },
+    liveUrl: 'https://yossescritor.vercel.app/',
+  },
+  {
     slug: 'gocreate',
     title: 'GoCreate',
     descriptionKey: 'gocreate.p2',
