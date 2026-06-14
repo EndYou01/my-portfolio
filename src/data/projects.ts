@@ -26,6 +26,38 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: 'worldcup-pvp',
+    title: 'World Cup PvP',
+    descriptionKey: 'worldcup.p2',
+    images: [
+      'worldcup/worldcup-home.webp',
+      'worldcup/worldcup-matches.webp',
+      'worldcup/worldcup-nations.webp',
+      'worldcup/worldcup-trading.webp',
+      'worldcup/worldcup-tournament.webp',
+      'worldcup/worldcup-how-it-works.webp',
+    ],
+    frontEnd: {
+      descriptionKey: 'worldcup.p3',
+      tech: [
+        'React',
+        'TypeScript',
+        'Vite',
+        'TanStack Query',
+        'wagmi',
+        'viem',
+        'Tailwind',
+        'Motion',
+      ],
+    },
+    backEnd: {
+      descriptionKey: 'worldcup.p4',
+      tech: ['NestJS', 'PostgreSQL', 'Prisma', 'Redis', 'Ably', 'Cloudflare'],
+    },
+    source: { type: 'visit', url: 'https://worldcupvp.io/home' },
+    liveUrl: 'https://worldcupvp.io/home',
+  },
+  {
     slug: 'pavel',
     title: 'Pavel Mustelier',
     descriptionKey: 'pavel.p2',

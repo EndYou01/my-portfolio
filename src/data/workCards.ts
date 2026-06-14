@@ -14,6 +14,18 @@ export type WorkCard = {
 
 export const workCards: WorkCard[] = [
   {
+    title: 'World Cup PvP',
+    descriptionKey: 'worldcup.p1',
+    logo: 'logos/worldcup_logo.webp',
+    image: 'worldcup/worldcup-home.webp',
+    altText: 'World Cup PvP',
+    url: '/worldcup-pvp',
+    role: 'Fullstack',
+    period: 'May/2026 - Jun/2026',
+    stack: ['React', 'TypeScript', 'NestJS', 'PostgreSQL', 'wagmi', 'Tailwind'],
+    featured: true,
+  },
+  {
     title: 'Pavel Mustelier',
     descriptionKey: 'pavel.p1',
     logo: 'logos/pavel_logo.webp',
