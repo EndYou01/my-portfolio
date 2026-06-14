@@ -26,6 +26,27 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: 'pavel',
+    title: 'Pavel Mustelier',
+    descriptionKey: 'pavel.p2',
+    images: [
+      'pavel/pavel-home.webp',
+      'pavel/pavel-trilogia.webp',
+      'pavel/pavel-cierzo.webp',
+      'pavel/pavel-ansea.webp',
+    ],
+    frontEnd: {
+      descriptionKey: 'pavel.p3',
+      tech: ['Next.js', 'React', 'TypeScript', 'Tailwind', 'Motion'],
+    },
+    backEnd: {
+      descriptionKey: 'pavel.p4',
+      isNone: true,
+    },
+    source: { type: 'visit', url: 'https://pavelescritor.vercel.app/' },
+    liveUrl: 'https://pavelescritor.vercel.app/',
+  },
+  {
     slug: 'yoss',
     title: 'Yoss',
     descriptionKey: 'yoss.p2',
