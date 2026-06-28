@@ -7,7 +7,7 @@ const root = path.resolve(__dirname, '..')
 const distClient = path.join(root, 'dist')
 const distServer = path.join(root, 'dist-server')
 
-const SITE_ORIGIN = 'https://jorge-senjudo-portfolio.vercel.app'
+const SITE_ORIGIN = 'https://jorgesenjudo.dev'
 
 const main = async () => {
   const templatePath = path.join(distClient, 'index.html')

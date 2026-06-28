@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jorge-senjudo-portfolio.vercel.app/sitemap.xml
+Sitemap: https://jorgesenjudo.dev/sitemap.xml

@@ -11,7 +11,7 @@ import {
   type HeadTag,
 } from '../../utils/headStore'
 
-export const SITE_ORIGIN = 'https://jorge-senjudo-portfolio.vercel.app'
+export const SITE_ORIGIN = 'https://jorgesenjudo.dev'
 
 type SchemaObject = Record<string, unknown>
 

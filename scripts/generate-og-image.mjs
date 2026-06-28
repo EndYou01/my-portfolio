@@ -60,7 +60,7 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
     </text>
 
     <text x="80" y="570" font-size="24" font-weight="600" fill="#E24630" letter-spacing="2">
-      jorge-senjudo-portfolio.vercel.app
+      jorgesenjudo.dev
     </text>
   </g>
 </svg>`
