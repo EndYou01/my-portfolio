@@ -26,6 +26,26 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: 'fuegoabierto-web',
+    title: 'Fuego Abierto Web',
+    descriptionKey: 'fuegoabiertoweb.p2',
+    images: [
+      'fuegoAbiertoWeb/fuegoabiertoweb-home.webp',
+      'fuegoAbiertoWeb/fuegoabiertoweb-cta.webp',
+      'fuegoAbiertoWeb/fuegoabiertoweb-perfil.webp',
+    ],
+    frontEnd: {
+      descriptionKey: 'fuegoabiertoweb.p3',
+      tech: ['React', 'TypeScript', 'Vite', 'Tailwind', 'Axios'],
+    },
+    backEnd: {
+      descriptionKey: 'fuegoabiertoweb.p4',
+      isNone: true,
+    },
+    source: { type: 'visit', url: 'https://www.fuegoabierto-airsoft.com' },
+    liveUrl: 'https://www.fuegoabierto-airsoft.com',
+  },
+  {
     slug: 'worldcup-pvp',
     title: 'World Cup PvP',
     descriptionKey: 'worldcup.p2',

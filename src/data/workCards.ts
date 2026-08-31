@@ -14,6 +14,18 @@ export type WorkCard = {
 
 export const workCards: WorkCard[] = [
   {
+    title: 'Fuego Abierto Web',
+    descriptionKey: 'fuegoabiertoweb.p1',
+    logo: 'logos/fuegoabierto_logo.webp',
+    image: 'fuegoAbiertoWeb/fuegoabiertoweb-home.webp',
+    altText: 'Fuego Abierto Web',
+    url: '/fuegoabierto-web',
+    role: 'Frontend',
+    period: 'Ago/2026',
+    stack: ['React', 'TypeScript', 'Vite', 'Tailwind', 'Zustand'],
+    featured: true,
+  },
+  {
     title: 'World Cup PvP',
     descriptionKey: 'worldcup.p1',
     logo: 'logos/worldcup_logo.webp',
