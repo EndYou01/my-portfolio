@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next'
 
 import { FlagshipCard } from '../components/home/landing/FlagshipCard'
-import { HomeFAQ, HOME_FAQ_KEYS } from '../components/home/landing/HomeFAQ'
 import { HomeFinalCTA } from '../components/home/landing/HomeFinalCTA'
 import { HomeProcess } from '../components/home/landing/HomeProcess'
 import { HomeServices } from '../components/home/landing/HomeServices'
@@ -16,10 +15,7 @@ import { Wordmark } from '../components/ui/Wordmark'
 import { WhatsAppCTA } from '../components/whatsappCTA/WhatsAppCTA'
 import { workCards } from '../data/workCards'
 import { useLanguage } from '../hooks/useLanguage'
-import {
-  buildFaqPageSchema,
-  buildProfessionalServiceSchema,
-} from '../utils/schema'
+import { buildProfessionalServiceSchema } from '../utils/schema'
 
 const TRAIL = [
   '/logos/fuegoabierto_logo.webp',
@@ -46,11 +42,6 @@ export const IndexPage = () => {
   const { t } = useTranslation('global')
   const { lang, localizePath } = useLanguage()
 
-  const faqItems = HOME_FAQ_KEYS.map((key) => ({
-    q: t(`home.faq.${key}.q`),
-    a: t(`home.faq.${key}.a`),
-  }))
-
   return (
     <>
       <SEO
@@ -59,10 +50,7 @@ export const IndexPage = () => {
         path={localizePath('/')}
         lang={lang === 'ES' ? 'es' : 'en'}
         hasEnglish
-        schema={[
-          buildProfessionalServiceSchema(),
-          buildFaqPageSchema(faqItems),
-        ]}
+        schema={buildProfessionalServiceSchema()}
       />
       <main>
         <section className="margenes relative flex min-h-svh flex-col justify-end gap-8 pb-6 pt-[84px] md:gap-12 md:pb-8">
@@ -120,7 +108,6 @@ export const IndexPage = () => {
         <HomeProcess />
         <LogosMarquee />
         <ManifestoHeadline i18nKey="manifesto3" />
-        <HomeFAQ />
         <HomeFinalCTA />
 
         <div className="margenes pb-6 pt-24 md:pt-32">

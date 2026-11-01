@@ -8,8 +8,8 @@ export type RoutePlan = {
   hasEnglish: boolean
 }
 
-const STATIC_PATHS_ES = ['/', '/about', '/work']
-const STATIC_PATHS_EN = ['/en', '/en/about', '/en/work']
+const STATIC_PATHS_ES = ['/', '/about', '/work', '/faq']
+const STATIC_PATHS_EN = ['/en', '/en/about', '/en/work', '/en/faq']
 const VERTICAL_PATHS_ES = ['/menu-digital-cuba', '/pagina-web-restaurante-cuba']
 
 export const buildRoutePlan = (): RoutePlan[] => {

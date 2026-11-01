@@ -1,5 +1,7 @@
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 
+import { useLanguage } from '../../hooks/useLanguage'
 import { WhatsAppCTA } from '../whatsappCTA/WhatsAppCTA'
 
 const LINKS = [
@@ -12,6 +14,7 @@ const LINKS = [
 
 export const Footer = () => {
   const [text] = useTranslation('global')
+  const { localizePath } = useLanguage()
 
   return (
     <footer
@@ -33,6 +36,9 @@ export const Footer = () => {
           ))}
         </ul>
         <div className="flex flex-wrap gap-x-6 gap-y-3 text-niebla">
+          <Link to={localizePath('/faq')} className="enlace text-hueso">
+            {text('home.faq.title')}
+          </Link>
           <a
             href="https://github.com/EndYou01/my-portfolio"
             className="enlace"

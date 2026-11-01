@@ -8,6 +8,7 @@ import { LangProvider } from './components/lang/LangProvider'
 import { IndexPage } from './pages/IndexPage'
 import { AboutPage } from './pages/about/AboutPage'
 import { WorkPage } from './pages/work/WorkPage'
+import { FaqPage } from './pages/faq/FaqPage'
 import { ProjectPage } from './pages/projects/ProjectPage'
 import { MenuDigitalPage } from './pages/verticals/MenuDigitalPage'
 import { RestaurantePage } from './pages/verticals/RestaurantePage'
@@ -17,6 +18,7 @@ const SpanishRoutes = () => (
     <Route path="/" element={<IndexPage />} />
     <Route path="about" element={<AboutPage />} />
     <Route path="work" element={<WorkPage />} />
+    <Route path="faq" element={<FaqPage />} />
     <Route path="menu-digital-cuba" element={<MenuDigitalPage />} />
     <Route
       path="pagina-web-restaurante-cuba"
@@ -32,6 +34,7 @@ const EnglishRoutes = () => (
     <Route path="/" element={<IndexPage />} />
     <Route path="about" element={<AboutPage />} />
     <Route path="work" element={<WorkPage />} />
+    <Route path="faq" element={<FaqPage />} />
     <Route path=":slug" element={<ProjectPage />} />
     <Route path="*" element={<IndexPage />} />
   </Routes>
