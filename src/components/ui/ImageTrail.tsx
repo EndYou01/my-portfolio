@@ -8,8 +8,10 @@ import {
 import { useEffect, useRef, useState } from 'react'
 import { EASE } from './motion'
 
-const WIDTH = 180
-const HEIGHT = 180
+const SIZE = 180
+/** Below the `md` breakpoint a 180 px logo takes up too much of the screen. */
+const MOBILE_SIZE = 110
+const MOBILE_MAX_WIDTH = 768
 /** Lo que recorre el ratón entre una foto y la siguiente, en píxeles. */
 const SPACING = 170
 /** Lo mismo con el dedo, que recorre menos en una pantalla de móvil. */
@@ -25,6 +27,7 @@ interface TrailImage {
   id: number
   x: number
   y: number
+  size: number
   src: string
 }
 
@@ -67,7 +70,8 @@ export function ImageTrail({ images, nextSection }: { images: string[]; nextSect
       last = { x: clientX, y: clientY }
       lastShownAt = performance.now()
       const rect = area.getBoundingClientRect()
-      const image = { id: id++, x: clientX - rect.left, y: clientY - rect.top, src: images[next] }
+      const size = window.innerWidth < MOBILE_MAX_WIDTH ? MOBILE_SIZE : SIZE
+      const image = { id: id++, x: clientX - rect.left, y: clientY - rect.top, size, src: images[next] }
       next = (next + 1) % images.length
       setTrail((list) => [...list, image])
       const timer = window.setTimeout(() => {
@@ -173,15 +177,15 @@ export function ImageTrail({ images, nextSection }: { images: string[]; nextSect
             key={image.id}
             src={image.src}
             alt=""
-            width={WIDTH}
-            height={HEIGHT}
+            width={image.size}
+            height={image.size}
             draggable={false}
             className="absolute object-contain"
             style={{
-              left: image.x - WIDTH / 2,
-              top: image.y - HEIGHT / 2,
-              width: WIDTH,
-              height: HEIGHT,
+              left: image.x - image.size / 2,
+              top: image.y - image.size / 2,
+              width: image.size,
+              height: image.size,
             }}
             initial={hidden}
             animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
