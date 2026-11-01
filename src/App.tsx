@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 
 import { Header } from './components/header/Header'
 import { Footer } from './components/footer/Footer'
-import { ThemeProvider } from './hooks/useDarkMode'
+import { SmoothScroll } from './components/ui/SmoothScroll'
 import { LangProvider } from './components/lang/LangProvider'
 
 import { IndexPage } from './pages/IndexPage'
@@ -38,8 +38,16 @@ const EnglishRoutes = () => (
 )
 
 export const App = () => (
-  <ThemeProvider>
+  <>
+    <a
+      href="#contenido"
+      className="fixed left-2 top-2 z-[60] -translate-y-20 bg-salvia px-3 py-2 text-etiqueta text-tinta focus:translate-y-0"
+    >
+      Saltar al contenido
+    </a>
     <Header />
+    <SmoothScroll />
+    <div id="contenido">
     <Routes>
       <Route
         path="/en/*"
@@ -58,8 +66,7 @@ export const App = () => (
         }
       />
     </Routes>
-    <div className="contain-footer">
-      <Footer />
     </div>
-  </ThemeProvider>
+    <Footer />
+  </>
 )

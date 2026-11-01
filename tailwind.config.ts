@@ -1,23 +1,31 @@
 import type { Config } from 'tailwindcss'
 
+const tight = { lineHeight: '1', letterSpacing: '-0.06em' }
+const body = { lineHeight: '1.2', letterSpacing: '-0.04em' }
+
 export default {
   content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
-  darkMode: ['class', '[data-theme="dark"]'],
   theme: {
     extend: {
       colors: {
-        primary: 'rgb(19, 48, 91)',
-        secondary: 'rgb(226, 70, 48)',
-        accent: 'rgb(226, 70, 48)',
-        'project-section': 'rgb(10, 10, 10)',
-        'bg-dark': 'rgb(20, 20, 20)',
-        'bg-light': 'rgba(255, 255, 255, 0.858)',
-        'text-dark': 'rgb(200, 200, 200)',
+        tinta: '#0f0f0f',
+        carbon: '#1a1a1a',
+        niebla: '#a6a6a6',
+        hueso: '#ffffff',
+        salvia: '#bbc6af',
       },
       fontFamily: {
-        sans: ['Manrope', 'system-ui', 'sans-serif'],
-        display: ['"Bricolage Grotesque"', 'Manrope', 'system-ui', 'sans-serif'],
-        mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+        sans: ['"Inter Variable"', 'Inter', 'system-ui', 'sans-serif'],
+      },
+      fontSize: {
+        display: ['4.5rem', tight],
+        titulo: ['3rem', tight],
+        cuerpo: ['1.125rem', body],
+        etiqueta: ['1rem', body],
+      },
+      spacing: {
+        margen: '2.5rem',
+        'margen-movil': '1.25rem',
       },
     },
   },

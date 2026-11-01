@@ -1,30 +1,26 @@
-import { IoIosArrowBack } from 'react-icons/io'
+import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 
-import { useDarkMode } from '../../hooks/useDarkMode'
-import { scrollToTop } from '../../utils/scroll'
+import { useLanguage } from '../../hooks/useLanguage'
 
 export const BackButton = () => {
+  const [text] = useTranslation('global')
   const navigate = useNavigate()
-  const { isDark } = useDarkMode()
+  const { localizePath } = useLanguage()
 
   const handleClick = () => {
-    const lastLocation =
-      typeof window !== 'undefined'
-        ? localStorage.getItem('lastLocation') || '/'
-        : '/'
-    navigate(lastLocation)
-    scrollToTop()
+    let target = localizePath('/work')
+    try {
+      target = localStorage.getItem('lastLocation') || target
+    } catch {
+      /* ignore storage errors */
+    }
+    navigate(target)
   }
 
   return (
-    <button
-      type="button"
-      className="bg_transparent my-element bckBtn"
-      onClick={handleClick}
-      aria-label="Go back"
-    >
-      <IoIosArrowBack className={isDark ? 'bckBtn_icon' : 'btn_icon_dark'} />
+    <button type="button" onClick={handleClick} className="enlace-marcado">
+      {text('snb.b')}
     </button>
   )
 }

@@ -1,86 +1,104 @@
+import { useState, useId } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Fade } from 'react-awesome-reveal'
 import { Link } from 'react-router-dom'
-import {
-  TbShoppingCart,
-  TbQrcode,
-  TbDatabase,
-  TbWorld,
-  TbTool,
-  TbTrendingUp,
-} from 'react-icons/tb'
-import type { IconType } from 'react-icons'
 
+import { PlusIcon } from '../../ui/PlusIcon'
+import { SectionHeader } from '../../ui/SectionHeader'
 import { WhatsAppCTA } from '../../whatsappCTA/WhatsAppCTA'
 import { useLanguage } from '../../../hooks/useLanguage'
 
-type ServiceKey = 's1' | 's2' | 's3' | 's4' | 's5' | 's6'
+const SERVICES = [
+  { key: 's1', image: '/freelance/confort/Pantalla_Principal.webp' },
+  { key: 's2', image: '/freelance/gelato/gelato1.webp', vertical: '/menu-digital-cuba' },
+  { key: 's3', image: '/cugranca/cugrancaxxi1.png' },
+  { key: 's4', image: '/pavel/pavel-home.webp', vertical: '/pagina-web-restaurante-cuba' },
+  { key: 's5', image: '/fuegoAbierto/fuegoabierto1.png' },
+  { key: 's6', image: '/yoss/yoss-home.webp' },
+]
 
-const SERVICE_ICONS: Record<ServiceKey, IconType> = {
-  s1: TbShoppingCart,
-  s2: TbQrcode,
-  s3: TbDatabase,
-  s4: TbWorld,
-  s5: TbTool,
-  s6: TbTrendingUp,
+const ServiceCard = ({
+  serviceKey,
+  image,
+  vertical,
+}: {
+  serviceKey: string
+  image: string
+  vertical?: string
+}) => {
+  const { t } = useTranslation('global')
+  const [open, setOpen] = useState(false)
+  const id = useId()
+
+  return (
+    <article className="relative aspect-[4/5] overflow-hidden bg-carbon">
+      <img
+        src={image}
+        alt=""
+        loading="lazy"
+        className={`absolute inset-0 size-full object-cover object-top transition-[filter,transform] duration-700 ${
+          open ? 'scale-105 blur-md brightness-[0.2] grayscale' : 'brightness-[0.32] grayscale'
+        }`}
+      />
+      <h3 className="titulo-item absolute inset-x-0 top-0">
+        <button
+          type="button"
+          aria-expanded={open}
+          aria-controls={id}
+          onClick={() => setOpen((v) => !v)}
+          className="flex w-full items-start justify-between gap-4 p-5 text-left uppercase"
+        >
+          {t(`home.services.${serviceKey}.name`)}
+          <PlusIcon open={open} />
+        </button>
+      </h3>
+      <p
+        id={id}
+        className={`prosa absolute inset-x-0 top-[72px] px-5 transition-[opacity,transform] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+          open ? 'opacity-100' : 'translate-y-3 opacity-0'
+        }`}
+      >
+        {t(`home.services.${serviceKey}.desc`)}
+      </p>
+      <div className="absolute inset-x-0 bottom-0 flex flex-wrap items-end justify-between gap-x-4 gap-y-2 p-5">
+        <p className="font-medium">{t(`home.services.${serviceKey}.price`)}</p>
+        <div className="flex flex-wrap gap-4">
+          {vertical && (
+            <Link to={vertical} className="enlace-marcado">
+              {t('home.services.dedicated')}
+            </Link>
+          )}
+          <WhatsAppCTA
+            variant="secondary"
+            message={t(`home.services.${serviceKey}.message`) as string}
+            label={t('home.services.learnMore') as string}
+          />
+        </div>
+      </div>
+    </article>
+  )
 }
-
-const VERTICAL_LINKS: Partial<Record<ServiceKey, string>> = {
-  s2: '/menu-digital-cuba',
-  s4: '/pagina-web-restaurante-cuba',
-}
-
-const SERVICE_KEYS: ServiceKey[] = ['s1', 's2', 's3', 's4', 's5', 's6']
 
 export const HomeServices = () => {
   const { t } = useTranslation('global')
   const { lang } = useLanguage()
-  const showVerticals = lang === 'ES'
 
   return (
-    <section id="services" className="home_section home_services">
-      <Fade triggerOnce>
-        <header className="home_section_head">
-          <h2 className="home_section_title">{t('home.services.title')}</h2>
-          <p className="home_section_sub">{t('home.services.subtitle')}</p>
-        </header>
-      </Fade>
-
-      <div className="home_services_grid">
-        {SERVICE_KEYS.map((key) => {
-          const Icon = SERVICE_ICONS[key]
-          const verticalPath = VERTICAL_LINKS[key]
-          return (
-            <article key={key} className="home_service_card">
-              <Icon className="home_service_icon" />
-              <h3 className="home_service_name">
-                {t(`home.services.${key}.name`)}
-              </h3>
-              <p className="home_service_desc">
-                {t(`home.services.${key}.desc`)}
-              </p>
-              <p className="home_service_price">
-                {t(`home.services.${key}.price`)}
-              </p>
-              <WhatsAppCTA
-                variant="secondary"
-                size="sm"
-                message={t(`home.services.${key}.message`) as string}
-                label={t('home.services.learnMore') as string}
-                className="home_service_cta"
-              />
-              {showVerticals && verticalPath && (
-                <Link
-                  to={verticalPath}
-                  className="home_service_vertical_link"
-                >
-                  Ver pagina dedicada →
-                </Link>
-              )}
-            </article>
-          )
-        })}
-      </div>
+    <section id="services" className="seccion scroll-mt-[60px]">
+      <SectionHeader
+        title={t('home.services.title')}
+        intro={t('home.services.subtitle')}
+      />
+      <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {SERVICES.map((s) => (
+          <li key={s.key}>
+            <ServiceCard
+              serviceKey={s.key}
+              image={s.image}
+              vertical={lang === 'ES' ? s.vertical : undefined}
+            />
+          </li>
+        ))}
+      </ul>
     </section>
   )
 }

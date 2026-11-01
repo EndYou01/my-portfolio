@@ -1,14 +1,10 @@
 import { useTranslation } from 'react-i18next'
-import { useDarkMode } from '../../../hooks/useDarkMode'
-
-const normalizeSrc = (src: string): string =>
-  src.startsWith('/') || src.startsWith('http') ? src : `/${src}`
 
 type ExperienceItem = {
   period: string
   titleKey: string
   subtitleKey?: string
-  company?: { url: string; label: string; logo?: string }
+  company?: { url: string; label: string }
   responsibilitiesKey?: string
   bullets: string[]
   bulletNested?: { parentKey: string; childKeys: string[] }
@@ -27,7 +23,6 @@ const EXPERIENCES: ExperienceItem[] = [
     company: {
       url: 'https://catalogo.godjango.dev/nosotros/',
       label: 'GoDjango Technology Company, La Habana',
-      logo: 'logos/GoDjangoLogo.png',
     },
     responsibilitiesKey: 'general.KeyResponsibilities',
     bullets: ['about.worksInfo.text4'],
@@ -42,7 +37,6 @@ const EXPERIENCES: ExperienceItem[] = [
     company: {
       url: 'https://www.tecopos.com/',
       label: 'TecoPos Technology Company, La Habana',
-      logo: 'logos/TecoposLogo2.jpg',
     },
     responsibilitiesKey: 'general.KeyResponsibilities',
     bullets: ['about.worksInfo.text7', 'about.worksInfo.text8'],
@@ -57,7 +51,6 @@ const EXPERIENCES: ExperienceItem[] = [
     company: {
       url: 'https://www.tecopos.com/',
       label: 'TecoPos Technology Company, La Habana',
-      logo: 'logos/TecoposLogo2.jpg',
     },
     responsibilitiesKey: 'general.KeyResponsibilities',
     bullets: [
@@ -74,7 +67,6 @@ const EXPERIENCES: ExperienceItem[] = [
     company: {
       url: 'https://www.redcollege.net/',
       label: 'RedCollege, Santiago, Chile (Remoto)',
-      logo: 'logos/redcollege_logo.png',
     },
     responsibilitiesKey: 'general.KeyResponsibilities',
     bullets: [
@@ -102,7 +94,6 @@ const EXPERIENCES: ExperienceItem[] = [
     company: {
       url: 'https://www.informagestudios.com/',
       label: 'InforMage Studios, España (Remoto)',
-      logo: 'logos/infomage_logo.webp',
     },
     responsibilitiesKey: 'general.KeyResponsibilities',
     bullets: [
@@ -115,81 +106,52 @@ const EXPERIENCES: ExperienceItem[] = [
 
 const ProfesionalExperience = () => {
   const [text] = useTranslation('global')
-  const { isDark } = useDarkMode()
 
   const formatPeriod = (raw: string) =>
     raw.replace('{present}', text('general.Present'))
 
   return (
-    <div>
-      <h2 className="center">{text('about.profExp')}</h2>
-
-      <div className="about_container">
-        <div
-          className={
-            isDark ? 'infoContain' : 'infoContain project_info_container_dark'
-          }
-        >
-          {EXPERIENCES.map((exp) => (
-            <div key={exp.period} style={{ border: 'none' }} className="tr">
-              <div className="first_td">{formatPeriod(exp.period)}</div>
-              <div className={isDark ? 'second_td' : 'second_td_dark'}>
-                <h3>{text(exp.titleKey)}</h3>
-
-                {exp.subtitleKey && (
-                  <p className="secundary_color">{text(exp.subtitleKey)}</p>
-                )}
-
-                {exp.company && (
-                  <div className="second_td_empressContainer">
-                    <a className="secundary_color" href={exp.company.url}>
-                      {exp.company.label}
-                    </a>
-                    {exp.company.logo && (
-                      <img
-                        className="second_td_empressIMG"
-                        src={normalizeSrc(exp.company.logo)}
-                        alt={`${exp.company.label} logo`}
-                      />
-                    )}
-                  </div>
-                )}
-
-                {exp.responsibilitiesKey && (
-                  <h4>{text(exp.responsibilitiesKey)}.</h4>
-                )}
-
-                {(exp.bulletNested || exp.bullets.length > 0) && (
-                  <ul>
-                    {exp.bulletNested && (
-                      <li>
-                        {text(exp.bulletNested.parentKey)}
-                        <ul>
-                          {exp.bulletNested.childKeys.map((key) => (
-                            <li key={key}>{text(key)}</li>
-                          ))}
-                        </ul>
-                      </li>
-                    )}
-                    {exp.bullets.map((key) => (
-                      <li key={key}>{text(key)}</li>
-                    ))}
-                  </ul>
-                )}
-
-                {!exp.bulletNested && !exp.responsibilitiesKey && (
-                  <div className="info">
-                    {exp.bullets.map((key) => (
-                      <p key={key}>{text(key)}</p>
-                    ))}
-                  </div>
-                )}
-              </div>
+    <section className="seccion">
+      <h2 className="titulo-seccion">{text('about.profExp')}</h2>
+      <ol className="mt-8">
+        {[...EXPERIENCES].reverse().map((exp) => (
+          <li
+            key={exp.period}
+            className="grid gap-3 border-t border-carbon py-6 md:grid-cols-2 md:gap-5"
+          >
+            <p className="rotulo">{formatPeriod(exp.period)}</p>
+            <div>
+              <h3 className="titulo-item">{text(exp.titleKey)}</h3>
+              {exp.subtitleKey && (
+                <p className="mt-2 text-niebla">{text(exp.subtitleKey)}</p>
+              )}
+              {exp.company && (
+                <a
+                  href={exp.company.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="enlace mt-2 inline-block text-niebla"
+                >
+                  {exp.company.label}
+                </a>
+              )}
+              <ul className="mt-4 grid gap-2">
+                {[
+                  ...(exp.bulletNested
+                    ? [exp.bulletNested.parentKey, ...exp.bulletNested.childKeys]
+                    : []),
+                  ...exp.bullets,
+                ].map((key) => (
+                  <li key={key} className="prosa">
+                    {text(key)}
+                  </li>
+                ))}
+              </ul>
             </div>
-          ))}
-        </div>
-      </div>
-    </div>
+          </li>
+        ))}
+      </ol>
+    </section>
   )
 }
 

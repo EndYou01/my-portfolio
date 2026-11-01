@@ -1,228 +1,158 @@
+import { AnimatePresence, motion } from 'motion/react'
 import { useEffect, useState } from 'react'
-import { useNavigate, NavLink, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { Link, NavLink } from 'react-router-dom'
 
-import { GiHamburgerMenu } from 'react-icons/gi'
-import { MdWeb, MdPermContactCalendar, MdHome } from 'react-icons/md'
-import { AiOutlineInfoCircle, AiOutlineClose } from 'react-icons/ai'
-import { HiMoon, HiSun } from 'react-icons/hi'
-import { FaWhatsapp } from 'react-icons/fa'
-
-import { scrollToTop, scrollToBottom } from '../../utils/scroll'
-import { useDarkMode } from '../../hooks/useDarkMode'
 import { useLanguage } from '../../hooks/useLanguage'
-import { useIsMobile } from '../../hooks/useMediaQuery'
+import { Clock } from '../ui/Clock'
+import { EASE } from '../ui/motion'
 import { WhatsAppCTA } from '../whatsappCTA/WhatsAppCTA'
 
 export const Header = () => {
   const [text] = useTranslation('global')
-  const navigate = useNavigate()
-  const location = useLocation()
-  const isHome = location.pathname === '/' || location.pathname === '/en'
-  const showHomeLink = [
-    '/about',
-    '/en/about',
-    '/work',
-    '/en/work',
-  ].includes(location.pathname)
-  const { isDark, toggle: toggleTheme } = useDarkMode()
   const { lang, toggle: toggleLang, localizePath } = useLanguage()
-  const isMobile = useIsMobile()
-
-  const [scrollPosition, setScrollPosition] = useState(0)
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [open, setOpen] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => setScrollPosition(window.pageYOffset)
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+    if (!open) return
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setOpen(false)
+    }
+    document.addEventListener('keydown', onKey)
+    const root = document.documentElement
+    root.style.overflow = 'hidden'
+    return () => {
+      document.removeEventListener('keydown', onKey)
+      root.style.overflow = ''
+    }
+  }, [open])
 
-  const goHome = () => {
-    navigate(localizePath('/'))
-    scrollToTop()
-  }
-
-  const closeMenu = () => setIsMenuOpen(false)
-
-  const isAboutTop =
-    (location.pathname === '/about' || location.pathname === '/en/about') &&
-    scrollPosition < 10
-
-  const headerClass = [
-    scrollPosition < 10
-      ? isDark
-        ? 'header_container'
-        : 'header_container_light'
-      : 'header_container',
-    isAboutTop ? 'header_about_top' : '',
+  const links = [
+    { to: localizePath('/'), label: text('header.home'), end: true },
+    { to: localizePath('/work'), label: text('header.work'), end: false },
+    { to: localizePath('/about'), label: text('header.about'), end: false },
   ]
-    .filter(Boolean)
-    .join(' ')
-
-  const menuTransform = !isMobile
-    ? 'translateX(0)'
-    : isMenuOpen
-    ? 'translateX(-100%)'
-    : 'translateX(0)'
+  const otherLang = lang === 'ES' ? 'EN' : 'ES'
 
   return (
-    <header className={headerClass}>
-      <div className="header_content">
-        <button
-          type="button"
-          onClick={goHome}
-          className="header_title"
-          style={{ background: 'none', border: 'none', cursor: 'pointer' }}
+    <header className="fixed inset-x-0 top-0 z-50 bg-tinta">
+      <div className="margenes relative z-10 flex h-[60px] items-center justify-between text-etiqueta uppercase md:grid md:grid-cols-[1fr_auto_1fr]">
+        <Link
+          to={localizePath('/')}
+          onClick={() => setOpen(false)}
+          className="justify-self-start font-medium"
         >
-          {isHome ? text('header.services') : text('header.portofolio')}
-        </button>
+          Jorge Senjudo
+        </Link>
 
-        <div className="header_right">
-          {isHome && (
-            <div className="header_home_cta">
-              <WhatsAppCTA
-                variant="primary"
-                size="sm"
-                label={text('header.bookCall') as string}
-                className="header_home_cta_text"
-              />
-              <WhatsAppCTA
-                variant="primary"
-                size="sm"
-                label=""
-                className="header_home_cta_icon"
-                aria-label={text('header.bookCall') as string}
-              >
-                <FaWhatsapp aria-hidden />
-              </WhatsAppCTA>
-            </div>
-          )}
+        <nav aria-label="Principal" className="hidden md:block">
+          <ul className="flex gap-6">
+            {links.map((l) => (
+              <li key={l.to}>
+                <NavLink to={l.to} end={l.end} className="enlace">
+                  {l.label}
+                </NavLink>
+              </li>
+            ))}
+            <li>
+              <a href="#contact" className="enlace">
+                {text('header.contact')}
+              </a>
+            </li>
+          </ul>
+        </nav>
 
+        <div className="flex items-center gap-5 justify-self-end">
+          <span className="hidden xl:inline">
+            <Clock />
+          </span>
           <button
             type="button"
-            onClick={() => setIsMenuOpen(true)}
-            className="hamburger_menu"
-            aria-label="Open navigation menu"
-            aria-expanded={isMenuOpen}
-            style={{ background: 'none', border: 'none' }}
+            onClick={toggleLang}
+            className="enlace uppercase"
+            aria-label={otherLang === 'EN' ? 'Switch to English' : 'Cambiar a español'}
           >
-            <GiHamburgerMenu />
+            {otherLang}
           </button>
-
-          <div
-            onClick={closeMenu}
-            className={isMenuOpen ? 'nav_bg_open' : 'nav_bg_closed'}
+          <WhatsAppCTA
+            variant="plain"
+            label={text('header.bookCall') as string}
+            className="hidden text-salvia md:inline"
+          />
+          <button
+            type="button"
+            className="uppercase md:hidden"
+            aria-expanded={open}
+            aria-controls="menu-movil"
+            onClick={() => setOpen((v) => !v)}
           >
-          <div
-            className="nav_container_open"
-            style={{
-              transform: menuTransform,
-              transition: 'transform 0.5s ease',
-            }}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              type="button"
-              onClick={closeMenu}
-              className="close_menu_button"
-              aria-label="Close navigation menu"
-              style={{ background: 'none', border: 'none' }}
-            >
-              <AiOutlineClose />
-            </button>
-
-            <ul className="navigation_list">
-              {showHomeLink && (
-                <li>
-                  <NavLink
-                    className="navigation_button"
-                    onClick={() => {
-                      scrollToTop()
-                      closeMenu()
-                    }}
-                    to={localizePath('/')}
-                    end
-                  >
-                    <MdHome className="menu_icon" />
-                    {text('header.home')}
-                  </NavLink>
-                </li>
-              )}
-
-              <li>
-                <NavLink
-                  className="navigation_button"
-                  onClick={() => {
-                    scrollToTop()
-                    closeMenu()
-                  }}
-                  to={localizePath('/about')}
-                >
-                  <AiOutlineInfoCircle className="menu_icon" />
-                  {text('header.about')}
-                </NavLink>
-              </li>
-
-              <li>
-                <NavLink
-                  className="navigation_button"
-                  onClick={() => {
-                    scrollToTop()
-                    closeMenu()
-                  }}
-                  to={localizePath('/work')}
-                >
-                  <MdWeb className="menu_icon" />
-                  {text('header.work')}
-                </NavLink>
-              </li>
-
-              <li>
-                <button
-                  type="button"
-                  className="navigation_button"
-                  onClick={() => {
-                    scrollToBottom()
-                    closeMenu()
-                  }}
-                >
-                  <MdPermContactCalendar className="menu_icon" />
-                  {text('header.contact')}
-                </button>
-              </li>
-
-              <li className="dropdown">
-                <button
-                  type="button"
-                  className="navigation_button dropdown-toggle"
-                  onClick={toggleLang}
-                >
-                  {lang}
-                </button>
-              </li>
-
-              <li className="li_icon">
-                <button
-                  type="button"
-                  className="navigation_button li_mr-2"
-                  onClick={toggleTheme}
-                >
-                  {isDark ? text('header.dark') : text('header.light')}
-                </button>
-                <span>
-                  {isDark ? (
-                    <HiMoon className="header_icon" />
-                  ) : (
-                    <HiSun className="header_icon" />
-                  )}
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
+            {open ? text('header.close') : text('header.menu')}
+          </button>
         </div>
       </div>
+
+      <AnimatePresence>
+        {open && (
+          <motion.nav
+            id="menu-movil"
+            data-lenis-prevent
+            aria-label="Principal"
+            className="fixed inset-0 bg-tinta px-margen-movil pt-[84px] md:hidden"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0, transition: { duration: 0.25, delay: 0.15 } }}
+            transition={{ duration: 0.25 }}
+          >
+            <ul>
+              {links.map((l, i) => (
+                <li key={l.to} className="overflow-hidden">
+                  <motion.div
+                    initial={{ y: '100%' }}
+                    animate={{ y: 0 }}
+                    exit={{ y: '100%', transition: { duration: 0.3, ease: EASE } }}
+                    transition={{ duration: 0.6, ease: EASE, delay: 0.05 + i * 0.06 }}
+                  >
+                    <NavLink
+                      to={l.to}
+                      end={l.end}
+                      onClick={() => setOpen(false)}
+                      className="block text-titulo font-medium uppercase !leading-[1.3] aria-[current=page]:text-salvia"
+                    >
+                      {l.label}
+                    </NavLink>
+                  </motion.div>
+                </li>
+              ))}
+              <li className="overflow-hidden">
+                <motion.div
+                  initial={{ y: '100%' }}
+                  animate={{ y: 0 }}
+                  exit={{ y: '100%', transition: { duration: 0.3, ease: EASE } }}
+                  transition={{ duration: 0.6, ease: EASE, delay: 0.05 + links.length * 0.06 }}
+                >
+                  <a
+                    href="#contact"
+                    onClick={() => setOpen(false)}
+                    className="block text-titulo font-medium uppercase !leading-[1.3]"
+                  >
+                    {text('header.contact')}
+                  </a>
+                </motion.div>
+              </li>
+            </ul>
+            <div className="absolute inset-x-margen-movil bottom-6 flex items-end justify-between gap-4 text-etiqueta uppercase">
+              <span className="text-niebla">
+                <Clock />
+              </span>
+              <WhatsAppCTA
+                variant="plain"
+                label={text('header.bookCall') as string}
+                className="text-salvia"
+              />
+            </div>
+          </motion.nav>
+        )}
+      </AnimatePresence>
     </header>
   )
 }

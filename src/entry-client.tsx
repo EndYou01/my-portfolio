@@ -8,6 +8,7 @@ import { App } from './App'
 import global_es from './translations/es/global.json'
 import global_en from './translations/en/global.json'
 
+import '@fontsource-variable/inter'
 import './styles/tailwind.css'
 
 const initialLang = window.location.pathname.startsWith('/en/') ||

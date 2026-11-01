@@ -21,7 +21,9 @@
         "contact": "Contact",
         "dark": "Dark",
         "light": "Light",
-        "bookCall": "Book a call"
+        "bookCall": "Book a call",
+        "menu": "Menu",
+        "close": "Close"
     },
     "footer": {
         "contactMe": "Contact me",
@@ -111,7 +113,12 @@
         "h1": "My projects",
         "lm": "Learn More",
         "freelance": "Freelance Projects",
-        "role": "Role"
+        "role": "Role",
+        "all": "All",
+        "more": "More projects",
+        "seeAll": "See all projects",
+        "selected": "Selected work",
+        "project": "The project"
     },
     "snb": {
         "p1": "SNB 2022 is a project developed using the Net.Beans development environment, using Java as a language main. It is a game oriented mainly to my training as a software engineer, in which they apply complex algorithms such as Fisher Yates, for randomization of random numbers. The logo you can see on the project is Lens, the name chosen by the team of developers who live at the university.",
@@ -266,7 +273,7 @@
             "subheadline": "I build online stores, management systems and professional websites for businesses that want reliable, easy-to-maintain technology. You talk to me, I build, and I handle the rest.",
             "ctaPrimary": "Book a free call (30 min)",
             "ctaPrimaryMessage": "Hi Jorge, I saw your website and I'd like to book the free 30-minute call. I wanted to tell you about a project I'm considering.",
-            "ctaSecondary": "See services and pricing ↓"
+            "ctaSecondary": "See services and pricing"
         },
         "killer": {
             "f1": "Reply in under 24h",
@@ -277,7 +284,7 @@
         "services": {
             "title": "What I build",
             "subtitle": "Services with clear scope and pricing. If none fits exactly, we build one to measure.",
-            "learnMore": "Learn more →",
+            "learnMore": "Learn more",
             "from": "From",
             "custom": "Custom quote",
             "s1": {
@@ -315,7 +322,8 @@
                 "desc": "I get your site to show up on Google when your customers search for what you offer. Technical audit, on-page optimization, and proper setup from day 1.",
                 "price": "From $150 USD",
                 "message": "Hi Jorge, I'm interested in the SEO service. Can we talk?"
-            }
+            },
+            "dedicated": "See page"
         },
         "process": {
             "title": "How I work",
@@ -412,7 +420,7 @@
         },
         "servicesMarquee": "Online stores · Digital menus · Management systems · Corporate websites · Landing pages · E-commerce · Custom applications · WhatsApp integration · Payment gateways · Odoo customization · Platform migration · Web maintenance · SEO · Technical audits · Speed optimization · APIs and backends · Databases · Admin dashboards · Multi-language · Online bookings",
         "logos": {
-            "eyebrow": "> TRUSTED BY"
+            "eyebrow": "Trusted by"
         },
         "flagship": {
             "sectionTitle": "The most requested project",
@@ -433,5 +441,6 @@
             "ctaMessage": "Hi Jorge, I'm interested in the $700 USD complete online store. Can we talk?",
             "finePrint": "Free quote · Delivered in 48h"
         }
-    }
+    },
+    "faqLink": "FAQ"
 }

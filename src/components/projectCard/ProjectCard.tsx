@@ -1,105 +1,40 @@
-import { useLocation, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { Fade } from 'react-awesome-reveal'
+import { Link, useLocation } from 'react-router-dom'
 
-import { lookupStack } from './stackConfig'
-
-export type ProjectCardProps = {
-  logo: string
-  title: string
-  description: string
-  role: string
-  period: string
-  stack: string[]
-  image: string
-  url: string
-  altText: string
-}
-
-const formatPeriod = (raw: string): string =>
-  raw.replace(/\//g, ' ').replace(/\s*-\s*/g, ' — ')
+import type { WorkCard } from '../../data/workCards'
+import { useLanguage } from '../../hooks/useLanguage'
 
 const normalizeSrc = (src: string): string =>
   src.startsWith('/') || src.startsWith('http') ? src : `/${src}`
 
-export const ProjectCard = ({
-  logo,
-  title,
-  description,
-  role,
-  period,
-  stack,
-  image,
-  url,
-  altText,
-}: ProjectCardProps) => {
+export const ProjectCard = ({ card }: { card: WorkCard }) => {
   const { t } = useTranslation('global')
+  const { localizePath } = useLanguage()
   const location = useLocation()
+  const title = card.titleKey ? t(card.titleKey) : card.title ?? ''
 
-  const handleClick = () => {
-    if (typeof window === 'undefined') return
+  const remember = () => {
     try {
       localStorage.setItem('lastLocation', location.pathname)
     } catch {
-      /* ignore */
+      /* ignore storage errors */
     }
   }
 
   return (
-    <Fade>
-      <article className="pcard">
+    <Link to={localizePath(card.url)} onClick={remember} className="group block">
+      <div className="aspect-[4/3] overflow-hidden bg-carbon">
         <img
-          className="pcard_bg"
-          src={normalizeSrc(image)}
-          alt={`${altText} preview`}
+          src={normalizeSrc(card.image)}
+          alt={`${card.altText} preview`}
           loading="lazy"
+          className="size-full object-cover object-top transition-transform duration-[1.2s] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]"
         />
-        <div className="pcard_overlay" aria-hidden />
-
-        <div className="pcard_top">
-          <div className="pcard_logo_box">
-            <img
-              className="pcard_logo"
-              src={normalizeSrc(logo)}
-              alt={`${altText} logo`}
-              loading="lazy"
-            />
-          </div>
-          <div className="pcard_top_meta">
-            <span className="pcard_period_pill">{formatPeriod(period)}</span>
-            <span className="pcard_role_pill">{role}</span>
-          </div>
-        </div>
-
-        <div className="pcard_bottom">
-          <div className="pcard_text">
-            <h3 className="pcard_title">{title}</h3>
-            <p className="pcard_desc">{description}</p>
-            <ul className="pcard_stack">
-              {stack.map((tech) => {
-                const cfg = lookupStack(tech)
-                const Icon = cfg.Icon
-                return (
-                  <li
-                    key={tech}
-                    className="pcard_stack_pill"
-                    style={{ background: cfg.bg, color: cfg.color }}
-                  >
-                    {Icon && <Icon className="pcard_stack_icon" />}
-                    <span>{cfg.label}</span>
-                  </li>
-                )
-              })}
-            </ul>
-          </div>
-          <Link to={url} onClick={handleClick} className="pcard_cta">
-            {t('work.lm')}
-            <span className="pcard_cta_arrow" aria-hidden>
-              →
-            </span>
-          </Link>
-        </div>
-      </article>
-    </Fade>
+      </div>
+      <h3 className="titulo-item mt-5">{title}</h3>
+      <p className="mt-1.5 text-niebla transition-colors group-hover:text-hueso">
+        {card.role}, {card.period}
+      </p>
+    </Link>
   )
 }

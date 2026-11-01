@@ -1,16 +1,18 @@
 import { useTranslation } from 'react-i18next'
 
-type Variant = 'primary' | 'secondary'
-type Size = 'lg' | 'md' | 'sm'
+type Variant = 'primary' | 'secondary' | 'plain'
 
 type Props = {
   variant?: Variant
-  size?: Size
   message?: string
   label?: string
   className?: string
-  children?: React.ReactNode
-  'aria-label'?: string
+}
+
+const VARIANT_CLASS: Record<Variant, string> = {
+  primary: 'boton',
+  secondary: 'enlace-marcado inline-block',
+  plain: 'enlace',
 }
 
 const buildWhatsAppLink = (message: string): string => {
@@ -20,37 +22,22 @@ const buildWhatsAppLink = (message: string): string => {
 
 export const WhatsAppCTA = ({
   variant = 'primary',
-  size = 'md',
   message,
   label,
   className = '',
-  children,
-  'aria-label': ariaLabel,
 }: Props) => {
   const { t } = useTranslation('global')
 
-  const finalMessage =
-    message ?? (t('home.whatsapp.defaultMessage') as string)
-  const finalLabel = label ?? (t('home.whatsapp.defaultLabel') as string)
-
-  const classes = [
-    'wa_cta',
-    `wa_cta_${variant}`,
-    `wa_cta_${size}`,
-    className,
-  ]
-    .filter(Boolean)
-    .join(' ')
-
   return (
     <a
-      href={buildWhatsAppLink(finalMessage)}
+      href={buildWhatsAppLink(
+        message ?? (t('home.whatsapp.defaultMessage') as string),
+      )}
       target="_blank"
       rel="noopener noreferrer"
-      className={classes}
-      aria-label={ariaLabel}
+      className={`${VARIANT_CLASS[variant]} ${className}`.trim()}
     >
-      {children ?? finalLabel}
+      {label ?? t('home.whatsapp.defaultLabel')}
     </a>
   )
 }

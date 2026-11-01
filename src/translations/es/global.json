@@ -21,7 +21,9 @@
         "contact": "Contáctame",
         "dark": "Oscuro",
         "light": "Claro",
-        "bookCall": "Solicitar llamada"
+        "bookCall": "Solicitar llamada",
+        "menu": "Menú",
+        "close": "Cerrar"
     },
     "footer": {
         "contactMe": "Contáctame",
@@ -111,7 +113,12 @@
         "h1": "Mis proyectos",
         "lm": "Leer Más",
         "freelance": "Proyectos Freelance",
-        "role": "Rol"
+        "role": "Rol",
+        "all": "Todos",
+        "more": "Más proyectos",
+        "seeAll": "Ver todos los proyectos",
+        "selected": "Proyectos destacados",
+        "project": "El proyecto"
     },
     "snb": {
         "p1": "SNB 2022 es un proyecto desarrollado usando el entorno de desarrollo Net.Beans, usando Java como lenguaje principal. Es un juego orientado principalmente a mi formación como ingeniero de software, en el se aplican complejos algoritmos como Fisher Yates, para la aleatorización de números aleatorios. El logo que puede ver en el proyecto es Lens, nombre que elegimos el equipo de desarrolladores que convivimos en la universidad.",
@@ -256,7 +263,7 @@
             "description": "Como hacer un menu digital para tu restaurante, cafetería o paladar cubano. Carta QR, pedidos por WhatsApp, cero comisiones por pedido. Desde $250 USD. Programador web en Cuba."
         },
         "hero": {
-            "eyebrow": "> MENÚ DIGITAL CUBA · CARTA QR · MIPYMES GASTRONÓMICAS",
+            "eyebrow": "MENÚ DIGITAL CUBA, CARTA QR, MIPYMES GASTRONÓMICAS",
             "headline": "Menú digital para restaurantes, cafeterías y paladares en Cuba.",
             "subheadline": "Tus clientes escanean un QR en la mesa, ven la carta desde su móvil y hacen el pedido por WhatsApp. Sin apps que descargar, sin comisiones por pedido, sin perder ventas porque la carta de papel está sucia o desactualizada.",
             "ctaPrimary": "Quiero mi menú digital",
@@ -335,7 +342,7 @@
             "description": "Pagina web profesional para tu restaurante en Cuba. Carta digital, pedidos por WhatsApp, reservas online y posicionamiento en Google. Para MIPYMES gastronómicas y paladares cubanos."
         },
         "hero": {
-            "eyebrow": "> PAGINA WEB PARA RESTAURANTE EN CUBA · MIPYMES GASTRONÓMICAS",
+            "eyebrow": "PAGINA WEB PARA RESTAURANTE EN CUBA, MIPYMES GASTRONÓMICAS",
             "headline": "Pagina web profesional para restaurantes y paladares cubanos.",
             "subheadline": "Una pagina web hecha para que tu restaurante en Cuba aparezca en Google, transmita lo que es y convierta a quien la visita en cliente que reserva o pide. Carta digital integrada, fotos cuidadas, pedidos por WhatsApp y SEO local desde el primer día.",
             "ctaPrimary": "Quiero una pagina para mi restaurante",
@@ -424,7 +431,7 @@
             "subheadline": "Si tienes una MIPYME, un restaurante, una cafetería o cualquier negocio privado en Cuba y te preguntas como hacer una pagina web para tu negocio, hablamos. Diseño y programo paginas web, tiendas virtuales y sistemas a medida para que aparezcas en Google y vendas por internet desde Cuba.",
             "ctaPrimary": "Solicitar llamada gratis (30 min)",
             "ctaPrimaryMessage": "Hola Jorge, vi tu web y me gustaría solicitar la llamada gratis de 30 minutos. Quería contarte sobre un proyecto en el que estoy pensando.",
-            "ctaSecondary": "Ver servicios y precios ↓"
+            "ctaSecondary": "Ver servicios y precios"
         },
         "killer": {
             "f1": "Respuesta en menos de 24h",
@@ -435,7 +442,7 @@
         "services": {
             "title": "Lo que construyo",
             "subtitle": "Paginas web, tiendas virtuales y sistemas pensados para el día a día de un actor económico en Cuba. Alcance claro, presupuesto fijo y código tuyo desde el día 1.",
-            "learnMore": "Saber más →",
+            "learnMore": "Saber más",
             "from": "Desde",
             "custom": "A medida",
             "s1": {
@@ -473,7 +480,8 @@
                 "desc": "Como aparecer en Google cuando tus clientes buscan productos o servicios en Cuba. Auditoría técnica, optimización on-page, Schema.org y configuración correcta desde el día 1 para que tu MIPYME se vea.",
                 "price": "Desde $150 USD",
                 "message": "Hola Jorge, me interesa el servicio de posicionamiento web (SEO). ¿Podemos hablar?"
-            }
+            },
+            "dedicated": "Ver página"
         },
         "process": {
             "title": "Cómo trabajo",
@@ -570,7 +578,7 @@
         },
         "servicesMarquee": "Paginas web MIPYME · Menú digital Cuba · Tienda online Cuba · Tienda virtual · Catálogo online · Sistemas de gestión · Pagina web restaurante · Pagina web cafetería · Pagina web barbería · Webs corporativas · Landing pages · E-commerce · Integración WhatsApp · Pasarelas de pago · Posicionamiento SEO · Como vender por internet en Cuba · Reservas online · Aplicaciones a medida · Dashboards administrativos · APIs y backends",
         "logos": {
-            "eyebrow": "> CONFIANZA DE"
+            "eyebrow": "Confían en mí"
         },
         "flagship": {
             "sectionTitle": "El proyecto más pedido",
@@ -591,5 +599,6 @@
             "ctaMessage": "Hola Jorge, me interesa la tienda online completa de $700 USD. ¿Hablamos?",
             "finePrint": "Presupuesto gratuito · Entrega en 48h"
         }
-    }
+    },
+    "faqLink": "Preguntas frecuentes"
 }
