@@ -22,17 +22,24 @@ import {
 } from '../utils/schema'
 
 const TRAIL = [
-  '/fuegoAbiertoWeb/fuegoabiertoweb-home.webp',
-  '/worldcup/worldcup-home.webp',
-  '/pavel/pavel-home.webp',
-  '/yoss/yoss-home.webp',
-  '/gocreate/gocreate-1.webp',
-  '/redcollege/redcollege1.webp',
-  '/freelance/elgaban/elgaban1.webp',
-  '/freelance/gelato/gelato1.webp',
+  '/logos/fuegoabierto_logo.webp',
+  '/logos/worldcup_logo.webp',
+  '/logos/cugranca_logo.webp',
+  '/logos/gocreate_logo.webp',
+  '/logos/kopenick_logo.webp',
+  '/logos/redcollege_logo.webp',
+  '/logos/yoss_logo.webp',
+  '/logos/TecoposLogo2.webp',
+  '/logos/pavel_logo.webp',
+  '/logos/gabanLogo.webp',
+  '/logos/coremant_logo.webp',
+  '/logos/GoDjangoLogo.webp',
 ]
 
-const FEATURED = workCards.filter((c) => c.featured).slice(0, 4)
+const FEATURED_URLS = ['/fuegoabierto-web', '/worldcup-pvp', '/gocreate', '/kopenick']
+const FEATURED = FEATURED_URLS.flatMap((url) =>
+  workCards.filter((c) => c.url === url),
+)
 const KILLER_KEYS = ['f1', 'f2', 'f3', 'f4'] as const
 
 export const IndexPage = () => {

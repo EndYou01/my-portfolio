@@ -8,8 +8,8 @@ import {
 import { useEffect, useRef, useState } from 'react'
 import { EASE } from './motion'
 
-const WIDTH = 200
-const HEIGHT = 250
+const WIDTH = 180
+const HEIGHT = 180
 /** Lo que recorre el ratón entre una foto y la siguiente, en píxeles. */
 const SPACING = 170
 /** Lo mismo con el dedo, que recorre menos en una pantalla de móvil. */
@@ -176,7 +176,7 @@ export function ImageTrail({ images, nextSection }: { images: string[]; nextSect
             width={WIDTH}
             height={HEIGHT}
             draggable={false}
-            className="absolute object-cover"
+            className="absolute object-contain"
             style={{
               left: image.x - WIDTH / 2,
               top: image.y - HEIGHT / 2,
